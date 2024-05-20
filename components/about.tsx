@@ -1,16 +1,38 @@
 import React from "react";
 import SectionHeading from "./section-heading";
+import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 
 export default function about() {
+  const cardData = [
+    {
+      quote:
+        "This is MarketTime is a fast-paced company with ever changing priorities, and Emran did an excellent job of juggling priorities that were provided to him by multiple Agile teams. He's a great leader and I loved working with him.",
+      name: "Todd",
+      title: "President MarketTime B2B, Texas, USA",
+    },
+    {
+      quote:
+        "Working with Emran at MarketTime was truly a pleasure. Emran displayed the ability to ask questions that not many others could. Solving customers pain points and making the best experience for them is truly Emrans passion and you can see that in his work output and in discussions with customers. I wouldn not hesitate to work with Emran again as he is truly an exceptional UI/UX Designer.",
+      name: "Richard Wohnsiedler",
+      title: "Sr Product Owner, ISN, Texas, USA",
+    },
+    {
+      quote:
+        "Emran's really good at figuring out tricky questions from customers. He's always there to help fix any problems and make sure everyone has a great experience. You can really tell how much he cares about making customers happy, just by talking to him or seeing his work.",
+      name: "Shafkat Ismam",
+      title: "Head of Brand Marketing, Ultra Clean, Malaysia",
+    },
+  ];
   return (
-    <section className="text-center max-w-[49rem]">
+    <section className="items-center max-w-[50rem]">
       <SectionHeading> About </SectionHeading>
-      <p className="items-center mb-10 mt-4 px-4 text-2xl leading-[1.5] sm:text-4xl">
-        A wizard who loves <span className="font-bold">design and code.</span> I
+      <p className="text-center mb-10 mt-4 px-4 text-xl sm:text-2xl">
+        A wizard who loves <span className="font-bold">design and code.</span>
         tell stories through my designs. I spend most of my free time solving
         <span className="font-bold"> design problems</span> around me, creating
         illustrations, design interactions and product design memes.
       </p>
+      <InfiniteMovingCards className="" items={cardData} speed="normal" />
     </section>
   );
 }
