@@ -27,7 +27,7 @@ export default function about() {
     <section className="items-center max-w-[50rem]">
       <SectionHeading> About </SectionHeading>
       <p className="text-center mb-10 mt-4 px-4 text-xl sm:text-2xl">
-        A wizard who loves <span className="font-bold">design and code.</span>
+        A wizard who loves <span className="font-bold">design and code. </span>I
         tell stories through my designs. I spend most of my free time solving
         <span className="font-bold"> design problems</span> around me, creating
         illustrations, design interactions and product design memes.
