@@ -38,7 +38,7 @@ const Card: React.FC<CardProps> = ({
           transition={{ duration: 0.2 }}
         />
         <div className="flex-grow px-6 py-4">
-          <h3 className="text-lg font-medium mb-2">{title}</h3>
+          <h3 className="text-lg font-bold mb-2">{title}</h3>
           <p className="text-sm text-gray-500">{smallText}</p>
           <p className="text-base">{description}</p>
         </div>

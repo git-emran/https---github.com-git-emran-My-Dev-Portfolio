@@ -7,7 +7,6 @@ import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 import insidemapsImg from "@/public/insidemaps.gif";
 import getgenieImg from "@/public/getgenie.gif";
-import { title } from "process";
 
 export const links = [
   {
@@ -70,7 +69,7 @@ export const projectsData = [
       "Designed & Developed the front-end in JavaScript with the help of AntDesign framework ",
     tags: ["React", "JavaScript", "AntDesign", "A.I", "Content Generator"],
     imageUrl: getgenieImg,
-    href: "mylink",
+    href: "Home",
   },
 
   {

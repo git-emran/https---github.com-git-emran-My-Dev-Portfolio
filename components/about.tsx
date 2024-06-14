@@ -1,6 +1,7 @@
 import React from "react";
 import SectionHeading from "./section-heading";
 import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
+import { useInView } from "framer-motion";
 
 export default function about() {
   const cardData = [
@@ -24,7 +25,7 @@ export default function about() {
     },
   ];
   return (
-    <section className="items-center max-w-[50rem]">
+    <section id="about" className="items-center max-w-[50rem]">
       <SectionHeading> About </SectionHeading>
       <p className="text-center mb-10 mt-4 px-4 text-xl sm:text-2xl">
         A wizard who loves <span className="font-bold">design and code. </span>I
