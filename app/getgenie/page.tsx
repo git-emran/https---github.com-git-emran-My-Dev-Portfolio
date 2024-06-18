@@ -1,10 +1,22 @@
+"use client"
+
+import React from "react";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { Button } from "@/components/ui/moving-border";
 
 export default function GetGenie() {
+  const router = useRouter();
+
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="relative w-full h-96 pt-0">
+      <header className="relative w-full h-96">
+        <button
+          onClick={() => router.push("/")}
+          className="absolute top-4 left-4 z-10 bg-blue-900 hover:bg-blue-600 text-white px-4 py-2 rounded"
+        >
+          Back to Home
+        </button>
         <div className="absolute inset-0 bg-black opacity-30"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <h1 className="text-4xl sm:text-6xl text-white font-bold">
@@ -21,7 +33,8 @@ export default function GetGenie() {
             width={900}
             height={700}
             quality={100}
-            className="m:block rounded-t-lg shadow-2xl object-cove pt-2"
+            unoptimized
+            className="block rounded-t-lg shadow-2xl object-cover pt-2"
           />
           <h2 className="text-3xl font-bold mb-4 pt-10">About the Project</h2>
           <p className="text-lg leading-relaxed mb-4">
@@ -42,8 +55,7 @@ export default function GetGenie() {
             ))}
           </ul>
 
-          {/* {Description} */}
-
+          {/* Description */}
           <h2 className="text-3xl font-bold mb-4 pt-11">Overview</h2>
           <p>
             Building an AI product requires designers to balance technical
