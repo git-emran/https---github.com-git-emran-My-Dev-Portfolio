@@ -4,9 +4,7 @@ import { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { relative } from "path";
 import Link from "next/link";
-import { Button } from "./ui/moving-border";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -15,7 +13,7 @@ export default function Project({
   description,
   tags,
   imageUrl,
-  href = "#",
+  href = "",
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -56,9 +54,8 @@ export default function Project({
           <Image
             src={imageUrl}
             alt="Project I worked on"
-            quality={100}
-            className="absolute hidden sm:block top-8 -right-40 rounded-t-lg shadow-2xl object-cover w-[28.25rem] h-[5]
-        
+            quality={95}
+            className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
         transition 
         group-hover:scale-[1.04]
         group-hover:-translate-x-3

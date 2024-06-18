@@ -7,6 +7,8 @@ import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 import insidemapsImg from "@/public/insidemaps.gif";
 import getgenieImg from "@/public/getgenie.gif";
+import officeImg from "@/public/office.gif";
+import webstieImg from "@/public/website.gif";
 
 export const links = [
   {
@@ -69,7 +71,7 @@ export const projectsData = [
       "Designed & Developed the front-end in JavaScript with the help of AntDesign framework ",
     tags: ["React", "JavaScript", "AntDesign", "A.I", "Content Generator"],
     imageUrl: getgenieImg,
-    href: "Home",
+    href: "/getgenie",
   },
 
   {
@@ -78,20 +80,21 @@ export const projectsData = [
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
     imageUrl: insidemapsImg,
+    href: "/insiddemaps",
   },
   {
-    title: "rmtDev",
+    title: "The Office Outlet",
     description:
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+    imageUrl: officeImg,
   },
   {
-    title: "Word Analytics",
+    title: "Website Redesign",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: webstieImg,
   },
 ];
 
@@ -103,13 +106,13 @@ export const skillsData = [
   "React",
   "Next.js",
   "Node.js",
+  "three.js",
   "Git",
   "Tailwind",
   "Prisma",
   "MongoDB",
   "Redux",
   "GraphQL",
-  "Apollo",
   "Express",
   "PostgreSQL",
   "Python",

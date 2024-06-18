@@ -6,11 +6,12 @@ import Projects from "@/components/projects";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import Skills from "@/components/skills";
 import Experience from "@/components/experience";
-import Timeline from "@/components/timeline";
+
 
 export default function Page() {
   return (
-    <main className="flex flex-col relative items-center px-4">
+    <main className="flex flex-col relative items-center px-4 pt-28 sm:pt-36">
+      <Header />
       <Intro />
       <About />
       <Projects />

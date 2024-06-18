@@ -7,14 +7,14 @@ import Link from "next/link";
 import { BsArrowRight, BsLinkedin, BsInstagram } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
-import YouTubeEmbed from "./ui/youtube-embed";
+
 
 // import { useSectionInView } from "@/lib/hooks";
 // import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:b-0">
+    <section className="mb-28 max-w-[50rem] text-center sm:b-0 ">
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -25,13 +25,13 @@ export default function Intro() {
               duration: 0.2,
             }}
           >
-            {/* <Image
+            <Image
               src="/Headshot 1.png"
               alt="Emran Portrait"
-              height="192"
-              width="192"
+              height="100"
+              width="100"
               className="h-50 w-50 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
-            /> */}
+            />
           </motion.div>
         </div>
       </div>
