@@ -13,6 +13,7 @@ import { useSectionInView } from "@/lib/hooks";
 
 import { useTheme } from "@/app/context/theme-context";
 
+
 export default function Experience() {
   const { ref } = useSectionInView("Experience");
   const { theme } = useTheme();
@@ -52,6 +53,7 @@ export default function Experience() {
               <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                 {item.description}
               </p>
+              
             </VerticalTimelineElement>
           </React.Fragment>
         ))}
