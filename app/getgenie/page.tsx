@@ -59,6 +59,22 @@ export default function GetGenie() {
               </li>
             ))}
           </ul>
+          <h3 className="text-lg font-medium leading-relaxed mb-4 mt-10">
+            Team
+          </h3>
+          <ul className="flex flex-wrap mt-4 mb-7 gap-2">
+            {[
+              "Jr Designers: 3",
+              "Engineering Lead",
+              "CTO",
+              "CEO",
+              "Sr Designer (me)",
+            ].map((tag, index) => (
+              <li key={index} className="bg-gray-200 px-3 py-1 rounded-full">
+                {tag}
+              </li>
+            ))}
+          </ul>
 
           {/* Description */}
           <h2 className="text-3xl font-bold mb-4 pt-11">Overview</h2>
@@ -70,17 +86,20 @@ export default function GetGenie() {
             iteratively to create products that resonate with users.
           </p>
 
-          {/* What I did */}
+          {/* Competitor Analysis */}
 
-          <h2 className="text-3xl font-bold mb-4 pt-11">Competitor Analysis</h2>
+          <h2 className="text-3xl font-bold mb-4 pt-20">Competitor Analysis</h2>
           <p>
             I jumped straight into competitor analysis due to the constraint of
             not being able to spend much time on research. I just wanted to find
             out how the competitors are doing it. It gave me a direction. What
-            the competitors did not have - 1. They were not offering dynamic
-            experience to generate content; their experience was too linear. 2.
-            Built in SEO optimization. 3. Greater control on the outcome. We
-            found our Hooks. Time to design, test , design and repeat.
+            the competitors did not have - 1.{" "}
+            <span className="italic font-bold">
+              They were not offering dynamic experience to generate content;
+            </span>{" "}
+            their experience was too linear. 2.Built in SEO optimization. 3.
+            Greater control on the outcome. We found our Hooks. Time to design,
+            test , design and repeat.
           </p>
           <Image
             src="/genie2.gif"
@@ -91,7 +110,7 @@ export default function GetGenie() {
             unoptimized
             className="block shadow-2xl object-cover rounded-md mt-6 mb-16"
           />
-          <h2 className="text-3xl font-bold mb-4 pt-11">
+          <h2 className="text-3xl font-bold mb-4 pt-8">
             Here are the Improvements that I made
           </h2>
           <p className="mb-8">
