@@ -29,7 +29,7 @@ export default function OfficeOutlet() {
       </header>
       {/* ----------------------------- */}
 
-      {/* Image */}
+      {/* Body */}
 
       <section className="p-8 bg-gray-100">
         <div className="max-w-4xl mx-auto">
@@ -44,6 +44,20 @@ export default function OfficeOutlet() {
             resulting in dissatisfaction after physical implementation. We saw
             the gap.
           </p>
+
+          {/* Timeline Image */}
+          <h2 className="text-3xl font-bold mb-4 pt-20">
+            Project Timeline
+          </h2>
+          <Image
+            src="/office1.png"
+            alt=""
+            width={900}
+            height={200}
+            quality={100}
+            unoptimized
+            className="mt-5"
+          />
 
           {/* Put design above this comment */}
         </div>

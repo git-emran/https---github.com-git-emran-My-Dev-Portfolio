@@ -1,5 +1,5 @@
 // components/BackToTopButton.js
-"use client"
+"use client";
 
 import { useState, useEffect } from "react";
 
@@ -33,7 +33,7 @@ const BackToTopButton = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="p-2 bg-gray-800 text-white rounded-full shadow-lg hover:bg-blue-700 transition-colors duration-300"
+          className="px-6 py-3 bg-gray-800 text-white rounded-full shadow-lg hover:bg-blue-700 transition-colors duration-300"
         >
           ↑ Back to Top
         </button>

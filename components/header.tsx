@@ -5,9 +5,11 @@ import { motion } from "framer-motion";
 import { links } from "@/lib/data";
 import Link from "next/link";
 import clsx from "clsx";
+import { useActiveSectionContext } from "@/app/context/active-section-context";
 
 export default function Header() {
-  const [activeSection, setActiveSection] = useState("Home");
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext();
   return (
     <header className="z-[999] relative">
       <motion.div
@@ -32,17 +34,17 @@ export default function Header() {
                   }
                 )}
                 href={link.hash}
-                onClick={()=> setActiveSection(link.name)}
+                onClick={() => setActiveSection(link.name)}
               >
                 {link.name}
                 {link.name === activeSection && (
-                  <motion.span 
-                  transition={{
-                    type: "spring",
-                    stiffness: 380,
-                    damping: 30,
-                  }}
-                  className="bg-gray-100 rounded-full absolute inset-0 -z-10 "
+                  <motion.span
+                    transition={{
+                      type: "spring",
+                      stiffness: 380,
+                      damping: 30,
+                    }}
+                    className="bg-gray-100 rounded-full absolute inset-0 -z-10 "
                   ></motion.span>
                 )}
               </Link>

@@ -1,9 +1,13 @@
+"use client"
+
 import React from "react";
 import SectionHeading from "./section-heading";
 import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
-import { useInView } from "framer-motion";
+import { useSectionInView } from "@/lib/hooks";
+import { motion } from "framer-motion";
 
-export default function about() {
+export default function About() {
+  const { ref } = useSectionInView("About");
   const cardData = [
     {
       quote:
@@ -25,7 +29,14 @@ export default function about() {
     },
   ];
   return (
-    <section id="about" className="items-center max-w-[50rem] scroll-smooth">
+    <motion.section
+      ref={ref}
+      id="About"
+      className="items-center max-w-[50rem] scroll-smooth"
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.175 }}
+    >
       <SectionHeading> About </SectionHeading>
       <p className="text-center mb-10 mt-4 px-4 text-xl sm:text-2xl">
         A wizard who loves <span className="font-bold">design and code. </span>I
@@ -34,6 +45,6 @@ export default function about() {
         illustrations, design interactions and product design memes.
       </p>
       <InfiniteMovingCards className="" items={cardData} speed="normal" />
-    </section>
+    </motion.section>
   );
 }
