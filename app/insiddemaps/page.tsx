@@ -172,6 +172,18 @@ export default function Insidemaps() {
             unoptimized
             className="mt-5 flex items-center justify-center"
           />
+          <h2 className="text-2xl font-bold mb-4 pt-12">
+            Next Steps
+          </h2>
+          <Image
+            src="/im9.png"
+            alt=""
+            width={900}
+            height={200}
+            quality={100}
+            unoptimized
+            className="mt-5"
+          />
 
           {/* Put design above this comment */}
         </div>

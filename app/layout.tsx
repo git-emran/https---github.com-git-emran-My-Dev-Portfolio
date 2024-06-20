@@ -6,6 +6,7 @@ import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/app/context/theme-context";
 import { Toaster } from "react-hot-toast";
+import BackToTopButton from "@/components/buttontop";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,6 +32,7 @@ export default function RootLayout({
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
             {children}
+            <BackToTopButton />
             <Footer />
 
             <Toaster position="top-right" />

@@ -25,7 +25,7 @@ export default function about() {
     },
   ];
   return (
-    <section id="about" className="items-center max-w-[50rem]">
+    <section id="about" className="items-center max-w-[50rem] scroll-smooth">
       <SectionHeading> About </SectionHeading>
       <p className="text-center mb-10 mt-4 px-4 text-xl sm:text-2xl">
         A wizard who loves <span className="font-bold">design and code. </span>I

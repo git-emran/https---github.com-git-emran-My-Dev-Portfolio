@@ -88,6 +88,7 @@ export const projectsData = [
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
     imageUrl: officeImg,
+    href: "/officeoutlet",
   },
   {
     title: "Website Redesign",

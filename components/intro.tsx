@@ -8,13 +8,15 @@ import { BsArrowRight, BsLinkedin, BsInstagram } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 
-
 // import { useSectionInView } from "@/lib/hooks";
 // import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:b-0 ">
+    <section
+      id="home"
+      className="mb-28 max-w-[50rem] text-center scroll-smooth scroll-mt-29"
+    >
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
