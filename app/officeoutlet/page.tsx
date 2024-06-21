@@ -3,7 +3,6 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import { BentoGridThirdDemo } from "@/components/bentogridthird";
 
 export default function OfficeOutlet() {
   const router = useRouter();
@@ -54,7 +53,7 @@ export default function OfficeOutlet() {
             height={200}
             quality={100}
             unoptimized
-            className="mt-5"
+            className="mt-5 rounded-md"
           />
           {/* Asking right questions */}
           <h2 className="text-3xl font-bold mb-4 pt-20">
@@ -71,7 +70,7 @@ export default function OfficeOutlet() {
             height={200}
             quality={100}
             unoptimized
-            className="mt-5"
+            className="mt-5 rounded-md"
           />
           {/* Wireframing designing testing
            */}
@@ -80,7 +79,7 @@ export default function OfficeOutlet() {
           </h2>
           <p>
             Following a linear process was not feasable for us. So I did all of
-            those at the same time. I call it dynamic iteration.
+            those things at the same time. I call it Iteration on the Go!.
           </p>
           <Image
             src="/office3.webp"
@@ -89,8 +88,9 @@ export default function OfficeOutlet() {
             height={200}
             quality={100}
             unoptimized
-            className="mt-5"
+            className="mt-5 rounded-md"
           />
+
           <Image
             src="/office4.webp"
             alt=""
@@ -98,8 +98,77 @@ export default function OfficeOutlet() {
             height={200}
             quality={100}
             unoptimized
-            className="mt-5"
+            className="mt-5 rounded-md"
           />
+          <Image
+            src="/office5.webp"
+            alt=""
+            width={900}
+            height={200}
+            quality={100}
+            unoptimized
+            className="mt-5 rounded-md"
+          />
+          {/* Image Bento */}
+          <h2 className="text-3xl font-bold mb-4 pt-20">Final Design</h2>
+          <div className="grid grid-cols-3 gap-4">
+            <div className="col-span-3">
+              <Image
+                src="/officebento1.webp"
+                alt=""
+                width={900}
+                height={200}
+                quality={100}
+                unoptimized
+                className="mt-5 rounded-md"
+              />
+            </div>
+            <div>
+              <Image
+                src="/officebento2.webp"
+                alt=""
+                width={900}
+                height={200}
+                quality={100}
+                unoptimized
+                className="mt-5 ounded-md"
+              />
+            </div>
+            <div>
+              <Image
+                src="/officebento3.webp"
+                alt=""
+                width={900}
+                height={200}
+                quality={100}
+                unoptimized
+                className="mt-5"
+              />
+            </div>
+            <div>
+              <Image
+                src="/officebento4.webp"
+                alt=""
+                width={900}
+                height={200}
+                quality={100}
+                unoptimized
+                className="mt-5"
+              />
+            </div>
+            <div className="col-span-3">
+              <Image
+                src="/officegif1.webp"
+                alt=""
+                width={900}
+                height={200}
+                quality={100}
+                unoptimized
+                className="mt-5 rounded-md"
+              />
+            </div>
+          </div>
+
           {/* Put design above this comment */}
         </div>
       </section>
