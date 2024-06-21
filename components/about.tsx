@@ -44,7 +44,7 @@ export default function About() {
         <span className="font-bold"> design problems</span> around me, creating
         illustrations, design interactions and product design memes.
       </p>
-      {/* <InfiniteMovingCards className="" items={cardData} speed="slow" /> */}
+      <InfiniteMovingCards className="" items={cardData} speed="normal" />
     </motion.section>
   );
 }
