@@ -3,7 +3,7 @@ import Header from "@/components/header";
 import Intro from "@/components/intro";
 import About from "@/components/about";
 import Projects from "@/components/projects";
-import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
+
 import Skills from "@/components/skills";
 import Experience from "@/components/experience";
 
