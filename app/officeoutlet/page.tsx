@@ -46,9 +46,7 @@ export default function OfficeOutlet() {
           </p>
 
           {/* Timeline Image */}
-          <h2 className="text-3xl font-bold mb-4 pt-20">
-            Project Timeline
-          </h2>
+          <h2 className="text-3xl font-bold mb-4 pt-20">Project Timeline</h2>
           <Image
             src="/office1.png"
             alt=""
@@ -58,7 +56,50 @@ export default function OfficeOutlet() {
             unoptimized
             className="mt-5"
           />
-
+          {/* Asking right questions */}
+          <h2 className="text-3xl font-bold mb-4 pt-20">
+            Asking the right questions
+          </h2>
+          <p>
+            I make sure I do not ask wrong questions as time is much valuable in
+            a development lifeycle.
+          </p>
+          <Image
+            src="/office2.avif"
+            alt=""
+            width={900}
+            height={200}
+            quality={100}
+            unoptimized
+            className="mt-5"
+          />
+          {/* Wireframing designing testing
+           */}
+          <h2 className="text-3xl font-bold mb-4 pt-20">
+            Wireframing, Designing & Testing
+          </h2>
+          <p>
+            Following a linear process was not feasable for us. So I did all of
+            those at the same time. I call it dynamic iteration.
+          </p>
+          <Image
+            src="/office3.webp"
+            alt=""
+            width={900}
+            height={200}
+            quality={100}
+            unoptimized
+            className="mt-5"
+          />
+          <Image
+            src="/office4.webp"
+            alt=""
+            width={900}
+            height={200}
+            quality={100}
+            unoptimized
+            className="mt-5"
+          />
           {/* Put design above this comment */}
         </div>
       </section>
