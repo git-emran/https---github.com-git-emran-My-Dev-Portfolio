@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import SectionHeading from "./section-heading";
@@ -44,7 +44,7 @@ export default function About() {
         <span className="font-bold"> design problems</span> around me, creating
         illustrations, design interactions and product design memes.
       </p>
-      <InfiniteMovingCards className="" items={cardData} speed="normal" />
+      <InfiniteMovingCards className="" items={cardData} speed="slow" />
     </motion.section>
   );
 }
