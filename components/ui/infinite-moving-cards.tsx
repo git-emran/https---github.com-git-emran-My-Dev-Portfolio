@@ -1,7 +1,8 @@
 "use client";
 
 import { cn } from "@/utils/cn";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { motion } from "framer-motion";
 
 export const InfiniteMovingCards = ({
   items,
@@ -14,61 +15,60 @@ export const InfiniteMovingCards = ({
     quote: string;
     name: string;
     title: string;
+    // Add a width property here if you have the actual width of each item (optional)
+    width?: number;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
   pauseOnHover?: boolean;
   className?: string;
 }) => {
-  const containerRef = React.useRef<HTMLDivElement>(null);
-  const scrollerRef = React.useRef<HTMLUListElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const scrollerRef = useRef<HTMLUListElement>(null);
+
+  const [animationStarted, setAnimationStarted] = useState(false);
 
   useEffect(() => {
-    addAnimation();
-  });
-  const [start, setStart] = useState(false);
-  function addAnimation() {
-    if (containerRef.current && scrollerRef.current) {
-      const scrollerContent = Array.from(scrollerRef.current.children);
+    const getDirection = () => {
+      if (containerRef.current) {
+        containerRef.current.style.setProperty(
+          "--animation-direction",
+          direction === "left" ? "forwards" : "reverse"
+        );
+      }
+    };
 
-      scrollerContent.forEach((item) => {
-        const duplicatedItem = item.cloneNode(true);
-        if (scrollerRef.current) {
-          scrollerRef.current.appendChild(duplicatedItem);
-        }
-      });
+    const getSpeed = () => {
+      if (containerRef.current) {
+        const speedMap = {
+          fast: "20s",
+          normal: "40s",
+          slow: "80s",
+        };
+        containerRef.current.style.setProperty(
+          "--animation-duration",
+          speedMap[speed] || "40s" // Default to normal if speed is invalid
+        );
+      }
+    };
+    if (containerRef.current && scrollerRef.current) {
+      // Calculate total width of all items (if width property exists)
+      const totalWidth = items.reduce(
+        (acc, item) => (item.width ? acc + item.width : acc),
+        0
+      );
+
+      // Set the scroller width to the total width (if calculated)
+      if (totalWidth) {
+        scrollerRef.current.style.width = `${totalWidth}px`;
+      }
 
       getDirection();
       getSpeed();
-      setStart(true);
+      setAnimationStarted(true);
     }
-  }
-  const getDirection = () => {
-    if (containerRef.current) {
-      if (direction === "left") {
-        containerRef.current.style.setProperty(
-          "--animation-direction",
-          "forwards"
-        );
-      } else {
-        containerRef.current.style.setProperty(
-          "--animation-direction",
-          "reverse"
-        );
-      }
-    }
-  };
-  const getSpeed = () => {
-    if (containerRef.current) {
-      if (speed === "fast") {
-        containerRef.current.style.setProperty("--animation-duration", "20s");
-      } else if (speed === "normal") {
-        containerRef.current.style.setProperty("--animation-duration", "40s");
-      } else {
-        containerRef.current.style.setProperty("--animation-duration", "80s");
-      }
-    }
-  };
+  }, [items, containerRef, scrollerRef, direction, speed]); // Re-calculate width on item changes
+
   return (
     <div
       ref={containerRef}
@@ -77,13 +77,15 @@ export const InfiniteMovingCards = ({
         className
       )}
     >
-      <ul
+      <motion.ul
         ref={scrollerRef}
         className={cn(
           " flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
-          start && "animate-scroll ",
+          animationStarted && "animate-scroll ",
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
+        animate={{ x: direction === "left" ? "100%" : "-100%" }} // Set initial animation position
+        transition={{ repeat: Infinity, repeatType: "loop" }} // Loop animation
       >
         {items.map((item, idx) => (
           <li
@@ -115,7 +117,7 @@ export const InfiniteMovingCards = ({
             </blockquote>
           </li>
         ))}
-      </ul>
+      </motion.ul>
     </div>
   );
 };
