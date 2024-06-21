@@ -31,7 +31,7 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      id="About"
+      id="about"
       className="items-center max-w-[50rem] scroll-smooth"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
