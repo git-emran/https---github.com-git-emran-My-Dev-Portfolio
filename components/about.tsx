@@ -32,15 +32,15 @@ export default function About() {
     <motion.section
       ref={ref}
       id="about"
-      className="items-center w-full scroll-smooth"
+      className="items-center mb-28 max-w-[65rem] flex-wrap text-center leading-8 sm:mb-40 scroll-mt-28 scroll-smooth"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
     >
       <SectionHeading> About </SectionHeading>
-      <p className="text-center flex-auto items-center first-line:mb-10 mt-4 px-4 text-xl sm:text-2xl">
-        A wizard who loves <span className="font-bold">design and code. </span>I
-        tell stories through my designs. I spend most of my free time solving
+      <p className="text-center mt-4 text-xl sm:text-2xl sm:px-20 md:text-xl lg:text-2xl xl:text-3xl">
+        A wizard who loves <span className="font-bold">design and code. </span>{" "}
+        I tell stories through my designs. I spend most of my free time solving
         <span className="font-bold"> design problems</span> around me, creating
         illustrations, design interactions and product design memes.
       </p>
