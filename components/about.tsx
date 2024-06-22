@@ -32,7 +32,7 @@ export default function About() {
     <motion.section
       ref={ref}
       id="about"
-      className="items-center mb-28 max-w-[65rem] flex-wrap text-center leading-8 sm:mb-40 scroll-mt-28 scroll-smooth"
+      className="items-center mb-28 max-w-[55rem] leading-8 sm:mb-40 scroll-mt-28 scroll-smooth"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
@@ -42,7 +42,7 @@ export default function About() {
         A wizard who loves <span className="font-bold">design and code. </span>{" "}
         I tell stories through my designs. I spend most of my free time solving
         <span className="font-bold"> design problems</span> around me, creating
-        illustrations, design interactions, and product design memes.
+        illustrations, design interactions and product design memes.
       </p>
       <InfiniteMovingCards className="" items={cardData} speed="normal" />
     </motion.section>
