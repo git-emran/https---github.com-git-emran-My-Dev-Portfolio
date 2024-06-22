@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 html {
+    @apply overflow-x-hidden;
   --line-color: #e5e7eb;
   overflow-x: hidden;
   margin: 0;

@@ -38,11 +38,11 @@ export default function About() {
       transition={{ delay: 0.175 }}
     >
       <SectionHeading> About </SectionHeading>
-      <p className="text-center mt-4 text-xl sm:text-2xl sm:px-20 md:text-xl lg:text-2xl xl:text-3xl">
+      <p className="text-center mt-4 mb-6 text-base sm:text-lg sm:px-4 md:text-xl lg:text-2xl xl:text-3xl">
         A wizard who loves <span className="font-bold">design and code. </span>{" "}
         I tell stories through my designs. I spend most of my free time solving
         <span className="font-bold"> design problems</span> around me, creating
-        illustrations, design interactions and product design memes.
+        illustrations, design interactions, and product design memes.
       </p>
       <InfiniteMovingCards className="" items={cardData} speed="normal" />
     </motion.section>
