@@ -1,4 +1,3 @@
-import Header from "@/components/header";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import ActiveSectionContextProvider from "@/app/context/active-section-context";
@@ -23,10 +22,13 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${inter.className} bg-gray-50 text-gray-950 relative dark:bg-gray-200 dark:text-gray-800 dark:text-opacity-90`}
+        className={`${inter.className} bg-gray-50 w-full overflow-x-hidden text-gray-950 relative dark:bg-gray-200 dark:text-gray-800 dark:text-opacity-90`}
       >
-        <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#946263]"></div>
-        <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]"></div>
+        {/* Responsive Background Blob 1 */}
+        <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[2rem] h-[20rem] w-[20rem] rounded-full blur-[6rem] sm:w-[40rem] sm:h-[40rem] sm:right-[11rem] md:w-[50rem] md:h-[50rem] lg:w-[60rem] lg:h-[60rem] xl:w-[70rem] xl:h-[70rem] dark:bg-[#946263]"></div>
+
+        {/* Responsive Background Blob 2 */}
+        <div className="bg-[#dbd7fb] absolute top-[1rem] -z-10 left-[-10rem] h-[20rem] w-[30rem] rounded-full blur-[6rem] sm:w-[40rem] sm:h-[40rem] sm:left-[-20rem] md:w-[50rem] md:h-[50rem] md:left-[-33rem] lg:w-[60rem] lg:h-[60rem] lg:left-[-28rem] xl:w-[70rem] xl:h-[70rem] xl:left-[-15rem] 2xl:w-[80rem] 2xl:h-[80rem] 2xl:left-[-5rem] dark:bg-[#676394]"></div>
 
         <ActiveSectionContextProvider>
           {children}
@@ -34,7 +36,6 @@ export default function RootLayout({
           <Footer />
 
           <Toaster position="top-right" />
-          {/* <ThemeSwitch /> */}
         </ActiveSectionContextProvider>
       </body>
     </html>

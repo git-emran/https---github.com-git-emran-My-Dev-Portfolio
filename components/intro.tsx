@@ -20,8 +20,8 @@ export default function Intro() {
       id="home"
       className="mb-28 max-w-[50rem] text-center scroll-smooth scroll-mt-29"
     >
-      <div className="flex items-center justify-center">
-        <div className="relative">
+      <div className="flex items-center overflow-x-hidden w-full justify-center">
+        <div className="flex relative">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}

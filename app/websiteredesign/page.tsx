@@ -3,8 +3,6 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import { BentoGridThirdDemo } from "@/components/bentogridthird";
-import BackToTopButton from "@/components/buttontop";
 
 export default function GetGenie() {
   const router = useRouter();
