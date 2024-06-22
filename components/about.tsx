@@ -32,7 +32,7 @@ export default function About() {
     <motion.section
       ref={ref}
       id="about"
-      className="items-center max-w-[50rem] scroll-smooth"
+      className="items-center w-full scroll-smooth"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}

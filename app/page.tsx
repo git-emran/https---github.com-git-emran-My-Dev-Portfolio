@@ -7,7 +7,7 @@ import Experience from "@/components/experience";
 
 export default function Page() {
   return (
-    <main className="flex-col flex-wrap overflow-x-hidden w-full relative items-center px-4 pt-28 sm:pt-26">
+    <main className="flex flex-col flex-nowrap overflow-x-hidden w-full relative items-center px-4 pt-28 sm:pt-26">
       <Header />
       <Intro />
       <About />
