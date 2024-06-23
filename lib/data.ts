@@ -1,12 +1,14 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
 import insidemapsImg from "@/public/insidemaps.gif";
 import getgenieImg from "@/public/getgenie.gif";
 import officeImg from "@/public/office.gif";
 import webstieImg from "@/public/website.gif";
 import { FaComputer } from "react-icons/fa6";
+import { FaCompassDrafting } from "react-icons/fa6";
+import { FaCubes } from "react-icons/fa6";
+
 
 export const links = [
   {
@@ -50,15 +52,31 @@ export const experiencesData = [
     description:
       "Helped small, medium and Enterprise businesses of Gift & Decor Industries serve more customers through our B2B application ecosystem",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2022 - 2023",
   },
   {
     title: "Lead Product Designer @XpeedStudio",
-    location: "Houston, TX",
+    location: "Houston, Texas, USA",
     description:
-      "Leading a Team 7 Designers. Developing AI based WordPress Gutenberg Plugin GetGenie AI, also web and Mobile based applications..",
+      "Leading a Team 7 Designers. Developing AI based WordPress Gutenberg Plugin GetGenie AI, also web and Mobile based applications",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2022",
+  },
+  {
+    title: "Lead Product Designer @Insidemaps",
+    location: "Silicon Valley, California, USA",
+    description:
+      "I collaborated closely with Designers, Sr Product Manager, Developers and Marketing Team to strategize product vision and growth",
+    icon: React.createElement(FaCompassDrafting),
+    date: "2020",
+  },
+  {
+    title: "Sr UI/UX Designer @Genex Infosys",
+    location: "Dhaka, Bangladesh",
+    description:
+      "I collaborated closely with Designers, Sr Product Manager, Developers and Marketing Team to strategize product vision and growth",
+    icon: React.createElement(FaCubes),
+    date: "2019",
   },
 ] as const;
 
