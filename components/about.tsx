@@ -12,7 +12,7 @@ export default function About() {
     {
       quote:
         "MarketTime is a fast-paced company with ever changing priorities, and Emran did an excellent job of juggling priorities that were provided to him by multiple Agile teams. He's a great leader and I loved working with him.",
-      name: "Todd",
+      name: "Todd Litzman",
       title: "President MarketTime B2B, Texas, USA",
     },
     {
@@ -35,7 +35,7 @@ export default function About() {
       className="items-center mb-28 max-w-[55rem] flex-wrap leading-8 sm:mb-40 scroll-mt-28 scroll-smooth"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.175 }}
+      transition={{ delay: 0.275 }}
     >
       <SectionHeading> About </SectionHeading>
       <p className="text-center mt-4 mb-6 text-base sm:text-lg sm:px-4 md:text-xl lg:text-2xl xl:text-3xl">

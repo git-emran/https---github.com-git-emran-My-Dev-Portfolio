@@ -15,7 +15,11 @@ export default function Experience() {
   const { ref } = useSectionInView("Experience");
 
   return (
-    <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
+    <section
+      id="experience"
+      ref={ref}
+      className="scroll-mt-28 mt-10 mb-28 pb-10 sm:mb-40 bg-gray-100 w-full"
+    >
       <SectionHeading>My experience</SectionHeading>
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
@@ -23,23 +27,23 @@ export default function Experience() {
             <VerticalTimelineElement
               visible={true}
               contentStyle={{
-                boxShadow: "none",
+                boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)",
                 border: "1px solid rgba(0, 0, 0, 0.05)",
                 textAlign: "left",
                 padding: "1.3rem 2rem",
-                
               }}
               contentArrowStyle={{}}
               date={item.date}
               icon={item.icon}
               iconStyle={{
-               background: 'rgb(32, 99, 233)', color: '#fff',
+                background: "rgb(32, 99, 233)",
+                color: "#fff",
                 fontSize: "1.5rem",
               }}
             >
-              <h3 className="font-semibold capitalize">{item.title}</h3>
-              <p className="font-normal !mt-0">{item.location}</p>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-gray-300">
+              <h3 className="font-bold text-black capitalize">{item.title}</h3>
+              <p className="font-normal pb-3 !mt-0">{item.location}</p>
+              <p className="!mt-1 !font-normal text-gray-700">
                 {item.description}
               </p>
             </VerticalTimelineElement>

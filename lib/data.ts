@@ -9,7 +9,6 @@ import { FaComputer } from "react-icons/fa6";
 import { FaCompassDrafting } from "react-icons/fa6";
 import { FaCubes } from "react-icons/fa6";
 
-
 export const links = [
   {
     name: "Home",
@@ -44,7 +43,7 @@ export const experiencesData = [
   },
   {
     title: "Lead UX/UI Designer @MarketTime",
-    location: "Texas, USA",
+    location: "Houston, Texas, USA",
     description:
       "Helped small, medium and Enterprise businesses of Gift & Decor Industries serve more customers through our B2B application ecosystem",
     icon: React.createElement(CgWorkAlt),
@@ -52,9 +51,9 @@ export const experiencesData = [
   },
   {
     title: "Lead Product Designer @XpeedStudio",
-    location: "Houston, Texas, USA",
+    location: "Dhaka, Bangladesh",
     description:
-      "Leading a Team 7 Designers. Developing AI based WordPress Gutenberg Plugin GetGenie AI, also web and Mobile based applications",
+      "Led a Team 7 Designers. Specially Hired to design and develop AI based WordPress Gutenberg Plugin GetGenie AI, also web and Mobile based applications",
     icon: React.createElement(FaReact),
     date: "2022",
   },
@@ -113,17 +112,24 @@ export const projectsData = [
 ];
 
 export const skillsData = [
+  "Human Centered Design",
+  "Design Accessibility ",
+  "User Experience Design",
+  "Product Lifecycle",
+  "Design Efficiency",
+  "User Interviews",
+  "Remote/Offline Usability Testing",
+  "Design Leadership & Mentorship",
   "HTML",
   "CSS",
   "JavaScript",
   "TypeScript",
+  "Swift",
   "React",
   "Next.js",
   "Node.js",
-  "three.js",
   "Git",
   "Tailwind",
-  "Prisma",
   "MongoDB",
   "Redux",
   "GraphQL",
