@@ -25,10 +25,10 @@ export default function RootLayout({
         className={`${inter.className} bg-gray-50 w-full overflow-x-hidden text-gray-950 relative dark:bg-gray-200 dark:text-gray-800 dark:text-opacity-90`}
       >
         {/* Responsive Background Blob 1 */}
-        <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[2rem] h-[20rem] w-[20rem] rounded-full blur-[6rem] sm:w-[40rem] sm:h-[40rem] sm:right-[11rem] md:w-[50rem] md:h-[50rem] lg:w-[60rem] lg:h-[60rem] xl:w-[70rem] xl:h-[70rem] dark:bg-[#946263]"></div>
+        <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[2rem] h-[20rem] w-[20rem] rounded-full blur-[6rem] sm:w-[40rem] sm:h-[40rem] sm:right-[11rem] md:w-[50rem] md:h-[50rem] lg:w-[60rem] lg:h-[60rem] xl:w-[70rem] xl:h-[70rem]]"></div>
 
         {/* Responsive Background Blob 2 */}
-        <div className="bg-[#dbd7fb] absolute top-[1rem] -z-10 left-[-10rem] h-[20rem] w-[30rem] rounded-full blur-[6rem] sm:w-[40rem] sm:h-[40rem] sm:left-[-20rem] md:w-[50rem] md:h-[50rem] md:left-[-33rem] lg:w-[60rem] lg:h-[60rem] lg:left-[-28rem] xl:w-[70rem] xl:h-[70rem] xl:left-[-15rem] 2xl:w-[80rem] 2xl:h-[80rem] 2xl:left-[-5rem] dark:bg-[#676394]"></div>
+        <div className="bg-[#dbd7fb] absolute top-[1rem] -z-10 left-[-10rem] h-[20rem] w-[30rem] rounded-full blur-[6rem] sm:w-[40rem] sm:h-[40rem] sm:left-[-20rem] md:w-[50rem] md:h-[50rem] md:left-[-33rem] lg:w-[60rem] lg:h-[60rem] lg:left-[-28rem] xl:w-[70rem] xl:h-[70rem] xl:left-[-15rem] 2xl:w-[80rem] 2xl:h-[80rem] 2xl:left-[-5rem]"></div>
 
         <ActiveSectionContextProvider>
           {children}
