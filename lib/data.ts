@@ -2,13 +2,11 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
 import insidemapsImg from "@/public/insidemaps.gif";
 import getgenieImg from "@/public/getgenie.gif";
 import officeImg from "@/public/office.gif";
 import webstieImg from "@/public/website.gif";
+import { FaComputer } from "react-icons/fa6";
 
 export const links = [
   {
@@ -39,26 +37,26 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: " Lead Product Designer @The Total Office",
+    location: "Barsha Heights, Dubai",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
+      "Leading the Design team, Building the future of WorkStation building tool",
+    icon: React.createElement(FaComputer),
+    date: "2024",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Lead UX/UI Designer @MarketTime",
+    location: "Texas, USA",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Helped small, medium and Enterprise businesses of Gift & Decor Industries serve more customers through our B2B application ecosystem",
     icon: React.createElement(CgWorkAlt),
     date: "2019 - 2021",
   },
   {
-    title: "Full-Stack Developer",
+    title: "Lead Product Designer @XpeedStudio",
     location: "Houston, TX",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Leading a Team 7 Designers. Developing AI based WordPress Gutenberg Plugin GetGenie AI, also web and Mobile based applications..",
     icon: React.createElement(FaReact),
     date: "2021 - present",
   },
