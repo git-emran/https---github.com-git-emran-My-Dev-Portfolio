@@ -10,6 +10,16 @@ import { FaGithubSquare } from "react-icons/fa";
 
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/app/context/active-section-context";
+import { AnimatedTooltip } from "./ui/animated-tooltip";
+
+const people = [
+  {
+    id: 1,
+    name: "Emran Hossain",
+    designation: "Software Designer & Engineer",
+    image: "/Headshot 1.png",
+  },
+];
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -30,13 +40,17 @@ export default function Intro() {
               duration: 0.2,
             }}
           >
-            <Image
+            <div className="flex flex-row items-center justify-center pt-24 mb-10 w-full">
+              <AnimatedTooltip items={people} />
+            </div>
+
+            {/* <Image
               src="/Headshot 1.png"
               alt="Emran Portrait"
               height="100"
               width="100"
               className="h-50 w-50 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
-            />
+            /> */}
           </motion.div>
         </div>
       </div>
