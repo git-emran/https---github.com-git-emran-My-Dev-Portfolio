@@ -4,6 +4,7 @@ import React from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import BackToHome from "@/components/back-to-home";
+import { PinContainer } from "@/components/ui/3d-pin";
 
 export default function GetGenie() {
   const router = useRouter();
@@ -13,13 +14,26 @@ export default function GetGenie() {
       {/* Header */}
       <header className="relative w-full h-96">
         {/* Back Button */}
-       <BackToHome />
+        <BackToHome />
         {/* Header bg div styling */}
         <div className="absolute inset-0 bg-black opacity-30"></div>
         <div className="absolute inset-0 flex items-center justify-center">
-          <h1 className="text-4xl sm:text-6xl text-white font-bold">
-            Website Redesign
-          </h1>
+          <PinContainer
+            title="View Live Product"
+            href="https://www.insidemaps.com/"
+            className=""
+          >
+            <div className="flex basis-full flex-col p-1 items-center tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] ">
+              <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-3xl text-slate-100">
+                InsideMaps
+              </h3>
+              <div className="text-base !m-0 !p-0 font-normal">
+                <span className="text-slate-500 ">
+                  Simplifying Real Estate 🔗
+                </span>
+              </div>
+            </div>
+          </PinContainer>
         </div>
       </header>
       {/* Body starts -------> */}
