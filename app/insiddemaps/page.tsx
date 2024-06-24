@@ -4,6 +4,7 @@ import React from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { BentoGridThirdDemo } from "@/components/bentogridthird";
+import BackToHome from "@/components/back-to-home";
 
 export default function Insidemaps() {
   const router = useRouter();
@@ -13,12 +14,7 @@ export default function Insidemaps() {
       {/* Header */}
       <header className="relative w-full h-96">
         {/* Back Button */}
-        <button
-          onClick={() => router.push("/")}
-          className="absolute top-4 left-4 z-10 bg-blue-900 hover:bg-blue-600 text-white px-4 py-2 rounded"
-        >
-          Back to Home
-        </button>
+      <BackToHome />
         {/* Header bg div styling */}
         <div className="absolute inset-0 bg-black opacity-30"></div>
         <div className="absolute inset-0 flex items-center justify-center">

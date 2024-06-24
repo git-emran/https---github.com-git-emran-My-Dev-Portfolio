@@ -61,7 +61,7 @@ export default function Intro() {
       >
         <span className="font-bold">
           Hello I am{" "}
-          <span className="bg-gradient-to-r from-blue-600 via-blue-400 to-indigo-600 inline-block text-transparent font-medium bg-clip-text">
+          <span className="bg-gradient-to-r from-indigo-600 via-blue-600 to-indigo-600 inline-block text-transparent font-semibold bg-clip-text">
             Emran Hossain
           </span>{" "}
         </span>{" "}

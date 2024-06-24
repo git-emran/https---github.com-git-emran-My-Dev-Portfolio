@@ -5,6 +5,8 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { BentoGridThirdDemo } from "@/components/bentogridthird";
 import BackToTopButton from "@/components/buttontop";
+import BackToHome from "@/components/back-to-home";
+import { PinContainer } from "@/components/ui/3d-pin";
 
 export default function GetGenie() {
   const router = useRouter();
@@ -14,25 +16,35 @@ export default function GetGenie() {
       {/* Header */}
       <header className="relative w-full h-96">
         {/* Back Button */}
-        <button
-          onClick={() => router.push("/")}
-          className="absolute top-4 left-4 z-10 bg-blue-900 hover:bg-blue-600 text-white px-4 py-2 rounded"
-        >
-          Back to Home
-        </button>
+        <BackToHome />
         {/* Header bg div styling */}
-        <div className="absolute inset-0 bg-black opacity-30"></div>
+        <div className="absolute inset-0 bg-black opacity-20"></div>
         <div className="absolute inset-0 flex items-center justify-center">
-          <h1 className="text-4xl sm:text-6xl text-white font-bold">
-            GetGenie
-          </h1>
+         
+          <PinContainer
+            title="View Live Product"
+            href="https://getgenie.ai/"
+            className=""
+          >
+            <div className="flex basis-full flex-col p-1 items-center tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] ">
+              <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-3xl text-slate-100">
+                Get Genie AI
+              </h3>
+              <div className="text-base !m-0 !p-0 font-normal">
+                <span className="text-slate-500 ">
+                  Personal AI content Writer
+                </span>
+              </div>
+            </div>
+          </PinContainer>
         </div>
       </header>
 
-      {/* Image */}
-
       <section className="p-8 bg-gray-100">
         <div className="max-w-4xl mx-auto">
+      
+
+          {/* Image */}
           <Image
             src="/getgenie.gif"
             alt="Project I worked on"
@@ -42,6 +54,7 @@ export default function GetGenie() {
             unoptimized
             className="block shadow-2xl rounded-md object-cover mt-2"
           />
+
           <h2 className="text-3xl font-bold mb-4 pt-10">About the Project</h2>
           <p className="text-lg leading-relaxed mb-4">
             Designed & Developed the front-end in JavaScript with the help of
