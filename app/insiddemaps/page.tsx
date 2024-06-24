@@ -22,7 +22,7 @@ export default function Insidemaps() {
           {/* 3D Pin Container */}
           <PinContainer
             title="View Live Product"
-            href="https://www.insidemaps.com/"
+            href="https://apps.apple.com/us/app/insidemaps-capture/id1077854108"
             className=""
           >
             <div className="flex basis-full flex-col p-1 items-center tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] ">

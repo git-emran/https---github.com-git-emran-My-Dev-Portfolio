@@ -20,7 +20,7 @@ export default function OfficeOutlet() {
         <div className="absolute mt-6 inset-0 flex items-center justify-center">
           <PinContainer
             title="View Live Product"
-            href="https://www.insidemaps.com/"
+            href="https://thetotaloffice.com/"
             className=""
           >
             <div className="flex basis-full flex-col p-1 items-center tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] ">
