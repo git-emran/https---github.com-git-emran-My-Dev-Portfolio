@@ -5,6 +5,7 @@ import SectionHeading from "./section-heading";
 import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
+import { LinkPreview } from "./ui/link-preview";
 
 export default function About() {
   const { ref } = useSectionInView("About");
@@ -39,10 +40,34 @@ export default function About() {
     >
       <SectionHeading> About </SectionHeading>
       <p className="text-center mt-4 mb-6 text-base sm:text-lg sm:px-4 md:text-xl lg:text-2xl xl:text-3xl">
-        A wizard who loves <span className="font-bold">design and code. </span>{" "}
+        A wizard who loves{" "}
+        <LinkPreview
+          url="https://github.com/git-emran"
+          isStatic={true}
+          imageSrc="/github.png"
+          className="font-semibold underline text-blue-800"
+        >
+          Design & Code
+        </LinkPreview>{" "}
         I tell stories through my designs. I spend most of my free time solving
-        <span className="font-bold"> design problems</span> around me, creating
-        illustrations, design interactions and product design memes.
+        design problems around me, {""}
+        <LinkPreview
+          url="https://dribbble.com/chrollo"
+          isStatic={true}
+          imageSrc="/dribbble.png"
+          className="font-semibold text-blue-800 underline"
+        >
+          creating illustrations
+        </LinkPreview>
+        , design interactions and product{" "}
+        <LinkPreview
+          url="https://www.instagram.com/designwithemran/"
+          isStatic={true}
+          imageSrc="/instagram.png"
+          className="font-semibold text-blue-800 underline"
+        >
+          design memes.
+        </LinkPreview>
       </p>
       <InfiniteMovingCards className="" items={cardData} speed="normal" />
     </motion.section>

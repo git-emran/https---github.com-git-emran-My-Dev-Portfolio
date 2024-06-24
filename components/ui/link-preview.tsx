@@ -19,7 +19,7 @@ type LinkPreviewProps = {
   width?: number;
   height?: number;
   quality?: number;
-  layout?: string;
+  layout?: "fixed" | "intrinsic" | "responsive" | "fill";
 } & (
   | { isStatic: true; imageSrc: string }
   | { isStatic?: false; imageSrc?: never }
@@ -137,7 +137,7 @@ export const LinkPreview = ({
                   style={{ fontSize: 0 }}
                 >
                   <Image
-                    src={isStatic ? imageSrc : src}
+                    src={src}
                     width={width}
                     height={height}
                     quality={quality}

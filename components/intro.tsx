@@ -11,6 +11,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/app/context/active-section-context";
 import { AnimatedTooltip } from "./ui/animated-tooltip";
+import { LinkPreview } from "./ui/link-preview";
 
 const people = [
   {
@@ -43,14 +44,6 @@ export default function Intro() {
             <div className="flex flex-row items-center justify-center pt-24 mb-10 w-full">
               <AnimatedTooltip items={people} />
             </div>
-
-            {/* <Image
-              src="/Headshot 1.png"
-              alt="Emran Portrait"
-              height="100"
-              width="100"
-              className="h-50 w-50 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
-            /> */}
           </motion.div>
         </div>
       </div>
@@ -59,9 +52,9 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">
+        <span className="font-normal">
           Hello I am{" "}
-          <span className="bg-gradient-to-r from-indigo-600 via-blue-600 to-indigo-600 inline-block text-transparent font-semibold bg-clip-text">
+          <span className="text-gray-800 font-bold ">
             Emran Hossain
           </span>{" "}
         </span>{" "}
@@ -69,7 +62,7 @@ export default function Intro() {
         <span className="font-bold">full-stack designer and developer</span>{" "}
         with <span className="font-bold">8 years</span> of experience. I enjoy
         building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline italic">React (Next.js)</span>.
+        <LinkPreview url="" isStatic={true} imageSrc="/next.png" className="italic underline font-semibold">React(Next.Js)</LinkPreview>
       </motion.p>
 
       <motion.div
