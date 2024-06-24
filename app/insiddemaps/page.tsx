@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { BentoGridThirdDemo } from "@/components/bentogridthird";
 import BackToHome from "@/components/back-to-home";
+import { PinContainer } from "@/components/ui/3d-pin";
 
 export default function Insidemaps() {
   const router = useRouter();
@@ -14,13 +15,27 @@ export default function Insidemaps() {
       {/* Header */}
       <header className="relative w-full h-96">
         {/* Back Button */}
-      <BackToHome />
+        <BackToHome />
         {/* Header bg div styling */}
         <div className="absolute inset-0 bg-black opacity-30"></div>
-        <div className="absolute inset-0 flex items-center justify-center">
-          <h1 className="text-4xl sm:text-6xl text-white font-bold">
-            Insidemaps Capture
-          </h1>
+        <div className="absolute inset-0 mt-6 flex items-center justify-center">
+          {/* 3D Pin Container */}
+          <PinContainer
+            title="View Live Product"
+            href="https://www.insidemaps.com/"
+            className=""
+          >
+            <div className="flex basis-full flex-col p-1 items-center tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] ">
+              <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-3xl text-slate-100">
+                InsideMaps
+              </h3>
+              <div className="text-base !m-0 !p-0 font-normal">
+                <span className="text-slate-500 ">
+                  Simplifying Real Estate 🔗
+                </span>
+              </div>
+            </div>
+          </PinContainer>
         </div>
       </header>
       {/* ----------------------------- */}
@@ -125,7 +140,7 @@ export default function Insidemaps() {
             className="mt-10"
           />
           <h3 className="text-lg font-bold mb-4 pt-8 uppercase">
-            Updated & Improved 3D map
+            Updated & Improved 3D map :
           </h3>
           <p className="text-sm">
             Previous improvements created a snowball effect leading to an almost
@@ -141,7 +156,7 @@ export default function Insidemaps() {
             className="mt-5 flex items-center justify-center rounded-md"
           />
           <h3 className="text-lg font-bold mb-4 pt-12 uppercase">
-            Updated Components
+            Updated Components :
           </h3>
           <p className="text-sm">
             Redesigning the components library to fit the improved design and
@@ -157,7 +172,7 @@ export default function Insidemaps() {
             className="mt-5 flex items-center justify-center"
           />
           <h3 className="text-lg font-bold mb-4 pt-12 uppercase">
-            Why it works?
+            Why it works? :
           </h3>
           <Image
             src="/im8.png"
@@ -168,9 +183,7 @@ export default function Insidemaps() {
             unoptimized
             className="mt-5 flex items-center justify-center"
           />
-          <h2 className="text-2xl font-bold mb-4 pt-12">
-            Next Steps
-          </h2>
+          <h2 className="text-3xl font-bold mb-4 pt-12">Next Steps</h2>
           <Image
             src="/im9.png"
             alt=""

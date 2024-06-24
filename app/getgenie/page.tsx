@@ -19,7 +19,7 @@ export default function GetGenie() {
         <BackToHome />
         {/* Header bg div styling */}
         <div className="absolute inset-0 bg-black opacity-20"></div>
-        <div className="absolute inset-0 flex items-center justify-center">
+        <div className="absolute inset-0 mt-6 flex items-center justify-center">
          
           <PinContainer
             title="View Live Product"
@@ -32,7 +32,7 @@ export default function GetGenie() {
               </h3>
               <div className="text-base !m-0 !p-0 font-normal">
                 <span className="text-slate-500 ">
-                  Personal AI content Writer
+                  Personal AI content Writer 🔗
                 </span>
               </div>
             </div>
