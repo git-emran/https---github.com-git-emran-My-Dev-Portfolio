@@ -113,6 +113,10 @@ export const projectsData = [
 
 export const skillsData = [
   "Human Centered Design",
+  "Interaction Design",
+  "Video Editing",
+  "Illustrations",
+  "Brand Identity",
   "Design Accessibility ",
   "User Experience Design",
   "Product Lifecycle",
