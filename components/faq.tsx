@@ -11,9 +11,9 @@ import { LinkPreview } from "./ui/link-preview";
 
 export default function Faq() {
   return (
-    <div className="w-full mb-28 max-w-[60rem] scroll-mt-20 scroll-mb-28 text-center sm:mb-40 sm:p-30">
-      <SectionHeading>Quick Questions & Answers</SectionHeading>
-      <Accordion type="single" collapsible className="w-full">
+    <div id="faq" className="w-full mb-28 max-w-[60rem] scroll-mt-20 scroll-mb-28 text-center sm:mb-40 sm:p-30">
+      <SectionHeading>Frequently Asked Questions & Answers</SectionHeading>
+      <Accordion type="single" collapsible className="w-full mt-12">
         <AccordionItem value="item-1">
           <AccordionTrigger>What are your strengths ?</AccordionTrigger>
           <AccordionContent>
