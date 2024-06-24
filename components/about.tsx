@@ -33,13 +33,13 @@ export default function About() {
     <motion.section
       ref={ref}
       id="about"
-      className="items-center mb-28 max-w-[55rem] flex-wrap leading-8 sm:mb-40 scroll-mt-28 scroll-smooth"
+      className="items-center mb-28 max-w-[55rem] overflow-x-hidden leading-8 sm:mb-40 scroll-mt-28 scroll-smooth"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.275 }}
     >
       <SectionHeading> About </SectionHeading>
-      <p className="text-center mt-4 mb-6 text-base sm:text-lg sm:px-4 md:text-xl lg:text-2xl xl:text-3xl">
+      <p className="text-center mt-4 mb-6 flex-wrap overflow-x-hidden sm:text-lg sm:px-4 md:text-xl lg:text-2xl xl:text-3xl">
         A wizard who loves{" "}
         <LinkPreview
           url="https://github.com/git-emran"
@@ -55,7 +55,7 @@ export default function About() {
           url="https://dribbble.com/chrollo"
           isStatic={true}
           imageSrc="/dribbble.png"
-          className="font-semibold text-blue-800 underline"
+          className="font-semibold flex-wrap text-blue-800 underline"
         >
           creating illustrations
         </LinkPreview>
@@ -64,7 +64,7 @@ export default function About() {
           url="https://www.instagram.com/designwithemran/"
           isStatic={true}
           imageSrc="/instagram.png"
-          className="font-semibold text-blue-800 underline"
+          className="font-semibold flex-wrap text-blue-800 underline"
         >
           design memes.
         </LinkPreview>

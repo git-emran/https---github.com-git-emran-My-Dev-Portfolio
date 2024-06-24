@@ -25,11 +25,11 @@ export default function OfficeOutlet() {
           >
             <div className="flex basis-full flex-col p-1 items-center tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] ">
               <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-3xl text-slate-100">
-                InsideMaps
+                Office Outlet
               </h3>
               <div className="text-base !m-0 !p-0 font-normal">
                 <span className="text-slate-500 ">
-                  Simplifying Real Estate 🔗
+                  The Future of Workstation Planning 🔗
                 </span>
               </div>
             </div>

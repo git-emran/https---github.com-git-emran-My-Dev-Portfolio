@@ -7,6 +7,11 @@ import { BentoGridThirdDemo } from "@/components/bentogridthird";
 import BackToTopButton from "@/components/buttontop";
 import BackToHome from "@/components/back-to-home";
 import { PinContainer } from "@/components/ui/3d-pin";
+import { ProjectNavigation } from "@/components/nextproject";
+import {
+  NavigationMenu,
+  NavigationMenuList,
+} from "@radix-ui/react-navigation-menu";
 
 export default function GetGenie() {
   const router = useRouter();
@@ -20,7 +25,6 @@ export default function GetGenie() {
         {/* Header bg div styling */}
         <div className="absolute inset-0 bg-black opacity-20"></div>
         <div className="absolute inset-0 mt-6 flex items-center justify-center">
-         
           <PinContainer
             title="View Live Product"
             href="https://getgenie.ai/"
@@ -42,8 +46,6 @@ export default function GetGenie() {
 
       <section className="p-8 bg-gray-100">
         <div className="max-w-4xl mx-auto">
-      
-
           {/* Image */}
           <Image
             src="/getgenie.gif"
@@ -132,6 +134,7 @@ export default function GetGenie() {
             trusting
           </p>
           <BentoGridThirdDemo />
+         
         </div>
         <BackToTopButton />
       </section>
