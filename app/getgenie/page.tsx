@@ -72,32 +72,26 @@ export default function GetGenie() {
           {/* Tech stack */}
 
           <ul className="flex flex-wrap mt-4 mb-7 gap-2">
-            {[
-              "JavaScript",
-              "AntDesign",
-              "A.I",
-              "Content Generator",
-            ].map((tag, index) => (
-              <li key={index} className="bg-gray-200 px-3 py-1 rounded-full">
-                {tag}
-              </li>
-            ))}
+            {["JavaScript", "AntDesign", "A.I", "Content Generator"].map(
+              (tag, index) => (
+                <li key={index} className="bg-gray-200 px-3 py-1 rounded-full">
+                  {tag}
+                </li>
+              )
+            )}
           </ul>
           {/* Teams */}
           <h3 className="text-lg font-medium leading-relaxed mb-4 mt-10">
             Team
           </h3>
           <ul className="flex flex-wrap mt-4 mb-7 gap-2">
-            {[
-              "Engineering Lead",
-              "CTO",
-              "CEO",
-              "Sr Designer (me)",
-            ].map((tag, index) => (
-              <li key={index} className="bg-gray-200 px-3 py-1 rounded-full">
-                {tag}
-              </li>
-            ))}
+            {["Engineering Lead", "CTO", "CEO", "Sr Designer (me)"].map(
+              (tag, index) => (
+                <li key={index} className="bg-gray-200 px-3 py-1 rounded-full">
+                  {tag}
+                </li>
+              )
+            )}
           </ul>
 
           {/* Description */}
@@ -141,6 +135,15 @@ export default function GetGenie() {
           </h2>
           <Image
             src="/genie15.avif"
+            alt="product UI stages"
+            width={900}
+            height={700}
+            quality={100}
+            unoptimized
+            className="block shadow-2xl object-cover rounded-md mt-6 mb-16"
+          />
+          <Image
+            src="/genie16.webp"
             alt="product UI stages"
             width={900}
             height={700}
