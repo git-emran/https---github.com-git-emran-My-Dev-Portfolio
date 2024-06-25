@@ -19,7 +19,7 @@ export default function Faq() {
           <AccordionContent>
             My core strengths as a Product designer includes my ability to find
             clarity through ambiguity, navigate and scale any idea even if its
-            just a single sentence.
+            just a single sentence. Also I can code myself, which makes me a team player who understand both the complexity and feasability of the designs that I create.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2">
