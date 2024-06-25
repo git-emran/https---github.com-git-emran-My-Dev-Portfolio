@@ -77,6 +77,14 @@ export const experiencesData = [
     icon: React.createElement(FaCubes),
     date: "2019",
   },
+  {
+    title: "Sr. UI/UX Designer, UI/UX Designer @BDTube ltd",
+    location: "Hamburg, Germany",
+    description:
+      "Built an app for farmers collaboratively with advanced search patterns, personalized recommendations, and real-time data boosting bookings by 40%",
+    icon: React.createElement(FaCubes),
+    date: "2017",
+  },
 ] as const;
 
 export const projectsData = [
