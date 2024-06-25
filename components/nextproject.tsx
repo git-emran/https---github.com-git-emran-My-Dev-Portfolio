@@ -26,7 +26,7 @@ export function ProjectNavigation() {
               <ListItem href="/insiddemaps" title="Inidemaps Capture">
                 Simplifying Real estate with just an iPhone
               </ListItem>
-              <ListItem href="/officeoutlet" title="The Total Office">
+              <ListItem href="/officeoutlet" title="Office Outlet">
                 How to install dependencies and structure your app
               </ListItem>
               <ListItem href="/websiteredesign" title="Website Redesign">
