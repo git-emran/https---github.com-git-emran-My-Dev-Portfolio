@@ -46,7 +46,13 @@ export default function GetGenie() {
 
       <section className="p-8 bg-gray-100">
         <div className="max-w-4xl mx-auto">
-          {/* Image */}
+          {/* Case study starting */}
+          <h2 className="text-3xl font-bold mb-4 pt-10">Final Design</h2>
+          <p className="text-lg leading-relaxed mb-4">
+            After many trials and errors this is the final design that works. I
+            have tried to explain the reasonings below why I made these design
+            decisions.
+          </p>
           <Image
             src="/getgenie.gif"
             alt="Project I worked on"
@@ -62,9 +68,11 @@ export default function GetGenie() {
             Designed & Developed the front-end in JavaScript with the help of
             AntDesign framework.
           </p>
+
+          {/* Tech stack */}
+
           <ul className="flex flex-wrap mt-4 mb-7 gap-2">
             {[
-              "React",
               "JavaScript",
               "AntDesign",
               "A.I",
@@ -75,12 +83,12 @@ export default function GetGenie() {
               </li>
             ))}
           </ul>
+          {/* Teams */}
           <h3 className="text-lg font-medium leading-relaxed mb-4 mt-10">
             Team
           </h3>
           <ul className="flex flex-wrap mt-4 mb-7 gap-2">
             {[
-              "Jr Designers: 3",
               "Engineering Lead",
               "CTO",
               "CEO",
@@ -119,13 +127,30 @@ export default function GetGenie() {
           </p>
           <Image
             src="/genie2.gif"
-            alt="Project I worked on"
+            alt="competitor analysis"
             width={900}
             height={700}
             quality={100}
             unoptimized
             className="block shadow-2xl object-cover rounded-md mt-6 mb-16"
           />
+          {/* Stages it went through */}
+
+          <h2 className="text-3xl font-bold mb-4 pt-8">
+            A glimpse of the Stages the UI went through
+          </h2>
+          <Image
+            src="/genie15.avif"
+            alt="product UI stages"
+            width={900}
+            height={700}
+            quality={100}
+            unoptimized
+            className="block shadow-2xl object-cover rounded-md mt-6 mb-16"
+          />
+
+          {/* Improvements I made */}
+
           <h2 className="text-3xl font-bold mb-4 pt-8">
             Here are the Improvements that I made
           </h2>
@@ -134,7 +159,6 @@ export default function GetGenie() {
             trusting
           </p>
           <BentoGridThirdDemo />
-         
         </div>
         <BackToTopButton />
       </section>

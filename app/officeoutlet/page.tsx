@@ -53,6 +53,21 @@ export default function OfficeOutlet() {
             resulting in dissatisfaction after physical implementation. We saw
             the gap.
           </p>
+          {/* Teams */}
+          <h3 className="text-lg font-medium leading-relaxed mb-4 mt-10">
+            Team
+          </h3>
+          <ul className="flex flex-wrap mt-4 mb-7 gap-2">
+            {[
+              "Engineering Lead",
+              "CEO",
+              "Sr Designer/Researcher/Front-end Engineer (me)",
+            ].map((tag, index) => (
+              <li key={index} className="bg-gray-200 px-3 py-1 rounded-full">
+                {tag}
+              </li>
+            ))}
+          </ul>
 
           {/* Timeline Image */}
           <h2 className="text-3xl font-bold mb-4 pt-20">Project Timeline</h2>
