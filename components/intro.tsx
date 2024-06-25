@@ -48,7 +48,7 @@ export default function Intro() {
         </div>
       </div>
       <motion.p
-        className="items-center mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="items-center mb-10 mt-4 px-4 text-xl font-medium !leading-[1.5] sm:text-3xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
@@ -61,9 +61,9 @@ export default function Intro() {
         I am a{" "}
         <span className="font-bold">full-stack designer and developer</span>{" "}
         with <span className="font-bold">8 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <LinkPreview url="" isStatic={true} imageSrc="/next.png" className="italic underline font-semibold">React(Next.Js)</LinkPreview>
-      </motion.p>
+        building <span className="italic">sites & apps</span>. My favorite language is{" "}
+        <LinkPreview url="" isStatic={true} imageSrc="/next.png" className="italic underline font-semibold">React(Next.Js)</LinkPreview> and Swift
+      </motion.p> 
 
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
