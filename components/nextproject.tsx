@@ -23,7 +23,6 @@ export function ProjectNavigation() {
           <NavigationMenuTrigger> View Other Projects </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              
               <ListItem href="/insiddemaps" title="Inidemaps Capture">
                 Simplifying Real estate with just an iPhone
               </ListItem>
@@ -32,6 +31,9 @@ export function ProjectNavigation() {
               </ListItem>
               <ListItem href="/websiteredesign" title="Website Redesign">
                 Redesigning a website to drive maximum conversion
+              </ListItem>
+              <ListItem href="/getgenie" title="GetGenie AI">
+                Your personal AI content generator with SERP data optimization
               </ListItem>
             </ul>
           </NavigationMenuContent>
