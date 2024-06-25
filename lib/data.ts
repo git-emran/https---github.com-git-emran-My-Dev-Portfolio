@@ -8,6 +8,7 @@ import webstieImg from "@/public/website.gif";
 import { FaComputer } from "react-icons/fa6";
 import { FaCompassDrafting } from "react-icons/fa6";
 import { FaCubes } from "react-icons/fa6";
+import { FaCss3Alt } from "react-icons/fa";
 
 export const links = [
   {
@@ -82,7 +83,7 @@ export const experiencesData = [
     location: "Hamburg, Germany",
     description:
       "Built an app for farmers collaboratively with advanced search patterns, personalized recommendations, and real-time data boosting bookings by 40%",
-    icon: React.createElement(FaCubes),
+    icon: React.createElement(FaCss3Alt),
     date: "2017",
   },
 ] as const;
