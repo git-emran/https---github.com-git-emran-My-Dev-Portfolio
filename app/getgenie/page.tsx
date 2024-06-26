@@ -164,7 +164,7 @@ export default function GetGenie() {
           </h2>
           <p className="mb-8">
             Due to certain constraints, I had to directly jump into solution
-            launching the product and testing out the product on the go!!
+            launching the product and testing out the product on the go!
           </p>
           <BentoGridThirdDemo />
         </div>
