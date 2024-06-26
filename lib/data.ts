@@ -115,7 +115,7 @@ export const projectsData = [
     href: "/officeoutlet",
   },
   {
-    title: "Website Redesign",
+    title: "Insidemaps Website",
     description:
       "Redesigning the legacy experience with brand new Navigation, Accessibility, Design system updates",
     tags: [".NET", "Figma", "WCAG 2.0", "Tailwind", "Custom Css"],
