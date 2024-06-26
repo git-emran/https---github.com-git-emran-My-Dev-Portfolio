@@ -133,6 +133,11 @@ export default function GetGenie() {
           <h2 className="text-3xl font-bold mb-4 pt-8">
             A glimpse of the Stages the UI went through
           </h2>
+          <p>
+            This is the way I test my design decisions, making a functional
+            prototype at each stage and make sure the navigation and the
+            corresponding components makes sense.
+          </p>
           <Image
             src="/genie15.avif"
             alt="product UI stages"
@@ -159,7 +164,7 @@ export default function GetGenie() {
           </h2>
           <p className="mb-8">
             Due to certain constraints, I had to directly jump into solution
-            trusting
+            launching the product and testing out the product on the go!!
           </p>
           <BentoGridThirdDemo />
         </div>
