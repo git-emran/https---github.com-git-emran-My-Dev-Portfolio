@@ -37,7 +37,6 @@ export default function About() {
     flex flex-col items-center 
     mb-16 sm:mb-28 md:mb-40 
     max-w-full md:max-w-[55rem] 
-    overflow-x-hidden 
     leading-6 sm:leading-8 
     scroll-mt-28 scroll-smooth
   "
@@ -79,7 +78,7 @@ export default function About() {
         </p>
       </div>
 
-      <InfiniteMovingCards className="" items={cardData} speed="normal" />
+      <InfiniteMovingCards className="max-w-[55rem]" items={cardData} speed="normal" />
     </motion.section>
   );
 }
