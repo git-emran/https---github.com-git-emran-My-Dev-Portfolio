@@ -106,7 +106,7 @@ export default function GetGenie() {
 
           {/* Competitor Analysis */}
 
-          <h2 className="text-3xl font-bold mb-4 pt-20">Competitor Analysis</h2>
+          <h2 className="text-3xl font-bold mb-4 pt-20">What I learned from the competition</h2>
           <p>
             I jumped straight into competitor analysis due to the constraint of
             not being able to spend much time on research. I just wanted to find
