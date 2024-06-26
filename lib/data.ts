@@ -102,7 +102,14 @@ export const projectsData = [
     title: "InsideMaps Capture",
     description:
       "As a Lead Product Designer I helped them redesign their most favorite feature where users can scan a home without any errors",
-    tags: ["SwiftUI", "Accessibility", "Interaction Design", "Custom CSS", "WCAG 2.0"],
+    tags: [
+      "iOS",
+      "SwiftUI",
+      "Accessibility",
+      "Interaction Design",
+      "Custom CSS",
+      "WCAG 2.0",
+    ],
     imageUrl: insidemapsImg,
     href: "/insiddemaps",
   },
