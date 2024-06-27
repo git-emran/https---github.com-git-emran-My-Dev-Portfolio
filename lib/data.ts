@@ -39,7 +39,7 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: " Lead Product Designer @The Total Office",
+    title: " Lead Product Designer/Front-end Dev @The Total Office",
     location: "Barsha Heights, Dubai",
     description:
       "Leading the Design team, Building the future of WorkStation building tool",
@@ -55,7 +55,7 @@ export const experiencesData = [
     date: "2022 - 2023",
   },
   {
-    title: "Lead Product Designer @XpeedStudio",
+    title: "Lead Product Designer/Front-end Dev @XpeedStudio",
     location: "Dhaka, Bangladesh",
     description:
       "Led a Team 7 Designers. Specially Hired to design and develop AI based WordPress Gutenberg Plugin GetGenie AI, also web and Mobile based applications",
@@ -125,7 +125,7 @@ export const projectsData = [
     title: "InsideMaps Website",
     description:
       "Redesigning the legacy experience with brand new Navigation, Accessibility, Design system updates",
-    tags: [".NET", "Figma", "WCAG 2.0", "Tailwind", "Custom Css"],
+    tags: ["React", "Figma", "WCAG 2.0", "Tailwind", "Custom Css"],
     imageUrl: webstieImg,
     href: "/websiteredesign",
   },
