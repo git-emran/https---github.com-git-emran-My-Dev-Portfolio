@@ -44,7 +44,7 @@ export default function About() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.275 }}
     >
-      <SectionHeading> About </SectionHeading>
+      <SectionHeading> About me </SectionHeading>
       <div className="flex">
         <p className="text-center mt-4 mb-6 text-base sm:text-lg sm:px-8 md:text-lg lg:text-xl xl:text-2xl">
           A wizard who loves{" "}
