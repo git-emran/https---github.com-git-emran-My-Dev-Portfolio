@@ -90,10 +90,10 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "GetGenie",
+    title: "GetGenie AI",
     description:
       "Designed & Developed the front-end in JavaScript with the help of AntDesign framework ",
-    tags: ["React", "JavaScript", "AntDesign", "A.I", "Content Generator"],
+    tags: ["Gutenberg", "JavaScript", "AntDesign", "A.I", "Content Generator"],
     imageUrl: getgenieImg,
     href: "/getgenie",
   },
