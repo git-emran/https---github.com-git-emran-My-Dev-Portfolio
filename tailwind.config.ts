@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-import { ClassValue, clsx } from "clsx";
 const defaultTheme = require("tailwindcss/defaultTheme");
  
 const colors = require("tailwindcss/colors");
@@ -25,6 +24,15 @@ const config = {
       },
     },
     extend: {
+      fontWeight: {
+        light: "300",
+        normal: "400",
+        medium: "500",
+        semibold: "600",
+        bold: "700",
+        extrabold: "800",
+        black: "900",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -88,9 +96,7 @@ const config = {
       },
     },
   },
-  plugins: [addVariablesForColors, require("tailwindcss-animate")]
-  
-  
+  plugins: [addVariablesForColors, require("tailwindcss-animate")],
 } satisfies Config;
 
 function addVariablesForColors({ addBase, theme }: any) {
