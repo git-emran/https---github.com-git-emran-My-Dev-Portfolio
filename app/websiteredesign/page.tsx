@@ -54,7 +54,7 @@ export default function GetGenie() {
             className="block shadow-2xl rounded-md object-cover mt-8"
           />
           {/* Teams */}
-          <h3 className="text-lg font-medium leading-relaxed mb-4 mt-10">
+          <h3 className="text-lg font-bold leading-relaxed mb-4 mt-10">
             Team
           </h3>
           <ul className="flex flex-wrap mt-4 mb-7 gap-2">
