@@ -84,9 +84,8 @@ export default function About() {
         items={cardData}
         speed="normal"
       />
-      <div className="pt-6">
-        <ContributionGraph />
-      </div>
+      <ContributionGraph />
+      
     </motion.section>
   );
 }

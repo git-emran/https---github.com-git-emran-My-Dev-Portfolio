@@ -50,6 +50,8 @@ export default function Experience() {
           </React.Fragment>
         ))}
       </VerticalTimeline>
+      
+  
     </section>
   );
 }
