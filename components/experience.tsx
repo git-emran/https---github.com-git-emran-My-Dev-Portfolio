@@ -10,7 +10,7 @@ import "react-vertical-timeline-component/style.min.css";
 
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
-import Image from "next/image";
+
 
 export default function Experience() {
   const { ref } = useSectionInView("Experience");
@@ -22,18 +22,7 @@ export default function Experience() {
       className="scroll-mt-28 mt-6 pb-10 sm:mb-30 bg-gray-100 w-full"
     >
       <SectionHeading>My experience</SectionHeading>
-      <div className="flex items-center justify-center">
-        {" "}
-        <Image
-          src="/searching-duck.gif"
-          alt=""
-          width={80}
-          height={80}
-          quality={100}
-          unoptimized
-          className="items-center mb-10"
-        />
-      </div>
+
 
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
