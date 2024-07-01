@@ -7,7 +7,6 @@ import { BentoGridThirdDemo } from "@/components/bentogridthird";
 import BackToTopButton from "@/components/buttontop";
 import BackToHome from "@/components/back-to-home";
 import { PinContainer } from "@/components/ui/3d-pin";
-import { ProjectNavigation } from "@/components/nextproject";
 import {
   NavigationMenu,
   NavigationMenuList,

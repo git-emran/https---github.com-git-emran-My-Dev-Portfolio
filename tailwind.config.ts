@@ -96,7 +96,7 @@ const config = {
       },
       backgroundImage: {
         noise:
-          "url('https://res.cloudinary.com/victoreke/image/upload/v1691779257/victoreke/noise.png')",
+          "/public/noise.png')",
       },
     },
   },
