@@ -94,6 +94,10 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      backgroundImage: {
+        noise:
+          "url('https://res.cloudinary.com/victoreke/image/upload/v1691779257/victoreke/noise.png')",
+      },
     },
   },
   plugins: [addVariablesForColors, require("tailwindcss-animate")],

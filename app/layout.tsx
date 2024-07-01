@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${inter.className} bg-gray-50 w-full overflow-x-hidden text-gray-950 relative dark:bg-gray-200 dark:text-gray-800 dark:text-opacity-90`}
+        className={`${inter.className} bg-noise w-full overflow-x-hidden text-gray-950 relative dark:text-opacity-90`}
       >
         {/* Responsive Background Blob 1 */}
         <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[2rem] h-[20rem] w-[20rem] rounded-full blur-[6rem] sm:w-[40rem] sm:h-[40rem] sm:right-[11rem] md:w-[50rem] md:h-[50rem] lg:w-[60rem] lg:h-[60rem] xl:w-[70rem] xl:h-[70rem]]"></div>
