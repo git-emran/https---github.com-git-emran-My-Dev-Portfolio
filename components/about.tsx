@@ -6,6 +6,8 @@ import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import { LinkPreview } from "./ui/link-preview";
+import ContributionGraph from "./contribution-graph";
+
 
 export default function About() {
   const { ref } = useSectionInView("About");
@@ -77,8 +79,14 @@ export default function About() {
           </LinkPreview>
         </p>
       </div>
-
-      <InfiniteMovingCards className="max-w-[55rem]" items={cardData} speed="normal" />
+      <InfiniteMovingCards
+        className="max-w-[55rem]"
+        items={cardData}
+        speed="normal"
+      />
+      <div className="pt-6">
+        <ContributionGraph />
+      </div>
     </motion.section>
   );
 }
