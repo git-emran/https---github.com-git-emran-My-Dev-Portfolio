@@ -61,7 +61,7 @@ export default function Intro() {
         <span className="font-bold">full-stack designer and developer</span>{" "}
         with <span className="font-bold">8 years</span> of experience. I enjoy
         building <span className="italic">sites & apps</span>. My favorite programming languages are{" "}
-        <LinkPreview url="" isStatic={true} imageSrc="/next.png" className="italic underline font-semibold">JavaScript</LinkPreview>{""}, Swift and Python
+        <LinkPreview url="" isStatic={true} imageSrc="/next.png" className="italic underline font-semibold">TypeScript</LinkPreview>{""}, Swift and Python
       </motion.p> 
 
       <motion.div
