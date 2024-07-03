@@ -101,7 +101,7 @@ export default function Insidemaps() {
           />
           {/* Qual Research */}
           <h2 className="text-3xl font-bold mb-4 pt-8">
-            Qualitative Research - Phase 1
+            Qualitative Research - Phase 2
           </h2>
           {/* Qual Image */}
           <Image
