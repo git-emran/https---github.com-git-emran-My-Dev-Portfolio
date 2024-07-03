@@ -22,7 +22,7 @@ export default function Faq() {
           <AccordionContent>
             My core strengths as a Product designer includes my ability to find
             clarity through ambiguity, navigate and scale any idea even if its
-            just a single sentence. Also I can code myself, which makes me a
+            just a single sentence. Also I can code, which makes me a strong
             team player who understand both the complexity and feasability of
             the designs that I create.
           </AccordionContent>
@@ -46,7 +46,7 @@ export default function Faq() {
         </AccordionItem>
         <AccordionItem value="item-3">
           <AccordionTrigger>
-            Are you an UI person or an UX person ?
+            My Strength: UX or UI ?
           </AccordionTrigger>
           <AccordionContent>
             Working with both startups and enterprise companies made me realize
