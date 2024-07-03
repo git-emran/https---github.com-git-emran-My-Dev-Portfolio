@@ -16,14 +16,14 @@ const people = [
   {
     id: 1,
     name: "Emran Hossain",
-    designation: "Software Designer & Engineer",
+    designation: "Software Designer & Developer",
     image: "/Headshot 1.png",
   },
 ];
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
-  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const { setTimeOfLastClick } = useActiveSectionContext();
   return (
     <section
       ref={ref}
