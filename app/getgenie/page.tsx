@@ -7,22 +7,19 @@ import { BentoGridThirdDemo } from "@/components/bentogridthird";
 import BackToTopButton from "@/components/buttontop";
 import BackToHome from "@/components/back-to-home";
 import { PinContainer } from "@/components/ui/3d-pin";
-import {
-  NavigationMenu,
-  NavigationMenuList,
-} from "@radix-ui/react-navigation-menu";
+
 
 export default function GetGenie() {
   const router = useRouter();
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen sm:top-20 flex flex-col">
       {/* Header */}
       <header className="relative w-full h-96">
         {/* Back Button */}
         <BackToHome />
         {/* Header bg div styling */}
-        <div className="absolute inset-0 bg-black opacity-20"></div>
+        <div className=" items-center absolute flex inset-0 top-0 bg-black opacity-20"></div>
         <div className="absolute inset-0 mt-6 flex items-center justify-center">
           <PinContainer
             title="View Live Product"

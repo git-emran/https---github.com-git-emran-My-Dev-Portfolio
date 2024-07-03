@@ -9,7 +9,7 @@ import Faq from "@/components/faq";
 
 export default function Page() {
   return (
-    <main className="flex flex-col overflow-x-hidden w-full relative items-center pt-28 sm:pt-26">
+    <main className="flex flex-col overflow-x-hidden w-full relative mt-20 items-center sm:pt-26">
       <Header />
       <Intro />
       <About />
