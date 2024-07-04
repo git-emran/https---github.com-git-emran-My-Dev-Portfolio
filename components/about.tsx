@@ -75,7 +75,7 @@ export default function About() {
             imageSrc="/instagram.png"
             className="font-semibold underline text-blue-800"
           >
-            design memes.
+            design memes. I also make open-source projects to help the development community.
           </LinkPreview>
         </p>
       </div>
