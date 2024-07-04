@@ -8,7 +8,6 @@ import { motion } from "framer-motion";
 import { LinkPreview } from "./ui/link-preview";
 import ContributionGraph from "./contribution-graph";
 
-
 export default function About() {
   const { ref } = useSectionInView("About");
   const cardData = [
@@ -75,8 +74,9 @@ export default function About() {
             imageSrc="/instagram.png"
             className="font-semibold underline text-blue-800"
           >
-            design memes. I also make open-source projects to help the development community.
-          </LinkPreview>
+            design memes.
+          </LinkPreview>{""}
+          I also make open-source projects to help the development community.
         </p>
       </div>
       <InfiniteMovingCards
@@ -85,7 +85,6 @@ export default function About() {
         speed="normal"
       />
       <ContributionGraph />
-      
     </motion.section>
   );
 }
