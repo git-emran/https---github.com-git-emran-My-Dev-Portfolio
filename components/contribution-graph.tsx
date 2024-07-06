@@ -39,7 +39,7 @@ export default function ContributionGraph() {
       </div>
       <div className="flex justify-center max-w-[30rem] flex-wrap gap-2">
         {/* Display only the last five years */}
-        {years.slice(0, 5).map((year: any) => (
+        {years.slice(0, 2).map((year: any) => (
           <YearButton
             key={year}
             year={year}
