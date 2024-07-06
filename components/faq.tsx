@@ -32,22 +32,28 @@ export default function Faq() {
             Have you ever built a product from scratch?
           </AccordionTrigger>
           <AccordionContent>
-            Yes I have, Infact I have built exactly 5 products from scratch. One
-            of my personal favorite one is{" "}
+            Yes I have, Infact I have built exactly 5 products from scratch and
+            each with over millions user-base. One of my personal favorite one
+            is{" "}
             <LinkPreview
               url="https://getgenie.ai/"
               className="font-bold underline"
             >
               GetGenie AI
             </LinkPreview>{" "}
-            {""}
-            components&apos; aesthetic.
+            {""}I love it because the whole{" "}
+            <a
+              href="https://getgenie.ai/"
+              className="text-blue-600 font-bold underline"
+            >
+              application
+            </a>
+            is really easy to use and the extensive ability to control the
+            outcome despite being an AI application.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-3">
-          <AccordionTrigger>
-            My Strength: UX or UI ?
-          </AccordionTrigger>
+          <AccordionTrigger>My Strength: UX or UI ?</AccordionTrigger>
           <AccordionContent>
             Working with both startups and enterprise companies made me realize
             that I am a Jack of all trades. Then I remembered the saying and
