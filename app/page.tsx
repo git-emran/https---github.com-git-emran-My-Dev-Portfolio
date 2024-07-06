@@ -1,4 +1,3 @@
-"use client"
 import Header from "@/components/header";
 import Intro from "@/components/intro";
 import About from "@/components/about";
