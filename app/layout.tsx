@@ -33,7 +33,7 @@ export default function RootLayout({
         <ActiveSectionContextProvider>
           {children}
           {/* <SpeedInsights /> */}
-          <Analytics />
+          {/* <Analytics /> */}
 
           <BackToTopButton />
           <Footer />
