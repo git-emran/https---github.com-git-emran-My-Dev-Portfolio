@@ -16,7 +16,7 @@ export default function OfficeOutlet() {
         {/* Back Button */}
         <BackToHome />
         {/* Header bg div styling */}
-        <div className="absolute inset-0 bg-black opacity-30"></div>
+        <div className=" bg-black opacity-30"></div>
         <div className="absolute mt-6 inset-0 flex items-center justify-center">
           <PinContainer
             title="View Live Product"

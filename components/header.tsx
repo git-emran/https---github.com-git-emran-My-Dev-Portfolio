@@ -1,5 +1,4 @@
 "use client";
-
 import React, { act, useState } from "react";
 import { motion } from "framer-motion";
 import { links } from "@/lib/data";

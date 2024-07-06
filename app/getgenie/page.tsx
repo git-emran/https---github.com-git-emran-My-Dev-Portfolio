@@ -19,7 +19,7 @@ export default function GetGenie() {
         {/* Back Button */}
         <BackToHome />
         {/* Header bg div styling */}
-        <div className=" items-center absolute flex inset-0 top-0 bg-black opacity-20"></div>
+        <div className=" items-center flex inset-0 bg-black opacity-30"></div>
         <div className="absolute inset-0 mt-6 flex items-center justify-center">
           <PinContainer
             title="View Live Product"
