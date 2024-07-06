@@ -67,7 +67,7 @@ export default function About() {
           >
             creating illustrations
           </LinkPreview>
-          , design interactions and product{" "}
+          , open-source projects, design interactions and product{" "}
           <LinkPreview
             url="https://www.instagram.com/designwithemran/"
             isStatic={true}
@@ -76,7 +76,7 @@ export default function About() {
           >
             design memes.
           </LinkPreview>{""}
-          I also make open-source projects to help the development community.
+          
         </p>
       </div>
       <InfiniteMovingCards
