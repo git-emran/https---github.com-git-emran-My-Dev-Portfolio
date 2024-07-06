@@ -41,15 +41,9 @@ export default function Faq() {
             >
               GetGenie AI
             </LinkPreview>{" "}
-            {""}I love it because the whole{" "}
-            <a
-              href="https://getgenie.ai/"
-              className="text-blue-600 font-bold underline"
-            >
-              application
-            </a>
-            is really easy to use and the extensive ability to control the
-            outcome despite being an AI application.
+            {""}I love it because the whole application is really easy to use
+            and the extensive ability to control the outcome despite being an AI
+            application.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-3">

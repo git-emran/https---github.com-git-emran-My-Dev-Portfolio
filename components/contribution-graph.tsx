@@ -1,6 +1,6 @@
 "use client";
 import GitHubCalendar from "react-github-calendar";
-import { espionage, github } from "@/app/data/contribution-graph-theme"
+import { espionage, github } from "@/app/data/contribution-graph-theme";
 import { useState, useEffect } from "react";
 import YearButton from "@/components/ui/YearButton";
 import { getGitHubYears } from "@/utils/calculate-years";
@@ -10,8 +10,6 @@ export default function ContributionGraph() {
   const [calendarYear, setCalendarYear] = useState<number | undefined>(
     undefined
   );
-
-
 
   const today = new Date().getFullYear();
   const username = process.env.NEXT_PUBLIC_GITHUB_USERNAME;
@@ -39,7 +37,7 @@ export default function ContributionGraph() {
       </div>
       <div className="flex justify-center max-w-[30rem] flex-wrap gap-2">
         {/* Display only the last five years */}
-        {years.slice(0, 3).map((year: any) => (
+        {years.slice(0, 5).map((year: any) => (
           <YearButton
             key={year}
             year={year}
