@@ -58,7 +58,7 @@ export default function Intro() {
           </span>{" "}
         </span>{" "}
         I am a{" "}
-        <span className="font-bold">full-stack designer and developer</span>{" "}
+        <span className="font-bold">a Designer and a Developer</span>{" "}
         with <span className="font-bold">8 years</span> of experience. I enjoy
         building <span className="italic">sites & apps</span>. My favorite programming languages are{" "}
         <LinkPreview url="" isStatic={true} imageSrc="/next.png" className="italic underline font-semibold">TypeScript</LinkPreview>{""}, Swift and Python
