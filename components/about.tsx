@@ -84,7 +84,7 @@ export default function About() {
         items={cardData}
         speed="normal"
       />
-      <ContributionGraph />
+      {/* <ContributionGraph /> */}
     </motion.section>
   );
 }
