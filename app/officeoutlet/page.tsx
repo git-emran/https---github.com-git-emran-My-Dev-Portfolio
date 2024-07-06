@@ -18,22 +18,16 @@ export default function OfficeOutlet() {
         {/* Header bg div styling */}
         <div className=" bg-black opacity-30"></div>
         <div className="absolute mt-6 inset-0 flex items-center justify-center">
-          <PinContainer
-            title="View Live Product"
-            href="https://thetotaloffice.com/"
-            className=""
-          >
-            <div className="flex basis-full flex-col p-1 items-center tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] ">
-              <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-3xl text-slate-100">
-                Office Outlet
-              </h3>
-              <div className="text-base !m-0 !p-0 font-normal">
-                <span className="text-slate-500 ">
-                  The Future of Workstation Planning 🔗
-                </span>
-              </div>
+          <div className="flex basis-full flex-col p-1 items-center tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] ">
+            <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-3xl text-slate-100">
+              Office Outlet
+            </h3>
+            <div className="text-base !m-0 !p-0 font-normal">
+              <span className="text-slate-500 ">
+                The Future of Workstation Planning
+              </span>
             </div>
-          </PinContainer>
+          </div>
         </div>
       </header>
       {/* ----------------------------- */}
@@ -54,9 +48,7 @@ export default function OfficeOutlet() {
             the gap.
           </p>
           {/* Teams */}
-          <h3 className="text-lg font-bold leading-relaxed mb-4 mt-10">
-            Team
-          </h3>
+          <h3 className="text-lg font-bold leading-relaxed mb-4 mt-10">Team</h3>
           <ul className="flex flex-wrap mt-4 mb-7 gap-2">
             {[
               "Engineering Lead",
