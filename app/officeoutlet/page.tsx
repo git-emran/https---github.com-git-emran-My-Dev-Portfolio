@@ -19,7 +19,7 @@ export default function OfficeOutlet() {
         <div className=" bg-black opacity-30"></div>
         <div className="absolute mt-6 inset-0 flex items-center justify-center">
           <div className="flex basis-full flex-col p-1 items-center tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] ">
-            <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-3xl text-slate-900">
+            <h3 className="max-w-xs !pb-2 !m-0 font-bold text-5xl text-slate-900">
               Office Outlet
             </h3>
             <div className="text-base !m-0 !p-0 font-normal">
