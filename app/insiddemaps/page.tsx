@@ -12,7 +12,8 @@ import { DirectionAwareHover } from "@/components/ui/direction-aware-hover";
 export default function Insidemaps() {
   const router = useRouter();
   const im2 = "/im2.png";
-  const im3 = '/im3.png'
+  const im3 = "/im3.png";
+  const im4 = "/im4.png";
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -71,18 +72,18 @@ export default function Insidemaps() {
             example is given below :
           </p>
           {/* Quant Image */}
-        <DirectionAwareHover imageUrl={im2}>
-          <p className="font-medium">Structuring the questions properly matters</p>
-          <p>Interviewed: 20 high value users</p>
-        </DirectionAwareHover>
+          <DirectionAwareHover imageUrl={im2}>
+            <p>Structuring the questions properly matters</p>
+            <p>Interviewed: 20 high value users</p>
+          </DirectionAwareHover>
           {/* Qual Research */}
           <h2 className="text-3xl font-bold mb-4 pt-8">
             Qualitative Research - Phase 2
           </h2>
           {/* Qual Image */}
-        <DirectionAwareHover imageUrl={im3}>
-
-        </DirectionAwareHover>
+          <DirectionAwareHover imageUrl={im3}>
+            <p>Focusing on the core emotions</p>
+          </DirectionAwareHover>
           {/* Final Improvements*/}
           <h2 className="text-3xl font-bold mb-4 pt-8">
             Final Improvements I made
@@ -91,15 +92,9 @@ export default function Insidemaps() {
             These are the imporvements I made after taking all the research into
             account.
           </p>
-          <Image
-            src="/im4.png"
-            alt=""
-            width={900}
-            height={700}
-            quality={100}
-            unoptimized
-            className="mt-10"
-          />
+          <DirectionAwareHover imageUrl={im4}>
+            <p>Instructions appear on real time based on the scenario</p>
+          </DirectionAwareHover>
           <Image
             src="/im5.png"
             alt=""
