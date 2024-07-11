@@ -6,6 +6,7 @@ import Image from "next/image";
 import { BentoGridThirdDemo } from "@/components/bentogridthird";
 import BackToHome from "@/components/back-to-home";
 import { PinContainer } from "@/components/ui/3d-pin";
+import SubpageHeader from "@/components/subpage-header";
 
 export default function Insidemaps() {
   const router = useRouter();
@@ -13,27 +14,8 @@ export default function Insidemaps() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
-      <header className="relative w-full h-96">
-        {/* Back Button */}
-        <BackToHome />
-        {/* Header bg div styling */}
-        <div className="bg-black opacity-30"></div>
-        <div className="absolute inset-0 mt-6 flex items-center justify-center">
-          {/* 3D Pin Container */}
-        
-            <div className="flex basis-full flex-col p-1 items-center tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] ">
-              <h3 className="max-w-xs !pb-2 !m-0 font-bold text-5xl text-slate-900">
-                InsideMaps
-              </h3>
-              <div className="text-base !m-0 !p-0 font-normal">
-                <span className="text-slate-500 ">
-                  Simplifying Real Estate 
-                </span>
-              </div>
-            </div>
-          
-        </div>
-      </header>
+      <SubpageHeader title="InsideMaps" subtitle="Simplifying Real-Estate" />
+
       {/* ----------------------------- */}
 
       {/* Image */}

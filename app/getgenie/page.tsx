@@ -7,38 +7,21 @@ import { BentoGridThirdDemo } from "@/components/bentogridthird";
 import BackToTopButton from "@/components/buttontop";
 import BackToHome from "@/components/back-to-home";
 import { PinContainer } from "@/components/ui/3d-pin";
-
+import SubpageHeader from "@/components/subpage-header";
 
 export default function GetGenie() {
   const router = useRouter();
 
   return (
     <div className="min-h-screen sm:top-20 flex flex-col">
-      {/* Header */}
-      <header className="relative w-full h-96">
-        {/* Back Button */}
-        <BackToHome />
-        {/* Header bg div styling */}
-        <div className=" items-center flex inset-0 bg-black opacity-30"></div>
-        <div className="absolute inset-0 mt-6 flex items-center justify-center">
-         
-            <div className="flex basis-full flex-col p-1 items-center tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] ">
-              <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-5xl text-slate-900">
-                Get Genie AI
-              </h3>
-              <div className="text-base !m-0 !p-0 font-normal">
-                <span className="text-slate-500 ">
-                  Personal AI content Writer 
-                </span>
-              </div>
-            </div>
-         
-        </div>
-      </header>
-
+      {/* Page Header */}
+      <SubpageHeader
+        title="GetGenie AI"
+        subtitle="Your personal AI content writer"
+      />
+      {/* Case study starting */}
       <section className="p-8 bg-gray-100">
         <div className="max-w-4xl mx-auto">
-          {/* Case study starting */}
           <h2 className="text-3xl font-bold mb-4 pt-10">Final Design</h2>
           <p className="text-lg leading-relaxed mb-4">
             After many trials and errors this is the final design that works. I
@@ -98,7 +81,9 @@ export default function GetGenie() {
 
           {/* Competitor Analysis */}
 
-          <h2 className="text-3xl font-bold mb-4 pt-20">What I learned from the competition</h2>
+          <h2 className="text-3xl font-bold mb-4 pt-20">
+            What I learned from the competition
+          </h2>
           <p>
             I jumped straight into competitor analysis due to the constraint of
             not being able to spend much time on research. I just wanted to find

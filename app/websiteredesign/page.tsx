@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import BackToHome from "@/components/back-to-home";
 import { PinContainer } from "@/components/ui/3d-pin";
+import SubpageHeader from "@/components/subpage-header";
 
 export default function GetGenie() {
   const router = useRouter();
@@ -12,26 +13,10 @@ export default function GetGenie() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
-      <header className="relative w-full h-96">
-        {/* Back Button */}
-        <BackToHome />
-        {/* Header bg div styling */}
-        <div className="bg-black opacity-30"></div>
-        <div className="absolute inset-0 flex items-center justify-center">
-          
-            <div className="flex basis-full flex-col p-1 items-center tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] ">
-              <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-5xl text-slate-900">
-                Website Redesign
-              </h3>
-              <div className="text-base !m-0 !p-0 font-normal">
-                <span className="text-slate-500 ">
-                  Restructuring the Experience 
-                </span>
-              </div>
-            </div>
-         
-        </div>
-      </header>
+      <SubpageHeader
+        title="Corporate Website Redesign "
+        subtitle="Redefining the Experience"
+      />
       {/* Body starts -------> */}
       <section className="p-8 bg-gray-100">
         <div className="max-w-4xl mx-auto">
