@@ -7,9 +7,11 @@ import { BentoGridThirdDemo } from "@/components/bentogridthird";
 import BackToHome from "@/components/back-to-home";
 import { PinContainer } from "@/components/ui/3d-pin";
 import SubpageHeader from "@/components/subpage-header";
+import { DirectionAwareHover } from "@/components/ui/direction-aware-hover";
 
 export default function Insidemaps() {
   const router = useRouter();
+  const im2 = "/im2.png"
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -68,15 +70,9 @@ export default function Insidemaps() {
             example is given below :
           </p>
           {/* Quant Image */}
-          <Image
-            src="/im2.png"
-            alt=""
-            width={900}
-            height={700}
-            quality={100}
-            unoptimized
-            className="mt-10"
-          />
+        <DirectionAwareHover imageUrl={im2}>
+          <p>This is the format I used to understand the research findings</p>
+        </DirectionAwareHover>
           {/* Qual Research */}
           <h2 className="text-3xl font-bold mb-4 pt-8">
             Qualitative Research - Phase 2
