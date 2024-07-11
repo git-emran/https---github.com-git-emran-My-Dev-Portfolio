@@ -5,8 +5,6 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { BentoGridThirdDemo } from "@/components/bentogridthird";
 import BackToTopButton from "@/components/buttontop";
-import BackToHome from "@/components/back-to-home";
-import { PinContainer } from "@/components/ui/3d-pin";
 import SubpageHeader from "@/components/subpage-header";
 
 export default function GetGenie() {

@@ -3,9 +3,6 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import { BentoGridThirdDemo } from "@/components/bentogridthird";
-import BackToHome from "@/components/back-to-home";
-import { PinContainer } from "@/components/ui/3d-pin";
 import SubpageHeader from "@/components/subpage-header";
 
 export default function Insidemaps() {
