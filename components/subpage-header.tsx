@@ -16,7 +16,7 @@ const SubpageHeader: React.FC<SubpageHeaderProps> = ({ title, subtitle }) => {
         <div className=" items-center flex inset-0 bg-black opacity-30"></div>
         <div className="absolute inset-0 mt-6 flex items-center justify-center">
           <div className="flex basis-full flex-col p-1 items-center tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] ">
-            <h3 className="max-w-2xl !pb-2 flex !m-0 font-bold text-center text-4xl text-slate-900">
+            <h3 className="max-w-2xl !pb-2 flex !m-0 font-semibold text-center text-5xl text-slate-700">
               {title}
             </h3>
             <div className="text-base !m-0 !p-0 font-normal">

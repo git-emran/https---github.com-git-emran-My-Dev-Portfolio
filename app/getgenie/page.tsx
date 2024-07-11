@@ -22,6 +22,7 @@ export default function GetGenie() {
       {/* Case study starting */}
       <section className="p-8 bg-gray-100">
         <div className="max-w-4xl mx-auto">
+         
           <h2 className="text-3xl font-bold mb-4 pt-10">Final Design</h2>
           <p className="text-lg leading-relaxed mb-4">
             After many trials and errors this is the final design that works. I
