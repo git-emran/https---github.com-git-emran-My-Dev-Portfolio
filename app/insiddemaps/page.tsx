@@ -11,7 +11,7 @@ export default function Insidemaps() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
-      <SubpageHeader title="InsideMaps" subtitle="Simplifying Real-Estate" />
+      <SubpageHeader title="InsideMaps Capture" subtitle="Redesigning the Asset Capture Feature" />
 
       {/* ----------------------------- */}
 
