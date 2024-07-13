@@ -53,16 +53,23 @@ export default function Intro() {
       >
         <span className="font-normal">
           Hello I am{" "}
-          <span className="text-gray-800 font-bold ">
-            Emran Hossain
-          </span>{" "}
+          <span className="text-gray-800 font-bold ">Emran Hossain</span>{" "}
         </span>{" "}
         I am a{" "}
-        <span className="font-bold">a Designer and a Developer</span>{" "}
-        with <span className="font-bold">8 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My favorite programming languages are{" "}
-        <LinkPreview url="" isStatic={true} imageSrc="/next.png" className="italic underline font-semibold">TypeScript</LinkPreview>{""}, Swift and Python
-      </motion.p> 
+        <span className="font-bold">Designer and Software Developer</span> with{" "}
+        <span className="font-bold">8 years</span> of experience. I enjoy
+        building <span className="italic">sites & apps</span>. My favorite
+        programming languages are{" "}
+        <LinkPreview
+          url=""
+          isStatic={true}
+          imageSrc="/next.png"
+          className="italic underline font-semibold"
+        >
+          TypeScript
+        </LinkPreview>
+        {""}, Swift and Python
+      </motion.p>
 
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"

@@ -75,8 +75,8 @@ export default function About() {
             className="font-semibold underline text-blue-800"
           >
             design memes.
-          </LinkPreview>{""}
-          
+          </LinkPreview>
+          {""}
         </p>
       </div>
       <InfiniteMovingCards
