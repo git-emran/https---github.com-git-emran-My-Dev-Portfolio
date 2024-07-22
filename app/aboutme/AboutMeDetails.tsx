@@ -12,6 +12,7 @@ function AboutMeDetails() {
       <section className='p-8 bg-gray-100"'>
         <div className="max-w-4xl mx-auto">
           The Body
+          and more filler texts
         </div>
       </section>
     </div>
