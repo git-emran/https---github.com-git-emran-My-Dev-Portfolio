@@ -13,6 +13,7 @@ function AboutMeDetails() {
         <div className="max-w-4xl mx-auto">
           The Body
           and more filler texts
+          and other filler texts
         </div>
       </section>
     </div>
