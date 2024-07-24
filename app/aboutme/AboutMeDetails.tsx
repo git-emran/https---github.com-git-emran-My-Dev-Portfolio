@@ -14,6 +14,10 @@ function AboutMeDetails() {
           The Body
           and more filler texts
           and other filler texts
+          THe other other texts that is needed for this 
+        </div>
+        <div>
+          filler texts
         </div>
       </section>
     </div>
