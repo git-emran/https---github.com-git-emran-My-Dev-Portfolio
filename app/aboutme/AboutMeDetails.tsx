@@ -18,6 +18,12 @@ function AboutMeDetails() {
         </div>
         <div>
           filler texts
+          no more filler commits
+          or any other for that matter
+        </div>
+        <div>
+          another emty div
+          
         </div>
       </section>
     </div>
