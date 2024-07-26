@@ -1,5 +1,5 @@
-import SubpageHeader from '@/components/subpage-header';
-import React from 'react'
+import SubpageHeader from "@/components/subpage-header";
+import React from "react";
 
 function AboutMeDetails() {
   return (
@@ -9,25 +9,9 @@ function AboutMeDetails() {
         subtitle="How it all got started"
       />
       {/* Start of the Body   */}
-      <section className='p-8 bg-gray-100"'>
-        <div className="max-w-4xl mx-auto">
-          The Body
-          and more filler texts
-          and other filler texts
-          THe other other texts that is needed for this 
-        </div>
-        <div>
-          filler texts
-          no more filler commits
-          or any other for that matter
-        </div>
-        <div>
-          another emty div
-          
-        </div>
-      </section>
+      <section className='p-8 bg-gray-100"'></section>
     </div>
   );
 }
 
-export default AboutMeDetails
+export default AboutMeDetails;
