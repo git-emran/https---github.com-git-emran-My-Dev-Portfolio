@@ -9,7 +9,7 @@ function AboutMeDetails() {
         subtitle="How it all got started"
       />
       {/* Start of the Body   */}
-      <section className='p-8 bg-gray-100"'></section>
+      <section></section>
     </div>
   );
 }
