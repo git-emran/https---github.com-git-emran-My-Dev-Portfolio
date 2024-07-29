@@ -116,7 +116,7 @@ export const projectsData = [
   {
     title: "The Office Outlet",
     description:
-      "With the inspiration from IKEA pax planner. We created 'Office Outlet' where user's can virtually plan their WorkStation",
+      "I designed 'Office Outlet' for the The Total Office where users can virtually plan their WorkStation",
     tags: ["Figma", "React", "TypeScript", "Redux", "SQL"],
     imageUrl: officeImg,
     href: "/officeoutlet",
