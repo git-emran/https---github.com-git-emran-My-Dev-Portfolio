@@ -18,7 +18,7 @@ export default function Faq() {
       <SectionHeading>Frequently Asked Questions & Answers</SectionHeading>
       <Accordion type="single" collapsible className="w-full mt-12">
         <AccordionItem value="item-1">
-          <AccordionTrigger>What are your strengths ?</AccordionTrigger>
+          <AccordionTrigger>Your Strength ?</AccordionTrigger>
           <AccordionContent>
             My core strengths as a Product designer includes my ability to find
             clarity through ambiguity, navigate and scale any idea even if its
@@ -47,7 +47,7 @@ export default function Faq() {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-3">
-          <AccordionTrigger>My Strength: UX or UI ?</AccordionTrigger>
+          <AccordionTrigger>Most Proficiency: UX or UI ?</AccordionTrigger>
           <AccordionContent>
             Working with both startups and enterprise companies made me realize
             that I am a Jack of all trades. Then I remembered the saying and
