@@ -66,7 +66,7 @@ export default function Intro() {
           imageSrc="/next.png"
           className="italic underline font-semibold"
         >
-          TypeScript
+          JavaScript
         </LinkPreview>
         {""}, Swift and Python
       </motion.p>
