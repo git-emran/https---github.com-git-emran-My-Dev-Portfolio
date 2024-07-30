@@ -1,7 +1,7 @@
 import SubpageHeader from "@/components/subpage-header";
 import React from "react";
 
-function AboutMeDetails() {
+function OtherProjects() {
   return (
     <div className="min-h-screen sm:top-20 flex flex-col">
       <SubpageHeader
@@ -9,9 +9,15 @@ function AboutMeDetails() {
         subtitle="How it all got started"
       />
       {/* Start of the Body   */}
-      <section></section>
+      <section>
+        
+
+      </section>
+      <section>
+
+      </section>
     </div>
   );
 }
 
-export default AboutMeDetails;
+export default OtherProjects;
