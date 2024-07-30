@@ -1,4 +1,7 @@
+'use client'
+
 import SubpageHeader from "@/components/subpage-header";
+import HoverCard from "@/components/ui/hoverCard";
 import React from "react";
 
 function OtherProjects() {
@@ -9,13 +12,12 @@ function OtherProjects() {
         subtitle="How it all got started"
       />
       {/* Start of the Body   */}
-      <section>
-        
+      <div>
 
-      </section>
-      <section>
+        <HoverCard imageSrc="/genie2.gif" altText="Hover card Image" title="MarketTime B2B" subtitle="Merging 2 Products to create a brand new experience" />
 
-      </section>
+      </div>
+     
     </div>
   );
 }

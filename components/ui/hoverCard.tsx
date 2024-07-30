@@ -2,14 +2,14 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { FC } from "react";
 
-interface DreamMachineProps {
+interface HoverCardProps {
   imageSrc: string;
   altText: string;
   title: string;
   subtitle: string;
 }
 
-const DreamMachine: FC<DreamMachineProps> = ({
+const HoverCard: FC<HoverCardProps> = ({
   imageSrc,
   altText,
   title,
@@ -17,7 +17,7 @@ const DreamMachine: FC<DreamMachineProps> = ({
 }) => {
   return (
     <motion.div
-      className="relative overflow-hidden group"
+      className="relative overflow-hidden group justify-start mt-20"
       whileHover={{ scale: 1.05 }}
       transition={{ duration: 0.3 }}
     >
@@ -29,7 +29,7 @@ const DreamMachine: FC<DreamMachineProps> = ({
         className="w-full h-auto"
       />
       <motion.div
-        className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-start opacity-0 group-hover:opacity-100 transition-opacity duration-300"
         initial={{ opacity: 0 }}
         whileHover={{ opacity: 1 }}
       >
@@ -40,4 +40,4 @@ const DreamMachine: FC<DreamMachineProps> = ({
   );
 };
 
-export default DreamMachine;
+export default HoverCard;
