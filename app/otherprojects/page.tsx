@@ -9,11 +9,11 @@ function OtherProjects() {
     <div className="min-h-screen sm:top-20 flex flex-col">
     
       {/* Start of the Body   */}
-      <div>
-        
-      </div>
+      <section>
+
+      </section>
       
-     
+  
     </div>
   );
 }
