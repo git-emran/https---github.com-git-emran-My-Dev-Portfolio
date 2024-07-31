@@ -24,11 +24,11 @@ export default function Projects() {
             <Project {...project} />
           </React.Fragment>
         ))}
-        {/* <div className="items-center justify-center flex">
+        <div className="items-center justify-center flex">
           <Button variant="outline" asChild>
             <Link href='/otherprojects'>View Other Projects</Link>
           </Button>
-        </div> */}
+        </div>
       </div>
     </section>
   );
