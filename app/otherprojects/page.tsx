@@ -1,6 +1,7 @@
 'use client'
 
 import SubpageHeader from "@/components/subpage-header";
+import { ExpandableCardDemo } from "@/components/ui/expandableCard";
 import HoverCard from "@/components/ui/hoverCard";
 import React from "react";
 
@@ -10,7 +11,7 @@ function OtherProjects() {
     
       {/* Start of the Body   */}
       <section>
-
+<ExpandableCardDemo />
       </section>
       
   
