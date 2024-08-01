@@ -25,9 +25,9 @@ export default function Projects() {
           </React.Fragment>
         ))}
         <div className="items-center justify-center flex">
-          <Button variant="outline" asChild>
+          {/* <Button variant="outline" asChild>
             <Link href='/otherprojects'>View Other Projects</Link>
-          </Button>
+          </Button> */}
         </div>
       </div>
     </section>
