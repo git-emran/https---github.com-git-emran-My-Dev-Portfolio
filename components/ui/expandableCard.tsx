@@ -131,7 +131,7 @@ export function ExpandableCardDemo() {
             layoutId={`card-${card.title}-${id}`}
             key={`card-${card.title}-${id}`}
             onClick={() => setActive(card)}
-            className="p-4 flex flex-col md:flex-row justify-between items-center hover:bg-gray-300 opacity-40 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
+            className="p-4 flex flex-col md:flex-row justify-between items-center hover:bg-gray-100 opacity-40 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
           >
             <div className="flex gap-4 flex-col md:flex-row ">
               <motion.div layoutId={`image-${card.title}-${id}`}>
@@ -206,11 +206,11 @@ export const CloseIcon = () => {
 
 const cards = [
   {
-    description: "Lana Del Rey",
-    title: "Summertime Sadness",
-    src: "/office1.png",
-    ctaText: "Play",
-    ctaLink: "https://ui.aceternity.com/templates",
+    description: "Chatlogy AI",
+    title: "Chatbot Creator",
+    src: "/ChatlogyBrain.gif",
+    ctaText: "View Site",
+    ctaLink: "https://chatlogy.ai/",
     content: () => {
       return (
         <p>
@@ -232,7 +232,7 @@ const cards = [
     description: "Babbu Maan",
     title: "Mitran Di Chhatri",
     src: "/office1.png",
-    ctaText: "Play",
+    ctaText: "View Site",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
       return (
