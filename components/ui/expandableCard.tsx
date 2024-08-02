@@ -208,7 +208,7 @@ const cards = [
   {
     description: "Chatlogy AI",
     title: "Chatbot Creator",
-    src: "/ChatlogyBrain.gif",
+    src: "/chatlogy.gif",
     ctaText: "View Site",
     ctaLink: "https://chatlogy.ai/",
     content: () => {
