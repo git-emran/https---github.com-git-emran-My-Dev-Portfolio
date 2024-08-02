@@ -10,7 +10,7 @@ function OtherProjects() {
     <div className="min-h-screen sm:top-20 flex flex-col">
       {/* Start of the Body   */}
       <section>
-        <h1 className="font-bold text-4xl flex items-center justify-center mt-20">
+        <h1 className="font-bold text-4xl flex items-center justify-center scroll-mt-20 mt-20">
           Other Fun Projects
         </h1>
       </section>
