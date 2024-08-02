@@ -247,7 +247,7 @@ const cards = [
     description: "Corporate Website",
     title: "Designing the experience as a Lead Designer",
     src: "/genex.png",
-    ctaText: "Play",
+    ctaText: "View Site",
     ctaLink: "https://genexinfosys.com",
     content: () => {
       return (
