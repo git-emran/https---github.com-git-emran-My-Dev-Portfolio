@@ -244,23 +244,17 @@ const cards = [
   },
 
   {
-    description: "Metallica",
-    title: "For Whom The Bell Tolls",
-    src: "/office1.png",
+    description: "Corporate Website",
+    title: "Designing the experience as a Lead Designer",
+    src: "/genex.png",
     ctaText: "Play",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://genexinfosys.com",
     content: () => {
       return (
         <p>
-          Metallica, an iconic American heavy metal band, is renowned for their
-          powerful sound and intense performances that resonate deeply with
-          their audience. Formed in Los Angeles, California, they have become a
-          cultural icon in the heavy metal music industry. <br /> <br /> Their
-          songs often reflect themes of aggression, social issues, and personal
-          struggles, capturing the essence of the heavy metal genre. With a
-          career spanning over four decades, Metallica has released numerous hit
-          albums and singles that have garnered them a massive fan following
-          both in the United States and abroad.
+          As a Sr Designer my primary role was to make sure the SEO and customer
+          conversion was on point. Biggest challenge was to make sure the legacy
+          users does not feel overwhelmed by the redesigned navigation.
         </p>
       );
     },
@@ -269,7 +263,7 @@ const cards = [
     description: "Led Zeppelin",
     title: "Stairway To Heaven",
     src: "/office1.png",
-    ctaText: "Play",
+    ctaText: "View Site",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
       return (
