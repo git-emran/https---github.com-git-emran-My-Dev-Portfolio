@@ -10,7 +10,12 @@ function OtherProjects() {
     <div className="min-h-screen sm:top-20 flex flex-col">
     
       {/* Start of the Body   */}
-      <section>
+     <section>
+      <h1 className="font-bold text-4xl flex items-center justify-center mt-20">
+        Other Fun Projects That I worked On
+      </h1>
+     </section>
+      <section className="mt-20 flex">
 <ExpandableCardDemo />
       </section>
       

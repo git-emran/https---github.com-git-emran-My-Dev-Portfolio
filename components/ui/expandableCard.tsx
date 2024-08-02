@@ -214,16 +214,12 @@ const cards = [
     content: () => {
       return (
         <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br /> Her songs
-          often explore themes of tragic romance, glamour, and melancholia,
-          drawing inspiration from both contemporary and vintage pop culture.
-          With a career that has seen numerous critically acclaimed albums, Lana
-          Del Rey has established herself as a unique and influential figure in
-          the music industry, earning a dedicated fan base and numerous
-          accolades.
+          As a Sr Product Designer, I led most of{" "}
+          <span className="font-bold italic">the UX and design system</span> work. Developed the site in
+          wordpress using Elementor. Also used custom JavaScript for Minor
+          front-end and interaction improvements.
+          <br /> <br /> Chatlogy allows you to create the most realistic
+          chatbots powered by AI for your business in every industry.
         </p>
       );
     },
