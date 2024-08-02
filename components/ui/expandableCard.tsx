@@ -233,15 +233,11 @@ const cards = [
     content: () => {
       return (
         <p>
-          Babu Maan, a legendary Punjabi singer, is renowned for his soulful
-          voice and profound lyrics that resonate deeply with his audience. Born
-          in the village of Khant Maanpur in Punjab, India, he has become a
-          cultural icon in the Punjabi music industry. <br /> <br /> His songs
-          often reflect the struggles and triumphs of everyday life, capturing
-          the essence of Punjabi culture and traditions. With a career spanning
-          over two decades, Babu Maan has released numerous hit albums and
-          singles that have garnered him a massive fan following both in India
-          and abroad.
+          Merging Brandwise 2.0 and MarketTime B2B applications together to
+          create a seamless experience. First challenge was setting up a brand
+          new design system with components that resembles both brands and their
+          core functionalities. Second challenge was to create a brand new user
+          experience without creating any learning curve.
         </p>
       );
     },
