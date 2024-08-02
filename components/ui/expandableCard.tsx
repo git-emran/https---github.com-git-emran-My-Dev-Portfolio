@@ -215,9 +215,9 @@ const cards = [
       return (
         <p>
           As a Sr Product Designer, I led most of{" "}
-          <span className="font-bold italic">the UX and design system</span> work. Developed the site in
-          wordpress using Elementor. Also used custom JavaScript for Minor
-          front-end and interaction improvements.
+          <span className="font-bold italic">the UX and design system</span>{" "}
+          work. Developed the site in wordpress using Elementor. Also used
+          custom JavaScript for Minor front-end and interaction improvements.
           <br /> <br /> Chatlogy allows you to create the most realistic
           chatbots powered by AI for your business in every industry.
         </p>
@@ -225,11 +225,11 @@ const cards = [
     },
   },
   {
-    description: "Babbu Maan",
-    title: "Mitran Di Chhatri",
-    src: "/office1.png",
+    description: "Merging 2 Applications",
+    title: "Creating MarketTime ecosystem 2.0",
+    src: "/b2b.png",
     ctaText: "View Site",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://markettime.com",
     content: () => {
       return (
         <p>
