@@ -1,5 +1,6 @@
 import React from "react";
 import BackToHome from "./back-to-home";
+import { ProjectNavigation } from "./nextproject";
 
 interface SubpageHeaderProps {
   title: string;
@@ -12,6 +13,9 @@ const SubpageHeader: React.FC<SubpageHeaderProps> = ({ title, subtitle }) => {
       <header className="relative w-full h-96">
         {/* Back Button */}
         <BackToHome />
+        <div className="absolute mt-14 top-4 left-4 mb-12">
+          <ProjectNavigation />
+        </div>
         {/* Header bg div styling */}
         <div className=" items-center flex inset-0 bg-black opacity-30"></div>
         <div className="absolute inset-0 mt-6 flex items-center justify-center">
