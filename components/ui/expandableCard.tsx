@@ -262,10 +262,11 @@ const cards = [
   },
   {
     description: "An Application for Travelling Enthusiasts",
-    title: "Tourism Tech",
+    title: "Kerela Tourism",
     src: "/tourism.png",
     ctaText: "View Site",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink:
+      "https://play.google.com/store/apps/details?id=org.keralatourism.travelkerala&hl=en",
     content: () => {
       return (
         <p>
