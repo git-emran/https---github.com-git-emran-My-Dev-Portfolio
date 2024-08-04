@@ -16,8 +16,8 @@ function OtherProjects() {
           Other Fun Projects
         </h3>
         <p className="text-center mt-4 w-90 px-20 text-sm">
-          Due to NDA some of the project details cannot be shared. Feel free to
-          look around and ask me anything if you have any questions.
+          Due to NDA project details are not available. But feel free to
+          look around, Let&apos;s chat if you have any questions
         </p>
       </section>
       <section className="mt-20 flex">
