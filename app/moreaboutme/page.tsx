@@ -2,6 +2,10 @@ import React from 'react'
 
 export default function MoreAboutMe() {
   return (
-    <div>More About Me</div>
+    <div>
+        <h1>
+            More About me
+        </h1>
+    </div>
   )
 }
