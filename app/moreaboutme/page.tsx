@@ -6,7 +6,11 @@ export default function MoreAboutMe() {
       <section className="min-h-screen sm:top-20 flex flex-col">
         <h1 className="font-bold text-3xl">More About me</h1>
       </section>
-      <section></section>
+      <section>
+        <p>
+            I have always been drawn to the creative side of Things. Here is how it all started!!
+        </p>
+      </section>
     </div>
   );
 }
