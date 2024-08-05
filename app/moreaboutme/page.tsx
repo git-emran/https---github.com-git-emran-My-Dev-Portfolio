@@ -8,7 +8,8 @@ export default function MoreAboutMe() {
       </section>
       <section>
         <p>
-            I have always been drawn to the creative side of Things. Here is how it all started!!
+          I have always been drawn to the <span className="italic font-medium"> creative</span>
+          {""}side of Things. Here is how it all started!!
         </p>
       </section>
     </div>
