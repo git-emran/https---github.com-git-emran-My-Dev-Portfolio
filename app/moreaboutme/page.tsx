@@ -7,7 +7,7 @@ export default function MoreAboutMe() {
         <h1 className="font-bold text-3xl">More About me</h1>
       </section>
       <section>
-        <p>
+        <p className="text-sm">
           I have always been drawn to the <span className="italic font-medium"> creative</span>
           {""}side of Things. Here is how it all started!!
         </p>
