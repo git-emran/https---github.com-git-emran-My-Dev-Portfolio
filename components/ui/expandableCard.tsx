@@ -262,7 +262,7 @@ const cards = [
   },
   {
     description: "An Application for Travelling Enthusiasts",
-    title: "Kerela Tourism",
+    title: "Travel & Tourism",
     src: "/tourism.png",
     ctaText: "View Site",
     ctaLink:
