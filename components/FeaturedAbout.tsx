@@ -18,16 +18,15 @@ export function FeaturesSectionDemo() {
         "col-span-1 lg:col-span-4 border-b lg:border-r dark:border-neutral-800",
     },
     {
-      title: "Capture pictures with AI",
+      title: "Places I visited and Loved",
       description:
-        "Capture stunning photos effortlessly using our advanced AI technology.",
+        "I love travelling around the globe. These are the places and the culture I loved most.",
       skeleton: <SkeletonTwo />,
       className: "border-b col-span-1 lg:col-span-2 dark:border-neutral-800",
     },
     {
       title: "My Portfolio Reel",
-      description:
-        "Watch my Short Portfolio Reel on YouTube.",
+      description: "Watch my Short Portfolio Reel on YouTube.",
       skeleton: <SkeletonThree />,
       className:
         "col-span-1 lg:col-span-3 lg:border-r  dark:border-neutral-800",
@@ -132,7 +131,7 @@ export const SkeletonOne = () => {
 export const SkeletonThree = () => {
   return (
     <Link
-      href=""
+      href="https://youtu.be/W62B-Zmsm2E"
       target="__blank"
       className="relative flex gap-10  h-full group/image"
     >
@@ -141,11 +140,11 @@ export const SkeletonThree = () => {
           {/* TODO */}
           <IconBrandYoutubeFilled className="h-20 w-20 absolute z-10 inset-0 text-red-500 m-auto " />
           <Image
-            src="/im2.png"
+            src="/vidthumb.png"
             alt="header"
             width={800}
             height={800}
-            className="h-full w-full aspect-square object-cover object-center rounded-sm blur-none group-hover/image:blur-md transition-all duration-200"
+            className="w-fit object-fit h-fit object-center rounded-sm blur-none group-hover/image:blur-md transition-all duration-200"
           />
         </div>
       </div>
@@ -154,7 +153,13 @@ export const SkeletonThree = () => {
 };
 
 export const SkeletonTwo = () => {
-  const images = ["/im2.png", "/im3.png", "/im4.png", "/im5.png", "/im7.png"];
+  const images = [
+    "/travel1.jpg",
+    "/travel2.jpg",
+    "/travel3.jpg",
+    "/travel4.jpg",
+    "/travel5.jpg",
+  ];
 
   const imageVariants = {
     whileHover: {
@@ -172,7 +177,7 @@ export const SkeletonTwo = () => {
     <div className="relative flex flex-col items-start p-8 gap-10 h-full overflow-hidden">
       {/* TODO */}
       <div className="flex flex-row -ml-20">
-        {images.map((image, idx) => (
+        {images.map((images, idx) => (
           <motion.div
             variants={imageVariants}
             key={"images-first" + idx}
@@ -184,7 +189,7 @@ export const SkeletonTwo = () => {
             className="rounded-xl -mr-4 mt-4 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 flex-shrink-0 overflow-hidden"
           >
             <Image
-              src={image}
+              src={images}
               alt="bali images"
               width="500"
               height="500"

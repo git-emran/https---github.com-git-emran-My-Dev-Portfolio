@@ -30,12 +30,13 @@ export default function RootLayout({
         {/* Responsive Background Blob 2 */}
         <div className="bg-[#dbd7fb] absolute top-[1rem] -z-10 left-[-10rem] h-[20rem] w-[30rem] rounded-full blur-[6rem] sm:w-[40rem] sm:h-[40rem] sm:left-[-20rem] md:w-[50rem] md:h-[50rem] md:left-[-33rem] lg:w-[60rem] lg:h-[60rem] lg:left-[-28rem] xl:w-[70rem] xl:h-[70rem] xl:left-[-15rem] 2xl:w-[80rem] 2xl:h-[80rem] 2xl:left-[-5rem]"></div>
 
+        <BackToTopButton />
         <ActiveSectionContextProvider>
           {children}
+
           <SpeedInsights />
           <Analytics />
 
-          <BackToTopButton />
           <Footer />
 
           <Toaster position="top-right" />
