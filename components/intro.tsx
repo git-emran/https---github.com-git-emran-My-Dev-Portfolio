@@ -56,7 +56,7 @@ export default function Intro() {
           <span className="text-gray-800 font-bold ">Emran Hossain</span>{" "}
         </span>{" "}
         I am a{" "}
-        <span className="font-bold">Designer and Software Developer</span> with{" "}
+        <span className="font-bold">Designer and Developer</span> with{" "}
         <span className="font-bold">8 years</span> of experience. I enjoy
         building <span className="italic">sites & apps</span>. My favorite
         programming languages are{" "}
