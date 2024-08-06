@@ -25,9 +25,9 @@ export function FeaturesSectionDemo() {
       className: "border-b col-span-1 lg:col-span-2 dark:border-neutral-800",
     },
     {
-      title: "Watch our AI on YouTube",
+      title: "My Portfolio Reel",
       description:
-        "Whether its you or Tyler Durden, you can get to know about our product on YouTube",
+        "Watch my Short Portfolio Reel on YouTube.",
       skeleton: <SkeletonThree />,
       className:
         "col-span-1 lg:col-span-3 lg:border-r  dark:border-neutral-800",
@@ -44,15 +44,15 @@ export function FeaturesSectionDemo() {
     <div className="relative z-20 py-10 lg:py-40 max-w-7xl mx-auto">
       <div className="px-8">
         <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black dark:text-white">
-          A Glimpse through out the Years
+          A Glimpse over the Years
         </h4>
 
         <p className="text-sm lg:text-base  max-w-2xl  my-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300">
-          From early stage start ups to Enterprises, I have been through thick
-          and thin. After all those years of hard work and consistency, I can
-          finally say that I can center a div pretty easily. My main motivation
-          is that I love to create and be part of a community of like minded
-          individuals
+          From early stage start ups to Enterprises, I have been through the
+          thick and thin. After all those years of hard work and consistency, I
+          can finally say that I can design cool stuff and I can center a div.
+          My main motivation is that I love to create and be part of a community
+          of like minded individuals
         </p>
       </div>
 
