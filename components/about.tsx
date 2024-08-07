@@ -7,6 +7,8 @@ import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import { LinkPreview } from "./ui/link-preview";
 import ContributionGraph from "./contribution-graph";
+import { Button } from "./ui/button";
+import Link from "next/link";
 
 export default function About() {
   const { ref } = useSectionInView("About");
@@ -85,6 +87,9 @@ export default function About() {
         speed="normal"
       />
       <ContributionGraph />
+      <Button variant="outline" asChild>
+        <Link href="/moreaboutme" className="mt-20">Learn More About Me</Link>
+      </Button>
     </motion.section>
   );
 }
