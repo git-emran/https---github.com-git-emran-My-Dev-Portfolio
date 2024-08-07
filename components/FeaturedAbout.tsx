@@ -18,7 +18,7 @@ export function FeaturesSectionDemo() {
         "col-span-1 lg:col-span-4 border-b lg:border-r dark:border-neutral-800",
     },
     {
-      title: "Places I visited and Loved",
+      title: "Spending time with my Family",
       description:
         "I love travelling around the globe. These are the places and the culture I loved most.",
       skeleton: <SkeletonTwo />,
@@ -32,9 +32,9 @@ export function FeaturesSectionDemo() {
         "col-span-1 lg:col-span-3 lg:border-r  dark:border-neutral-800",
     },
     {
-      title: "Deploy in seconds",
+      title: "Remote Work Experience",
       description:
-        "With our blazing fast, state of the art, cutting edge, we are so back cloud servies (read AWS) - you can deploy your model in seconds.",
+        "Who knew chatting with people from your couch could be such a wild ride? I've cracked the code on nailing communication, whether it's through a screen or carrier pigeon!",
       skeleton: <SkeletonFour />,
       className: "col-span-1 lg:col-span-3 border-b lg:border-none",
     },
@@ -52,8 +52,8 @@ export function FeaturesSectionDemo() {
           From early stage start ups to Enterprises, I have been through the
           thick and thin. After all those years of hard work and consistency, I
           can finally say that I can design cool stuff and I can center a div.
-          My main motivation is that I love to create and being part of a community
-          of like minded individuals.
+          My main motivation is that I love to create and being part of a
+          community of like minded individuals.
         </p>
       </div>
 
@@ -146,7 +146,7 @@ export const SkeletonThree = () => {
             alt="header"
             width={800}
             height={800}
-            className="w-fit object-fit h-fit object-center rounded-sm blur-none group-hover/image:blur-md transition-all duration-200"
+            className="w-fit h-fit items-center flex justify-center object-center rounded-sm blur-none group-hover/image:blur-md transition-all duration-200"
           />
         </div>
       </div>
@@ -179,7 +179,7 @@ export const SkeletonTwo = () => {
     <div className="relative flex flex-col items-start p-8 gap-10 h-full overflow-hidden">
       {/* TODO */}
       <div className="flex flex-row -ml-20">
-        {images.map((images, idx) => (
+        {images.map((image, idx) => (
           <motion.div
             variants={imageVariants}
             key={"images-first" + idx}
@@ -191,7 +191,7 @@ export const SkeletonTwo = () => {
             className="rounded-xl -mr-4 mt-4 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 flex-shrink-0 overflow-hidden"
           >
             <Image
-              src={images}
+              src={image}
               alt="bali images"
               width="500"
               height="500"
