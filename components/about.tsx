@@ -2,7 +2,6 @@
 
 import React from "react";
 import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
-import { motion } from "framer-motion";
 import { LinkPreview } from "./ui/link-preview";
 import ContributionGraph from "./contribution-graph";
 import { FeaturesSectionDemo } from "./FeaturedAbout";
@@ -29,18 +28,13 @@ export default function About() {
     },
   ];
   return (
-    <motion.section
+    <section
       className="
-    flex flex-col items-center 
+    flex flex-col flex-wrap py-20 md:py-32 lg:py-40 items-center 
     
   "
-      initial={{ opacity: 0, y: 100 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.275 }}
     >
-      {/* <SectionHeading> About me </SectionHeading> */}
-
-      <div className="flex flex-col items-center px-20 justify-center">
+      <div className="flex flex-col items-center . justify-center">
         <FeaturesSectionDemo />
         <p
           className="text-center mb-8 
@@ -86,6 +80,6 @@ export default function About() {
       />
       <ContributionGraph />
       <div className="mb-20"></div>
-    </motion.section>
+    </section>
   );
 }
