@@ -8,7 +8,6 @@ import { IconBrandYoutubeFilled } from "@tabler/icons-react";
 import Link from "next/link";
 import { AnimatedTooltip } from "./ui/animated-tooltip";
 
-
 const people = [
   {
     id: 1,
@@ -51,7 +50,10 @@ export function FeaturesSectionDemo() {
     },
   ];
   return (
-    <div className="relative z-20 pt-12 max-w-7xl mx-auto">
+    <div
+      className="relative scroll-mt-40 mt-24 z-20 pt-12 max-w-7xl mx-auto"
+      id="home"
+    >
       <div className="px-8">
         <div className="flex flex-row items-center pb-8 justify-center w-full">
           <AnimatedTooltip items={people} />
@@ -176,11 +178,13 @@ export const SkeletonTwo = () => {
     "/travel4.jpg",
     "/travel5.jpg",
   ];
-    const images2 = [
-      "/travel3.jpg",
-      "/travel4.jpg",
-      "/travel5.jpg",
-    ];
+  const images2 = [
+    "/travel5.jpg",
+    "/travel6.jpg",
+    "/travel7.jpg",
+    "/travel8.jpg",
+    "/travel9.jpg",
+  ];
 
   const imageVariants = {
     whileHover: {
@@ -241,7 +245,6 @@ export const SkeletonTwo = () => {
           </motion.div>
         ))}
       </div>
-
 
       <div className="absolute left-0 z-[100] inset-y-0 w-20 bg-gradient-to-r from-gray-100 to-transparent h-full pointer-events-none" />
       <div className="absolute right-0 z-[100] inset-y-0 w-20 bg-gradient-to-l from-gray-100 to-transparent h-full pointer-events-none" />
