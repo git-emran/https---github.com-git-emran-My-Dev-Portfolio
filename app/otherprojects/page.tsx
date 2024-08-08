@@ -1,9 +1,7 @@
 "use client";
 
 import BackToHome from "@/components/back-to-home";
-import SubpageHeader from "@/components/subpage-header";
 import { ExpandableCardDemo } from "@/components/ui/expandableCard";
-import HoverCard from "@/components/ui/hoverCard";
 import React from "react";
 
 function OtherProjects() {
@@ -16,8 +14,8 @@ function OtherProjects() {
           Other Fun Projects
         </h3>
         <p className="text-center mt-4 w-90 px-20 text-sm">
-          Due to NDA project details are not available. But feel free to
-          look around, Let&apos;s chat if you have any questions
+          Due to NDA project details are not available. But feel free to look
+          around, Let&apos;s chat if you have any questions
         </p>
       </section>
       <section className="mt-20 flex">

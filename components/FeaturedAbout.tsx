@@ -6,19 +6,11 @@ import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { IconBrandYoutubeFilled } from "@tabler/icons-react";
 import Link from "next/link";
-import { AnimatedTooltip } from "./ui/animated-tooltip";
 import { Button, buttonVariants } from "./ui/button";
 import { BsLinkedin } from "react-icons/bs";
 import { FaSquareGithub } from "react-icons/fa6";
 
-const people = [
-  {
-    id: 1,
-    name: "Emran Hossain",
-    designation: "Software Designer & Developer",
-    image: "/Headshot 1.png",
-  },
-];
+
 
 export function FeaturesSectionDemo() {
   const features = [
@@ -54,13 +46,10 @@ export function FeaturesSectionDemo() {
   ];
   return (
     <div
-      className="relative scroll-mt-40 mt-24 z-20 pt-12 max-w-7xl mx-auto"
-      id="home"
+      className="scroll-mt-20 pt-12 flex flex-wrap items-center justify-center max-w-7xl mx-auto"
     >
-      <div className="px-8">
-        <div className="flex flex-row items-center pb-8 justify-center w-full">
-          <AnimatedTooltip items={people} />
-        </div>
+      <div className="">
+     
         <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black dark:text-white">
           I am Emran, a dedicated product designer with over 9 years of
           experience, specializing in creating compelling and customer-centric
