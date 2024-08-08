@@ -1,14 +1,10 @@
 "use client";
 
 import React from "react";
-import SectionHeading from "./section-heading";
 import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
-import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import { LinkPreview } from "./ui/link-preview";
 import ContributionGraph from "./contribution-graph";
-import { Button } from "./ui/button";
-import Link from "next/link";
 import { FeaturesSectionDemo } from "./FeaturedAbout";
 
 export default function About() {
@@ -43,7 +39,7 @@ export default function About() {
       transition={{ delay: 0.275 }}
     >
       {/* <SectionHeading> About me </SectionHeading> */}
-      
+
       <div className="flex flex-col items-center px-20 justify-center">
         <FeaturesSectionDemo />
         <p
@@ -90,7 +86,6 @@ export default function About() {
       />
       <ContributionGraph />
       <div className="mb-20"></div>
-
     </motion.section>
   );
 }

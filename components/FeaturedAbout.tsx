@@ -92,14 +92,14 @@ export function FeaturesSectionDemo() {
             </Link>
           </Button>
           <a
-            className="bg-gray-800 p-4 text-gray-300 hover:text-gray-50 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            className="bg-gray-800 p-4 text-gray-300 hover:text-gray-50 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
             href="https://www.linkedin.com/in/emran-hossain-80ab17190/"
             target=""
           >
             <BsLinkedin />
           </a>
           <a
-            className="bg-gray-800 p-4 text-gray-300 hover:text-gray-50 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            className="bg-gray-800 p-4 text-gray-300 hover:text-gray-50 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
             href="https://github.com/git-emran"
             target=""
           >
