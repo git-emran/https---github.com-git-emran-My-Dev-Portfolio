@@ -176,6 +176,11 @@ export const SkeletonTwo = () => {
     "/travel4.jpg",
     "/travel5.jpg",
   ];
+    const images2 = [
+      "/travel3.jpg",
+      "/travel4.jpg",
+      "/travel5.jpg",
+    ];
 
   const imageVariants = {
     whileHover: {
@@ -192,7 +197,7 @@ export const SkeletonTwo = () => {
   return (
     <div className="relative flex flex-col items-start p-8 gap-10 h-full overflow-hidden">
       {/* TODO */}
-      <div className="flex flex-row -ml-20">
+      <div className="flex flex-row -ml-40 mt-40">
         {images.map((image, idx) => (
           <motion.div
             variants={imageVariants}
@@ -202,20 +207,20 @@ export const SkeletonTwo = () => {
             }}
             whileHover="whileHover"
             whileTap="whileTap"
-            className="rounded-xl -mr-4 mt-4 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 flex-shrink-0 overflow-hidden"
+            className="rounded-xl -mr-2 mt-4 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 flex-shrink-0 overflow-hidden"
           >
             <Image
               src={image}
               alt="bali images"
               width="500"
               height="500"
-              className="rounded-lg h-20 w-20 md:h-40 md:w-40 object-cover flex-shrink-0"
+              className="rounded-lg h-10 w-10 md:h-40 md:w-40 object-cover flex-shrink-0"
             />
           </motion.div>
         ))}
       </div>
-      <div className="flex flex-row">
-        {images.map((image, idx) => (
+      <div className="flex flex-row -ml-40">
+        {images2.map((image, idx) => (
           <motion.div
             key={"images-second" + idx}
             style={{
@@ -236,6 +241,7 @@ export const SkeletonTwo = () => {
           </motion.div>
         ))}
       </div>
+
 
       <div className="absolute left-0 z-[100] inset-y-0 w-20 bg-gradient-to-r from-gray-100 to-transparent h-full pointer-events-none" />
       <div className="absolute right-0 z-[100] inset-y-0 w-20 bg-gradient-to-l from-gray-100 to-transparent h-full pointer-events-none" />
