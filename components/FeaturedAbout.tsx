@@ -22,13 +22,13 @@ export function FeaturesSectionDemo() {
     {
       title: "Value of Team Work",
       description:
-        "Understanding the true value of working together is something I will never forget. ",
+        "Working around other's strengths and weaknesses is a major key to unlocking a Team's true potential. ",
       skeleton: <SkeletonOne />,
       className:
         "col-span-1 lg:col-span-4 border-b lg:border-r dark:border-neutral-800",
     },
     {
-      title: "Spending time with my Family",
+      title: "Family & Travelling",
       description:
         "I love travelling around the globe. These are the places and the culture I loved most.",
       skeleton: <SkeletonTwo />,
@@ -64,7 +64,7 @@ export function FeaturesSectionDemo() {
           solutions, especially for B2B & SaaS startups.
         </h4>
 
-        <p className="text-sm lg:text-base  max-w-2xl  my-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300">
+        <p className="text-md lg:text-base  max-w-2xl  my-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300">
           From early stage start ups to Enterprises, I have been through the
           thick and thin. After all those years of hard work and consistency, I
           can finally say that I can design cool stuff and I can center a div.
@@ -283,8 +283,19 @@ export const Globe = ({ className }: { className?: string }) => {
       glowColor: [1, 1, 1],
       markers: [
         // longitude latitude
-        { location: [37.7595, -122.4367], size: 0.03 },
+        { location: [37.7595, -122.4367], size: 0.1 },
         { location: [40.7128, -74.006], size: 0.1 },
+        { location: [40.761147, -73.985741], size: 0.1 },
+        { location: [48.858093, 2.294694], size: 0.1 },
+        { location: [-13.16322, -72.544963], size: 0.1 },
+        { location: [27.175015, 78.042155], size: 0.1 },
+        { location: [29.979235, 31.134006], size: 0.1 },
+        { location: [41.889966, 12.492269], size: 0.1 },
+        { location: [20.682778, -88.568056], size: 0.1 },
+        { location: [30.328917, 35.44447], size: 0.1 },
+        { location: [13.412469, 103.866486], size: 0.1 },
+        { location: [25.197278, 55.274306], size: 0.1 },
+        { location: [-25.695556, -54.436389], size: 0.1 },
       ],
       onRender: (state) => {
         // Called on every animation frame.
