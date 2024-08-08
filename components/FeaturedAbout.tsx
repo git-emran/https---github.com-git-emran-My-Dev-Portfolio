@@ -36,7 +36,7 @@ export function FeaturesSectionDemo() {
     },
     {
       title: "My Portfolio Reel",
-      description: "Watch my Short Portfolio Reel on YouTube.",
+      description: "It's a short collection of my best works over the years.",
       skeleton: <SkeletonThree />,
       className:
         "col-span-1 lg:col-span-3 lg:border-r  dark:border-neutral-800",
