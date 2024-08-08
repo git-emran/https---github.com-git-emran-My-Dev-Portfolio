@@ -9,9 +9,9 @@ import { LinkPreview } from "./ui/link-preview";
 import ContributionGraph from "./contribution-graph";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import { FeaturesSectionDemo } from "./FeaturedAbout";
 
 export default function About() {
-  const { ref } = useSectionInView("About");
   const cardData = [
     {
       quote:
@@ -34,8 +34,6 @@ export default function About() {
   ];
   return (
     <motion.section
-      ref={ref}
-      id="about"
       className="
     flex flex-col items-center 
     mb-16 sm:mb-28 md:mb-40 
@@ -47,10 +45,11 @@ export default function About() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.275 }}
     >
-      <SectionHeading> About me </SectionHeading>
+      {/* <SectionHeading> About me </SectionHeading> */}
+      <FeaturesSectionDemo />
       <div className="flex">
-        <p className="text-center mt-4 mb-6 text-base sm:text-lg sm:px-8 md:text-lg lg:text-xl xl:text-2xl">
-          A wizard who loves{" "}
+        <p className="text-center mt-40 mb-6 text-base sm:text-lg sm:px-8 md:text-lg lg:text-xl xl:text-2xl">
+          I love{" "}
           <LinkPreview
             url="https://github.com/git-emran"
             isStatic={true}
@@ -87,9 +86,9 @@ export default function About() {
         speed="normal"
       />
       <ContributionGraph />
-      <Button variant="outline" asChild>
+      {/* <Button variant="outline" asChild>
         <Link href="/moreaboutme" className="mt-20">Learn More About Me</Link>
-      </Button>
+      </Button> */}
     </motion.section>
   );
 }

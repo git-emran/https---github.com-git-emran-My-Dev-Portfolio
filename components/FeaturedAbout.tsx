@@ -6,6 +6,17 @@ import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { IconBrandYoutubeFilled } from "@tabler/icons-react";
 import Link from "next/link";
+import { AnimatedTooltip } from "./ui/animated-tooltip";
+
+
+const people = [
+  {
+    id: 1,
+    name: "Emran Hossain",
+    designation: "Software Designer & Developer",
+    image: "/Headshot 1.png",
+  },
+];
 
 export function FeaturesSectionDemo() {
   const features = [
@@ -40,8 +51,11 @@ export function FeaturesSectionDemo() {
     },
   ];
   return (
-    <div className="relative z-20 py-10 lg:py-40 max-w-7xl mx-auto">
+    <div className="relative z-20 pt-12 max-w-7xl mx-auto">
       <div className="px-8">
+        <div className="flex flex-row items-center pb-8 justify-center w-full">
+          <AnimatedTooltip items={people} />
+        </div>
         <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black dark:text-white">
           I am Emran, a dedicated product designer with over 9 years of
           experience, specializing in creating compelling and customer-centric
