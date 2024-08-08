@@ -15,7 +15,7 @@ export function FeaturesSectionDemo() {
     {
       title: "Value of Team Work",
       description:
-        "Working around other's strengths and weaknesses is a major key to unlocking a Team's true potential. ",
+        "Working around each other's strengths and weaknesses is a major key to unlocking a Team's true potential. ",
       skeleton: <SkeletonOne />,
       className:
         "col-span-1 lg:col-span-4 border-b lg:border-r dark:border-neutral-800",
