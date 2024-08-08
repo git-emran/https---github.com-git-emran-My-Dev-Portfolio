@@ -10,8 +10,6 @@ import { Button, buttonVariants } from "./ui/button";
 import { BsLinkedin } from "react-icons/bs";
 import { FaSquareGithub } from "react-icons/fa6";
 
-
-
 export function FeaturesSectionDemo() {
   const features = [
     {
@@ -45,12 +43,9 @@ export function FeaturesSectionDemo() {
     },
   ];
   return (
-    <div
-      className="scroll-mt-20 pt-12 flex flex-wrap items-center justify-center max-w-7xl mx-auto"
-    >
+    <div className="scroll-mt-20 pt-12 flex flex-wrap items-center justify-center max-w-7xl mx-auto">
       <div className="">
-     
-        <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black dark:text-white">
+        <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black">
           I am Emran, a dedicated product designer with over 9 years of
           experience, specializing in creating compelling and customer-centric
           solutions, especially for B2B & SaaS startups.
