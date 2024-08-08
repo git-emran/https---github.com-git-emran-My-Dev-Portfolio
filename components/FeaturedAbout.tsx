@@ -64,7 +64,7 @@ export function FeaturesSectionDemo() {
               className={buttonVariants({ variant: "destructive" })}
               href="/EmranCV.pdf"
             >
-              DOWNLOAD CV
+              DOWNLOAD CV ⇣
             </Link>
           </Button>
           <Button asChild>
