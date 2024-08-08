@@ -2,7 +2,6 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import ActiveSectionContextProvider from "@/app/context/active-section-context";
 import Footer from "@/components/footer";
-import { Toaster } from "react-hot-toast";
 import BackToTopButton from "@/components/buttontop";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -39,7 +38,7 @@ export default function RootLayout({
 
           <Footer />
 
-          <Toaster position="top-right" />
+        
         </ActiveSectionContextProvider>
       </body>
     </html>

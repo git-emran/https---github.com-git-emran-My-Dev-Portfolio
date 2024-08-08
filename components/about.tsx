@@ -36,19 +36,22 @@ export default function About() {
     <motion.section
       className="
     flex flex-col items-center 
-    mb-16 sm:mb-28 md:mb-40 
-    max-w-full md:max-w-[55rem] 
-    leading-6 sm:leading-8 
-    scroll-mt-28 scroll-smooth
+    
   "
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.275 }}
     >
       {/* <SectionHeading> About me </SectionHeading> */}
-      <FeaturesSectionDemo />
-      <div className="flex">
-        <p className="text-center mt-40 mb-6 text-base sm:text-lg sm:px-8 md:text-lg lg:text-xl xl:text-2xl">
+      
+      <div className="flex flex-col items-center px-20 justify-center">
+        <FeaturesSectionDemo />
+        <p
+          className="text-center mb-8 
+    max-w-full md:max-w-[55rem] 
+    leading-6 sm:leading-8 
+    scroll-smooth mt-40 text-base sm:text-lg sm:px-8 md:text-lg lg:text-xl xl:text-2xl"
+        >
           I love{" "}
           <LinkPreview
             url="https://github.com/git-emran"
@@ -86,9 +89,8 @@ export default function About() {
         speed="normal"
       />
       <ContributionGraph />
-      {/* <Button variant="outline" asChild>
-        <Link href="/moreaboutme" className="mt-20">Learn More About Me</Link>
-      </Button> */}
+      <div className="mb-20"></div>
+
     </motion.section>
   );
 }

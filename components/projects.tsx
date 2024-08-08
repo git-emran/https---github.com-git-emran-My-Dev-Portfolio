@@ -15,7 +15,7 @@ export default function Projects() {
     <section
       ref={ref}
       id="projects"
-      className="scroll-mt-28 mb-28 scroll-smooth"
+      className="scroll-mt-28 mb-28 scroll-smooth px-12"
     >
       <SectionHeading>Featured projects</SectionHeading>
       <div className="mt-12">
@@ -24,9 +24,9 @@ export default function Projects() {
             <Project {...project} />
           </React.Fragment>
         ))}
-        <div className="items-center justify-center flex">
+        <div className="items-center justify-center flex ">
           <Button variant="outline" asChild>
-            <Link href='/otherprojects'>Other Projects</Link>
+            <Link href="/otherprojects">Other Projects</Link>
           </Button>
         </div>
       </div>
