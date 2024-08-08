@@ -46,8 +46,7 @@ export function FeaturesSectionDemo() {
     <div className="scroll-mt-20 pt-12 flex flex-wrap items-center justify-center max-w-7xl mx-auto">
       <div className="">
         <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black">
-          I am Emran, a dedicated product designer with over 9 years of
-          experience, specializing in creating compelling and customer-centric
+          I am Emran, a designer and developer with over 8 years of experience, specializing in creating compelling and customer-centric
           solutions, especially for B2B & SaaS startups.
         </h4>
 
