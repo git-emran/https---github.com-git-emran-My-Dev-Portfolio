@@ -18,7 +18,7 @@ export function FeaturesSectionDemo() {
         "Working around each other's strengths and weaknesses is a major key to unlocking a Team's true potential. ",
       skeleton: <SkeletonOne />,
       className:
-        "col-span-1 lg:col-span-4 border-b lg:border-r dark:border-neutral-800",
+        "flex-wrap col-span-1 lg:col-span-4 border-b lg:border-r dark:border-neutral-800",
     },
     {
       title: "Family & Travelling",
@@ -45,12 +45,13 @@ export function FeaturesSectionDemo() {
   return (
     <div className="scroll-mt-20 pt-12 flex flex-wrap items-center justify-center max-w-7xl mx-auto">
       <div className="">
-        <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black">
-          I am Emran, a designer and developer with over 8 years of experience, specializing in creating compelling and customer-centric
-          solutions, especially for B2B & SaaS startups.
+        <h4 className="flex flex-wrap sm:px-40 md:px-4 text-3xl sm:text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black">
+          I am Emran, a designer and developer with over 8 years of experience,
+          specializing in creating compelling and customer-centric solutions,
+          especially for B2B & SaaS startups.
         </h4>
 
-        <p className="text-md lg:text-base  max-w-2xl  my-4 mx-auto text-neutral-500 text-center font-normal">
+        <p className="text-md px-10 lg:text-base max-w-2xl my-4 mx-auto text-neutral-500 text-center font-normal">
           From early stage start ups to Enterprises, I have been through the
           thick and thin. After all those years of hard work and consistency, I
           can finally say that I can design cool stuff and I can center a div.
@@ -91,7 +92,7 @@ export function FeaturesSectionDemo() {
         </div>
       </div>
 
-      <div className="relative ">
+      <div className="relative w-full flex ">
         <div className="grid grid-cols-1 lg:grid-cols-6 mt-12 xl:border rounded-md dark:border-neutral-800">
           {features.map((feature) => (
             <FeatureCard key={feature.title} className={feature.className}>
@@ -114,7 +115,7 @@ const FeatureCard = ({
   className?: string;
 }) => {
   return (
-    <div className={cn(`p-4 sm:p-8 relative overflow-hidden`, className)}>
+    <div className={cn(`p-4 w-full relative overflow-hidden`, className)}>
       {children}
     </div>
   );
@@ -144,7 +145,7 @@ const FeatureDescription = ({ children }: { children?: React.ReactNode }) => {
 
 export const SkeletonOne = () => {
   return (
-    <div className="relative flex py-8 px-2 gap-10 h-full">
+    <div className="relative flex flex-wrap py-8 px-2 gap-10 h-full">
       <div className="w-full  p-5  mx-auto bg-white dark:bg-neutral-900 shadow-2xl group h-full">
         <div className="flex flex-1 w-full h-full flex-col space-y-2  ">
           {/* TODO */}

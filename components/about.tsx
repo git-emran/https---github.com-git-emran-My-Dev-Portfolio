@@ -40,13 +40,13 @@ export default function About() {
   return (
     <section
       className="
-    flex flex-col flex-wrap py-20 md:py-32 lg:py-20 items-center justify-center  
+    flex flex-col flex-wrap py-20 md:py-32 sm:py-10 lg:py-20 items-center justify-center  
     
   "
       id="home"
     >
-      <div className="flex flex-wrap flex-col items-center justify-center">
-        <div className="flex items-center justify-center pt-12 w-full">
+      <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-wrap  items-center justify-center pt-12 w-full">
           <AnimatedTooltip items={people} />
         </div>
         <FeaturesSectionDemo />
