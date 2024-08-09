@@ -28,7 +28,7 @@ export default function Faq() {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2">
-          <AccordionTrigger>
+          <AccordionTrigger className="text-left">
             Have you ever built a product from scratch?
           </AccordionTrigger>
           <AccordionContent>
