@@ -21,30 +21,6 @@ export default function GetGenie() {
       {/* Case study starting */}
       <section className="p-8 bg-gray-100">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-4 pt-8">
-            Here are the Improvements that I made
-          </h2>
-          <p className="mb-8">
-            Due to certain constraints, I had to directly jump into solution
-            launching the product and testing out the product on the go!
-          </p>
-          <BentoGridThirdDemo />
-          <h2 className="text-3xl font-bold mb-4 pt-10">Final Design</h2>
-          <p className="text-lg leading-relaxed mb-4">
-            After many trials and errors this is the final design that works. I
-            have tried to explain the reasonings below why I made these design
-            decisions.
-          </p>
-          <Image
-            src="/getgenie.gif"
-            alt="Project I worked on"
-            width={900}
-            height={700}
-            quality={100}
-            unoptimized
-            className="block shadow-2xl rounded-md object-cover mt-2"
-          />
-
           <h2 className="text-3xl font-bold mb-4 pt-10">About the Project</h2>
           <p className="text-lg leading-relaxed mb-4">
             Designed & Developed the front-end in JavaScript with the help of
@@ -75,6 +51,29 @@ export default function GetGenie() {
               )
             )}
           </ul>
+          <h2 className="text-3xl font-bold mb-4 pt-8">
+            Here are the Improvements that I made
+          </h2>
+          <p className="mb-8">
+            Due to certain constraints, I had to directly jump into solution
+            launching the product and testing out the product on the go!
+          </p>
+          <BentoGridThirdDemo />
+          <h2 className="text-3xl font-bold mb-4 pt-10">Final Design</h2>
+          <p className="text-lg leading-relaxed mb-4">
+            After many trials and errors this is the final design that works. I
+            have tried to explain the reasonings below why I made these design
+            decisions.
+          </p>
+          <Image
+            src="/getgenie.gif"
+            alt="Project I worked on"
+            width={900}
+            height={700}
+            quality={100}
+            unoptimized
+            className="block shadow-2xl rounded-md object-cover mt-2"
+          />
 
           {/* Description */}
           <h2 className="text-3xl font-bold mb-4 pt-11">Overview</h2>
