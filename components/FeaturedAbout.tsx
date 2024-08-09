@@ -11,28 +11,6 @@ import { BsLinkedin } from "react-icons/bs";
 import { FaSquareGithub } from "react-icons/fa6";
 import { toast } from "sonner";
 
-
-
-export function SonnerDemo() {
-  return (
-    <Button
-      variant="outline"
-      onClick={() =>
-        toast("Event has been created", {
-          description: "Sunday, December 03, 2023 at 9:00 AM",
-          action: {
-            label: "Undo",
-            onClick: () => console.log("Undo"),
-          },
-        })
-      }
-    >
-      Show Toast
-    </Button>
-  );
-}
-
-
 export function FeaturesSectionDemo() {
   const features = [
     {
@@ -104,7 +82,7 @@ export function FeaturesSectionDemo() {
             onClick={() =>
               toast("Use Laptop or a Tablet", {
                 description:
-                  "For the optimal experience please either use Laptop or a Tablet ",
+                  "For the optimal experience please use either a Laptop or a Tablet ",
               })
             }
           >
