@@ -21,6 +21,14 @@ export default function GetGenie() {
       {/* Case study starting */}
       <section className="p-8 bg-gray-100">
         <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold mb-4 pt-8">
+            Here are the Improvements that I made
+          </h2>
+          <p className="mb-8">
+            Due to certain constraints, I had to directly jump into solution
+            launching the product and testing out the product on the go!
+          </p>
+          <BentoGridThirdDemo />
           <h2 className="text-3xl font-bold mb-4 pt-10">Final Design</h2>
           <p className="text-lg leading-relaxed mb-4">
             After many trials and errors this is the final design that works. I
@@ -134,17 +142,7 @@ export default function GetGenie() {
           />
 
           {/* Improvements I made */}
-
-          <h2 className="text-3xl font-bold mb-4 pt-8">
-            Here are the Improvements that I made
-          </h2>
-          <p className="mb-8">
-            Due to certain constraints, I had to directly jump into solution
-            launching the product and testing out the product on the go!
-          </p>
-          <BentoGridThirdDemo />
         </div>
-        <BackToTopButton />
       </section>
     </div>
   );

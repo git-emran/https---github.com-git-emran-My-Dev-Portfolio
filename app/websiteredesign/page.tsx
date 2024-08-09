@@ -6,7 +6,7 @@ import Image from "next/image";
 import SubpageHeader from "@/components/subpage-header";
 import BackToTopButton from "@/components/buttontop";
 
-export default function GetGenie() {
+export default function WebSiteRedesign() {
   const router = useRouter();
 
   return (
