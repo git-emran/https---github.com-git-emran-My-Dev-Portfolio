@@ -2,9 +2,10 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import ActiveSectionContextProvider from "@/app/context/active-section-context";
 import Footer from "@/components/footer";
-import BackToTopButton from "@/components/buttontop";
+
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Toaster } from "@/components/ui/sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,6 +32,7 @@ export default function RootLayout({
 
         <ActiveSectionContextProvider>
           {children}
+          <Toaster />
 
           <SpeedInsights />
           <Analytics />

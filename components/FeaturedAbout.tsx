@@ -9,6 +9,29 @@ import Link from "next/link";
 import { Button, buttonVariants } from "./ui/button";
 import { BsLinkedin } from "react-icons/bs";
 import { FaSquareGithub } from "react-icons/fa6";
+import { toast } from "sonner";
+
+
+
+export function SonnerDemo() {
+  return (
+    <Button
+      variant="outline"
+      onClick={() =>
+        toast("Event has been created", {
+          description: "Sunday, December 03, 2023 at 9:00 AM",
+          action: {
+            label: "Undo",
+            onClick: () => console.log("Undo"),
+          },
+        })
+      }
+    >
+      Show Toast
+    </Button>
+  );
+}
+
 
 export function FeaturesSectionDemo() {
   const features = [
@@ -75,6 +98,18 @@ export function FeaturesSectionDemo() {
               EMAIL 📨
             </Link>
           </Button>
+          <Button
+            variant="outline"
+            className="bg-gray-800"
+            onClick={() =>
+              toast("Use Laptop or a Tablet", {
+                description:
+                  "For the optimal experience please either use Laptop or a Tablet ",
+              })
+            }
+          >
+            👋
+          </Button>
           <a
             className="bg-gray-800 p-4 text-gray-300 hover:text-gray-50 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
             href="https://www.linkedin.com/in/emran-hossain-80ab17190/"
@@ -92,7 +127,7 @@ export function FeaturesSectionDemo() {
         </div>
       </div>
 
-      <div className="relative flex ">
+      <div className="relative flex">
         <div className="grid grid-cols-1 lg:grid-cols-6 mt-12 xl:border rounded-md dark:border-neutral-800">
           {features.map((feature) => (
             <FeatureCard key={feature.title} className={feature.className}>
