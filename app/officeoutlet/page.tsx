@@ -4,6 +4,7 @@ import React from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import SubpageHeader from "@/components/subpage-header";
+import BackToTopButton from "@/components/buttontop";
 
 export default function OfficeOutlet() {
   const router = useRouter();
@@ -11,6 +12,7 @@ export default function OfficeOutlet() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
+      <BackToTopButton />
       <SubpageHeader
         title="Office Outlet"
         subtitle="Future of Workstation Planning"

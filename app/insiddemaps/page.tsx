@@ -4,6 +4,7 @@ import React from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import SubpageHeader from "@/components/subpage-header";
+import BackToTopButton from "@/components/buttontop";
 
 export default function Insidemaps() {
   const router = useRouter();
@@ -11,7 +12,11 @@ export default function Insidemaps() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
-      <SubpageHeader title="InsideMaps Capture" subtitle="Redesigning the Asset Capture Feature" />
+      <BackToTopButton />
+      <SubpageHeader
+        title="InsideMaps Capture"
+        subtitle="Redesigning the Asset Capture Feature"
+      />
 
       {/* ----------------------------- */}
 

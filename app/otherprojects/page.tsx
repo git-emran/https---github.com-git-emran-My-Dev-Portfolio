@@ -3,10 +3,12 @@
 import BackToHome from "@/components/back-to-home";
 import { ExpandableCardDemo } from "@/components/ui/expandableCard";
 import React from "react";
+import BackToTopButton from "@/components/buttontop";
 
 function OtherProjects() {
   return (
     <div className="min-h-screen sm:top-20 flex flex-col">
+      <BackToTopButton />
       <BackToHome />
       {/* Start of the Body   */}
       <section className="items-center justify-center flex-col">

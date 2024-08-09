@@ -9,7 +9,7 @@ import BackToTopButton from "@/components/buttontop";
 export default function Page() {
   return (
     <main className="flex flex-col overflow-x-hidden w-full relative mt-20 items-center sm:pt-26">
-      <BackToTopButton />
+      
       <Header />
       <About />
       <Projects />
