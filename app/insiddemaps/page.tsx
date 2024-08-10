@@ -163,7 +163,7 @@ export default function Insidemaps() {
             unoptimized
             className="mt-5 flex items-center justify-center"
           />
-          <h2 className="text-3xl font-bold mb-4 pt-12">Next Steps</h2>
+          <h2 className="text-3xl font-bold mb-4 pt-12"> Results & Next Steps</h2>
           <Image
             src="/im9.png"
             alt=""
