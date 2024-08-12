@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import SubpageHeader from "@/components/subpage-header";
 import BackToTopButton from "@/components/buttontop";
+import DescriptionSection from "@/components/DescriptionSection";
 
 export default function Insidemaps() {
   const router = useRouter();
@@ -50,49 +51,41 @@ export default function Insidemaps() {
           </ul>
 
           {/* Description */}
-          <h2 className="text-3xl font-bold mb-4 pt-8">Overview</h2>
-          <p>
-            Building an AI product requires designers to balance technical
+          <DescriptionSection
+            title="Overview"
+            description={`Building an AI product requires designers to balance technical
             complexity with user-friendly design, understanding their needs
             while leveraging AI capabilities effectively. It is a delicate
             dance, navigating between innovation and usability, refining
-            iteratively to create products that resonate with users.
-          </p>
-
+            iteratively to create products that resonate with users.`}
+          />
           {/* Quant Research */}
-          <h2 className="text-3xl font-bold mb-4 pt-8">
-            Quantitative Research - Phase 1
-          </h2>
-          <p>
-            Initial phase was divided into two parts. Part 1 was mostly
+          <DescriptionSection
+            title="Quantitative Research - Phase 1"
+            description={`Initial phase was divided into two parts. Part 1 was mostly
             quantitative analysis where I interviewed a group of 20 people.
             Questions were carefully crafted to generate relevant data. One
-            example is given below :
-          </p>
-          {/* Quant Image */}
-          <Image
-            src="/im2.png"
-            alt=""
-            width={900}
-            height={700}
-            quality={100}
-            unoptimized
-            className="mt-10"
+            example is given below :`}
+            images={[
+              {
+                src: "/im2.png",
+                alt: "Quantitative Research Image",
+                width: 900,
+                height: 700,
+              },
+            ]}
           />
           {/* Qual Research */}
-          <h2 className="text-3xl font-bold mb-4 pt-8">
-            Qualitative Research - Phase 2
-          </h2>
-          {/* Qual Image */}
-          <Image
-            src="/im3.png"
-            alt=""
-            width={900}
-            height={700}
-            quality={100}
-            unoptimized
-            className="mt-10 mb-10"
+          <DescriptionSection title="Qualitative Research - Phase 2" 
+          images={[
+            {src:'/im3.png',
+              alt: '',
+              width: 900,
+              height: 700,
+            }
+          ]}
           />
+        
           {/* Final Improvements*/}
           <h2 className="text-3xl font-bold mb-4 pt-8">
             Final Improvements I made
@@ -163,7 +156,10 @@ export default function Insidemaps() {
             unoptimized
             className="mt-5 flex items-center justify-center"
           />
-          <h2 className="text-3xl font-bold mb-4 pt-12"> Results & Next Steps</h2>
+          <h2 className="text-3xl font-bold mb-4 pt-12">
+            {" "}
+            Results & Next Steps
+          </h2>
           <Image
             src="/im9.png"
             alt=""
