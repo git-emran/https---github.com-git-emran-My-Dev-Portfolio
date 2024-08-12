@@ -1,15 +1,12 @@
 "use client";
 
 import React from "react";
-import { useRouter } from "next/navigation";
 import Image from "next/image";
 import SubpageHeader from "@/components/subpage-header";
 import BackToTopButton from "@/components/buttontop";
 import DescriptionSection from "@/components/DescriptionSection";
 
 export default function Insidemaps() {
-  const router = useRouter();
-
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
@@ -92,7 +89,7 @@ export default function Insidemaps() {
               { src: "/im6.gif", alt: "", height: 700, width: 900 },
             ]}
           />
-          
+
           <h3 className="text-lg font-bold mb-4 pt-12 uppercase">
             Updated Components :
           </h3>
