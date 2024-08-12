@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import SubpageHeader from "@/components/subpage-header";
 import BackToTopButton from "@/components/buttontop";
+import DescriptionSection from "@/components/DescriptionSection";
 
 export default function OfficeOutlet() {
   const router = useRouter();
@@ -49,69 +50,50 @@ export default function OfficeOutlet() {
           </ul>
 
           {/* Timeline Image */}
-          <h2 className="text-3xl font-bold mb-4 pt-20">Project Timeline</h2>
-          <Image
-            src="/office1.png"
-            alt=""
-            width={900}
-            height={200}
-            quality={100}
-            unoptimized
-            className="mt-5 rounded-md"
+          <DescriptionSection
+            title="Project Timeline"
+            images={[{ src: "/office1.png", alt: "", width: 900, height: 200 }]}
           />
           {/* Asking right questions */}
-          <h2 className="text-3xl font-bold mb-4 pt-20">
-            Asking the right questions
-          </h2>
-          <p>
-            I make sure I do not ask wrong questions as time is much valuable in
-            a development lifeycle.
-          </p>
-          <Image
-            src="/office2.avif"
-            alt=""
-            width={900}
-            height={200}
-            quality={100}
-            unoptimized
-            className="mt-5 rounded-md"
+          <DescriptionSection
+            title="Asking the right questions"
+            description="  I make sure I do not ask wrong questions as time is much valuable in
+            a development lifeycle."
+            images={[
+              {
+                src: "/office2.avif",
+                alt: "Asking questions",
+                width: 900,
+                height: 200,
+              },
+            ]}
           />
           {/* Wireframing designing testing
            */}
-          <h2 className="text-3xl font-bold mb-4 pt-20">
-            Wireframing, Designing & Testing
-          </h2>
-          <p>
-            Following a linear process was not feasable for us. So I did all of
-            those things at the same time. I call it Iteration on the Go!.
-          </p>
-          <Image
-            src="/office3.webp"
-            alt=""
-            width={900}
-            height={200}
-            quality={100}
-            unoptimized
-            className="mt-5 rounded-md"
-          />
-
-          <Image
-            src="/office4.webp"
-            alt=""
-            width={900}
-            height={200}
-            quality={100}
-            unoptimized
-            className="mt-5 rounded-md"
-          />
-          <Image
-            src="/office5.webp"
-            alt=""
-            width={900}
-            height={200}
-            quality={100}
-            unoptimized
-            className="mt-5 rounded-md"
+          <DescriptionSection
+            title="Wireframing, Designing & Testing"
+            description="  Following a linear process was not feasable for us. So I did all of
+            those things at the same time. I call it Iteration on the Go!."
+            images={[
+              {
+                src: "/office3.webp",
+                alt: "Wireframing",
+                width: 900,
+                height: 200,
+              },
+              {
+                src: "/office4.webp",
+                alt: "Wireframing",
+                width: 900,
+                height: 200,
+              },
+              {
+                src: "/office5.webp",
+                alt: "Wireframing",
+                width: 900,
+                height: 200,
+              },
+            ]}
           />
           {/* Image Bento */}
           <h2 className="text-3xl font-bold mb-4 pt-20">Final Design</h2>
