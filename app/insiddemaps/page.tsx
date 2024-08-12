@@ -76,58 +76,23 @@ export default function Insidemaps() {
             ]}
           />
           {/* Qual Research */}
-          <DescriptionSection title="Qualitative Research - Phase 2" 
-          images={[
-            {src:'/im3.png',
-              alt: '',
-              width: 900,
-              height: 700,
-            }
-          ]}
+          <DescriptionSection
+            title="Qualitative Research - Phase 2"
+            images={[{ src: "/im3.png", alt: "", width: 900, height: 700 }]}
           />
-        
+
           {/* Final Improvements*/}
-          <h2 className="text-3xl font-bold mb-4 pt-8">
-            Final Improvements I made
-          </h2>
-          <p>
-            These are the imporvements I made after taking all the research into
-            account.
-          </p>
-          <Image
-            src="/im4.png"
-            alt=""
-            width={900}
-            height={700}
-            quality={100}
-            unoptimized
-            className="mt-10"
+          <DescriptionSection
+            title="Final Improvements I made"
+            description=" These are the imporvements I made after taking all the research into
+            account."
+            images={[
+              { src: "/im4.png", alt: "", height: 700, width: 900 },
+              { src: "/im5.png", alt: "", height: 700, width: 900 },
+              { src: "/im6.gif", alt: "", height: 700, width: 900 },
+            ]}
           />
-          <Image
-            src="/im5.png"
-            alt=""
-            width={900}
-            height={700}
-            quality={100}
-            unoptimized
-            className="mt-10"
-          />
-          <h3 className="text-lg font-bold mb-4 pt-8 uppercase">
-            Updated & Improved 3D map :
-          </h3>
-          <p className="text-sm">
-            Previous improvements created a snowball effect leading to an almost
-            pixel perfect 3D map with each scan.
-          </p>
-          <Image
-            src="/im6.gif"
-            alt=""
-            width={800}
-            height={200}
-            quality={100}
-            unoptimized
-            className="mt-5 flex items-center justify-center rounded-md"
-          />
+          
           <h3 className="text-lg font-bold mb-4 pt-12 uppercase">
             Updated Components :
           </h3>
