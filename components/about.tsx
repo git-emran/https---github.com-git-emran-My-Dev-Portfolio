@@ -5,16 +5,7 @@ import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 import { LinkPreview } from "./ui/link-preview";
 import ContributionGraph from "./contribution-graph";
 import { FeaturesSectionDemo } from "./FeaturedAbout";
-import { AnimatedTooltip } from "./ui/animated-tooltip";
-
-const people = [
-  {
-    id: 1,
-    name: "Emran Hossain",
-    designation: "Software Designer & Developer",
-    image: "/Headshot 1.png",
-  },
-];
+import SectionHeading from "./section-heading";
 
 export default function About() {
   const cardData = [
@@ -40,15 +31,15 @@ export default function About() {
   return (
     <section
       className="
-    flex flex-col flex-wrap py-20 md:py-32 sm:py-10 lg:py-20 items-center justify-center  
-    
-  "
-      id="home"
+    flex flex-col flex-wrap py-20 md:py-32 sm:py-10 lg:py-20 items-center justify-center"
+      id="about"
     >
       <div className="flex flex-col items-center justify-center">
-        <div className="flex flex-wrap  items-center justify-center pt-12 w-full">
-          <AnimatedTooltip items={people} />
-        </div>
+        <SectionHeading>
+          <h2>Enjoying the Work</h2>
+          <p className="font-light text-lg">And the Things I have learned</p>
+        </SectionHeading>
+
         <FeaturesSectionDemo />
         <p
           className="text-center mb-8 

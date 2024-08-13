@@ -4,12 +4,12 @@ import Projects from "@/components/projects";
 import Skills from "@/components/skills";
 import Experience from "@/components/experience";
 import Faq from "@/components/faq";
-import BackToTopButton from "@/components/buttontop";
+import Intro from "@/components/intro";
 
 export default function Page() {
   return (
     <main className="flex flex-col overflow-x-hidden w-full relative mt-20 items-center sm:pt-26">
-      
+      <Intro />
       <Header />
       <About />
       <Projects />
