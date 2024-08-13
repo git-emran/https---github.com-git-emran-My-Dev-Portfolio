@@ -7,6 +7,8 @@ import { toast } from "sonner";
 import Link from "next/link";
 import { AnimatedTooltip } from "./ui/animated-tooltip";
 import React from "react";
+import { LinkPreview } from "./ui/link-preview";
+
 
 const people = [
   {
@@ -29,14 +31,46 @@ function Intro() {
           specializing in creating compelling and customer-centric solutions,
           especially for B2B & SaaS startups.
         </h4>
+        <div className="flex items justify-center">
+          <p
+            className="justify-center text-center font-normal
+    max-w-full md:max-w-[55rem] 
+    leading-6 sm:leading-8 
+    scroll-smooth mt-6 text-base sm:text-lg sm:px-8 md:text-lg lg:text-xl xl:text-2xl"
+          >
+            I love{" "}
+            <LinkPreview
+              url="https://github.com/git-emran"
+              isStatic={true}
+              imageSrc="/github.png"
+              className="font-semibold underline text-blue-800"
+            >
+              Design & Code
+            </LinkPreview>{" "}
+            I tell stories through my designs. I spend most of my free time
+            solving design problems around me,{" "}
+            <LinkPreview
+              url="https://dribbble.com/chrollo"
+              isStatic={true}
+              imageSrc="/dribbble.png"
+              className="font-semibold underline text-blue-800"
+            >
+              creating illustrations
+            </LinkPreview>
+            , open-source projects, design interactions and product{" "}
+            <LinkPreview
+              url="https://www.instagram.com/designwithemran/"
+              isStatic={true}
+              imageSrc="/instagram.png"
+              className="font-semibold underline text-blue-800"
+            >
+              design memes.
+            </LinkPreview>
+            {""}
+          </p>
+        </div>
 
-        <p className="text-md px-10 lg:text-base max-w-2xl my-4 mx-auto text-neutral-500 text-center font-normal">
-          From early stage start ups to Enterprises, I have been through the
-          thick and thin. After all those years of hard work and consistency, I
-          can finally say that I can design cool stuff and I can center a div.
-          My main motivation is that I love to create and being part of a
-          community of like minded individuals.
-        </p>
+        {/* Buttons */}
         <div className=" flex flex-row items-center gap-4 justify-center mt-6">
           <Button asChild>
             <Link

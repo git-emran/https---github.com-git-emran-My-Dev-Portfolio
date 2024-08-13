@@ -2,10 +2,9 @@
 
 import React from "react";
 import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
-import { LinkPreview } from "./ui/link-preview";
 import ContributionGraph from "./contribution-graph";
 import { FeaturesSectionDemo } from "./FeaturedAbout";
-import SectionHeading from "./section-heading";
+import DescriptionSection from "./DescriptionSection";
 
 export default function About() {
   const cardData = [
@@ -34,57 +33,30 @@ export default function About() {
     flex flex-col flex-wrap py-20 md:py-32 sm:py-10 lg:py-20 items-center justify-center"
       id="about"
     >
-      <div className="flex flex-col items-center justify-center">
-        <SectionHeading>
-          <h2>Fun & Work</h2>
-          <p className="font-light text-lg">And the Things I have learned</p>
-        </SectionHeading>
-
-        <FeaturesSectionDemo />
-        <p
-          className="text-center mb-8 
-    max-w-full md:max-w-[55rem] 
-    leading-6 sm:leading-8 
-    scroll-smooth mt-40 text-base sm:text-lg sm:px-8 md:text-lg lg:text-xl xl:text-2xl"
-        >
-          I love{" "}
-          <LinkPreview
-            url="https://github.com/git-emran"
-            isStatic={true}
-            imageSrc="/github.png"
-            className="font-semibold underline text-blue-800"
-          >
-            Design & Code
-          </LinkPreview>{" "}
-          I tell stories through my designs. I spend most of my free time
-          solving design problems around me,{" "}
-          <LinkPreview
-            url="https://dribbble.com/chrollo"
-            isStatic={true}
-            imageSrc="/dribbble.png"
-            className="font-semibold underline text-blue-800"
-          >
-            creating illustrations
-          </LinkPreview>
-          , open-source projects, design interactions and product{" "}
-          <LinkPreview
-            url="https://www.instagram.com/designwithemran/"
-            isStatic={true}
-            imageSrc="/instagram.png"
-            className="font-semibold underline text-blue-800"
-          >
-            design memes.
-          </LinkPreview>
-          {""}
-        </p>
+      <div className="flex flex-col items-center text-center justify-center">
+        <DescriptionSection
+          title="Fun & Work"
+          description="And the things along the way"
+        />
+        <div className="items-center gap-4 flex-col justify-center flex">
+          <FeaturesSectionDemo />
+          <ContributionGraph />
+        </div>
       </div>
-      <InfiniteMovingCards
-        className="max-w-[55rem]"
-        items={cardData}
-        speed="normal"
-      />
-      <ContributionGraph />
-      <div className="mb-20"></div>
+      <div className="flex flex-col items-center mb-20 justify-center">
+        {/* Peer Praise Section */}
+        <div className="mt-20 items-center text-center justify-center">
+          <DescriptionSection
+            title="Peer Praise"
+            description="People loves to work with me, their words! not mine"
+          />
+        </div>
+        <InfiniteMovingCards
+          className="max-w-[55rem]"
+          items={cardData}
+          speed="normal"
+        />
+      </div>
     </section>
   );
 }

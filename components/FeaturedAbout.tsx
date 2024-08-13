@@ -7,7 +7,6 @@ import { motion } from "framer-motion";
 import { IconBrandYoutubeFilled } from "@tabler/icons-react";
 import Link from "next/link";
 
-
 export function FeaturesSectionDemo() {
   const features = [
     {
@@ -41,7 +40,7 @@ export function FeaturesSectionDemo() {
     },
   ];
   return (
-    <div className="flex flex-wrap items-center justify-center max-w-7xl mx-auto">      
+    <div className="flex flex-wrap items-center justify-center max-w-7xl mx-auto">
       <div className="relative flex">
         <div className="grid grid-cols-1 lg:grid-cols-6 mt-12 xl:border rounded-md dark:border-neutral-800">
           {features.map((feature) => (
@@ -143,7 +142,6 @@ export const SkeletonTwo = () => {
   const images = [
     "/travel1.jpg",
     "/travel2.jpg",
-    "/travel3.jpg",
     "/travel4.jpg",
     "/travel5.jpg",
   ];

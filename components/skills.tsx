@@ -1,10 +1,10 @@
 "use client";
 
 import React from "react";
-import SectionHeading from "./section-heading";
 import { skillsData } from "@/lib/data";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
+import DescriptionSection from "./DescriptionSection";
 
 
 
@@ -31,7 +31,7 @@ export default function Skills() {
       ref={ref}
       className=" flex-col mb-28 mt-20 max-w-[55rem] scroll-mb-28 scroll-mt-16 items-center justify-center text-center sm:mb-40"
     >
-      <SectionHeading>My skills</SectionHeading>
+    <DescriptionSection title="My Skills" />
 
    
 

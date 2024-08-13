@@ -6,8 +6,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import SectionHeading from "./section-heading";
+
 import { LinkPreview } from "./ui/link-preview";
+import DescriptionSection from "./DescriptionSection";
 
 export default function Faq() {
   return (
@@ -15,7 +16,7 @@ export default function Faq() {
       id="faq"
       className="flex flex-wrap text-left flex-col p-10 w-full mb-28 max-w-[60rem] scroll-mt-20 scroll-mb-28 sm:mb-40 sm:px-30"
     >
-      <SectionHeading>Frequently Asked Questions & Answers</SectionHeading>
+     <DescriptionSection title="Frequently asked Questions & Answers" />
       <Accordion type="single" collapsible className="w-full mt-12">
         <AccordionItem value="item-1">
           <AccordionTrigger>Your Strength ?</AccordionTrigger>
