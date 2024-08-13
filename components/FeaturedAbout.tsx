@@ -34,7 +34,7 @@ export function FeaturesSectionDemo() {
     {
       title: "Remote Work Experience",
       description:
-        "Who knew chatting with people from your couch could be such a wild ride? I've cracked the code on nailing communication, whether it's through a screen or carrier pigeon!",
+        "From cross-functional teams to cross-continental teams, Remote, Hybrid, Onsite, Been there! Done That! and Good at it too!",
       skeleton: <SkeletonFour />,
       className: "col-span-1 lg:col-span-3 border-b lg:border-none",
     },
