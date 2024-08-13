@@ -36,7 +36,7 @@ export default function About() {
     >
       <div className="flex flex-col items-center justify-center">
         <SectionHeading>
-          <h2>Enjoying the Work</h2>
+          <h2>Fun & Work</h2>
           <p className="font-light text-lg">And the Things I have learned</p>
         </SectionHeading>
 
