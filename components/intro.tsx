@@ -9,7 +9,6 @@ import { AnimatedTooltip } from "./ui/animated-tooltip";
 import React from "react";
 import { LinkPreview } from "./ui/link-preview";
 
-
 const people = [
   {
     id: 1,
@@ -34,7 +33,7 @@ function Intro() {
         <div className="flex items justify-center">
           <p
             className="justify-center text-center font-normal
-    max-w-full md:max-w-[55rem] 
+    max-w-full md:max-w-[44rem] 
     leading-6 sm:leading-8 
     scroll-smooth mt-6 text-base sm:text-lg sm:px-8 md:text-lg lg:text-xl xl:text-2xl"
           >
