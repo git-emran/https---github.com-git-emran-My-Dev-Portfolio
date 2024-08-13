@@ -16,7 +16,10 @@ export default function Faq() {
       id="faq"
       className="flex flex-wrap text-left flex-col p-10 w-full mb-28 max-w-[60rem] scroll-mt-20 scroll-mb-28 sm:mb-40 sm:px-30"
     >
-     <DescriptionSection title="Frequently asked Questions & Answers" />
+      <div className="text-center items-center">
+        <DescriptionSection title="Frequently asked Questions & Answers" />
+      </div>
+
       <Accordion type="single" collapsible className="w-full mt-12">
         <AccordionItem value="item-1">
           <AccordionTrigger>Your Strength ?</AccordionTrigger>
