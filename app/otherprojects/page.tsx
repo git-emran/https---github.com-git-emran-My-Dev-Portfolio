@@ -4,6 +4,7 @@ import BackToHome from "@/components/back-to-home";
 import { ExpandableCardDemo } from "@/components/ui/expandableCard";
 import React from "react";
 import BackToTopButton from "@/components/buttontop";
+import DescriptionSection from "@/components/DescriptionSection";
 
 function OtherProjects() {
   return (
@@ -12,13 +13,13 @@ function OtherProjects() {
       <BackToHome />
       {/* Start of the Body   */}
       <section className="items-center justify-center flex-col">
-        <h3 className="font-bold text-4xl flex items-center justify-center scroll-mt-20 mt-20">
-          Other Fun Projects
-        </h3>
-        <p className="text-center mt-4 w-90 px-20 text-sm">
-          Due to NDA project details are not available. But feel free to look
-          around, Let&apos;s chat if you have any questions
-        </p>
+        <div className="mt-20 scroll-mt-20">
+          <DescriptionSection
+            title="Other Fun Projects"
+            description=" Due to NDA project details are not available. But feel free to look
+          around, Let's chat if you have any questions"
+          />
+        </div>
       </section>
       <section className="mt-20 flex">
         <ExpandableCardDemo />
