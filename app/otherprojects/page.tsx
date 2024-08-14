@@ -13,7 +13,7 @@ function OtherProjects() {
       <BackToHome />
       {/* Start of the Body   */}
       <section className="items-center justify-center flex-col">
-        <div className="mt-20 scroll-mt-20">
+        <div className="mt-20 text-center items-center justify-center scroll-mt-20">
           <DescriptionSection
             title="Other Fun Projects"
             description=" Due to NDA project details are not available. But feel free to look
