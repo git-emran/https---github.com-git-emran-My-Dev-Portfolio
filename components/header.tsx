@@ -1,5 +1,5 @@
 "use client";
-import React, { act, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { links } from "@/lib/data";
 import Link from "next/link";
@@ -23,6 +23,7 @@ export default function Header() {
               className="h-3/4 flex items-center relative justify-center"
               key={link.hash}
               initial={{ y: -100, opacity: 0 }}
+              whileHover={{ scale: 1.2 }}
               animate={{ y: 0, opacity: 1 }}
             >
               <Link
