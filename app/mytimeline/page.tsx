@@ -33,17 +33,15 @@ export default function MyTimeline() {
   return (
     <section className="min-h-screen sm:top-20 flex flex-col">
       <Header />
-      <section className="">
-        <div className="mt-20 text-center items-center justify-center ">
-          <DescriptionSection
-            title="Timeline"
-            description="The linear view of some milestones and notable moments that happened so far (119 key moments). And you can always find more information on Twitter and LinkedIn."
-          />
-        </div>
-      </section>
+      <div className="text-center">
+        <SubpageHeader
+          title="Timeline"
+          subtitle="The linear view of some milestones and notable moments that happened so far (119 key moments). And you can always find more information on Twitter and LinkedIn."
+        />
+      </div>
 
       <section className="flex flex-col items-center justify-center">
-        <div className="mt-20 ">
+        <div className="">
           {items.map((item, index) => (
             <TimelineItem
               key={index}
