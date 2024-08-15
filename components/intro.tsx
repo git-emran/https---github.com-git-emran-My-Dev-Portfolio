@@ -20,7 +20,7 @@ const people = [
 
 function Intro() {
   return (
-    <section id="home" className="scroll-mt-28 mb-28 scroll-smooth px-12">
+    <section id="home" className="scroll-mt-30 mb-28 scroll-smooth px-12">
       <div className="flex flex-wrap items-center scroll-mt-20 justify-center mt-20 mb-6 w-full">
         <AnimatedTooltip items={people} />
       </div>

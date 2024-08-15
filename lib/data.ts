@@ -9,29 +9,38 @@ import { FaComputer } from "react-icons/fa6";
 import { FaCompassDrafting } from "react-icons/fa6";
 import { FaCubes } from "react-icons/fa6";
 import { FaCss3Alt } from "react-icons/fa";
+import { RiHomeSmileLine } from "react-icons/ri";
+import { MdOutlineMenuBook } from "react-icons/md";
 
-
+import { PiBriefcaseBold } from "react-icons/pi";
+import { BsQuestionSquare } from "react-icons/bs";
+import { LiaMicrochipSolid } from "react-icons/lia";
 
 export const links = [
   {
     name: "Home",
     hash: "#home",
+    icons: RiHomeSmileLine,
   },
   {
     name: "Projects",
     hash: "#projects",
+    icons: MdOutlineMenuBook,
   },
   {
     name: "Skills",
     hash: "#skills",
+    icons: LiaMicrochipSolid,
   },
   {
     name: "Experience",
     hash: "#experience",
+    icons: PiBriefcaseBold,
   },
   {
     name: "FAQ",
     hash: "#faq",
+    icons: BsQuestionSquare,
   },
 ] as const;
 
