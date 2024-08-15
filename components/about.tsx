@@ -31,7 +31,7 @@ export default function About() {
     <section
       className="
     flex flex-col flex-wrap py-20 md:py-32 sm:py-10 lg:py-20 items-center justify-center"
-      id="about"
+      
     >
       <div className="flex flex-col items-center text-center justify-center">
         <DescriptionSection

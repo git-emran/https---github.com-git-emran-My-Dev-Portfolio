@@ -15,32 +15,40 @@ import { MdOutlineMenuBook } from "react-icons/md";
 import { PiBriefcaseBold } from "react-icons/pi";
 import { BsQuestionSquare } from "react-icons/bs";
 import { LiaMicrochipSolid } from "react-icons/lia";
+import { StaticImageData } from "next/image";
 
-export const links = [
+type Link = {
+  name: string;
+  hash: string;
+  icon: string; // Updated type
+};
+
+
+export const links: Link[] = [
   {
     name: "Home",
     hash: "#home",
-    icons: RiHomeSmileLine,
+    icon: "/home.svg",
   },
   {
     name: "Projects",
     hash: "#projects",
-    icons: MdOutlineMenuBook,
+    icon: "/projects.svg",
   },
   {
     name: "Skills",
     hash: "#skills",
-    icons: LiaMicrochipSolid,
+    icon: "/skills.svg",
   },
   {
     name: "Experience",
     hash: "#experience",
-    icons: PiBriefcaseBold,
+    icon: "/experiences.svg",
   },
   {
     name: "FAQ",
     hash: "#faq",
-    icons: BsQuestionSquare,
+    icon: "/faq.svg",
   },
 ] as const;
 
