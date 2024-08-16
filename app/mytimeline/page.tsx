@@ -32,7 +32,6 @@ export default function MyTimeline() {
 
   return (
     <section className="min-h-screen sm:top-20 flex flex-col">
-      <Header />
       <div className="text-center">
         <SubpageHeader
           title="Timeline"

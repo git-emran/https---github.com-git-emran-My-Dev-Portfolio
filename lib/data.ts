@@ -33,12 +33,12 @@ export const links = [
   {
     name: "Skills",
     hash: "#skills",
-    icon: MdOutlineMenuBook,
+    icon: LiaMicrochipSolid,
   },
   {
     name: "Experience",
     hash: "#experience",
-    icon: LiaMicrochipSolid,
+    icon: MdOutlineMenuBook,
   },
   {
     name: "FAQ",
