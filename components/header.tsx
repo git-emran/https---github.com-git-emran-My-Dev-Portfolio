@@ -41,13 +41,7 @@ export default function Header() {
                   setTimeOfLastClick(Date.now());
                 }}
               >
-                <Image
-                  src={link.icon}
-                  alt={`${link.name} icon`}
-                  width={24}
-                  height={24}
-                  className="w-[1.5rem] h-[1.5rem]"
-                />
+                <link.icon className="w-[1.5rem] h-[1.5rem]" />
                 <span className="absolute top-full left-1/2 -translate-x-1/2 bg-gray-100 px-2 py-1 rounded text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   {link.name}
                 </span>
