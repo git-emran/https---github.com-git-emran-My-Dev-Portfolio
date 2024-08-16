@@ -8,6 +8,7 @@ import Link from "next/link";
 import { AnimatedTooltip } from "./ui/animated-tooltip";
 import React from "react";
 import { LinkPreview } from "./ui/link-preview";
+import { BiSolidMessageError } from "react-icons/bi";
 
 const people = [
   {
@@ -20,8 +21,8 @@ const people = [
 
 function Intro() {
   return (
-    <section id="home" className="scroll-mt-30 mt-20 mb-28 scroll-smooth px-12">
-      <div className="flex flex-wrap items-center scroll-mt-20 justify-center mb-6 w-full">
+    <section id="home" className="scroll-mt-[30] mt-20 scroll-smooth px-12">
+      <div className="flex flex-wrap items-center justify-center mb-6 w-full">
         <AnimatedTooltip items={people} />
       </div>
       <div>
@@ -35,7 +36,7 @@ function Intro() {
             className="justify-center text-center font-normal
     max-w-full md:max-w-[44rem] 
     leading-6 sm:leading-8 
-    scroll-smooth mt-6 text-base sm:text-lg sm:px-8 md:text-lg lg:text-xl xl:text-2xl"
+    mt-6 text-base sm:text-lg sm:px-8 md:text-lg lg:text-xl xl:text-2xl"
           >
             I love{" "}
             <LinkPreview
@@ -89,31 +90,32 @@ function Intro() {
           </Button>
           <Button
             variant="outline"
-            className="bg-gray-800"
+            className="text-gray-300 hover:text-gray-800 bg-gray-800"
             onClick={() =>
-              toast("Use Laptop or a Tablet", {
+              toast("Use Laptop, Desktop or a Tablet", {
                 description:
-                  "For the optimal experience please use either a Laptop or a Tablet ",
+                  "For the optimal experience please use either a Laptop, Desktop or a Tablet ",
               })
             }
           >
-            👋
+            <BiSolidMessageError />
           </Button>
           <a
-            className="bg-gray-800 p-4 text-gray-300 hover:text-gray-50 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
+            className="bg-gray-800 p-4 text-gray-300 hover:text-gray-800 hover:bg-gray-100 flex items-center gap-2 rounded-full focus:scale-[2.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
             href="https://www.linkedin.com/in/emran-hossain-80ab17190/"
             target=""
           >
             <BsLinkedin />
           </a>
           <a
-            className="bg-gray-800 p-4 text-gray-300 hover:text-gray-50 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
+            className="bg-gray-800 p-4 text-gray-300 hover:text-gray-800 hover:bg-gray-100 flex items-center gap-2 rounded-full focus:scale-[2.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
             href="https://github.com/git-emran"
             target=""
           >
             <FaSquareGithub />
           </a>
         </div>
+        <div className="mb-28"></div>
       </div>
     </section>
   );
