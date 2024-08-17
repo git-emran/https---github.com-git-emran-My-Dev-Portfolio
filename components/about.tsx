@@ -56,7 +56,9 @@ export default function About() {
           items={cardData}
           speed="normal"
         />
-        <button className=" bg-white cursor-pointer border font-medium border-gray-200 hover:bg-slate-200 text-sm px-10 py-4 rounded-md mt-8"><Link href=""> View Timeline</Link></button>
+        <button className=" bg-white cursor-pointer border font-medium border-gray-200 hover:bg-slate-200 text-sm px-10 py-4 rounded-md mt-8">
+          <Link href="/mytimeline">View Timeline</Link>
+        </button>
       </div>
     </section>
   );
