@@ -4,10 +4,7 @@ import TimelineItem from "@/components/Timeline";
 import SubpageHeader from "@/components/subpage-header";
 import { timelineitem } from "@/lib/data";
 
-
 export default function MyTimeline() {
-
-
   return (
     <section className="min-h-screen sm:top-20 flex flex-col">
       <div className="text-center">

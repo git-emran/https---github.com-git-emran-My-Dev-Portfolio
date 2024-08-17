@@ -9,10 +9,13 @@ import {
 
 import { LinkPreview } from "./ui/link-preview";
 import DescriptionSection from "./DescriptionSection";
+import { buttonVariants } from "@/components/ui/button";
+import Link from "next/link";
+
 
 export default function Faq() {
   return (
-    <div
+    <section
       id="faq"
       className="flex flex-wrap text-left flex-col p-10 w-full mb-28 max-w-[60rem] scroll-mt-20 scroll-mb-28 sm:mb-40 sm:px-30"
     >
@@ -41,7 +44,7 @@ export default function Faq() {
             is{" "}
             <LinkPreview
               url="https://getgenie.ai/"
-              className="font-bold underline"
+              className="font-bold underline text-blue-600"
             >
               GetGenie AI
             </LinkPreview>{" "}
@@ -71,6 +74,11 @@ export default function Faq() {
           </AccordionContent>
         </AccordionItem>
       </Accordion>
-    </div>
+      <div>
+        <Link href="/mytimeline" className={buttonVariants({ variant: "outline" })}>
+          Click here
+        </Link>
+      </div>
+    </section>
   );
 }

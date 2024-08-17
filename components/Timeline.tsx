@@ -28,16 +28,16 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="relative flex">git push -v origin main
+      <div className="relative">
         <span
-          className={`block h-4 w-4 rounded-full ${
+          className={`block h-4 w-4 rounded-full justify-center items-start ${
             status === "update" ? "bg-red-500" : "bg-purple-500"
           }`}
         ></span>
         {/* Timeline bar */}
-        <div className="absolute top-5 left-1/2 transform -translate-x-1/2 w-0.5 bg-gray-400 h-[20rem] opacity-40 items-center justify-center"></div>
+        <div className="absolute flex top-5 left-1/2 transform -translate-x-1/2 w-0.5 bg-gray-400 h-[20rem] opacity-40 items-start justify-center"></div>
       </div>
-      <div className="">
+      <div className=" justify-center items-start">
         <p className="text-sm text-gray-500">{date}</p>
         <h3 className="text-xl font-semibold">{title}</h3>
         <p className="text-gray-700 max-w-[40rem]">{description}</p>
