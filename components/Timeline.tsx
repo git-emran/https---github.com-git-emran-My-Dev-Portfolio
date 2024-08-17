@@ -28,7 +28,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="relative flex">
+      <div className="relative flex">git push -v origin main
         <span
           className={`block h-4 w-4 rounded-full ${
             status === "update" ? "bg-red-500" : "bg-purple-500"
