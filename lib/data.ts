@@ -9,6 +9,7 @@ import { FaComputer } from "react-icons/fa6";
 import { FaCompassDrafting } from "react-icons/fa6";
 import { FaCubes } from "react-icons/fa6";
 import { FaCss3Alt } from "react-icons/fa";
+import { FaFireAlt } from "react-icons/fa";
 
 export const links = [
   {
@@ -34,6 +35,15 @@ export const links = [
 ] as const;
 
 export const experiencesData = [
+  {
+    title: " Design director, Founding Designer @ JoContractor",
+    location: "Minneapolis, Minnesota, USA",
+    description:
+      "Enhancing the contracting experiences for the average Jo. They can track projects easily, connect with clients and manage contracts like its a walk in the park.",
+    icon: React.createElement(FaFireAlt),
+    date: "Present",
+  },
+
   {
     title: " Lead Product Designer/Front-end Dev @The Total Office",
     location: "Barsha Heights, Dubai",
