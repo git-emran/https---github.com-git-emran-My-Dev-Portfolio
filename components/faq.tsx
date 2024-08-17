@@ -74,11 +74,7 @@ export default function Faq() {
           </AccordionContent>
         </AccordionItem>
       </Accordion>
-      <div>
-        <Link href="/mytimeline" className={buttonVariants({ variant: "outline" })}>
-          Click here
-        </Link>
-      </div>
+  
     </section>
   );
 }
