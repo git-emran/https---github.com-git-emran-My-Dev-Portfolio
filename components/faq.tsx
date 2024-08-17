@@ -12,7 +12,6 @@ import DescriptionSection from "./DescriptionSection";
 import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 
-
 export default function Faq() {
   return (
     <section
@@ -74,7 +73,6 @@ export default function Faq() {
           </AccordionContent>
         </AccordionItem>
       </Accordion>
-  
     </section>
   );
 }
