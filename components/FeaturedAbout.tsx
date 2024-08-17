@@ -178,14 +178,14 @@ export const SkeletonTwo = () => {
             }}
             whileHover="whileHover"
             whileTap="whileTap"
-            className="rounded-xl mt-4 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 flex-shrink-0 overflow-hidden"
+            className="rounded-xl mt-4 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 flex-shrink-0 overflow-hidden"
           >
             <Image
               src={image}
               alt="bali images"
               width="500"
               height="500"
-              className="rounded-lg h-20 w-20 md:h-40 md:w-40 object-cover flex-shrink-"
+              className="rounded-lg h-20 w-20 md:h-30 md:w-30 object-cover flex-shrink-"
             />
           </motion.div>
         ))}
@@ -221,7 +221,7 @@ export const SkeletonTwo = () => {
 
 export const SkeletonFour = () => {
   return (
-    <div className="h-60 md:h-60  flex flex-col items-center relative bg-transparent mt-10">
+    <div className="h-60 md:h-60 flex flex-col items-center justify-center bg-transparent mt-10">
       <Globe className="absolute -right-5 md:-right-10 -bottom-80 md:-bottom-72" />
     </div>
   );
