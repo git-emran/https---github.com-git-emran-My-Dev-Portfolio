@@ -5,6 +5,7 @@ import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 import ContributionGraph from "./contribution-graph";
 import { FeaturesSectionDemo } from "./FeaturedAbout";
 import DescriptionSection from "./DescriptionSection";
+import Link from "next/link";
 
 export default function About() {
   const cardData = [
@@ -31,7 +32,6 @@ export default function About() {
     <section
       className="
     flex flex-col flex-wrap py-20 md:py-32 sm:py-10 lg:py-20 items-center justify-center"
-      
     >
       <div className="flex flex-col items-center text-center justify-center">
         <DescriptionSection
@@ -56,6 +56,7 @@ export default function About() {
           items={cardData}
           speed="normal"
         />
+        <button className=" bg-white cursor-pointer border font-medium border-gray-200 hover:bg-slate-200 text-sm px-10 py-4 rounded-md mt-8"><Link href=""> View Timeline</Link></button>
       </div>
     </section>
   );

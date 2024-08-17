@@ -25,19 +25,19 @@ export default function ContributionGraph() {
     );
 
   return (
-    <div className="flex items-center overflow-x-hidden max-w-full flex-col gap-4">
-      <div className="flex flex-wrap bg-primary-foreground border dark:border-zinc-800 border-zinc-200 p-4 sm:p-8 md:p-6 rounded-lg max-h-full w-fit">
+    <div className="flex items-center max-w-fit flex-col gap-4">
+      <div className="flex flex-wrap bg-primary-foreground border py-2 dark:border-zinc-800 px-2 border-zinc-200 rounded-lg max-h-full">
         <GitHubCalendar
           username={username}
           theme={github}
           colorScheme={"light"}
-          blockSize={13}
+          blockSize={12}
           year={calendarYear}
         />
       </div>
       <div className="flex justify-center flex-wrap gap-2">
         {/* Display only the last five years */}
-        {years.slice(0, 5).map((year: any) => (
+        {years.slice(0, 2).map((year: any) => (
           <YearButton
             key={year}
             year={year}

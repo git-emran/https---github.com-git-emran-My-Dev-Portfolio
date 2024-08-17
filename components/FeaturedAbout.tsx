@@ -40,7 +40,7 @@ export function FeaturesSectionDemo() {
     },
   ];
   return (
-    <div className="flex flex-wrap items-center justify-center max-w-7xl mx-auto">
+    <div className="flex flex-wrap items-center justify-center max-w-6xl px-12 mx-40">
       <div className="relative flex">
         <div className="grid grid-cols-1 lg:grid-cols-6 mt-12 xl:border rounded-md dark:border-neutral-800">
           {features.map((feature) => (

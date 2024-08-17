@@ -25,7 +25,7 @@ export default function Faq() {
       <Accordion type="single" collapsible className="w-full mt-12">
         <AccordionItem value="item-1">
           <AccordionTrigger>Your Strength ?</AccordionTrigger>
-          <AccordionContent>
+          <AccordionContent className="text-left">
             My core strengths as a Product designer includes my ability to find
             clarity through ambiguity, navigate and scale any idea even if its
             just a single sentence. Also I can code, which makes me a strong
@@ -37,7 +37,7 @@ export default function Faq() {
           <AccordionTrigger className="text-left">
             Have you ever built a product from scratch?
           </AccordionTrigger>
-          <AccordionContent>
+          <AccordionContent className="text-left">
             Yes I have, Infact I have built exactly 5 products from scratch and
             each with over millions user-base. One of my personal favorite one
             is{" "}
@@ -54,7 +54,7 @@ export default function Faq() {
         </AccordionItem>
         <AccordionItem value="item-3">
           <AccordionTrigger>Most Proficiency: UX or UI ?</AccordionTrigger>
-          <AccordionContent>
+          <AccordionContent className="text-left">
             Working with both startups and enterprise companies made me realize
             that I am a Jack of all trades. Then I remembered the saying and
             made my self a master of one. Since I studied Design in my
@@ -63,7 +63,7 @@ export default function Faq() {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-4">
-          <AccordionTrigger>
+          <AccordionTrigger className="text-left">
             Did you build this site by yourself ?
           </AccordionTrigger>
           <AccordionContent>
