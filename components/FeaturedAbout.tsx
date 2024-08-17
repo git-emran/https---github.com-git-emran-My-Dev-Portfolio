@@ -47,7 +47,7 @@ export function FeaturesSectionDemo() {
             <FeatureCard key={feature.title} className={feature.className}>
               <FeatureTitle>{feature.title}</FeatureTitle>
               <FeatureDescription>{feature.description}</FeatureDescription>
-              <div className="h-full w-full">{feature.skeleton}</div>
+              <div className="flex h-full w-full">{feature.skeleton}</div>
             </FeatureCard>
           ))}
         </div>
@@ -168,7 +168,7 @@ export const SkeletonTwo = () => {
   return (
     <div className="relative flex flex-col items-start p-8 gap-10 h-full overflow-hidden">
       {/* TODO */}
-      <div className="flex flex-row -ml-40 mt-40">
+      <div className="flex flex-row items-center">
         {images.map((image, idx) => (
           <motion.div
             variants={imageVariants}
@@ -178,19 +178,19 @@ export const SkeletonTwo = () => {
             }}
             whileHover="whileHover"
             whileTap="whileTap"
-            className="rounded-xl -mr-2 mt-4 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 flex-shrink-0 overflow-hidden"
+            className="rounded-xl mt-4 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 flex-shrink-0 overflow-hidden"
           >
             <Image
               src={image}
               alt="bali images"
               width="500"
               height="500"
-              className="rounded-lg h-10 w-10 md:h-40 md:w-40 object-cover flex-shrink-0"
+              className="rounded-lg h-20 w-20 md:h-40 md:w-40 object-cover flex-shrink-"
             />
           </motion.div>
         ))}
       </div>
-      <div className="flex flex-row -ml-40">
+      <div className="flex flex-row justify-center items-center">
         {images2.map((image, idx) => (
           <motion.div
             key={"images-second" + idx}
@@ -200,14 +200,14 @@ export const SkeletonTwo = () => {
             variants={imageVariants}
             whileHover="whileHover"
             whileTap="whileTap"
-            className="rounded-xl -mr-4 mt-4 p-1 bg-white border border-neutral-100 flex-shrink-0 overflow-hidden"
+            className="rounded-xl mt-4 bg-white border border-neutral-100 flex-shrink-0 overflow-hidden"
           >
             <Image
               src={image}
               alt="bali images"
               width="500"
               height="500"
-              className="rounded-lg h-20 w-20 md:h-40 md:w-40 object-cover flex-shrink-0"
+              className="rounded-lg h-20 w-20 object-cover flex-shrink-0"
             />
           </motion.div>
         ))}
