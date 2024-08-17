@@ -55,8 +55,6 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
           className="mt-4 rounded-lg shadow-lg object-cover w-64 h-40"
         />
       </div>
-
-
     </motion.div>
   );
 };
