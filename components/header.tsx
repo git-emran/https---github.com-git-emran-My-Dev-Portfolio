@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <header className="z-[999] relative">
       <motion.div
-        className="fixed top-0 left-1/2 -translate-x-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-75 shadow-lg shadow-black/[0.03] backdrop-blur-[2rem] sm:top-6 sm:h-[3.25rem] sm:w-[30rem] sm:rounded-full "
+        className="fixed top-0 left-1/2 -translate-x-1/2 h-[5.5rem] w-full rounded-none border border-white border-opacity-40 bg-gray-50 bg-opacity-75 shadow-lg shadow-black/[0.09] backdrop-blur-[2rem] sm:top-6 sm:h-[3.25rem] sm:w-[35rem] sm:rounded-full "
         initial={{ y: -100, x: "-50%", opacity: 1 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
       ></motion.div>
@@ -43,7 +43,7 @@ export default function Header() {
                       stiffness: 380,
                       damping: 30,
                     }}
-                    className="bg-gray-200 rounded-full absolute inset-0 -z-10 "
+                    className="bg-gray-200 border-gray-400 rounded-full absolute inset-0 -z-10 "
                   ></motion.span>
                 )}
               </Link>

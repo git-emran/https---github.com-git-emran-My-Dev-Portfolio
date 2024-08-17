@@ -13,7 +13,7 @@ import { useSectionInView } from "@/lib/hooks";
 import DescriptionSection from "./DescriptionSection";
 
 export default function Experience() {
-  const { ref } = useSectionInView("Experience");
+  const { ref } = useSectionInView("Experience", 0.5);
 
   return (
     <section

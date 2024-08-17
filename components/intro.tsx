@@ -3,12 +3,11 @@
 import { Button, buttonVariants } from "./ui/button";
 import { BsLinkedin } from "react-icons/bs";
 import { FaSquareGithub } from "react-icons/fa6";
-import { toast } from "sonner";
+import { useSectionInView } from "@/lib/hooks";
 import Link from "next/link";
 import { AnimatedTooltip } from "./ui/animated-tooltip";
 import React from "react";
 import { LinkPreview } from "./ui/link-preview";
-import { BiSolidMessageError } from "react-icons/bi";
 
 const people = [
   {
@@ -20,16 +19,27 @@ const people = [
 ];
 
 function Intro() {
+  const { ref } = useSectionInView("Home");
   return (
-    <section id="home" className="flex flex-col scroll-mt-[30] mt-20 scroll-smooth px-20">
+    <section
+      id="home"
+      ref={ref}
+      className="flex flex-col snap-start scroll-mt-[40rem] mt-20 scroll-smooth px-20"
+    >
       <div className="flex flex-wrap items-center justify-center mb-6 w-full">
         <AnimatedTooltip items={people} />
       </div>
       <div className="flex flex-col">
-        <h4 className="flex text-wrap sm:px-40 md:px-4 text-3xl sm:text-3xl lg:text-5xl lg:leading-tight max-w-5xl text-center tracking-tight font-medium text-black">
-          I am Emran, a designer and developer with over 8 years of experience,
-          specializing in creating compelling and customer-centric solutions,
-          especially for B2B & SaaS startups.
+        <h4 className="text-wrap text-gray-800 sm:px-40 md:px-4 text-3xl sm:text-3xl lg:text-5xl lg:leading-tight max-w-5xl text-center tracking-tight font-normal">
+          I am Emran, a{" "}
+          <span className="italic text-black font-serif font-normal">
+            designer & developer
+          </span>{" "}
+          with over 8 years of experience, specializing in creating compelling
+          and customer-centric solutions, especially for{" "}
+          <span className=" text-black italic font-serif font-normal">
+            B2B & SaaS startups.
+          </span>
         </h4>
         <div className="flex items justify-center">
           <p
@@ -45,7 +55,7 @@ function Intro() {
               imageSrc="/github.png"
               className="font-semibold underline text-blue-800"
             >
-              Design & Code
+              Design & Code.
             </LinkPreview>{" "}
             I tell stories through my designs. I spend most of my free time
             solving design problems around me,{" "}

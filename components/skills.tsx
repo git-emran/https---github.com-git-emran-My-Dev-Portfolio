@@ -6,8 +6,6 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import DescriptionSection from "./DescriptionSection";
 
-
-
 const fadeInAnimationVariants = {
   initial: {
     opacity: 0,
@@ -23,7 +21,7 @@ const fadeInAnimationVariants = {
 };
 
 export default function Skills() {
-  const { ref } = useSectionInView("Skills");
+  const { ref } = useSectionInView("Skills", 0.5);
 
   return (
     <section
@@ -31,9 +29,7 @@ export default function Skills() {
       ref={ref}
       className=" flex-col mb-28 mt-20 max-w-[55rem] scroll-mb-28 scroll-mt-16 items-center justify-center text-center sm:mb-40"
     >
-    <DescriptionSection title="My Skills" />
-
-   
+      <DescriptionSection title="My Skills" />
 
       <ul className="flex flex-wrap justify-center gap-2 mt-12 text-lg text-blue-950-800">
         {skillsData.map((skill, index) => (

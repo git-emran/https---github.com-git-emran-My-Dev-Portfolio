@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import {
   Accordion,
@@ -9,10 +10,10 @@ import {
 
 import { LinkPreview } from "./ui/link-preview";
 import DescriptionSection from "./DescriptionSection";
-import { buttonVariants } from "@/components/ui/button";
-import Link from "next/link";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function Faq() {
+  const { ref } = useSectionInView("FAQ", 0.5);
   return (
     <section
       id="faq"

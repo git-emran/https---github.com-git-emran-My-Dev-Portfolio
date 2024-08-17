@@ -6,8 +6,11 @@ import ContributionGraph from "./contribution-graph";
 import { FeaturesSectionDemo } from "./FeaturedAbout";
 import DescriptionSection from "./DescriptionSection";
 import Link from "next/link";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
+  const { ref } = useSectionInView("About", 0.5);
+
   const cardData = [
     {
       quote:
@@ -30,8 +33,10 @@ export default function About() {
   ];
   return (
     <section
+      id="about"
+      ref={ref}
       className="
-    flex flex-col flex-wrap py-20 md:py-32 sm:py-10 lg:py-20 items-center justify-center"
+    flex flex-col flex-wrap py-20 md:py-32 sm:py-10 lg:py-20 items-center scroll-smooth justify-center"
     >
       <div className="flex flex-col items-center text-center justify-center">
         <DescriptionSection
@@ -41,11 +46,14 @@ export default function About() {
         <div className="items-center gap-4 flex-col justify-center flex">
           <FeaturesSectionDemo />
           <ContributionGraph />
+          <button className=" bg-white cursor-pointer border font-medium border-gray-200 hover:bg-slate-200 text-sm px-10 py-4 rounded-md mt-14">
+            <Link href="/mytimeline"> View My Timeline </Link>
+          </button>
         </div>
       </div>
       <div className="flex flex-col items-center mb-20 justify-center">
         {/* Peer Praise Section */}
-        <div className="mt-20 items-center text-center justify-center">
+        <div className=" flex flex-wrap text-wrap mt-60 scroll-mt-60 items-center text-center justify-center">
           <DescriptionSection
             title="Peer Praise"
             description="People loves to work with me, their words! not mine"
@@ -56,9 +64,6 @@ export default function About() {
           items={cardData}
           speed="normal"
         />
-        <button className=" bg-white cursor-pointer border font-medium border-gray-200 hover:bg-slate-200 text-sm px-10 py-4 rounded-md mt-8">
-          <Link href="/mytimeline">View Timeline</Link>
-        </button>
       </div>
     </section>
   );
