@@ -72,7 +72,7 @@ const FeatureCard = ({
 
 const FeatureTitle = ({ children }: { children?: React.ReactNode }) => {
   return (
-    <p className=" max-w-5xl mx-auto text-left tracking-tight text-black dark:text-white text-xl md:text-2xl md:leading-snug">
+    <p className=" flex text-wrap mx-2 max-w-5xl px-4 text-left tracking-tight text-black dark:text-white text-xl md:text-2xl md:leading-snug">
       {children}
     </p>
   );
@@ -82,9 +82,9 @@ const FeatureDescription = ({ children }: { children?: React.ReactNode }) => {
   return (
     <p
       className={cn(
-        "text-sm md:text-base max-w-4xl text-left mx-auto",
+        "text-sm text-wrap flex md:text-base px-4 max-w-4xl text-left mx-auto",
         "text-neutral-500 text-center font-normal dark:text-neutral-300",
-        "text-left max-w-sm mx-0 md:text-sm my-2"
+        "text-left max-w-sm mx-2 md:text-sm my-2"
       )}
     >
       {children}
@@ -185,7 +185,7 @@ export const SkeletonTwo = () => {
               alt="bali images"
               width="500"
               height="500"
-              className="rounded-lg h-20 w-20 md:h-30 md:w-30 object-cover flex-shrink-"
+              className="rounded-lg h-20 w-20 md:h-40 md:w-40 object-cover flex-shrink-1"
             />
           </motion.div>
         ))}

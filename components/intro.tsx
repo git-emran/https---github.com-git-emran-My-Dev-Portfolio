@@ -21,12 +21,12 @@ const people = [
 
 function Intro() {
   return (
-    <section id="home" className="scroll-mt-[30] mt-20 scroll-smooth px-12">
+    <section id="home" className="flex flex-col scroll-mt-[30] mt-20 scroll-smooth px-20">
       <div className="flex flex-wrap items-center justify-center mb-6 w-full">
         <AnimatedTooltip items={people} />
       </div>
-      <div>
-        <h4 className="flex flex-wrap sm:px-40 md:px-4 text-3xl sm:text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black">
+      <div className="flex flex-col">
+        <h4 className="flex text-wrap sm:px-40 md:px-4 text-3xl sm:text-3xl lg:text-5xl lg:leading-tight max-w-5xl text-center tracking-tight font-medium text-black">
           I am Emran, a designer and developer with over 8 years of experience,
           specializing in creating compelling and customer-centric solutions,
           especially for B2B & SaaS startups.
@@ -36,7 +36,7 @@ function Intro() {
             className="justify-center text-center font-normal
     max-w-full md:max-w-[44rem] 
     leading-6 sm:leading-8 
-    mt-6 text-base sm:text-lg sm:px-8 md:text-lg lg:text-xl xl:text-2xl"
+    mt-6 text-base sm:text-lg sm:px-40 md:px-10 lg:px-10 md:text-lg lg:text-xl xl:text-2xl"
           >
             I love{" "}
             <LinkPreview
@@ -71,7 +71,7 @@ function Intro() {
         </div>
 
         {/* Buttons */}
-        <div className=" flex flex-row items-center gap-4 justify-center mt-6">
+        <div className=" flex flex-row items-center gap-4 sm:px-20 md:px-10 justify-center mt-6">
           <Button asChild>
             <Link
               className={buttonVariants({ variant: "destructive" })}
@@ -87,18 +87,6 @@ function Intro() {
             >
               EMAIL 📨
             </Link>
-          </Button>
-          <Button
-            variant="outline"
-            className="text-gray-300 hover:text-gray-800 bg-gray-800"
-            onClick={() =>
-              toast("Use Laptop, Desktop or a Tablet", {
-                description:
-                  "For the optimal experience please use either a Laptop, Desktop or a Tablet ",
-              })
-            }
-          >
-            <BiSolidMessageError />
           </Button>
           <a
             className="bg-gray-800 p-4 text-gray-300 hover:text-gray-800 hover:bg-gray-100 flex items-center gap-2 rounded-full focus:scale-[2.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
