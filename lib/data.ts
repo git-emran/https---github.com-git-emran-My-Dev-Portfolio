@@ -11,6 +11,42 @@ import { FaCubes } from "react-icons/fa6";
 import { FaCss3Alt } from "react-icons/fa";
 import { FaFireAlt } from "react-icons/fa";
 
+export const timelineitem = [
+  {
+    date: "Aug 15, 2024",
+    title: "Designing JoContractor Functionalities",
+    description: "Making it easier for the average Contracting Jo's ",
+    imageUrl: "/jocontractor.png",
+    status: "update",
+    linkUrl: "https://jocontractor.com",
+  },
+  {
+    date: "July 15, 2024",
+    title: "Thailand, Singapore, Malaysia Trip",
+    description: "Enjoying couple of weeks with my family",
+    imageUrl: "/travel2.jpg",
+    status: "released",
+  },
+  {
+    date: "July 25, 2024",
+    title: "Fnished a Full-stack React app with Prisma & clerk Auth",
+    description:
+      "Built a full-stack web app using react, tailwind, typeScript, nextJs ",
+    imageUrl: "/react.jpg",
+    status: "released",
+    linkUrl: "https://github.com/git-emran/store",
+  },
+  {
+    date: "July 5, 2024",
+    title: "Coding a Full-stack iOS application - Fructus",
+    description:
+      "Built a fun little application as a learning sprint using Swift and SwiftData. An app that gives you all the nutrition info of some fruits.",
+    imageUrl: "/iosapp.jpg",
+    status: "released",
+    linkUrl: "https://github.com/git-emran/Fructus-iOS",
+  },
+];
+
 export const links = [
   {
     name: "Home",

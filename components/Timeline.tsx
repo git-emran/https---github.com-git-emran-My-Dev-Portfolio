@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 interface TimelineItemProps {
   date: string;
@@ -8,6 +9,7 @@ interface TimelineItemProps {
   description: string;
   imageUrl: string;
   status: string;
+  linkUrl?: string;
 }
 
 const TimelineItem: React.FC<TimelineItemProps> = ({
@@ -16,6 +18,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
   description,
   imageUrl,
   status,
+  linkUrl,
 }) => {
   return (
     <motion.div
@@ -37,15 +40,23 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
       <div className="">
         <p className="text-sm text-gray-500">{date}</p>
         <h3 className="text-xl font-semibold">{title}</h3>
-        <p className="text-gray-700">{description}</p>
+        <p className="text-gray-700 max-w-[40rem]">{description}</p>
+        {linkUrl && (
+          <Link className="font-medium text-blue-600 italic" href={linkUrl}>
+            {linkUrl}
+          </Link>
+        )}
+
         <Image
           src={imageUrl}
           alt={title}
           height={700}
-          width={900}
+          width={600}
           className="mt-4 rounded-lg shadow-lg object-cover w-64 h-40"
         />
       </div>
+
+
     </motion.div>
   );
 };
