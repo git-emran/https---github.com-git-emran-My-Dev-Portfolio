@@ -101,8 +101,8 @@ export const SkeletonOne = () => {
           <Image
             src="/mt1.jpg"
             alt="header"
-            width={800}
-            height={800}
+            width={600}
+            height={500}
             className="h-fit w-fit aspect-square object-cover object-left-top rounded-sm"
           />
         </div>
