@@ -4,18 +4,26 @@ import TimelineItem from "@/components/Timeline";
 import SubpageHeader from "@/components/subpage-header";
 import { timelineitem } from "@/lib/data";
 import BackToTopButton from "@/components/buttontop";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 export default function MyTimeline() {
   return (
     <section className="min-h-screen sm:top-20 flex flex-col">
       <div className="text-center">
-        <BackToTopButton/>
+        <BackToTopButton />
+
         <SubpageHeader
           title="Timeline"
-          subtitle="The linear view of some milestones and notable moments that happened so far. And you can always find more information on Twitter and LinkedIn."
+          subtitle="The linear view of some milestones and notable moments that happened so far."
         />
       </div>
-
+     
       <section className="flex flex-col items-center justify-center">
         <div className="">
           {timelineitem.map((item, index) => (

@@ -159,7 +159,6 @@ function Intro() {
             </Tooltip>
           </TooltipProvider>
         </div>
-        <div className="mb-28"></div>
       </div>
     </section>
   );
