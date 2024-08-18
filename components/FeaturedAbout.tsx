@@ -121,10 +121,9 @@ export const SkeletonThree = () => {
       target="__blank"
       className="relative flex gap-10  h-full group/image"
     >
-      <div className="w-full  mx-auto bg-transparent dark:bg-transparent group h-full">
-        <div className="flex w-full h-full flex-col space-y-2  relative">
-          
-          <IconBrandYoutubeFilled className="h-20 w-20 absolute z-10 inset-0 text-red-500 m-auto " />
+      <div className="w-full mx-auto bg-transparent dark:bg-transparent group h-full">
+        <div className="flex flex-wrap w-fit h-fit flex-col space-y-2  relative">
+          <IconBrandYoutubeFilled className="h-20 w-20 absolute x-10 z-10 inset-0 text-red-500 m-auto " />
           <Image
             src="/vidthumb.png"
             alt="header"
