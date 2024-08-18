@@ -8,6 +8,12 @@ import Link from "next/link";
 import { AnimatedTooltip } from "./ui/animated-tooltip";
 import React from "react";
 import { LinkPreview } from "./ui/link-preview";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 const people = [
   {
@@ -82,36 +88,76 @@ function Intro() {
 
         {/* Buttons */}
         <div className=" flex flex-row items-center gap-4 sm:px-20 md:px-10 justify-center mt-6">
-          <Button asChild>
-            <Link
-              className={buttonVariants({ variant: "destructive" })}
-              href="/EmranCV.pdf"
-            >
-              DOWNLOAD CV ⇣
-            </Link>
-          </Button>
-          <Button asChild>
-            <Link
-              className={buttonVariants({ variant: "destructive" })}
-              href="mailto:emrn.hossn@gmail.com"
-            >
-              EMAIL 📨
-            </Link>
-          </Button>
-          <a
-            className="bg-gray-800 p-4 text-gray-300 hover:text-gray-800 hover:bg-gray-100 flex items-center gap-2 rounded-full focus:scale-[2.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
-            href="https://www.linkedin.com/in/emran-hossain-80ab17190/"
-            target=""
-          >
-            <BsLinkedin />
-          </a>
-          <a
-            className="bg-gray-800 p-4 text-gray-300 hover:text-gray-800 hover:bg-gray-100 flex items-center gap-2 rounded-full focus:scale-[2.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
-            href="https://github.com/git-emran"
-            target=""
-          >
-            <FaSquareGithub />
-          </a>
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger>
+                {" "}
+                <Button asChild>
+                  <Link
+                    className={buttonVariants({ variant: "destructive" })}
+                    href="/EmranCV.pdf"
+                  >
+                    DOWNLOAD CV ⇣
+                  </Link>
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent>Directly download PDF</TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
+
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger>
+                <Button asChild>
+                  <Link
+                    className={buttonVariants({ variant: "destructive" })}
+                    href="mailto:emrn.hossn@gmail.com"
+                  >
+                    EMAIL 📨
+                  </Link>
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Yup! My email</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
+
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger>
+                {" "}
+                <a
+                  className="bg-gray-800 p-4 text-gray-300 hover:text-gray-800 hover:bg-gray-100 flex items-center gap-2 rounded-full focus:scale-[2.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
+                  href="https://www.linkedin.com/in/emran-hossain-80ab17190/"
+                  target=""
+                >
+                  <BsLinkedin />
+                </a>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>My LinkedIn Profile</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
+
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger>
+                {" "}
+                <a
+                  className="bg-gray-800 p-4 text-gray-300 hover:text-gray-800 hover:bg-gray-100 flex items-center gap-2 rounded-full focus:scale-[2.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
+                  href="https://github.com/git-emran"
+                  target=""
+                >
+                  <FaSquareGithub />
+                </a>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>My Github Profile</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
         </div>
         <div className="mb-28"></div>
       </div>
