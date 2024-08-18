@@ -32,12 +32,12 @@ function Intro() {
       <div className="flex flex-col">
         <h4 className="text-wrap text-gray-800 sm:px-40 md:px-4 text-3xl sm:text-3xl lg:text-5xl lg:leading-tight max-w-5xl text-center tracking-tight font-normal">
           I am Emran, a{" "}
-          <span className="italic text-black font-serif font-normal">
+          <span className="italic text-gray-800  font-serif font-light">
             designer & developer
           </span>{" "}
           with over 8 years of experience, specializing in creating compelling
           and customer-centric solutions, especially for{" "}
-          <span className=" text-black italic font-serif font-normal">
+          <span className=" text-gray-800 italic font-serif font-light">
             B2B & SaaS startups.
           </span>
         </h4>
