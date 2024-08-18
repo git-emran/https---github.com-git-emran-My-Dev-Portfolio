@@ -95,15 +95,15 @@ const FeatureDescription = ({ children }: { children?: React.ReactNode }) => {
 export const SkeletonOne = () => {
   return (
     <div className="relative flex flex-wrap py-8 px-2 gap-10 h-full">
-      <div className="w-full  p-5  mx-auto bg-white dark:bg-neutral-900 shadow-2xl group h-full">
-        <div className="flex flex-1 w-full h-full flex-col space-y-2  ">
+      <div className="w-full p-5 mx-auto bg-white dark:bg-neutral-900 shadow-2xl group h-full">
+        <div className="grid grid-row-2 gap-2 w-full h-full space-y-2">
           {/* TODO */}
           <Image
             src="/mt1.jpg"
             alt="header"
             width={800}
             height={800}
-            className="h-full w-full aspect-square object-cover object-left-top rounded-sm"
+            className="h-fit w-fit aspect-square object-cover object-left-top rounded-sm"
           />
         </div>
       </div>
@@ -124,13 +124,16 @@ export const SkeletonThree = () => {
       <div className="w-full mx-auto bg-transparent dark:bg-transparent group h-full">
         <div className="flex flex-wrap w-fit h-fit flex-col space-y-2  relative">
           <IconBrandYoutubeFilled className="h-20 w-20 absolute x-10 z-10 inset-0 text-red-500 m-auto " />
-          <Image
-            src="/vidthumb.png"
-            alt="header"
-            width={800}
-            height={800}
-            className="w-fit h-fit items-center flex justify-center object-center rounded-sm blur-none group-hover/image:blur-md transition-all duration-200"
-          />
+          <div className="flex flex-wrap">
+            {" "}
+            <Image
+              src="/vidthumb.png"
+              alt="header"
+              width={800}
+              height={800}
+              className="w-fit h-fit items-center flex justify-center object-center rounded-sm blur-none group-hover/image:blur-md transition-all duration-200"
+            />
+          </div>
         </div>
       </div>
     </Link>

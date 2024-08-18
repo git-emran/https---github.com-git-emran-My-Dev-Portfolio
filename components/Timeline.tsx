@@ -22,7 +22,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
 }) => {
   return (
     <motion.div
-      className="flex items-start space-x-4 p-4"
+      className="flex items-start justify-start space-x-4 p-4"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
@@ -35,7 +35,6 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
           }`}
         ></span>
         {/* Timeline bar */}
-        <div className="absolute flex top-5 left-1/2 transform -translate-x-1/2 w-0.5 bg-gray-400 h-[20rem] opacity-40 items-start justify-center"></div>
       </div>
       <div className=" justify-center items-start">
         <p className="text-sm text-gray-500">{date}</p>
@@ -52,7 +51,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
           alt={title}
           height={700}
           width={600}
-          className="mt-4 rounded-lg shadow-lg object-cover w-64 h-40"
+          className="mt-4 rounded-lg shadow-lg object-cover mb-20 w-fit h-fit "
         />
       </div>
     </motion.div>

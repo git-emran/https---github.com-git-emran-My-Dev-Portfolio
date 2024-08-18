@@ -30,14 +30,14 @@ function Intro() {
         <AnimatedTooltip items={people} />
       </div>
       <div className="flex flex-col">
-        <h4 className="text-wrap text-gray-800 sm:px-40 md:px-4 text-3xl sm:text-3xl lg:text-5xl lg:leading-tight max-w-5xl text-center tracking-tight font-normal">
+        <h4 className="text-wrap text-gray-800 sm:px-40 md:px-4 text-3xl sm:text-3xl lg:text-5xl lg:leading-tight max-w-5xl text-center items-center justify-center tracking-tight font-normal">
           I am Emran, a{" "}
-          <span className="italic text-gray-800  font-serif font-light">
+          <span className="italic text-gray-800 font-extralight">
             designer & developer
           </span>{" "}
           with over 8 years of experience, specializing in creating compelling
           and customer-centric solutions, especially for{" "}
-          <span className=" text-gray-800 italic font-serif font-light">
+          <span className=" text-gray-800 italic font-extralight">
             B2B & SaaS startups.
           </span>
         </h4>

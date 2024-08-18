@@ -22,7 +22,7 @@ export function ProjectNavigation() {
         <NavigationMenuItem>
           <NavigationMenuTrigger> View Other Projects </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+            <ul className="grid text-left gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <ListItem href="/insiddemaps" title="Inidemaps Capture">
                 Simplifying Real estate with just an iPhone
               </ListItem>
