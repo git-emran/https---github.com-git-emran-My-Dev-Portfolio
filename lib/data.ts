@@ -14,6 +14,16 @@ import { FaFireAlt } from "react-icons/fa";
 export const timelineitem = [
   {
     date: "Aug 15, 2024",
+    title: "Built a new Section for my Portfolio",
+    description: "I designed and developed this section. Find the code from the github link below.",
+    imageUrl: "/portupdate.png",
+    status: "update",
+    linkUrl:
+      "https://github.com/git-emran/https---github.com-git-emran-My-Dev-Portfolio",
+  },
+
+  {
+    date: "Aug 15, 2024",
     title: "Designing JoContractor Functionalities",
     description: "Making it easier for the average Contracting Jo's ",
     imageUrl: "/jocontractor.png",
