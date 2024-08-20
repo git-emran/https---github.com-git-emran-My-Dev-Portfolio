@@ -68,9 +68,18 @@ export default function Faq() {
             Did you build this site by yourself ?
           </AccordionTrigger>
           <AccordionContent>
-            Yes I hard coded this site by myself. Using react, tailwind css,
-            nextjs, framer-motion and typescript, Hosting through Vercel. I also
-            personally love building apps using swift & swiftUI.
+            Yes I programmed this site by myself. Using react, typescript,
+            tailwind css, nextjs, framer-motion. I also love building apps using
+            swift & swiftUI.
+          </AccordionContent>
+        </AccordionItem>
+        <AccordionItem value="item-5">
+          <AccordionTrigger className="text-left">
+            How about no-code website builders ?
+          </AccordionTrigger>
+          <AccordionContent>
+            Yes, I can build websites using Webflow, Framer, Wix, WordPress.
+            Also with the help of JavaScript I can utilize custom code too.
           </AccordionContent>
         </AccordionItem>
       </Accordion>
