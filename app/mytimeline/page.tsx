@@ -15,15 +15,14 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 export default function MyTimeline() {
   return (
     <section className="min-h-screen sm:top-20 flex flex-col">
+      <BackToTopButton />
       <div className="text-center">
-        <BackToTopButton />
-
         <SubpageHeader
           title="Timeline"
           subtitle="The linear view of some milestones and notable moments that happened so far."
         />
       </div>
-     
+
       <section className="flex flex-col items-center justify-center">
         <div className="">
           {timelineitem.map((item, index) => (
