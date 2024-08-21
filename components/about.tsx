@@ -14,21 +14,21 @@ export default function About() {
   const cardData = [
     {
       quote:
-        "MarketTime is a fast-paced company with ever changing priorities, and Emran did an excellent job of juggling priorities that were provided to him by multiple Agile teams. He's a great leader and I loved working with him.",
+        "MarketTime is a fast-paced company with ever-changing priorities, and Emran did an excellent job of juggling the demands provided to him by multiple Agile teams. His ability to adapt quickly while maintaining a high standard of work is truly impressive. Emran's leadership skills shine through in the way he inspires his team, always ready to step in and support wherever needed. Working with him was not only productive but also a pleasure, as he brings both professionalism and a positive attitude to the table.",
       name: "Todd Litzman",
       title: "President MarketTime B2B, Texas, USA",
       imageUrl: "/todd.jpeg.webp",
     },
     {
       quote:
-        "Working with Emran at was truly a pleasure. Emran displayed the ability to ask questions that not many others could. Solving customers pain points and making the best experience for them is truly Emrans passion and you can see that in his work output and in discussions with customers. I wouldn not hesitate to work with Emran again as he is truly an exceptional UI/UX Designer.",
+        "Working with Emran at was truly a pleasure. Emran displayed the ability to ask questions that not many others could. Solving customers pain points and making the best experience for them is truly Emrans passion and you can see that in his work output and in discussions with customers. I would NOT hesitate to work with Emran again as he is truly an exceptional UI/UX Designer and a Developer.",
       name: "Richard Wohnsiedler",
       title: "Sr Product Owner, ISN, Texas, USA",
       imageUrl: "/richard.webp",
     },
     {
       quote:
-        "Emran's really good at figuring out tricky questions from customers. He's always there to help fix any problems and make sure everyone has a great experience. You can really tell how much he cares about making customers happy, just by talking to him or seeing his work.",
+        "Emran's really good at figuring out tricky questions from customers. He's always there to help fix any problems and make sure everyone has a great experience. You can really tell how much he cares about making customers happy, just by talking to him or seeing his work. His ability to stay calm under pressure and find solutions quickly is impressive, making him an invaluable asset to any team. It's clear that he puts the needs of customers first, and his commitment to their satisfaction never stops.",
       name: "Shafkat Ismam",
       title: "Head of Brand Marketing, Ultra Clean, Malaysia",
       imageUrl: "/shafkat.webp",
