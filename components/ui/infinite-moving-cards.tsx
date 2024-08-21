@@ -2,6 +2,7 @@
 
 import { cn } from "@/utils/cn";
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
 export const InfiniteMovingCards = ({
   items,
@@ -11,6 +12,7 @@ export const InfiniteMovingCards = ({
   className,
 }: {
   items: {
+    imageUrl: string;
     quote: string;
     name: string;
     title: string;
@@ -38,8 +40,6 @@ export const InfiniteMovingCards = ({
           }
         });
 
-        getDirection();
-        getSpeed();
         setStart(true);
       }
     }
@@ -112,6 +112,9 @@ export const InfiniteMovingCards = ({
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
                 <span className="flex flex-col gap-1">
+                  <div className="pt-4">
+                    <Image src={item.imageUrl} alt="" height="52" width="52" className="rounded-full" />
+                  </div>
                   <span className=" text-xl leading-[1.6] text-gray-700 font-bold">
                     {item.name}
                   </span>
