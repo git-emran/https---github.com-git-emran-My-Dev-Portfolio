@@ -22,30 +22,38 @@ export default function Insidemaps() {
 
       <section className="p-8 bg-gray-100">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-4 pt-10">
-            Problem we were facing
-          </h2>
-          <p className="text-lg leading-relaxed mb-4">
-            Revenue hits a roadblock when there is a genuine dissatisfaction
+          <div className="flex flex-row items-start justify-center">
+            <div className="pr-12">
+              {" "}
+              <DescriptionSection
+                title="Problem we were facing"
+                description="Revenue hits a roadblock when there is a genuine dissatisfaction
             from customers when using certain services in our application. And
             that is what happened to us. Our customers were not happy using our
-            feature.
-          </p>
+            feature."
+              />
+            </div>
 
-          <h3 className="text-lg font-bold leading-relaxed mb-4 mt-10">Team</h3>
-          <ul className="flex flex-wrap mt-4 mb-7 gap-2">
-            {[
-              "Jr Designers: 5",
-              "Product owners: 2",
-              "Software Engineers: 3",
+            <div className="flex flex-col">
+              <h3 className="text-lg font-bold leading-relaxed mt-10">Team</h3>
+              <ul className="flex flex-wrap mt-4 mb-7 gap-2">
+                {[
+                  "Jr Designers: 5",
+                  "Product owners: 2",
+                  "Software Engineers: 3",
 
-              "Lead Product Designer (me)",
-            ].map((tag, index) => (
-              <li key={index} className="bg-gray-200 px-3 py-1 rounded-full">
-                {tag}
-              </li>
-            ))}
-          </ul>
+                  "Lead Product Designer (me)",
+                ].map((tag, index) => (
+                  <li
+                    key={index}
+                    className="bg-gray-200 px-3 py-1 rounded-full"
+                  >
+                    {tag}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
 
           {/* Description */}
           <DescriptionSection
@@ -84,9 +92,24 @@ export default function Insidemaps() {
             description=" These are the imporvements I made after taking all the research into
             account."
             images={[
-              { src: "/im4.png", alt: "", height: 700, width: 900 },
-              { src: "/im5.png", alt: "", height: 700, width: 900 },
-              { src: "/im6.gif", alt: "", height: 700, width: 900 },
+              {
+                src: "/im4.png",
+                alt: "improvement 1 ",
+                height: 700,
+                width: 900,
+              },
+              {
+                src: "/im5.png",
+                alt: "improvement 2",
+                height: 700,
+                width: 900,
+              },
+              {
+                src: "/im6.gif",
+                alt: "improvement 3",
+                height: 700,
+                width: 900,
+              },
             ]}
           />
 
