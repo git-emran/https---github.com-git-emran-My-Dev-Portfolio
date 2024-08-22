@@ -43,7 +43,7 @@ function Intro() {
           </span>{" "}
           with over 8 years of experience in{" "}
           <span className=" text-gray-800 italic font-extralight">
-            B2B & SaaS.
+            B2B, SaaS & AI.
           </span>
         </h4>
         <div className="flex items justify-center">

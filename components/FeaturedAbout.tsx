@@ -34,7 +34,7 @@ export function FeaturesSectionDemo() {
     {
       title: "Remote Work Experience",
       description:
-        "From cross-functional teams to cross-continental teams, Remote, Hybrid, Onsite, Been there! Done That! and Good at it too!",
+        "From cross-functional teams to cross-continental teams, Remote, Hybrid, Onsite, I have done it all. And yes! those are the offices I have worked at.",
       skeleton: <SkeletonFour />,
       className: "col-span-1 lg:col-span-3 border-b lg:border-none",
     },
