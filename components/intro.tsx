@@ -41,10 +41,9 @@ function Intro() {
           <span className="italic text-gray-800 font-extralight">
             designer & developer
           </span>{" "}
-          with over 8 years of experience, specializing in creating compelling
-          and customer-centric solutions, especially for{" "}
+          with over 8 years of experience in{" "}
           <span className=" text-gray-800 italic font-extralight">
-            B2B & SaaS startups.
+            B2B & SaaS.
           </span>
         </h4>
         <div className="flex items justify-center">
@@ -54,35 +53,36 @@ function Intro() {
     leading-6 sm:leading-8 
     mt-6 text-base sm:text-sm sm:px-40 md:px-10 lg:px-10 md:text-lg lg:text-xl xl:text-2xl"
           >
-            I love{" "}
+            I enjoy creating{" "}
             <LinkPreview
               url="https://github.com/git-emran"
               isStatic={true}
               imageSrc="/github.png"
               className="font-semibold underline text-blue-800"
             >
-              Design & Code.
+              {" "}
+              open-source
             </LinkPreview>{" "}
-            I tell stories through my designs. I spend most of my free time
-            solving design problems around me,{" "}
+            projects,
             <LinkPreview
               url="https://dribbble.com/chrollo"
               isStatic={true}
               imageSrc="/dribbble.png"
               className="font-semibold underline text-blue-800"
             >
-              creating illustrations
+              {" "}
+              illustrations
             </LinkPreview>
-            , open-source projects, design interactions and product{" "}
+            , design interactions &{" "}
             <LinkPreview
               url="https://www.instagram.com/designwithemran/"
               isStatic={true}
               imageSrc="/instagram.png"
               className="font-semibold underline text-blue-800"
             >
-              design memes.
+              satire design
             </LinkPreview>
-            {""}
+            {""} ideas
           </p>
         </div>
 

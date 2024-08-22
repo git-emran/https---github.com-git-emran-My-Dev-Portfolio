@@ -22,7 +22,7 @@ export default function Experience() {
       className="scroll-mt-28 mt-6 pb-10 sm:mb-30 bg-gray-100 w-full"
     >
       <div className="text-center">
-        <DescriptionSection title="My Experiences" />
+        <DescriptionSection title="Job Experiences" description="Over 8 years of experience" />
       </div>
 
       <VerticalTimeline lineColor="">

@@ -4,13 +4,6 @@ import TimelineItem from "@/components/Timeline";
 import SubpageHeader from "@/components/subpage-header";
 import { timelineitem } from "@/lib/data";
 import BackToTopButton from "@/components/buttontop";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
-import { FaSquareXTwitter } from "react-icons/fa6";
 
 export default function MyTimeline() {
   return (
@@ -23,7 +16,7 @@ export default function MyTimeline() {
         />
       </div>
 
-      <section className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center">
         <div className="">
           {timelineitem.map((item, index) => (
             <TimelineItem
@@ -39,7 +32,7 @@ export default function MyTimeline() {
         </div>
         <div className="mb-40 text-3xl font-semibold"></div>
         <p className="text-center flex items-center">More Info Coming Soon</p>
-      </section>
+      </div>
     </section>
   );
 }

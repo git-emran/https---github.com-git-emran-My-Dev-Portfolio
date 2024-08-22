@@ -16,7 +16,7 @@ export default function About() {
       quote:
         "MarketTime is a fast-paced company with ever-changing priorities, and Emran did an excellent job of juggling the demands provided to him by multiple Agile teams. His ability to adapt quickly while maintaining a high standard of work is truly impressive. Emran's leadership skills shine through in the way he inspires his team, always ready to step in and support wherever needed. Working with him was not only productive but also a pleasure, as he brings both professionalism and a positive attitude to the table.",
       name: "Todd Litzman",
-      title: "President MarketTime B2B, Texas, USA",
+      title: "Founder of Brandwise, Tech Entrepreneur, Texas, USA",
       imageUrl: "/todd.jpeg.webp",
     },
     {
