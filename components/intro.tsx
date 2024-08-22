@@ -82,7 +82,7 @@ function Intro() {
             >
               satire design
             </LinkPreview>
-            {""} ideas
+            {""} ideas in my free time.
           </p>
         </div>
 
