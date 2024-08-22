@@ -82,6 +82,18 @@ export default function Faq() {
             Also with the help of JavaScript I can utilize custom code too.
           </AccordionContent>
         </AccordionItem>
+        <AccordionItem value="item-6">
+          <AccordionTrigger className="text-left">
+            Experience in Animation or Graphics design ?
+          </AccordionTrigger>
+          <AccordionContent>
+            Yes, Since I come from a design background and I have professional
+            Digital Design experience, I can proudly say I know everything
+            related to design. Animation, Interaction design, packaging design,
+            physical banner/poster design, Illustrations etc. Visit my instagram
+            page, it is on the header section on this page.
+          </AccordionContent>
+        </AccordionItem>
       </Accordion>
     </section>
   );
