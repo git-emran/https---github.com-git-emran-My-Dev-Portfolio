@@ -25,7 +25,7 @@ export function FeaturesSectionDemo() {
       className: "border-b col-span-1 lg:col-span-2 dark:border-neutral-800",
     },
     {
-      title: "My Portfolio Reel",
+      title: "Design Reel",
       description: "It's a short collection of my best works over the years.",
       skeleton: <SkeletonThree />,
       className:
