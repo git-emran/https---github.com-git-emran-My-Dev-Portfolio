@@ -138,7 +138,7 @@ export default function WebSiteRedesign() {
             root level.
           </p>
           <Image
-            src="/redesign6.webp"
+            src="/redesign6.png"
             alt="Take 2"
             width={900}
             height={700}
