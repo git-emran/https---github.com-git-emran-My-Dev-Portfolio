@@ -39,7 +39,7 @@ function Intro() {
         <h4 className="text-wrap text-gray-800 sm:px-40 md:px-4 text-3xl sm:text-3xl lg:text-5xl lg:leading-tight max-w-5xl text-center items-center justify-center tracking-tight font-normal">
           I am Emran, a{" "}
           <span className="italic text-gray-800 font-extralight">
-            designer & developer
+            designer & UI engineer
           </span>{" "}
           with over 8 years of experience in{" "}
           <span className=" text-gray-800 italic font-extralight">
