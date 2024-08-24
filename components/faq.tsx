@@ -91,7 +91,7 @@ export default function Faq() {
             Digital Design experience, I can proudly say I know everything
             related to design. Animation, Interaction design, packaging design,
             physical banner/poster design, Illustrations etc. Visit my instagram
-            page, it is on the header section on this page.
+            page, it is on the header section of this page.
           </AccordionContent>
         </AccordionItem>
       </Accordion>
