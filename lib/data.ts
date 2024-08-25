@@ -15,7 +15,8 @@ export const timelineitem = [
   {
     date: "Aug 15, 2024",
     title: "Designing JoContractor",
-    description: "Making it easier for the average Contracting Jo's. More update coming in upcoming posts. ",
+    description:
+      "Making it easier for the average Contracting Jo's. More update coming in upcoming posts. ",
     imageUrl: "/jocontractor.png",
     status: "update",
     linkUrl: "https://jocontractor.com",
@@ -212,7 +213,6 @@ export const skillsData = [
   "Tailwind",
   "MongoDB",
   "Redux",
-  "GraphQL",
   "Express",
   "PostgreSQL",
   "Python",
@@ -220,5 +220,3 @@ export const skillsData = [
   "Framer Motion",
   "StoryBook",
 ] as const;
-
-
