@@ -218,6 +218,7 @@ export const skillsData = [
   "Python",
   "Django",
   "Framer Motion",
+  "StoryBook",
 ] as const;
 
 
