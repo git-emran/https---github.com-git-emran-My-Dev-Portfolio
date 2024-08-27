@@ -24,7 +24,8 @@ export default function GetGenie() {
           <h2 className="text-3xl font-bold mb-4 pt-10">About the Project</h2>
           <p className="text-lg leading-relaxed mb-4">
             Designed & Developed the front-end in JavaScript with the help of
-            AntDesign framework.
+            AntDesign framework. My primary focus was to ensure reusability and
+            scalability of the components.
           </p>
 
           {/* Tech stack */}
