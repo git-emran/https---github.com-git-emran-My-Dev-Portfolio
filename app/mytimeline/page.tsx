@@ -30,8 +30,9 @@ export default function MyTimeline() {
             />
           ))}
         </div>
-        <div className="mb-40 text-3xl font-semibold"></div>
-        <p className="text-center flex items-center">More Info Coming Soon</p>
+        <div className="mb-40 text-3xl font-semibold">
+          <p className="text-center flex items-center">More Info Coming Soon</p>
+        </div>
       </div>
     </section>
   );
