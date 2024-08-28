@@ -28,9 +28,9 @@ export default function Projects() {
           </React.Fragment>
         ))}
         <div className="items-center justify-center flex ">
-          <Button variant="outline" asChild>
-            <Link href="/otherprojects">Other Projects</Link>
-          </Button>
+          <button className=" bg-white cursor-pointer border font-medium border-gray-200 hover:bg-slate-200 text-sm px-10 py-4 rounded-md mt-14">
+            <Link href="/otherprojects"> View Other Projects </Link>
+          </button>
         </div>
       </div>
     </section>
