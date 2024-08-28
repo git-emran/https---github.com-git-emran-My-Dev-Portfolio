@@ -4,7 +4,6 @@ import React from "react";
 import { projectsData } from "@/lib/data";
 import Project from "./project";
 import { useSectionInView } from "@/lib/hooks";
-import { Button } from "./ui/button";
 import Link from "next/link";
 import DescriptionSection from "./DescriptionSection";
 
