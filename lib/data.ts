@@ -120,7 +120,7 @@ export const experiencesData = [
     date: "2022",
   },
   {
-    title: "Lead Product Designer @Insidemaps",
+    title: "Lead Product Designer, UI Engineer @Insidemaps",
     location: "Silicon Valley, California, USA",
     description:
       "I collaborated closely with Designers, Sr Product Manager, Developers and Marketing Team to strategize product vision and growth",
@@ -128,7 +128,7 @@ export const experiencesData = [
     date: "2020",
   },
   {
-    title: "Sr UI/UX Designer @Genex Infosys",
+    title: "Sr UI/UX Designer, Jr. Front-end Developer @Genex Infosys",
     location: "Dhaka, Bangladesh",
     description:
       "I collaborated closely with Designers, Sr Product Manager, Developers and Marketing Team to strategize product vision and growth",
