@@ -84,14 +84,10 @@ export default function Faq() {
         </AccordionItem>
         <AccordionItem value="item-6">
           <AccordionTrigger className="text-left">
-            Experience in Animation or Graphics design ?
+            How much Front-end development experience do you have ?
           </AccordionTrigger>
           <AccordionContent>
-            Yes, Since I come from a design background and I have professional
-            Digital Design experience, I can proudly say I know everything
-            related to design. Animation, Interaction design, packaging design,
-            physical banner/poster design, Illustrations etc. Visit my instagram
-            page, it is on the header section of this page.
+            I have 4 years of front-end development experience. Skilled in React, React Native, Typescript, Swift, SwiftUI. 
           </AccordionContent>
         </AccordionItem>
       </Accordion>
