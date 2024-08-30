@@ -54,21 +54,22 @@ export default function GetGenie() {
             )}
           </ul>
 
-          <h2 className="text-3xl font-bold mb-4 pt-10">Final Design</h2>
-          <p className="text-lg leading-relaxed mb-4">
-            After many trials and errors this is the final design that works. I
+          <div>
+            <DescriptionSection
+              title="Final Design"
+              description=" After many trials and errors this is the final design that works. I
             have tried to explain the reasonings below why I made these design
-            decisions.
-          </p>
-          <Image
-            src="/getgenie.gif"
-            alt="Project I worked on"
-            width={900}
-            height={700}
-            quality={100}
-            unoptimized
-            className="block shadow-2xl rounded-md object-cover mt-2"
-          />
+            decisions."
+              images={[
+                {
+                  src: "/getgenie.gif",
+                  alt: "GetGenie Final design",
+                  width: 900,
+                  height: 200,
+                },
+              ]}
+            />
+          </div>
 
           {/* Description */}
           <h2 className="text-3xl font-bold mb-4 pt-11">Overview</h2>
