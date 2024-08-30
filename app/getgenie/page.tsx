@@ -6,6 +6,7 @@ import Image from "next/image";
 import { BentoGridThirdDemo } from "@/components/bentogridthird";
 import BackToTopButton from "@/components/buttontop";
 import SubpageHeader from "@/components/subpage-header";
+import DescriptionSection from "@/components/DescriptionSection";
 
 export default function GetGenie() {
   const router = useRouter();
@@ -21,12 +22,12 @@ export default function GetGenie() {
       {/* Case study starting */}
       <section className="p-8 bg-gray-100">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-4 pt-10">About the Project</h2>
-          <p className="text-lg leading-relaxed mb-4">
-            Designed & Developed the front-end in JavaScript with the help of
+          <DescriptionSection
+            title="About the Project"
+            description="Designed & Developed the front-end in JavaScript with the help of
             AntDesign framework. My primary focus was to ensure reusability and
-            scalability of the components.
-          </p>
+            scalability of the components."
+          />
 
           {/* Tech stack */}
 
@@ -52,14 +53,7 @@ export default function GetGenie() {
               )
             )}
           </ul>
-          <h2 className="text-3xl font-bold mb-4 pt-8">
-            Here are the Improvements that I made
-          </h2>
-          <p className="mb-8">
-            Due to certain constraints, I had to directly jump into solution
-            launching the product and testing out the product on the go!
-          </p>
-          <BentoGridThirdDemo />
+
           <h2 className="text-3xl font-bold mb-4 pt-10">Final Design</h2>
           <p className="text-lg leading-relaxed mb-4">
             After many trials and errors this is the final design that works. I
