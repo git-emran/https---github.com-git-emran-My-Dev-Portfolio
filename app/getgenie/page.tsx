@@ -72,14 +72,17 @@ export default function GetGenie() {
           </div>
 
           {/* Description */}
-          <h2 className="text-3xl font-bold mb-4 pt-11">Overview</h2>
-          <p>
-            Building an AI product requires designers to balance technical
+          <div>
+            {" "}
+            <DescriptionSection
+              title="Overview"
+              description="Building an AI product requires designers to balance technical
             complexity with user-friendly design, understanding their needs
             while leveraging AI capabilities effectively. It is a delicate
             dance, navigating between innovation and usability, refining
-            iteratively to create products that resonate with users.
-          </p>
+            iteratively to create products that resonate with users."
+            />
+          </div>
 
           {/* Competitor Analysis */}
 
