@@ -150,6 +150,9 @@ export default function Insidemaps() {
             unoptimized
             className="mt-5 flex items-center justify-center"
           />
+          <div>
+            <DescriptionSection title="" images={[]} />
+          </div>
           <h2 className="text-3xl font-bold mb-4 pt-12">
             {" "}
             Results & Next Steps
