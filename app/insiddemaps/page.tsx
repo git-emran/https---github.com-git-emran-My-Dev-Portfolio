@@ -56,79 +56,88 @@ export default function Insidemaps() {
           </div>
 
           {/* Description */}
-          <DescriptionSection
-            title="Overview"
-            description={`Building an AI product requires designers to balance technical
+          <div>
+            {" "}
+            <DescriptionSection
+              title="Overview"
+              description={`Building an AI product requires designers to balance technical
             complexity with user-friendly design, understanding their needs
             while leveraging AI capabilities effectively. It is a delicate
             dance, navigating between innovation and usability, refining
             iteratively to create products that resonate with users.`}
-          />
+            />
+          </div>
+
           {/* Quant Research */}
-          <DescriptionSection
-            title="Quantitative Research - Phase 1"
-            description={`Initial phase was divided into two parts. Part 1 was mostly
+          <div>
+            <DescriptionSection
+              title="Quantitative Research - Phase 1"
+              description={`Initial phase was divided into two parts. Part 1 was mostly
             quantitative analysis where I interviewed a group of 20 people.
             Questions were carefully crafted to generate relevant data. One
             example is given below :`}
-            images={[
-              {
-                src: "/im2.png",
-                alt: "Quantitative Research Image",
-                width: 900,
-                height: 700,
-              },
-            ]}
-          />
+              images={[
+                {
+                  src: "/im2.png",
+                  alt: "Quantitative Research Image",
+                  width: 900,
+                  height: 700,
+                },
+              ]}
+            />
+          </div>
+
           {/* Qual Research */}
-          <DescriptionSection
-            title="Qualitative Research - Phase 2"
-            images={[{ src: "/im3.png", alt: "", width: 900, height: 700 }]}
-          />
+          <div>
+            <DescriptionSection
+              title="Qualitative Research - Phase 2"
+              images={[{ src: "/im3.png", alt: "", width: 900, height: 700 }]}
+            />
+          </div>
 
           {/* Final Improvements*/}
-          <DescriptionSection
-            title="Final Improvements I made"
-            description=" These are the imporvements I made after taking all the research into
+          <div>
+            <DescriptionSection
+              title="Final Improvements I made"
+              description=" These are the imporvements I made after taking all the research into
             account."
-            images={[
-              {
-                src: "/im4.png",
-                alt: "improvement 1 ",
-                height: 700,
-                width: 900,
-              },
-              {
-                src: "/im5.png",
-                alt: "improvement 2",
-                height: 700,
-                width: 900,
-              },
-              {
-                src: "/im6.gif",
-                alt: "improvement 3",
-                height: 700,
-                width: 900,
-              },
-            ]}
-          />
-
-          <h3 className="text-lg font-bold mb-4 pt-12 uppercase">
-            Updated Components :
-          </h3>
-          <p className="text-sm">
-            Redesigning the components library to fit the improved design and
-            interaction
-          </p>
-          <Image
-            src="/im7.png"
-            alt=""
-            width={900}
-            height={200}
-            quality={100}
-            unoptimized
-            className="mt-5 flex items-center justify-center"
-          />
+              images={[
+                {
+                  src: "/im4.png",
+                  alt: "improvement 1 ",
+                  height: 700,
+                  width: 900,
+                },
+                {
+                  src: "/im5.png",
+                  alt: "improvement 2",
+                  height: 700,
+                  width: 900,
+                },
+                {
+                  src: "/im6.gif",
+                  alt: "improvement 3",
+                  height: 700,
+                  width: 900,
+                },
+              ]}
+            />
+          </div>
+          <div>
+            <DescriptionSection
+              title="Updated Components :"
+              description="Redesigning the components library to fit the improved design and
+            interaction"
+              images={[
+                {
+                  src: "/im7.png",
+                  alt: "updated component",
+                  width: 900,
+                  height: 500,
+                },
+              ]}
+            />
+          </div>
           <h3 className="text-lg font-bold mb-4 pt-12 uppercase">
             Why it works? :
           </h3>
