@@ -148,24 +148,21 @@ export default function Insidemaps() {
             height={200}
             quality={100}
             unoptimized
-            className="mt-5 flex items-center justify-center"
+            className="mt-5 flex items-center justify-center mb-5"
           />
           <div>
-            <DescriptionSection title="" images={[]} />
+            <DescriptionSection
+              title="Results & Next Step"
+              images={[
+                {
+                  src: "/im9.png",
+                  alt: "updated component",
+                  width: 900,
+                  height: 500,
+                },
+              ]}
+            />
           </div>
-          <h2 className="text-3xl font-bold mb-4 pt-12">
-            {" "}
-            Results & Next Steps
-          </h2>
-          <Image
-            src="/im9.png"
-            alt=""
-            width={900}
-            height={200}
-            quality={100}
-            unoptimized
-            className="mt-5"
-          />
 
           {/* Put design above this comment */}
         </div>
