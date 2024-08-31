@@ -85,59 +85,47 @@ export default function GetGenie() {
           </div>
 
           {/* Competitor Analysis */}
-
-          <h2 className="text-3xl font-bold mb-4 pt-20">
-            What I learned from the competition
-          </h2>
-          <p>
-            I jumped straight into competitor analysis due to the constraint of
+          <div>
+            <DescriptionSection
+              title="What I learned from the competition"
+              description="  I jumped straight into competitor analysis due to the constraint of
             not being able to spend much time on research. I just wanted to find
             out how the competitors are doing it. It gave me a direction. What
-            the competitors did not have - 1.{" "}
-            <span className="italic font-bold">
-              They were not offering dynamic experience to generate content;
-            </span>{" "}
-            their experience was too linear. 2.Built in SEO optimization. 3.
+            the competitors did not have - 1.They were not offering dynamic experience to generate content, their experience was too linear. 2.Built in SEO optimization. 3.
             Greater control on the outcome. We found our Hooks. Time to design,
-            test , design and repeat.
-          </p>
-          <Image
-            src="/genie2.gif"
-            alt="competitor analysis"
-            width={900}
-            height={700}
-            quality={100}
-            unoptimized
-            className="block shadow-2xl object-cover rounded-md mt-6 mb-16"
-          />
+            test , evaluate and repeat. "
+              images={[
+                {
+                  src: "/genie2.gif",
+                  alt: "competitor analysis",
+                  width: 900,
+                  height: 200,
+                },
+              ]}
+            />
+          </div>
           {/* Stages it went through */}
 
-          <h2 className="text-3xl font-bold mb-4 pt-8">
-            A glimpse of the Stages the UI went through
-          </h2>
-          <p>
-            This is the way I test my design decisions, making a functional
-            prototype at each stage and make sure the navigation and the
-            corresponding components makes sense.
-          </p>
-          <Image
-            src="/genie15.avif"
-            alt="product UI stages"
-            width={900}
-            height={700}
-            quality={100}
-            unoptimized
-            className="block shadow-2xl object-cover rounded-md mt-6 mb-16"
-          />
-          <Image
-            src="/genie16.webp"
-            alt="product UI stages"
-            width={900}
-            height={700}
-            quality={100}
-            unoptimized
-            className="block shadow-2xl object-cover rounded-md mt-6 mb-16"
-          />
+          <div>
+            <DescriptionSection
+              title=""
+              description=""
+              images={[
+                {
+                  src: "/genie15.avif",
+                  alt: "product UI stages",
+                  width: 900,
+                  height: 200,
+                },
+                {
+                  src: "/genie16.webp",
+                  alt: "product UI stages",
+                  width: 900,
+                  height: 200,
+                },
+              ]}
+            />
+          </div>
 
           {/* Improvements I made */}
         </div>
