@@ -138,18 +138,21 @@ export default function Insidemaps() {
               ]}
             />
           </div>
-          <h3 className="text-lg font-bold mb-4 pt-12 uppercase">
-            Why it works? :
-          </h3>
-          <Image
-            src="/im8.png"
-            alt=""
-            width={900}
-            height={200}
-            quality={100}
-            unoptimized
-            className="mt-5 flex items-center justify-center mb-5"
-          />
+          <div>
+            <h3 className="text-lg font-bold mb-4 pt-12 uppercase">
+              Why it works? :
+            </h3>
+            <Image
+              src="/im8.png"
+              alt=""
+              width={900}
+              height={200}
+              quality={100}
+              unoptimized
+              className="mt-5 flex items-center justify-center mb-5"
+            />
+          </div>
+
           <div>
             <DescriptionSection
               title="Results & Next Step"
