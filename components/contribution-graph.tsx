@@ -1,8 +1,7 @@
 "use client";
 import GitHubCalendar from "react-github-calendar";
-import { espionage, github } from "@/app/data/contribution-graph-theme";
+import { github } from "@/app/data/contribution-graph-theme";
 import { useState, useEffect } from "react";
-import YearButton from "@/components/ui/YearButton";
 import { getGitHubYears } from "@/utils/calculate-years";
 import EmptyState from "@/components/ui/empty-state";
 
@@ -11,10 +10,9 @@ export default function ContributionGraph() {
     undefined
   );
 
-  const today = new Date().getFullYear();
+
   const username = process.env.NEXT_PUBLIC_GITHUB_USERNAME;
   const joinYear = Number(process.env.NEXT_PUBLIC_GITHUB_JOIN_YEAR);
-  const years = getGitHubYears(joinYear);
 
   if (!username || !joinYear)
     return (
