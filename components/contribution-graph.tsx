@@ -1,8 +1,7 @@
 "use client";
 import GitHubCalendar from "react-github-calendar";
 import { github } from "@/app/data/contribution-graph-theme";
-import { useState, useEffect } from "react";
-import { getGitHubYears } from "@/utils/calculate-years";
+import { useState} from "react";
 import EmptyState from "@/components/ui/empty-state";
 
 export default function ContributionGraph() {
