@@ -26,7 +26,8 @@ export function FeaturesSectionDemo() {
     },
     {
       title: "Design Reel",
-      description: "It's a short collection of my best works over the years.",
+      description:
+        "It's a short collection of some of the design related work over the years.",
       skeleton: <SkeletonThree />,
       className:
         "col-span-1 lg:col-span-3 lg:border-r  dark:border-neutral-800",
@@ -95,21 +96,21 @@ const FeatureDescription = ({ children }: { children?: React.ReactNode }) => {
 export const SkeletonOne = () => {
   return (
     <div className="relative flex flex-wrap py-8 px-2 gap-10 h-full">
-      <div className="w-full p-5 mx-auto bg-white dark:bg-neutral-900 shadow-2xl group h-full">
+      <div className="w-full h-fit p-5 mx-auto rounded-md bg-white dark:bg-neutral-900 shadow-md group">
         <div className="grid grid-row-2 gap-2 w-full h-full space-y-2">
           {/* TODO */}
           <Image
-            src="/mt1.jpg"
+            src="/mt1.png"
             alt="header"
-            width={600}
-            height={500}
-            className="h-fit w-fit aspect-square object-cover object-left-top rounded-sm"
+            width={2000}
+            height={800}
+            className="h-fit w-fit object-cover justify-center rounded-sm"
           />
         </div>
       </div>
 
-      <div className="absolute bottom-0 z-40 inset-x-0 h-60 bg-gradient-to-t from-white dark:from-black via-white dark:via-black to-transparent w-full pointer-events-none" />
-      <div className="absolute top-0 z-40 inset-x-0 h-60 bg-gradient-to-b from-white dark:from-black via-transparent to-transparent w-full pointer-events-none" />
+      {/* <div className="absolute bottom-0 z-40 inset-x-0 h-60 bg-gradient-to-t from-white dark:from-black via-white dark:via-black to-transparent w-full pointer-events-none" />
+      <div className="absolute top-0 z-40 inset-x-0 h-60 bg-gradient-to-b from-white dark:from-black via-transparent to-transparent w-full pointer-events-none" /> */}
     </div>
   );
 };

@@ -44,11 +44,14 @@ export default function About() {
       <div className="flex flex-col items-center text-center justify-center">
         <DescriptionSection
           title="Fun & Work"
-          description="And the things along the way"
+          description="& the things along the way"
         />
         <div className="items-center gap-4 flex-col justify-center flex">
           <FeaturesSectionDemo />
-          <ContributionGraph />
+          <div className="flex flex-wrap">
+            <ContributionGraph />
+          </div>
+
           <button className=" bg-white cursor-pointer border font-medium border-gray-200 hover:bg-slate-200 text-sm px-10 py-4 rounded-md mt-14">
             <Link href="/mytimeline"> View My Timeline </Link>
           </button>

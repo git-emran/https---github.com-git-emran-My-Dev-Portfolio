@@ -51,6 +51,8 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
           alt={title}
           height={700}
           width={600}
+          unoptimized
+          loading="lazy"
           className="mt-4 rounded-lg shadow-lg object-cover mb-20 w-fit h-fit "
         />
       </div>
