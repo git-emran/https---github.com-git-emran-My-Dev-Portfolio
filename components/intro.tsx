@@ -50,7 +50,7 @@ function Intro() {
           <p
             className="justify-center text-center font-normal
     max-w-full md:max-w-[44rem] leading-6 sm:leading-8 
-    mt-6 text-base sm:text-sm sm:px-40 md:px-10 lg:px-10 md:text-sm lg:text-xl xl:text-2xl"
+    mt-6 sm:px-40 md:px-10 lg:px-10 lg:text-sm xl:text-xl"
           >
             I enjoy creating{" "}
             <LinkPreview
