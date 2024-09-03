@@ -1,16 +1,82 @@
 "use client";
 
 import React from "react";
-
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-
-import { experiencesData } from "@/lib/data";
+import Image from "next/image";
 import { useSectionInView } from "@/lib/hooks";
 import DescriptionSection from "./DescriptionSection";
+import { Timeline } from "@/components/ui/timeline";
+import Link from "next/link";
+
+const experiencesdata = [
+  {
+    title: "Founding Designer",
+    content: (
+      <section>
+        <h1 className="text-2xl font-bold">JoContractor</h1>
+        <p className="text-sm text-gray-500 mb-6">
+          Minneapolis, Minnesota, USA
+        </p>
+        <p>
+          Building a platform to connect contractors with clients and vice versa
+        </p>
+        <div className="pt-4">
+          <Image
+            src="/jocontractor.png"
+            alt="JoContractor"
+            width={500}
+            height={300}
+            className="rounded-md"
+          />
+        </div>
+      </section>
+    ),
+  },
+  {
+    title: "Lead Product Designer & Front-end Dev",
+    content: (
+      <section>
+        <h1 className="text-2xl font-bold">The Total Office</h1>
+        <p className="text-sm text-gray-500 mb-6">Barsha Heights, Dubai</p>
+        <p>
+          Leading the Design team, Building the future of WorkStation building
+          tool
+        </p>
+        <div className="pt-4">
+          <Image
+            src="/totalofficeheader.png"
+            alt="TheTotalOffice"
+            width={500}
+            height={300}
+            className="rounded-md"
+          />
+        </div>
+      </section>
+    ),
+  },
+  {
+    title: "Lead UX/UI Designer",
+    content: (
+      <section>
+        <h1 className="text-2xl font-bold">MarketTime B2B</h1>
+        <p className="text-sm text-gray-500 mb-6">Texas, USA</p>
+        <p>
+          Leading the Design team, Building the future of WorkStation building
+          tool
+        </p>
+        <div className="pt-4">
+          <Image
+            src="/markettimeheader.png"
+            alt="TheTotalOffice"
+            width={500}
+            height={300}
+            className="rounded-md"
+          />
+        </div>
+      </section>
+    ),
+  },
+];
 
 export default function Experience() {
   const { ref } = useSectionInView("Experience", 0.5);
@@ -19,41 +85,22 @@ export default function Experience() {
     <section
       id="experience"
       ref={ref}
-      className="scroll-mt-28 mt-6 pb-10 sm:mb-30 bg-gray-100 w-full"
+      className="scroll-mt-28 mt-6 pb-10 sm:mb-30 scroll-smooth bg-gray-100 w-full"
     >
-      <div className="text-center">
-        <DescriptionSection title="Job Experiences" />
+      <div className="text-center mb-[-6rem]">
+        <DescriptionSection
+          title="Highlighted Experiences"
+          description="Linear view of the places I have worked at"
+        />
       </div>
-
-      <VerticalTimeline lineColor="">
-        {experiencesData.map((item, index) => (
-          <React.Fragment key={index}>
-            <VerticalTimelineElement
-              visible={true}
-              contentStyle={{
-                boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)",
-                border: "1px solid rgba(0, 0, 0, 0.05)",
-                textAlign: "left",
-                padding: "1.3rem 2rem",
-              }}
-              contentArrowStyle={{}}
-              date={item.date}
-              icon={item.icon}
-              iconStyle={{
-                background: "rgb(32, 99, 233)",
-                color: "#fff",
-                fontSize: "1.5rem",
-              }}
-            >
-              <h3 className="font-bold text-black capitalize">{item.title}</h3>
-              <p className="font-normal pb-3 !mt-0">{item.location}</p>
-              <p className="!mt-1 !font-normal text-gray-700">
-                {item.description}
-              </p>
-            </VerticalTimelineElement>
-          </React.Fragment>
-        ))}
-      </VerticalTimeline>
+      <div className="items-center justify-center text-start">
+        <Timeline data={experiencesdata} />
+      </div>
+      <div className="items-center justify-center flex ">
+        <button className=" bg-white cursor-pointer border font-medium border-gray-200 hover:bg-slate-200 text-sm px-10 py-4 rounded-md mt-14">
+          <Link href="/mytimeline"> View Full Timeline </Link>
+        </button>
+      </div>
     </section>
   );
 }

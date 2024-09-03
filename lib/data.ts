@@ -13,7 +13,7 @@ import { FaFireAlt } from "react-icons/fa";
 
 export const timelineitem = [
   {
-    date: "Aug 15, 2024",
+    date: "2022",
     title: "Designing JoContractor",
     description:
       "Making it easier for the average Contracting Jo's. More update coming in upcoming posts. ",

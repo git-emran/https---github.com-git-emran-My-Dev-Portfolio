@@ -1,3 +1,4 @@
+
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -22,7 +23,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
 }) => {
   return (
     <motion.div
-      className="flex items-start justify-start space-x-4 p-4"
+      className="flex max-w-[40rem] items-start justify-start space-x-4 p-4"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}

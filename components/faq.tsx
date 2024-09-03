@@ -17,7 +17,7 @@ export default function Faq() {
   return (
     <section
       id="faq"
-      className="flex flex-wrap text-left flex-col p-10 w-full mb-28 max-w-[60rem] scroll-mt-20 scroll-mb-28 sm:mb-40 sm:px-30"
+      className="flex flex-wrap text-left flex-col p-10 w-full mt-20 mb-28 max-w-[60rem] scroll-mt-20 scroll-mb-28 sm:mb-40 sm:px-30"
     >
       <div className="text-center items-center">
         <DescriptionSection title="Frequently asked Questions & Answers" />
