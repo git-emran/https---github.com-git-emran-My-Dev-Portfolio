@@ -32,7 +32,7 @@ const experiencesdata = [
     ),
   },
   {
-    title: "Lead Product Designer & Front-end Dev",
+    title: "Lead Product Designer & Design Engineer",
     content: (
       <section>
         <h1 className="text-2xl font-bold">The Total Office</h1>
