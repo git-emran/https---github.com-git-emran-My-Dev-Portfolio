@@ -60,8 +60,8 @@ const experiencesdata = [
         <h1 className="text-2xl font-bold">MarketTime B2B</h1>
         <p className="text-sm text-gray-500 mb-6">Texas, USA</p>
         <p>
-          Leading the Design team, Building the future of WorkStation building
-          tool
+          Helped small, medium and Enterprise businesses of Gift & Decor
+          Industries serve more customers through our B2B application ecosystem
         </p>
         <div className="pt-4">
           <Image
