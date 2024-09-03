@@ -22,7 +22,7 @@ export default function MyTimeline() {
       <BackToHome />
       <BackToTopButton />
       <div className="text-center">
-        <DescriptionSection title="Full Job Experience" />
+        <DescriptionSection title="Full Job Experience" description="These are all the companies I have worked for" />
       </div>
 
       <VerticalTimeline lineColor="">

@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import "react-vertical-timeline-component/style.min.css";
 import Image from "next/image";
@@ -87,10 +86,10 @@ export default function Experience() {
       ref={ref}
       className="scroll-mt-28 mt-6 pb-10 sm:mb-30 scroll-smooth bg-gray-100 w-full"
     >
-      <div className="text-center mb-[-6rem]">
+      <div className="text-center">
         <DescriptionSection
-          title="Highlighted Experiences"
-          description="Linear view of the places I have worked at"
+          title="Experience"
+          description="My Professional Journey"
         />
       </div>
       <div className="items-center justify-center text-start">
