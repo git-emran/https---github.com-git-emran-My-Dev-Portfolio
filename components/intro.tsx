@@ -36,7 +36,7 @@ function Intro() {
         <AnimatedTooltip items={people} />
       </div>
       <div className="flex flex-col">
-        <h4 className="text-wrap text-gray-800 sm:px-40 md:px-4 text-3xl sm:text-3xl lg:text-5xl lg:leading-tight max-w-5xl text-center items-center justify-center tracking-tight font-normal">
+        <h4 className="text-wrap text-gray-800 sm:px-40 md:px-4 text-3xl sm:text-3xl lg:text-7xl lg:leading-tight max-w-4xl text-center items-center justify-center tracking-tight font-normal">
           I am Emran, a{" "}
           <span className="italic text-gray-800 font-extralight">
             designer & UI engineer
@@ -49,9 +49,8 @@ function Intro() {
         <div className="flex items justify-center">
           <p
             className="justify-center text-center font-normal
-    max-w-full md:max-w-[44rem] 
-    leading-6 sm:leading-8 
-    mt-6 text-base sm:text-sm sm:px-40 md:px-10 lg:px-10 md:text-lg lg:text-xl xl:text-2xl"
+    max-w-full md:max-w-[44rem] leading-6 sm:leading-8 
+    mt-6 text-base sm:text-sm sm:px-40 md:px-10 lg:px-10 md:text-sm lg:text-xl xl:text-2xl"
           >
             I enjoy creating{" "}
             <LinkPreview
@@ -87,7 +86,7 @@ function Intro() {
         </div>
 
         {/* Buttons */}
-        <div className=" flex flex-row items-center gap-4 sm:px-20 md:px-10 justify-center mt-6">
+        <div className=" flex flex-row items-center gap-4 sm:px-20 md:px-10 justify-center mt-10">
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger>
