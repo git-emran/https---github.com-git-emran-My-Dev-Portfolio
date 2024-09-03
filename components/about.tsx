@@ -5,7 +5,6 @@ import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 import ContributionGraph from "./contribution-graph";
 import { FeaturesSectionDemo } from "./FeaturedAbout";
 import DescriptionSection from "./DescriptionSection";
-import Link from "next/link";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
