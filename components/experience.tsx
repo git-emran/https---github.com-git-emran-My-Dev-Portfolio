@@ -9,7 +9,7 @@ import Link from "next/link";
 
 const experiencesdata = [
   {
-    title: "Founding Designer",
+    title: "Lead Product Designer",
     content: (
       <section>
         <h1 className="text-2xl font-bold">JoContractor</h1>
