@@ -26,10 +26,10 @@ export function ProjectNavigation() {
                 Simplifying Real estate with just an iPhone
               </ListItem>
               <ListItem href="/officeoutlet" title="Office Outlet">
-                How to install dependencies and structure your app
+                Workstation item shopping and planner tool.
               </ListItem>
               <ListItem href="/websiteredesign" title="Website Redesign">
-                Redesigning a website to drive maximum conversion
+                Redesigning a corporate website to drive maximum conversion
               </ListItem>
               <ListItem href="/getgenie" title="GetGenie AI">
                 Your personal AI content generator with SERP data optimization
