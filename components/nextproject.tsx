@@ -29,7 +29,7 @@ export function ProjectNavigation() {
                 Workstation item shopping and planner tool.
               </ListItem>
               <ListItem href="/websiteredesign" title="Website Redesign">
-                Redesigning a corporate website to drive maximum conversion
+                Redesigning a website to drive maximum conversion
               </ListItem>
               <ListItem href="/getgenie" title="GetGenie AI">
                 Your personal AI content generator with SERP data optimization
