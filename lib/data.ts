@@ -52,7 +52,7 @@ export const experiencesData = [
     title: " Lead Product Designer/Front-end Dev @The Total Office",
     location: "Barsha Heights, Dubai",
     description:
-      "Leading the Design team, Building the future of WorkStation building tool",
+      "Leading the Product Design team, Building the future of WorkStation building tool",
     icon: React.createElement(FaComputer),
     date: "2024",
   },
