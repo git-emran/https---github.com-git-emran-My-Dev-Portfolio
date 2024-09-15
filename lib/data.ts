@@ -152,7 +152,7 @@ export const skillsData = [
   "Product Lifecycle",
   "Design Efficiency",
   "User Interviews",
-  "Remote/Offline Usability Testing",
+  "Usability Testing",
   "Design Leadership & Mentorship",
   "HTML",
   "CSS",
