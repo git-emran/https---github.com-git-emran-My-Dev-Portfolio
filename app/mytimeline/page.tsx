@@ -25,7 +25,7 @@ export default function MyTimeline() {
       <div className="text-center">
         <DescriptionSection
           title="Full Job Experience"
-          description="These are all the companies I have worked for"
+          description="With over 8 years of experience, I have managed teams and also tackled situations Solo"
         />
       </div>
       <div className="">
