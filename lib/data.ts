@@ -145,7 +145,7 @@ export const skillsData = [
   "Human Centered Design",
   "Interaction Design",
   "Video Editing",
-  "Illustrations",
+  "Illustration",
   "Brand Identity",
   "Design Accessibility ",
   "User Experience Design",
