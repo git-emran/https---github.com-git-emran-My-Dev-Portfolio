@@ -152,7 +152,6 @@ export const skillsData = [
   "Usability Testing",
   "Video Editing",
   "Illustration",
-  "Brand Identity",
   "Design Leadership & Mentorship",
   "HTML",
   "CSS",
