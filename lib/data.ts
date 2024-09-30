@@ -150,7 +150,6 @@ export const skillsData = [
   "Design Efficiency",
   "User Interviews",
   "Usability Testing",
-  "Video Editing",
   "Illustration",
   "Design Leadership & Mentorship",
   "HTML",
