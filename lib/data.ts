@@ -102,7 +102,7 @@ export const projectsData = [
   {
     title: "GetGenie AI",
     description:
-      "Designed & Developed the front-end in JavaScript with the help of AntDesign framework ",
+      "Designed & Developed the front-end in JavaScript leveraging the AntDesign framework ",
     tags: ["Gutenberg", "JavaScript", "AntDesign", "A.I", "Content Generator"],
     imageUrl: getgenieImg,
     href: "/getgenie",
