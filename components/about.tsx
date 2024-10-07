@@ -47,9 +47,9 @@ export default function About() {
         />
         <div className="items-center gap-4 flex-col justify-center flex">
           <FeaturesSectionDemo />
-          <div className="flex flex-wrap">
+          {/* <div className="flex flex-wrap">
             <ContributionGraph />
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="flex flex-col items-center mb-20 justify-center">
