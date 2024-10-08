@@ -117,8 +117,6 @@ export const projectsData = [
       "SwiftUI",
       "Accessibility",
       "Interaction Design",
-      "Custom CSS",
-      "WCAG 2.0",
     ],
     imageUrl: insidemapsImg,
     href: "/insiddemaps",
