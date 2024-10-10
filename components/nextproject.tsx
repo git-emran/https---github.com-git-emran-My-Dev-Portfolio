@@ -32,7 +32,7 @@ export function ProjectNavigation() {
                 Redesigning a website to drive maximum conversion
               </ListItem>
               <ListItem href="/getgenie" title="GetGenie AI">
-                Your personal AI content generator with SERP data optimization
+                Your personal AI Content Generator with built in SERP data optimization.
               </ListItem>
             </ul>
           </NavigationMenuContent>
