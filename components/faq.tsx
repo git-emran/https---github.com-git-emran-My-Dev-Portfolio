@@ -78,7 +78,7 @@ export default function Faq() {
             How about no-code website builders ?
           </AccordionTrigger>
           <AccordionContent>
-            Yes, I can build websites using Webflow, Framer, Wix, WordPress.
+            Yes, I can quickly put together big scale websites using Webflow, Framer, Wix, WordPress.
             Also with the help of JavaScript I can utilize custom code too.
           </AccordionContent>
         </AccordionItem>
