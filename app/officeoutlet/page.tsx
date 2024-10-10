@@ -28,7 +28,7 @@ export default function OfficeOutlet() {
             Why we started This project
           </h2>
           <p>
-            The current office space planning and interior design process in the
+            The current enterprise or personal Workstation space planning and interior design process in the
             UAE demographic is time-consuming, lacking visualization
             capabilities, and often leads to costly mistakes and waste. Users
             struggle to visualize and experiment with different design options,
