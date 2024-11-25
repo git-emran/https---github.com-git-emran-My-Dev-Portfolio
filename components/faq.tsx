@@ -87,7 +87,7 @@ export default function Faq() {
             How much Front-end development experience do you have ?
           </AccordionTrigger>
           <AccordionContent>
-            I have 3 years of front-end only development experience. Skilled in React, React Native, Typescript, Swift, SwiftUI. 
+            I have 4 years of exclusive front-end development experience. Skilled in React, React Native, Typescript, Swift, SwiftUI. 
           </AccordionContent>
         </AccordionItem>
       </Accordion>
