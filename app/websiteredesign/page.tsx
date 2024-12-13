@@ -6,6 +6,7 @@ import Image from "next/image";
 import SubpageHeader from "@/components/subpage-header";
 import BackToTopButton from "@/components/buttontop";
 import OptimizedImage from "@/components/OptimizedImage";
+import DescriptionSection from "@/components/DescriptionSection";
 
 export default function WebSiteRedesign() {
   const router = useRouter();
@@ -214,6 +215,9 @@ export default function WebSiteRedesign() {
             unoptimized
             className="block shadow-2xl rounded-md object-cover mt-8"
           />
+          <div className="mt-12">
+            <DescriptionSection title="Final Results" description="After every iteration, it is crucial to evaluate what's happening" />
+          </div>
 
           {/* Design goes above this line */}
         </div>
