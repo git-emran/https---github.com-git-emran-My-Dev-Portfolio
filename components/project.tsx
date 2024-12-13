@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import Link from "next/link";
 
 type ProjectProps = (typeof projectsData)[number];
@@ -20,8 +20,16 @@ export default function Project({
     target: ref,
     offset: ["0 1", "1.33 1"],
   });
-  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
-  const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+
+  // Optimized animations with spring effects
+  const scaleProgess = useSpring(
+    useTransform(scrollYProgress, [0, 1], [0.8, 1]),
+    { stiffness: 200, damping: 20 }
+  );
+  const opacityProgess = useSpring(
+    useTransform(scrollYProgress, [0, 1], [0.6, 1]),
+    { stiffness: 200, damping: 20 }
+  );
 
   return (
     <motion.div
@@ -53,21 +61,20 @@ export default function Project({
 
           <Image
             src={imageUrl}
-            alt="Project I worked on"
+            alt={title}
             quality={95}
-            unoptimized
+            placeholder="blur"
+            blurDataURL="/path-to-blur-placeholder.jpg"
             className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
-        transition 
-        group-hover:scale-[1.04]
-        group-hover:-translate-x-3
-        group-hover:translate-y-3
-        group-hover:-rotate-2
-
-        group-even:group-hover:translate-x-3
-        group-even:group-hover:translate-y-3
-        group-even:group-hover:rotate-2
-
-        group-even:right-[initial] group-even:-left-40"
+              transition 
+              group-hover:scale-[1.04]
+              group-hover:-translate-x-3
+              group-hover:translate-y-3
+              group-hover:-rotate-2
+              group-even:group-hover:translate-x-3
+              group-even:group-hover:translate-y-3
+              group-even:group-hover:rotate-2
+              group-even:right-[initial] group-even:-left-40"
           />
         </section>
       </Link>

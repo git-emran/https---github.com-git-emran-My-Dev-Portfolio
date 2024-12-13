@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import SubpageHeader from "@/components/subpage-header";
 import BackToTopButton from "@/components/buttontop";
+import OptimizedImage from "@/components/OptimizedImage";
 
 export default function WebSiteRedesign() {
   const router = useRouter();
@@ -20,20 +21,6 @@ export default function WebSiteRedesign() {
       {/* Body starts -------> */}
       <section className="p-8 bg-gray-100">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-4 pt-10">Final Design</h2>
-          <p>
-            This is the layout that achieves what I was aiming for. Here is how
-            I got here -
-          </p>
-          <Image
-            src="/redesign1.webp"
-            alt="Final Outcome"
-            width={900}
-            height={700}
-            quality={100}
-            unoptimized
-            className="block shadow-2xl rounded-md object-cover mt-8"
-          />
           {/* Teams */}
           <h3 className="text-lg font-bold leading-relaxed mb-4 mt-10">Team</h3>
           <ul className="flex flex-wrap mt-4 mb-7 gap-2">
@@ -49,6 +36,61 @@ export default function WebSiteRedesign() {
               </li>
             ))}
           </ul>
+          <h2 className="text-3xl font-bold mb-4 pt-10">Final Design</h2>
+          <p>
+            This is the layout that achieves what I was aiming for. Here is how
+            I got here -
+          </p>
+          <Image
+            src="/redesign1.webp"
+            alt="Final Outcome"
+            width={900}
+            height={700}
+            quality={100}
+            unoptimized
+            className="block shadow-2xl rounded-md object-cover mt-8"
+          />
+
+          {/* Improvements I made -------> */}
+          <h2 className="text-3xl font-bold mb-4 pt-20">
+            Highlighted UI Changes
+          </h2>
+          <p>
+            Among other design decisions, these are some of the major UI changes
+            that happened.
+          </p>
+
+          <div className="grid grid-cols-3 gap-4 mt-5">
+            {/* Large Image Spanning Full Width */}
+            <div className="col-span-3">
+              <OptimizedImage
+                src="/redesign10.webp"
+                alt="Redesign Highlight 1"
+              />
+            </div>
+
+            {/* Two-thirds Width Image */}
+            <div className="col-span-2">
+              <OptimizedImage
+                src="/redesign11.webp"
+                alt="Redesign Highlight 2"
+              />
+            </div>
+
+            {/* Single-column Image */}
+            <div>
+              <OptimizedImage
+                src="/redesign12.webp"
+                alt="Redesign Highlight 3"
+              />
+            </div>
+          </div>
+
+          {/* Additional Full-Width Images */}
+          <div className="mt-5 space-y-5">
+            <OptimizedImage src="/redesign9.webp" alt="Redesign Highlight 4" />
+            <OptimizedImage src="/redesign13.webp" alt="Redesign Highlight 5" />
+          </div>
           {/* Overview/Starting -------> */}
 
           <h2 className="text-3xl font-bold mb-4 pt-40 text-center">
@@ -171,67 +213,6 @@ export default function WebSiteRedesign() {
             quality={100}
             unoptimized
             className="block shadow-2xl rounded-md object-cover mt-8"
-          />
-          {/* Improvements I made -------> */}
-          <h2 className="text-3xl font-bold mb-4 pt-20">
-            Highlighted UI changes
-          </h2>
-          <p>
-            Among other design decisions, these are some of the major UI changes
-            that happened.
-          </p>
-          <div className="grid grid-cols-3 gap-4">
-            <div className="col-span-3">
-              <Image
-                src="/redesign10.webp"
-                alt=""
-                width={900}
-                height={200}
-                quality={100}
-                unoptimized
-                className="mt-5 rounded-md"
-              />
-            </div>
-            <div className="col-span-2">
-              <Image
-                src="/redesign11.webp"
-                alt=""
-                width={900}
-                height={200}
-                quality={100}
-                unoptimized
-                className="mt-5 ounded-md"
-              />
-            </div>
-            <div>
-              <Image
-                src="/redesign12.webp"
-                alt=""
-                width={900}
-                height={200}
-                quality={100}
-                unoptimized
-                className="mt-5"
-              />
-            </div>
-          </div>
-          <Image
-            src="/redesign9.webp"
-            alt=""
-            width={900}
-            height={200}
-            quality={100}
-            unoptimized
-            className="mt-5"
-          />
-          <Image
-            src="/redesign13.webp"
-            alt=""
-            width={900}
-            height={200}
-            quality={100}
-            unoptimized
-            className="mt-5"
           />
 
           {/* Design goes above this line */}
