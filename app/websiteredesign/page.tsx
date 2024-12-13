@@ -96,38 +96,29 @@ export default function WebSiteRedesign() {
             />
           </div>
           {/* Interface & Content Layout -------> */}
-          <h2 className="text-3xl font-bold mb-4 pt-20">
-            Interface & Content Layout - Spoiler alert! First attempt did not
-            work
-          </h2>
-          <p>
-            First layout testing did not go as planned. Some {""}
-            <span className="font-bold text-lg">mistakes</span> were made.
-          </p>
-          <Image
-            src="/redesign5.webp"
-            alt="Content Layout"
-            width={900}
-            height={700}
-            quality={100}
-            unoptimized
-            className="block shadow-2xl rounded-md object-cover mt-8"
-          />
+          <div className="mt-10">
+            {" "}
+            <DescriptionSection
+              title="Interface & Content Layout - Spoiler alert! First attempt did not
+            work"
+              description="First layout testing did not go as planned. Some mistakes were made"
+              images={[{ src: "/redesign5.webp", alt: "Content Layout" }]}
+            />
+          </div>
           {/* Take 2 -------> */}
-          <h2 className="text-3xl font-bold mb-4 pt-20">Take 2</h2>
-          <p>
-            Second attempt to find the perfect layout which is tested on the
-            root level.
-          </p>
-          <Image
-            src="/redesign6.png"
-            alt="Take 2"
-            width={900}
-            height={700}
-            quality={100}
-            unoptimized
-            className="block shadow-2xl rounded-md object-cover mt-8"
-          />
+          <div className="mt-20 p-12 bg-gray-50">
+            <DescriptionSection
+              title="Take 2"
+              description="Second attempt to find the perfect layout which is tested on the
+            root level."
+              images={[
+                {
+                  src: "/redesign6.png",
+                  alt: "Take 2",
+                },
+              ]}
+            />
+          </div>
           {/* Responsiveness & Accessibility -------> */}
           <h2 className="text-3xl font-bold mb-4 pt-20">
             Responsiveness & Accessibility
