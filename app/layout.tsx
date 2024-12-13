@@ -5,7 +5,6 @@ import Footer from "@/components/footer";
 
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Toaster } from "@/components/ui/sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,7 +31,6 @@ export default function RootLayout({
 
         <ActiveSectionContextProvider>
           {children}
-          <Toaster />
 
           <SpeedInsights />
           <Analytics />
