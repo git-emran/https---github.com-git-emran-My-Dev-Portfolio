@@ -36,7 +36,6 @@ export default function MyTimeline() {
               <VerticalTimelineElement
                 visible={true}
                 contentStyle={{
-                  boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)",
                   border: "1px solid rgba(0, 0, 0, 0.05)",
                   textAlign: "left",
                   padding: "1.3rem 2rem",

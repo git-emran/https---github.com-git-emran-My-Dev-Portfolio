@@ -281,3 +281,4 @@ const cards = [
     },
   },
 ];
+export default ExpandableCardDemo;
