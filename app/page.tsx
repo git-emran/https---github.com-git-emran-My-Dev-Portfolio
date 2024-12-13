@@ -12,10 +12,10 @@ export default function Page() {
     <main className="flex flex-col overflow-x-hidden w-full h-full relative mt-20 items-center sm:pt-26">
       <Header />
       <Intro />
-      <About />
       <Projects />
-      <Skills />
+      <About />
       <Experience />
+      <Skills />
       <Faq />
     </main>
   );
