@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import SubpageHeader from "@/components/subpage-header";
 import BackToTopButton from "@/components/buttontop";
+import DescriptionSection from "@/components/DescriptionSection";
 
 export default function WebSiteRedesign() {
   const router = useRouter();
@@ -20,22 +21,19 @@ export default function WebSiteRedesign() {
       {/* Body starts -------> */}
       <section className="p-8 bg-gray-100">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-4 pt-10">Final Design</h2>
-          <p>
-            This is the layout that achieves what I was aiming for. Here is how
-            I got here -
-          </p>
-          <Image
-            src="/redesign1.webp"
-            alt="Final Outcome"
-            width={900}
-            height={700}
-            quality={100}
-            unoptimized
-            className="block shadow-2xl rounded-md object-cover mt-8"
+          <DescriptionSection
+            title="Final Design"
+            description="This is the layout that achieves what I was aiming for. Here is how
+            I got here -"
+            images={[
+              {
+                src: "/redesign1.webp",
+                alt: "Final Outcome",
+              },
+            ]}
           />
           {/* Teams */}
-          <h3 className="text-lg font-bold leading-relaxed mb-4 mt-10">Team</h3>
+          <DescriptionSection title="Team" />
           <ul className="flex flex-wrap mt-4 mb-7 gap-2">
             {[
               "Jr Designers: 3",
@@ -49,70 +47,54 @@ export default function WebSiteRedesign() {
               </li>
             ))}
           </ul>
-          {/* Overview/Starting -------> */}
-
-          <h2 className="text-3xl font-bold mb-4 pt-40 text-center">
-            How I got here ?
-          </h2>
-          <p className="text-center">
-            Sometimes the simplest way is the best way.
-          </p>
-
-          {/* Design process -------> */}
-          <h2 className="text-3xl font-bold mb-4 pt-20">Design Process</h2>
-          <p>
-            Here is the design process that I have followed. This is a project
-            where a linear design process was followed. Everything by the book.
-          </p>
-          <Image
-            src="/redesign2.webp"
-            alt="Final Outcome"
-            width={900}
-            height={700}
-            quality={100}
-            unoptimized
-            className="block shadow-2xl rounded-md object-cover mt-8"
+          {/* Overview/Starting -------> */}{" "}
+          <DescriptionSection
+            title="How I got here?"
+            description="Figuring it out as I go, One sprint at a time"
           />
+          {/* Design process -------> */}
+          <div className="mt-20 p-12 bg-gray-50">
+            {" "}
+            <DescriptionSection
+              title="Design Process"
+              description="Here is the design process that I have followed. This is a project
+            where a linear design process was followed. Everything by the book.
+          </p>"
+              images={[
+                {
+                  src: "/redesign2.webp",
+                  alt: "Design process",
+                },
+              ]}
+            />
+          </div>
           {/* Running Usability tests -------> */}
-          <h2 className="text-3xl font-bold mb-4 pt-20">
-            Internal Usability Tests
-          </h2>
-          <p>
-            Usability testing and only{" "}
-            <span className="font-bold text-lg">
-              internal team validation process
-            </span>{" "}
-            was used here. I did not ask any user any questions. I repeat I did
-            not ask any users any questions.
-          </p>
-          <Image
-            src="/redesign3.avif"
-            alt="Final Outcome"
-            width={900}
-            height={700}
-            quality={100}
-            unoptimized
-            className="block shadow-2xl rounded-md object-cover mt-8"
+          <DescriptionSection
+            title="Internal Usability Tests"
+            description="Usability testing and only internal team validation process was used here. I did not ask any user any questions. I repeat I did
+            not ask any users any questions."
+            images={[
+              {
+                src: "/redesign3.avif",
+              },
+            ]}
           />
           {/* First things First -------> */}
-          <h2 className="text-3xl font-bold mb-4 pt-20">
-            First Things First - The Sitemap
-          </h2>
-          <p>
-            <span className="font-bold text-lg">Sitemap!! </span>Optimizing the
+          <div className="mt-20 p-12 bg-gray-50">
+            <DescriptionSection
+              title="First Things First - The Sitemap"
+              description="Sitemap!! Optimizing the
             sitemap for an easier navigation throughout the website. While
             focusing on conversion, I also doubled down on the lean UX
-            principles to remove unnecessary design artifacts.
-          </p>
-          <Image
-            src="/redesign4.webp"
-            alt="first things first"
-            width={900}
-            height={700}
-            quality={100}
-            unoptimized
-            className="block shadow-2xl rounded-md object-cover mt-8"
-          />
+            principles to remove unnecessary design artifacts."
+              images={[
+                {
+                  src: "/redesign4.webp",
+                  alt: "first things first",
+                },
+              ]}
+            />
+          </div>
           {/* Interface & Content Layout -------> */}
           <h2 className="text-3xl font-bold mb-4 pt-20">
             Interface & Content Layout - Spoiler alert! First attempt did not
@@ -233,7 +215,6 @@ export default function WebSiteRedesign() {
             unoptimized
             className="mt-5"
           />
-
           {/* Design goes above this line */}
         </div>
       </section>
