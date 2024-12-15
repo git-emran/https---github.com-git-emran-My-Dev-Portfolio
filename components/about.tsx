@@ -51,7 +51,7 @@ export default function About() {
       </div>
       {/* Peer Praise Section */}
       <div className="flex flex-col items-center mb-20 justify-center">
-        <div className=" flex flex-wrap text-wrap mt-60 scroll-mt-60 items-center text-center justify-center pt-12 bg-gray-50">
+        <div className=" flex flex-wrap text-wrap mt-60 scroll-mt-60 items-center text-center justify-center pt-12">
           <DescriptionSection
             title="Peer Praise"
             description="People love to work with me, their words!"
