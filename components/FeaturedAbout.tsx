@@ -18,14 +18,14 @@ export function FeaturesSectionDemo() {
         "flex-wrap col-span-1 lg:col-span-4 border-b lg:border-r dark:border-neutral-800",
     },
     {
-      title: "Family & Travelling",
+      title: "Time with Family matters",
       description:
         "I love travelling around the globe. These are the places and the culture I loved most.",
       skeleton: <SkeletonTwo />,
       className: "border-b col-span-1 lg:col-span-2 dark:border-neutral-800",
     },
     {
-      title: "Design Reel",
+      title: "Design SneakPeek Reel",
       description:
         "It's a short collection of some of the design related work over the years.",
       skeleton: <SkeletonThree />,

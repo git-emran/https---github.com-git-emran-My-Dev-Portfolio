@@ -39,21 +39,22 @@ export default function About() {
       className="
     flex flex-col flex-wrap py-20 md:py-32 sm:py-10 lg:py-20 items-center scroll-smooth justify-center"
     >
+      {/* About me */}
       <div className="flex flex-col items-center text-center justify-center">
         <DescriptionSection
-          title="Fun & Work"
-          description="& the things along the way"
+          title="About me"
+          description="& the things I learned along the way"
         />
         <div className="items-center gap-4 flex-col justify-center flex">
           <FeaturesSectionDemo />
         </div>
       </div>
+      {/* Peer Praise Section */}
       <div className="flex flex-col items-center mb-20 justify-center">
-        {/* Peer Praise Section */}
-        <div className=" flex flex-wrap text-wrap mt-60 scroll-mt-60 items-center text-center justify-center">
+        <div className=" flex flex-wrap text-wrap mt-60 scroll-mt-60 items-center text-center justify-center pt-12 bg-gray-50">
           <DescriptionSection
             title="Peer Praise"
-            description="People love to work with me, their words! not mine"
+            description="People love to work with me, their words!"
           />
         </div>
         <InfiniteMovingCards
