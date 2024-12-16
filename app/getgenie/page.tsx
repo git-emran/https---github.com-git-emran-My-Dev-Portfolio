@@ -108,8 +108,8 @@ export default function GetGenie() {
 
           <div>
             <DescriptionSection
-              title=""
-              description=""
+              title="Trying to Figure it out"
+              description="Here you can see I am going through the stages of iterating a design"
               images={[
                 {
                   src: "/genie15.avif",
@@ -117,9 +117,51 @@ export default function GetGenie() {
                   width: 900,
                   height: 200,
                 },
+              ]}
+            />
+          </div>
+
+          <div className="mt-12">
+            <DescriptionSection
+              title="Feature led Design"
+              description="Focusing on the required features first and designing solutions around them"
+              images={[
                 {
                   src: "/genie16.webp",
-                  alt: "product UI stages",
+                  alt: "Final Feature 1",
+                  width: 900,
+                  height: 200,
+                },
+                {
+                  src: "/genie33.png",
+                  alt: "Final Feature 2",
+                  width: 900,
+                  height: 200,
+                },
+                {
+                  src: "/genie34.png",
+                  alt: "Final Feature 3",
+                  width: 900,
+                  height: 200,
+                },
+                {
+                  src: "/genie36.png",
+                  alt: "Final Feature 4",
+                  width: 900,
+                  height: 200,
+                },
+              ]}
+            />
+          </div>
+
+          <div>
+            <DescriptionSection
+              title="First-hand Experiences With GetGenie"
+              description="Here's what people think about the best Ai content & SEO assistant 👇"
+              images={[
+                {
+                  src: "/genie35.png",
+                  alt: "Final Feature 1",
                   width: 900,
                   height: 200,
                 },
