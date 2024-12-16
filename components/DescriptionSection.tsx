@@ -33,6 +33,7 @@ const DescriptionSection: React.FC<DescriptionSection> = ({
           alt={image.alt || ""}
           width={image.width || 900}
           height={image.height || 700}
+          unoptimized
           className="w-full h-auto mt-2 mb-12"
         />
       ))}
