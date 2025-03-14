@@ -3,7 +3,6 @@
 import { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
 
 type ProjectProps = (typeof projectsData)[number];
@@ -16,22 +15,9 @@ export default function Project({
   href = "",
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["0 1", "1.33 1"],
-  });
-  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
-  const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
   return (
-    <motion.div
-      ref={ref}
-      style={{
-        scale: scaleProgess,
-        opacity: opacityProgess,
-      }}
-      className="group mb-5 sm:mb-8 last:mb-0 items-center justify-center rounded-lg shadow-lg"
-    >
+    <div className="group max-w-[43rem] mb-5 sm:mb-8 last:mb-0 items-center justify-center rounded-lg shadow-lg">
       <Link href={href}>
         <section className="bg-gray-100 max-w-[46rem] border border-black/5 rounded-lg overflow-hidden relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
           <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
@@ -42,7 +28,7 @@ export default function Project({
             <ul className="flex flex-wrap mt-4 pt-7 mb-7 gap-2 sm:mt-auto">
               {tags.map((tag, index) => (
                 <li
-                  className="bg-black/[0.7] px-4 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-black/70"
+                  className="bg-black/[0.06] px-4 py-1 text-[0.7rem] uppercase tracking-wider text-black/[0.6] rounded-full"
                   key={index}
                 >
                   {tag}
@@ -71,6 +57,6 @@ export default function Project({
           />
         </section>
       </Link>
-    </motion.div>
+    </div>
   );
 }
