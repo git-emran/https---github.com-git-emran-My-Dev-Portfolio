@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, buttonVariants } from "./ui/button";
+import { Button } from "./ui/button";
 import { BsLinkedin } from "react-icons/bs";
 import { FaSquareGithub } from "react-icons/fa6";
 import { useSectionInView } from "@/lib/hooks";
@@ -57,7 +57,7 @@ function Intro() {
               url="https://github.com/git-emran"
               isStatic={true}
               imageSrc="/github.png"
-              className="font-semibold underline text-blue-800"
+              className="font-semibold underline text-blue-800 italic"
             >
               {" "}
               open-source
@@ -67,7 +67,7 @@ function Intro() {
               url="https://dribbble.com/chrollo"
               isStatic={true}
               imageSrc="/dribbble.png"
-              className="font-semibold underline text-blue-800"
+              className="font-semibold underline text-blue-800 italic"
             >
               {" "}
               illustrations
@@ -77,7 +77,7 @@ function Intro() {
               url="https://www.instagram.com/designwithemran/"
               isStatic={true}
               imageSrc="/instagram.png"
-              className="font-semibold underline text-blue-800"
+              className="font-semibold underline text-blue-800 italic"
             >
               satire design
             </LinkPreview>
@@ -91,14 +91,11 @@ function Intro() {
             <Tooltip>
               <TooltipTrigger>
                 {" "}
-                <Button asChild>
-                  <Link
-                    className={buttonVariants({ variant: "destructive" })}
-                    href="/EmranCV.pdf"
-                  >
-                    DOWNLOAD CV ⇣
-                  </Link>
-                </Button>
+             <Button>
+              <Link href=''>
+              Download CV
+              </Link>
+             </Button>
               </TooltipTrigger>
               <TooltipContent>Directly download PDF</TooltipContent>
             </Tooltip>
@@ -109,7 +106,6 @@ function Intro() {
               <TooltipTrigger>
                 <Button asChild>
                   <Link
-                    className={buttonVariants({ variant: "destructive" })}
                     href="mailto:emrn.hossn@gmail.com"
                   >
                     EMAIL 📨
@@ -117,7 +113,7 @@ function Intro() {
                 </Button>
               </TooltipTrigger>
               <TooltipContent>
-                <p>Yup! My email</p>
+               My Email
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>
@@ -135,7 +131,7 @@ function Intro() {
                 </a>
               </TooltipTrigger>
               <TooltipContent>
-                <p>My LinkedIn Profile</p>
+              LinkedIn Profile
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>
@@ -153,7 +149,7 @@ function Intro() {
                 </a>
               </TooltipTrigger>
               <TooltipContent>
-                <p>My Github Profile</p>
+                Github Profile
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>
