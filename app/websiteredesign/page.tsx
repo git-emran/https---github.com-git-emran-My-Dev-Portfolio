@@ -12,7 +12,7 @@ export default function WebSiteRedesign() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      {/* Header */}
+      {/* InsideMaps Website Header */}
       <BackToTopButton />
       <SubpageHeader
         title="Corporate Website Redesign "

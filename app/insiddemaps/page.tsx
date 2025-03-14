@@ -60,11 +60,7 @@ export default function Insidemaps() {
             {" "}
             <DescriptionSection
               title="Overview"
-              description={`Building an AI product requires designers to balance technical
-            complexity with user-friendly design, understanding their needs
-            while leveraging AI capabilities effectively. It is a delicate
-            dance, navigating between innovation and usability, refining
-            iteratively to create products that resonate with users.`}
+              description={`Insidemaps Capture is feature within the Insidemaps application. It's main job is to make sure any user can complete the capturing process without any problem. But currently that is not the case, it is somewhat hard to navigate around the whole system`}
             />
           </div>
 
