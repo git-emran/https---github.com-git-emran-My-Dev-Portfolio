@@ -133,7 +133,7 @@ export const projectsData = [
     title: "InsideMaps Website",
     description:
       "Redesigning the legacy experience with brand new Navigation, Accessibility, Building brand new scalable design system",
-    tags: ["React", "Figma", "WCAG 2.0", "Tailwind", "Custom Css"],
+    tags: ["React", "Figma", "WCAG 2.0", "Tailwind", "UX Design"],
     imageUrl: webstieImg,
     href: "/websiteredesign",
   },
