@@ -54,7 +54,7 @@ export default function About() {
         <div className=" flex flex-wrap text-wrap mt-60 scroll-mt-60 items-center text-center justify-center pt-12">
           <DescriptionSection
             title="Peer Praise"
-            description="People love to work with me, their words!"
+            description="Collaboration is one of my strong suits!"
           />
         </div>
         <InfiniteMovingCards

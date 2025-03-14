@@ -16,8 +16,7 @@ function OtherProjects() {
         <div className="mt-20 text-center items-center justify-center scroll-mt-20">
           <DescriptionSection
             title="Other Fun Projects"
-            description=" Due to NDA project details are not available. But feel free to look
-          around, Let's chat if you have any questions"
+            description=" Due to NDA all of the project details are not available. Let's chat if you have any questions"
           />
         </div>
       </section>
