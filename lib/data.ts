@@ -1,8 +1,7 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
-import insidemapsImg from "@/public/insidemaps.gif";
-import getgenieImg from "@/public/getgenie.gif";
+import ttologo from "@/public/ttologo.png"
 import officeImg from "@/public/office.gif";
 import webstieImg from "@/public/website.gif";
 import { FaComputer } from "react-icons/fa6";
@@ -10,6 +9,9 @@ import { FaCompassDrafting } from "react-icons/fa6";
 import { FaCubes } from "react-icons/fa6";
 import { FaCss3Alt } from "react-icons/fa";
 import { FaFireAlt } from "react-icons/fa";
+import genieImg from "@/public/genie-head.png"
+import imapslogoImg from "@/public/insidemapslogo.png"
+
 
 export const links = [
   {
@@ -102,23 +104,18 @@ export const projectsData = [
   {
     title: "GetGenie AI",
     description:
-      "Designed & Developed the front-end in JavaScript leveraging the AntDesign framework ",
+      "Designed & Developed the front-end in JavaScript leveraging the AntDesign framework. A complete design journey of the product",
     tags: ["Gutenberg", "JavaScript", "AntDesign", "A.I", "Content Generator"],
-    imageUrl: getgenieImg,
+    imageUrl: genieImg,
     href: "/getgenie",
   },
 
   {
-    title: "InsideMaps Capture",
+    title: "Asset Capture",
     description:
       "As a Lead Product Designer I helped them redesign their most favorite feature where users can scan a home without any errors",
-    tags: [
-      "iOS",
-      "SwiftUI",
-      "Accessibility",
-      "Interaction Design",
-    ],
-    imageUrl: insidemapsImg,
+    tags: ["iOS", "SwiftUI", "Accessibility", "Interaction Design"],
+    imageUrl: imapslogoImg,
     href: "/insiddemaps",
   },
   {
@@ -126,15 +123,15 @@ export const projectsData = [
     description:
       "I designed 'Office Outlet' for the The Total Office where users can virtually organize their WorkStation",
     tags: ["Figma", "React", "TypeScript", "Redux", "SQL"],
-    imageUrl: officeImg,
+    imageUrl: ttologo,
     href: "/officeoutlet",
   },
   {
-    title: "InsideMaps Website",
+    title: "Insidemaps.com",
     description:
       "Redesigning the legacy experience with brand new Navigation, Accessibility, Building brand new scalable design system",
     tags: ["React", "Figma", "WCAG 2.0", "Tailwind", "UX Design"],
-    imageUrl: webstieImg,
+    imageUrl: imapslogoImg,
     href: "/websiteredesign",
   },
 ];

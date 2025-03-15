@@ -4,6 +4,8 @@ import { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import Link from "next/link";
+import { Box, Card, Flex, Avatar, Text, Inset } from "@radix-ui/themes";
+
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -17,46 +19,25 @@ export default function Project({
   const ref = useRef<HTMLDivElement>(null);
 
   return (
-    <div className="group max-w-[43rem] mb-5 sm:mb-8 last:mb-0 items-center justify-center rounded-lg shadow-lg">
-      <Link href={href}>
-        <section className="bg-gray-100 max-w-[46rem] border border-black/5 rounded-lg overflow-hidden relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-          <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
-            <h3 className="text-2xl text-left font-semibold">{title}</h3>
-            <p className="mt-2 text-sm text-left mb-6 leading-relaxed text-gray-700 dark:text-gray-700">
-              {description}
-            </p>
-            <ul className="flex flex-wrap mt-4 pt-7 mb-7 gap-2 sm:mt-auto">
-              {tags.map((tag, index) => (
-                <li
-                  className="bg-black/[0.06] px-4 py-1 text-[0.7rem] uppercase tracking-wider text-black/[0.6] rounded-full"
-                  key={index}
-                >
-                  {tag}
-                </li>
-              ))}
-            </ul>
-          </div>
+    <div>
+      <Flex gap="3" direction="column">
+        <Box maxWidth="350px" className="bg-re">
+          <Card size="2" variant="surface">
+            <Flex gap="4" align="center">
+              <a href={href}>
+           <Image src={imageUrl} width={30} height={30} alt="Image" className="rounded-full aspect-square mb-4" />
 
-          <Image
-            src={imageUrl}
-            alt="Project I worked on"
-            quality={85}
-            unoptimized
-            className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
-        transition 
-        group-hover:scale-[1.04]
-        group-hover:-translate-x-3
-        group-hover:translate-y-3
-        group-hover:-rotate-2
-
-        group-even:group-hover:translate-x-3
-        group-even:group-hover:translate-y-3
-        group-even:group-hover:rotate-2
-
-        group-even:right-[initial] group-even:-left-40"
-          />
-        </section>
-      </Link>
+                <Text as="div" size="5" weight="bold" className="mb-2">
+                  {title}
+                </Text>
+                <Text as="div" color="gray" size="2">
+                  {description}
+                </Text>
+              </a>
+            </Flex>
+          </Card>
+        </Box>
+      </Flex>
     </div>
   );
 }
