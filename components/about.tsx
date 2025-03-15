@@ -5,6 +5,7 @@ import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 import { FeaturesSectionDemo } from "./FeaturedAbout";
 import DescriptionSection from "./DescriptionSection";
 import { useSectionInView } from "@/lib/hooks";
+import { Badge } from "@radix-ui/themes";
 
 export default function About() {
   const { ref } = useSectionInView("About", 0.5);
@@ -43,8 +44,9 @@ export default function About() {
       <div className="flex flex-col items-center text-center justify-center">
         <DescriptionSection
           title="About me"
-          description="& the things I learned along the way"
+          badge="& the Things I learned to value along the way"
         />
+
         <div className="items-center gap-4 flex-col justify-center flex">
           <FeaturesSectionDemo />
         </div>
@@ -54,7 +56,7 @@ export default function About() {
         <div className=" flex flex-wrap text-wrap mt-60 scroll-mt-60 items-center text-center justify-center pt-12">
           <DescriptionSection
             title="Peer Praise"
-            description="Collaboration is one of my strong suits!"
+            badge="Testimonials"
           />
         </div>
         <InfiniteMovingCards

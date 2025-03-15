@@ -17,7 +17,7 @@ export default function Projects() {
       className="scroll-mt-28 mb-28 scroll-smooth px-12"
     >
       <div className="text-center justify-center p-4 items-center">
-        <DescriptionSection title="Featured Projects" />
+        <DescriptionSection title="Featured Projects" badge="Detailed Case-studies" />
       </div>
       <div className="p-4 grid xl:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-6 mt-12">
         {projectsData.map((project, index) => (

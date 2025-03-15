@@ -89,7 +89,7 @@ export default function Experience() {
       <div className="text-center">
         <DescriptionSection
           title="Experience"
-          description="Highlight of my Professional Journey"
+          badge="Work History"
         />
       </div>
       <div className="items-center justify-center text-start">
