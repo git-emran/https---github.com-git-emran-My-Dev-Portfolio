@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import Link from "next/link";
-import { Box, Card, Flex, Avatar, Text, Inset } from "@radix-ui/themes";
+import { Box, Card, Flex, Text, } from "@radix-ui/themes";
 
 
 type ProjectProps = (typeof projectsData)[number];
@@ -21,7 +21,7 @@ export default function Project({
   return (
     <div>
       <Flex gap="3" direction="column">
-        <Box maxWidth="350px" className="bg-re">
+        <Box maxWidth="350px" className="hover:bg-blue-100">
           <Card size="2" variant="surface">
             <Flex gap="4" align="center">
               <a href={href}>
