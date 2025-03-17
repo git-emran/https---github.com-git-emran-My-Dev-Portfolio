@@ -30,7 +30,7 @@ export default function About() {
       quote:
         "Emran was a standout SaaS Product Designer at Tiblo, blending killer design with serious coding chops. He didn’t just make our platform look good—he built functionality that ran like a dream. Emran could dive into the code, fix bugs, and optimize systems like a pro. He was awesome to work with, always ready to troubleshoot or tweak things on the fly. His technical know-how and creative edge made our product faster and smarter. Tiblo was better off with Emran on the crew!",
       name: "Anders Blomqvist",
-      title: "CTO,Co-Founder, Tiblo Digital",
+      title: "CTO, Co-Founder, Tiblo Digital",
       imageUrl: "/blomqivst.png",
     },
     {
