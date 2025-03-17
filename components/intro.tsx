@@ -36,7 +36,7 @@ function Intro() {
         <AnimatedTooltip items={people} />
       </div>
       <div className="flex flex-col">
-        <h4 className="text-wrap text-gray-800 sm:px-40 md:px-4 text-3xl sm:text-3xl lg:text-7xl lg:leading-tight max-w-4xl text-center items-center justify-center tracking-tight font-normal">
+        <h4 className="text-wrap text-gray-800 sm:px-40 md:px-4 text-3xl sm:text-3xl lg:text-6xl lg:leading-tight max-w-3xl text-center items-center justify-center tracking-tight font-normal">
           I am Emran, a{" "}
           <span className="italic text-gray-800 font-extralight">
             designer & UI engineer
