@@ -18,9 +18,9 @@ export function FeaturesSectionDemo() {
         "flex-wrap col-span-1 lg:col-span-4 border-b lg:border-r dark:border-neutral-800",
     },
     {
-      title: "Time with Family matters",
+      title: "Work life Balance",
       description:
-        "I love travelling around the globe. These are the places and the culture I loved most.",
+        "My family is the reason behind my strong work ethic.",
       skeleton: <SkeletonTwo />,
       className: "border-b col-span-1 lg:col-span-2 dark:border-neutral-800",
     },
