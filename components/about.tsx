@@ -18,6 +18,21 @@ export default function About() {
       title: "Founder of Brandwise, Tech Entrepreneur, Texas, USA",
       imageUrl: "/todd.jpeg.webp",
     },
+
+    {
+      quote:
+        "Emran was an awesome SaaS Product Designer at Tiblo, always coming up with fresh, user-friendly ideas. He had a knack for making our platform look great and work even better. Emran could take tricky concepts and turn them into designs that just clicked. He was super easy to work with and always ready to tackle problems. His mix of creativity and know-how really made a difference. We were lucky to have Emran on the team!",
+      name: "Anders Tidemand",
+      title: "CEO, Tiblo Digital",
+      imageUrl: "/tidemand.png",
+    },
+    {
+      quote:
+        "Emran was a standout SaaS Product Designer at Tiblo, blending killer design with serious coding chops. He didn’t just make our platform look good—he built functionality that ran like a dream. Emran could dive into the code, fix bugs, and optimize systems like a pro. He was awesome to work with, always ready to troubleshoot or tweak things on the fly. His technical know-how and creative edge made our product faster and smarter. Tiblo was better off with Emran on the crew!",
+      name: "Anders Blomqvist",
+      title: "CTO,Co-Founder, Tiblo Digital",
+      imageUrl: "/blomqivst.png",
+    },
     {
       quote:
         "Working with Emran at was truly a pleasure. Emran displayed the ability to ask questions that not many others could. Solving customers pain points and making the best experience for them is truly Emrans passion and you can see that in his work output and in discussions with customers. I would NOT hesitate to work with Emran again as he is truly an exceptional UI/UX Designer and a Developer.",
