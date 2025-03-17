@@ -58,8 +58,7 @@ export default function WebSiteRedesign() {
             <DescriptionSection
               title="Design Process"
               description="Here is the design process that I have followed. This is a project
-            where a linear design process was followed. Everything by the book.
-          </p>"
+            where a linear design process was followed. Everything by the book."
               images={[
                 {
                   src: "/redesign2.webp",
