@@ -2,8 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import ttologo from "@/public/ttologo.png"
-import officeImg from "@/public/office.gif";
-import webstieImg from "@/public/website.gif";
+import { SiWebex } from "react-icons/si";
 import { FaComputer } from "react-icons/fa6";
 import { FaCompassDrafting } from "react-icons/fa6";
 import { FaCubes } from "react-icons/fa6";
@@ -42,12 +41,20 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Product Lead @Tiblo Digital",
+    location: "Copenhagen, Denmark",
+    description:
+      "Primary responsibility was to translate the client's requirements into a Product roadmap, Design deliverables and Trackable metrics. Also to make things look cool",
+    icon: React.createElement(SiWebex),
+    date: "2024-Present",
+  },
+  {
     title: " Design director, Founding Designer @ JoContractor",
     location: "Minneapolis, Minnesota, USA",
     description:
       "Enhancing the contracting experiences for the average Jo. They can track projects easily, connect with clients and manage contracts like its a walk in the park.",
     icon: React.createElement(FaFireAlt),
-    date: "Present",
+    date: "2024",
   },
 
   {
