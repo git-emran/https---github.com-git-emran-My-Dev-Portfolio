@@ -6,8 +6,31 @@ import { useSectionInView } from "@/lib/hooks";
 import DescriptionSection from "./DescriptionSection";
 import { Timeline } from "@/components/ui/timeline";
 import Link from "next/link";
-
+ 
 const experiencesdata = [
+  {
+    title: "Product Lead",
+    content: (
+      <section>
+        <h1 className="text-2xl font-bold">Tiblo digital</h1>
+        <p className="text-sm text-gray-500 mb-6">
+          Copenhagen, Denmark
+        </p>
+        <p>
+         A Leading Digital Agency focused on Software Development.
+        </p>
+        <div className="pt-4">
+          <Image
+            src="/tiblo.gif"
+            alt="JoContractor"
+            width={500}
+            height={300}
+            className="rounded-md"
+          />
+        </div>
+      </section>
+    ),
+  },
   {
     title: "Lead Product Designer",
     content: (

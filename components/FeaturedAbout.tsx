@@ -120,7 +120,7 @@ export const SkeletonThree = () => {
     <Link
       href="https://youtu.be/W62B-Zmsm2E"
       target="__blank"
-      className="relative flex gap-10  h-full group/image"
+      className="relative flex flex-wrap gap-10 h-full group/image"
     >
       <div className="w-full mx-auto bg-transparent dark:bg-transparent group h-full">
         <div className="flex flex-wrap w-fit h-fit flex-col space-y-2  relative">
