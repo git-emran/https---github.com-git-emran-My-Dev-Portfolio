@@ -5,7 +5,7 @@ import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 import { FeaturesSectionDemo } from "./FeaturedAbout";
 import DescriptionSection from "./DescriptionSection";
 import { useSectionInView } from "@/lib/hooks";
-import { Badge } from "@radix-ui/themes";
+
 
 export default function About() {
   const { ref } = useSectionInView("About", 0.5);
@@ -40,13 +40,7 @@ export default function About() {
       title: "Sr Product Owner, ISN, Texas, USA",
       imageUrl: "/richard.webp",
     },
-    {
-      quote:
-        "Emran's really good at figuring out tricky questions from customers. He's always there to help fix any problems and make sure everyone has a great experience. You can really tell how much he cares about making customers happy, just by talking to him or seeing his work. His ability to stay calm under pressure and find solutions quickly is impressive, making him an invaluable asset to any team. It's clear that he puts the needs of customers first, and his commitment to their satisfaction never stops.",
-      name: "Shafkat Ismam",
-      title: "Head of Brand Marketing, Ultra Clean, Malaysia",
-      imageUrl: "/shafkat.webp",
-    },
+ 
   ];
   return (
     <section
