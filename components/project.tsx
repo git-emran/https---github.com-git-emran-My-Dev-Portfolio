@@ -21,7 +21,7 @@ export default function Project({
   return (
     <div>
       <Flex gap="3" direction="column">
-        <Box maxWidth="350px" className="hover:bg-blue-100">
+        <Box maxWidth="350px" className="hover:bg-blue-100 hover:rounded-full">
           <Card size="2" variant="surface">
             <Flex gap="4" align="center">
               <a href={href}>
