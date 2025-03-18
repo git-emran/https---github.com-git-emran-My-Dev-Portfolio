@@ -33,7 +33,7 @@ export function FeaturesSectionDemo() {
         "col-span-1 lg:col-span-3 lg:border-r  dark:border-neutral-800",
     },
     {
-      title: "Remote Work Experience",
+      title: "Dynamic Experience",
       description:
         "From cross-functional teams to cross-continental teams, Remote, Hybrid, Onsite, I have done it all. And yes! those are the offices I have worked at.",
       skeleton: <SkeletonFour />,
