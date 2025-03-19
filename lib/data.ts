@@ -112,7 +112,7 @@ export const projectsData = [
   {
     title: "MatchTrack",
     description:
-      "Succfully launched a Sports management software for Tennis Coaches and Clubs in Denmark. Managing teams made easier. ",
+      "Successfully launched a Sports management software for Tennis Coaches and Clubs in Denmark. Managing teams made easier. ",
     tags: ["Gutenberg", "JavaScript", "AntDesign", "A.I", "Content Generator"],
     imageUrl: mtrackImg,
     href: "/matchtrack",
