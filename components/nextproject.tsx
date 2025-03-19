@@ -22,8 +22,11 @@ export function ProjectNavigation() {
           <NavigationMenuTrigger> View Other Projects </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid text-left gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+              <ListItem href="/matchtrack" title="MatchTrack">
+                Designing a Sports management mobile application.
+              </ListItem>
               <ListItem href="/insiddemaps" title="Inidemaps Capture">
-                Simplifying Real estate with just an iPhone
+                Simplifying Real estate with just an iPhone.
               </ListItem>
               <ListItem href="/officeoutlet" title="Office Outlet">
                 Workstation item shopping and planner tool.
@@ -32,7 +35,8 @@ export function ProjectNavigation() {
                 Redesigning a website to drive maximum conversion.
               </ListItem>
               <ListItem href="/getgenie" title="GetGenie AI">
-                Your personal AI Content Generator with built in SERP data optimization.
+                Your personal AI Content Generator with built in SERP data
+                optimization.
               </ListItem>
             </ul>
           </NavigationMenuContent>

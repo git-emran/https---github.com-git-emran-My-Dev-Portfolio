@@ -2,11 +2,13 @@
 import SubpageHeader from "@/components/subpage-header";
 import DescriptionSection from "@/components/DescriptionSection";
 import { Text, Kbd } from "@radix-ui/themes";
+import BackToTopButton from "@/components/buttontop";
 
 export default function MatchTrack() {
   return (
     <main>
       {/* header section */}
+      <BackToTopButton />
       <SubpageHeader
         title="MatchTrack"
         subtitle="Designing a mobile app for the Sports Management Industry"
@@ -57,13 +59,30 @@ export default function MatchTrack() {
             <DescriptionSection
               title="Where to Start ?"
               description="It is often fun and games when ideating but real challenge comes along when its time to put priority on things. So the question remains, where do we start from? I did some user interviews and came up with critical use cases. And that was the plan, to start with use cases and solve one high priority problem at a time."
+              images={[
+                {
+                  src: "/matchtrack-usecases.png",
+                },
+              ]}
             />
           </section>
           {/* Taking Initiative */}
-          <section></section>
+          <section>
+            <DescriptionSection
+              title="Taking Initiative"
+              description="Started with the prototype to focus on perfect navigation. Bringing in user insights early on."
+              images={[
+                {
+                  src: "/matchtrack-wireframes.png",
+                },
+              ]}
+            />
+          </section>
 
           {/* Clear Navigation*/}
-          <section></section>
+          <section>
+            <DescriptionSection title="" description="" />
+          </section>
 
           {/* Mtrack payment*/}
           <section></section>
