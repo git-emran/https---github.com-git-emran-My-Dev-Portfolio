@@ -107,7 +107,18 @@ export default function MatchTrack() {
 
           {/* Total Report*/}
           <section>
-            
+            <DescriptionSection
+              title="Easy Report"
+              description="Track and Generate Report to manage better."
+              images={[
+                {
+                  src: "/matchtrack-totalreport.png",
+                },
+                {
+                  src: "/matchtrack-totalreport.png",
+                },
+              ]}
+            />
           </section>
 
           {/* Final Preview*/}
