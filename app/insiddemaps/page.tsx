@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import Image from "next/image";
 import SubpageHeader from "@/components/subpage-header";
 import BackToTopButton from "@/components/buttontop";

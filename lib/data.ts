@@ -10,6 +10,7 @@ import { FaCss3Alt } from "react-icons/fa";
 import { FaFireAlt } from "react-icons/fa";
 import genieImg from "@/public/genie-head.png"
 import imapslogoImg from "@/public/insidemapslogo.png"
+import mtrackImg from "@/public/logomtrack.png"
 
 
 export const links = [
@@ -108,6 +109,14 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "MatchTrack",
+    description:
+      "Succfully launched a Sports management software for Tennis Coaches and Clubs in Denmark. Managing teams made easier. ",
+    tags: ["Gutenberg", "JavaScript", "AntDesign", "A.I", "Content Generator"],
+    imageUrl: mtrackImg,
+    href: "/matchtrack",
+  },
   {
     title: "GetGenie AI",
     description:
