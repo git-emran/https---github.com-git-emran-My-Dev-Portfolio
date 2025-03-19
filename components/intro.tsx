@@ -19,7 +19,7 @@ const people = [
   {
     id: 1,
     name: "Emran Hossain",
-    designation: "Designer & Software Developer",
+    designation: "Designer & Front-end Engineer",
     image: "/Headshot 1.png",
   },
 ];
