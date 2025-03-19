@@ -39,7 +39,7 @@ export default function MatchTrack() {
               aim to launch the product with a few unique selling point."
             />
           </section>
-          {/* Where to start */}
+          {/* Started from an Excel sheet */}
           <section>
             <DescriptionSection
               title="Started from an Excel sheet"
@@ -52,8 +52,26 @@ export default function MatchTrack() {
             />
           </section>
 
+          {/* Where to start */}
+          <section>
+            <DescriptionSection
+              title="Where to Start ?"
+              description="It is often fun and games when ideating but real challenge comes along when its time to put priority on things. So the question remains, where do we start from? I did some user interviews and came up with critical use cases. And that was the plan, to start with use cases and solve one high priority problem at a time."
+            />
+          </section>
           {/* Taking Initiative */}
           <section></section>
+
+          {/* Clear Navigation*/}
+          <section></section>
+
+          {/* Mtrack payment*/}
+          <section></section>
+
+          {/* Total Report*/}
+          <section></section>
+
+          {/* Final Preview*/}
         </div>
       </section>
     </main>
