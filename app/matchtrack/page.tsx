@@ -81,14 +81,34 @@ export default function MatchTrack() {
 
           {/* Clear Navigation*/}
           <section>
-            <DescriptionSection title="" description="" />
+            <DescriptionSection
+              title="Easy to understand Navigation"
+              description="Clear navigation is essential for moving between tasks and getting things done quicker. I have iterated twice on this to find the perfect balance."
+              images={[
+                {
+                  src: "/matchtrack-nav.png",
+                },
+              ]}
+            />
           </section>
 
           {/* Mtrack payment*/}
-          <section></section>
+          <section>
+            <DescriptionSection
+              title="Get things done quicker"
+              description="Making sure critical sections are handled within 2-3 steps to reduce cognitive load. For example: in-app shopping experience is like a 3 step process. Easy to handle, faster checkouts."
+              images={[
+                {
+                  src: "/matchtrack-payment.png",
+                },
+              ]}
+            />
+          </section>
 
           {/* Total Report*/}
-          <section></section>
+          <section>
+            
+          </section>
 
           {/* Final Preview*/}
         </div>
