@@ -23,15 +23,15 @@ const DescriptionSection: React.FC<DescriptionSection> = ({
   images,
 }) => {
   return (
-    <section className="pt-8">
+    <section className="pt-8 pb-8">
       <h2 className="text-3xl font-bold mb-1">{title}</h2>
       {description && <p className="mb-2">{description}</p>}
       {badge && (
-        <Badge color="orange" className="mb-4">
+        <Badge color="orange">
           {badge}
         </Badge>
       )}
-      <div className="mt-10 space-y-4"></div>
+      <div className="mt-6 space-y-4"></div>
       {images?.map((image, index) => (
         <Image
           key={index}
@@ -41,7 +41,7 @@ const DescriptionSection: React.FC<DescriptionSection> = ({
           width={image.width || 900}
           height={image.height || 700}
           unoptimized
-          className="w-full h-auto mt-2 mb-12"
+          className="w-full h-auto mb-6"
         />
       ))}
     </section>

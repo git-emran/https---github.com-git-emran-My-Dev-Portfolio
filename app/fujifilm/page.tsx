@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import SubpageHeader from "@/components/subpage-header";
 import DescriptionSection from "@/components/DescriptionSection";
 import BackToTopButton from "@/components/buttontop";
@@ -13,7 +13,85 @@ export default function FujiFilm() {
         subtitle="Designing a Dashboard capable of handling complex data."
       />
       {/* Case study starts here */}
+
       {/* Background */}
+      <section className="p-8 bg-gray-100">
+        {/* Padding */}
+        <div className="max-w-4xl mx-auto">
+          {/* Preview Image */}
+          <section>
+            <DescriptionSection
+              title=""
+              description=""
+              images={[
+                {
+                  src: "/fuji-header.png",
+                },
+              ]}
+            />
+          </section>
+
+          {/* Summary */}
+          <section>
+            <DescriptionSection
+              title="Summary"
+              description="FUJIFILM Diosynth Biotechnologies is a leading global contract development and manufacturing organization (CDMO) specializing in biologics, vaccines, and advanced therapies. They wanted an easy to use software that is easy to use and has complex user roles with interconnected data that needed to shown or removed depending on the respective roles. My primary focus was always on the ease of use."
+            />
+          </section>
+
+          {/* Before Everything else */}
+          <section>
+            <DescriptionSection
+              title="I had to understand data before everything else"
+              description="Fujifilm had a clear idea of what the product should do. But the flow was a mess of interconnected tasks. I started with lots of data. I started to go through them to establish a connection, so that I can easily direct or redirect the flow of the information as needed. It was a mess of tasks within tasks."
+              images={[
+                {
+                  src: "/fuji-startproject-before.png",
+                },
+                {
+                  src: "/fuji-startproject-after.png",
+                },
+              ]}
+            />
+          </section>
+
+          {/* Atomic approach */}
+          <section>
+            <DescriptionSection
+              title="Design system with Atomic approach"
+              description="Starting to build the design system, building reusable components using the atomic design approach. Focusing on Organisms and Templates mostly."
+              badge="4 iterations done"
+              images={[
+                {
+                  src: "fuji-atomicapproach.png",
+                },
+              ]}
+            />
+          </section>
+
+          {/* Mobility */}
+          <section>
+            <DescriptionSection
+              title="Mobility"
+              description="It was important for Fujifilm to operate while being mobile, So responsiveness, saved sessions, cached data was very much important throughout the process."
+              images={[{ src: "/fuji-mobility.png" }]}
+            />
+          </section>
+
+          {/* Final */}
+          <section>
+            <DescriptionSection
+              title="Finally, Everything makes sense"
+              description="A comprehensive dashboard was ready that had multi-tiered roles, accesses and user interfaces with cross-platform compatibility. This is fun to use."
+              images={[
+                {
+                  src: "/fuji-final.png",
+                },
+              ]}
+            />
+          </section>
+        </div>
+      </section>
     </main>
   );
 }
