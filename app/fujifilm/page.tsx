@@ -44,6 +44,7 @@ export default function FujiFilm() {
             <DescriptionSection
               title="I had to understand data before everything else"
               description="Fujifilm had a clear idea of what the product should do. But the flow was a mess of interconnected tasks. I started with lots of data. I started to go through them to establish a connection, so that I can easily direct or redirect the flow of the information as needed. It was a mess of tasks within tasks."
+              badge="4 iterations"
               images={[
                 {
                   src: "/fuji-startproject-before.png",
@@ -60,7 +61,7 @@ export default function FujiFilm() {
             <DescriptionSection
               title="Design system with Atomic approach"
               description="Starting to build the design system, building reusable components using the atomic design approach. Focusing on Organisms and Templates mostly."
-              badge="4 iterations done"
+              badge="Design system"
               images={[
                 {
                   src: "fuji-atomicapproach.png",
@@ -74,6 +75,7 @@ export default function FujiFilm() {
             <DescriptionSection
               title="Mobility"
               description="It was important for Fujifilm to operate while being mobile, So responsiveness, saved sessions, cached data was very much important throughout the process."
+              badge="Responsiveness"
               images={[{ src: "/fuji-mobility.png" }]}
             />
           </section>
