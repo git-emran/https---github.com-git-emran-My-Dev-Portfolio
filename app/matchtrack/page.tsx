@@ -1,7 +1,6 @@
 "use client";
 import SubpageHeader from "@/components/subpage-header";
 import DescriptionSection from "@/components/DescriptionSection";
-import { Text, Kbd } from "@radix-ui/themes";
 import BackToTopButton from "@/components/buttontop";
 
 export default function MatchTrack() {
