@@ -8,9 +8,10 @@ import { FaCompassDrafting } from "react-icons/fa6";
 import { FaCubes } from "react-icons/fa6";
 import { FaCss3Alt } from "react-icons/fa";
 import { FaFireAlt } from "react-icons/fa";
-import genieImg from "@/public/genie-head.png"
+import genieImg from "@/public/genie-head.png";
 import imapslogoImg from "@/public/insidemapslogo.png"
 import mtrackImg from "@/public/logomtrack.png"
+import fujiImg from "@/public/fuji-logo.png"
 
 
 export const links = [
@@ -110,9 +111,16 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "FujiFilm",
+    description:
+      "Designing a Comprehensive dashboard visualizing a data-heavy complex system for a Biotech laboratory called FujiFilm Diosynth.  ",
+    imageUrl: fujiImg,
+    href: "/fujifilm",
+  },
+  {
     title: "MatchTrack",
     description:
-      "Successfully launched a Sports management software for Tennis Coaches and Clubs in Denmark. Managing teams made easier. ",
+      "Successfully launched a Sports management software for Tennis Coaches and Clubs. Managing teams has never been easier. ",
     tags: ["Gutenberg", "JavaScript", "AntDesign", "A.I", "Content Generator"],
     imageUrl: mtrackImg,
     href: "/matchtrack",
