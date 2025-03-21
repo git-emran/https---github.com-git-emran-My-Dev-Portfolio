@@ -29,7 +29,7 @@ export default function Skills() {
       ref={ref}
       className=" flex-col mb-28 mt-20 max-w-[55rem] scroll-mb-28 scroll-mt-16 items-center justify-center text-center sm:mb-40"
     >
-      <DescriptionSection title="My Skills" badge="Hard Skills" />
+      <DescriptionSection title="My Skills" description="Things I am really good at" badge="Hard Skills" />
 
       <ul className="flex flex-wrap justify-center gap-2 mt-12 text-lg text-blue-950-800">
         {skillsData.map((skill, index) => (

@@ -53,7 +53,7 @@ export default function About() {
       <div className="flex flex-col items-center text-center justify-center">
         <DescriptionSection
           title="About me"
-          badge="& the Things I learned to value along the way"
+          description="& the Things I learned to value along the way"
         />
 
         <div className="items-center gap-4 flex-col justify-center flex">
@@ -65,7 +65,7 @@ export default function About() {
         <div className=" flex flex-wrap text-wrap mt-60 scroll-mt-60 items-center text-center justify-center pt-12">
           <DescriptionSection
             title="Peer Praise"
-            badge="Testimonials"
+            description="Testimonials"
           />
         </div>
         <InfiniteMovingCards

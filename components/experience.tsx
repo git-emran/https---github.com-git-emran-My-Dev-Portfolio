@@ -1,24 +1,19 @@
 "use client";
-import React from "react";
 import "react-vertical-timeline-component/style.min.css";
 import Image from "next/image";
 import { useSectionInView } from "@/lib/hooks";
 import DescriptionSection from "./DescriptionSection";
 import { Timeline } from "@/components/ui/timeline";
 import Link from "next/link";
- 
+
 const experiencesdata = [
   {
     title: "Product Lead",
     content: (
       <section>
         <h1 className="text-2xl font-bold">Tiblo digital</h1>
-        <p className="text-sm text-gray-500 mb-6">
-          Copenhagen, Denmark
-        </p>
-        <p>
-         A Leading Digital Agency focused on Software Development.
-        </p>
+        <p className="text-sm text-gray-500 mb-6">Copenhagen, Denmark</p>
+        <p>A Leading Digital Agency focused on Software Development.</p>
         <div className="pt-4">
           <Image
             src="/tiblo.gif"
@@ -110,10 +105,7 @@ export default function Experience() {
       className="scroll-mt-28 mt-6 pb-10 sm:mb-30 scroll-smooth bg-gray-100 w-full"
     >
       <div className="text-center">
-        <DescriptionSection
-          title="Experience"
-          badge="Work History"
-        />
+        <DescriptionSection title="Experience" description="Over 9+ years of professional working experience" badge="Featured Positions" />
       </div>
       <div className="items-center justify-center text-start">
         <Timeline data={experiencesdata} />

@@ -20,7 +20,7 @@ export default function Faq() {
       className="flex flex-wrap text-left flex-col p-10 w-full mt-20 mb-28 max-w-[60rem] scroll-mt-20 scroll-mb-28 sm:mb-40 sm:px-30"
     >
       <div className="text-center items-center">
-        <DescriptionSection title="Frequently asked Questions & Answers" badge="Common Queries" />
+        <DescriptionSection title="Frequently asked Questions & Answers" description="Recruiters, this is where I tried to answer your common questions" badge="FAQ" />
       </div>
 
       <Accordion type="single" collapsible className="w-full mt-12">
