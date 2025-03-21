@@ -14,7 +14,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { Text, Em, Heading, Kbd } from "@radix-ui/themes";
+import { Text, Em, Heading, Kbd, Strong } from "@radix-ui/themes";
 
 const people = [
   {
@@ -37,22 +37,12 @@ function Intro() {
         <AnimatedTooltip items={people} />
       </div>
       <div className="flex max-w-3xl text-center items-center flex-col">
-        {/* <h4 className="text-wrap text-gray-800 sm:px-40 md:px-4 text-3xl sm:text-3xl lg:text-6xl lg:leading-tight max-w-3xl text-center items-center justify-center tracking-tight font-normal">
-          I am Emran, a{" "}
-          <span className="italic text-gray-800 font-extralight">
-            designer & UI engineer
-          </span>{" "}
-          with over 8 years of experience in{" "}
-          <span className=" text-gray-800 italic font-extralight">
-            B2B, SaaS & AI.
-          </span>
-        </h4> */}
         <Heading weight="medium" color="gray" highContrast size="8">
           I am <Em>Emran</Em>, a <Em>Designer</Em> & <Em>Front-end </Em>{" "}
           engineer.
         </Heading>
         <div className="flex items justify-center mt-4">
-          <Text size="2" wrap="wrap">
+          <Text size="2" wrap="wrap" className="max-w-2xl">
             I enjoy creating{" "}
             <LinkPreview
               url="https://github.com/git-emran"
@@ -79,7 +69,8 @@ function Intro() {
             >
               <Kbd> satire design</Kbd>
             </LinkPreview>
-            {""} ideas in my free time.
+            {""} ideas in my free time. I have over <Strong> 9+ years </Strong> of experience
+            designing for <Strong>B2B, SaaS & AI.</Strong>
           </Text>
         </div>
 
