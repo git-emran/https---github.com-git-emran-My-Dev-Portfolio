@@ -14,6 +14,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { Text, Em, Heading, Kbd } from "@radix-ui/themes";
 
 const people = [
   {
@@ -35,8 +36,8 @@ function Intro() {
       <div className="flex flex-wrap items-center justify-center mb-6 w-full">
         <AnimatedTooltip items={people} />
       </div>
-      <div className="flex flex-col">
-        <h4 className="text-wrap text-gray-800 sm:px-40 md:px-4 text-3xl sm:text-3xl lg:text-6xl lg:leading-tight max-w-3xl text-center items-center justify-center tracking-tight font-normal">
+      <div className="flex max-w-3xl text-center items-center flex-col">
+        {/* <h4 className="text-wrap text-gray-800 sm:px-40 md:px-4 text-3xl sm:text-3xl lg:text-6xl lg:leading-tight max-w-3xl text-center items-center justify-center tracking-tight font-normal">
           I am Emran, a{" "}
           <span className="italic text-gray-800 font-extralight">
             designer & UI engineer
@@ -45,44 +46,41 @@ function Intro() {
           <span className=" text-gray-800 italic font-extralight">
             B2B, SaaS & AI.
           </span>
-        </h4>
-        <div className="flex items justify-center">
-          <p
-            className="justify-center text-center font-normal
-    max-w-full md:max-w-[44rem] leading-6 sm:leading-8 
-    mt-6 sm:px-40 md:px-10 lg:px-10 lg:text-sm xl:text-xl"
-          >
+        </h4> */}
+        <Heading weight="medium" color="gray" highContrast size="8">
+          I am <Em>Emran</Em>, a <Em>Designer</Em> & <Em>Front-end </Em>{" "}
+          engineer.
+        </Heading>
+        <div className="flex items justify-center mt-4">
+          <Text size="2" wrap="wrap">
             I enjoy creating{" "}
             <LinkPreview
               url="https://github.com/git-emran"
               isStatic={true}
               imageSrc="/github.png"
-              className="font-semibold underline text-blue-800 italic"
             >
               {" "}
-              open-source
+              <Kbd>open-source</Kbd>
             </LinkPreview>{" "}
             projects,
             <LinkPreview
               url="https://dribbble.com/chrollo"
               isStatic={true}
               imageSrc="/dribbble.png"
-              className="font-semibold underline text-blue-800 italic"
             >
               {" "}
-              illustrations
+              <Kbd>illustrations</Kbd>
             </LinkPreview>
             , design interactions &{" "}
             <LinkPreview
               url="https://www.instagram.com/designwithemran/"
               isStatic={true}
               imageSrc="/instagram.png"
-              className="font-semibold underline text-blue-800 italic"
             >
-              satire design
+              <Kbd> satire design</Kbd>
             </LinkPreview>
             {""} ideas in my free time.
-          </p>
+          </Text>
         </div>
 
         {/* Buttons */}
@@ -91,11 +89,9 @@ function Intro() {
             <Tooltip>
               <TooltipTrigger>
                 {" "}
-             <Button>
-              <Link href=''>
-              Download CV
-              </Link>
-             </Button>
+                <Button>
+                  <Link href="">Download CV</Link>
+                </Button>
               </TooltipTrigger>
               <TooltipContent>Directly download PDF</TooltipContent>
             </Tooltip>
@@ -105,16 +101,10 @@ function Intro() {
             <Tooltip>
               <TooltipTrigger>
                 <Button asChild>
-                  <Link
-                    href="mailto:emrn.hossn@gmail.com"
-                  >
-                    EMAIL 📨
-                  </Link>
+                  <Link href="mailto:emrn.hossn@gmail.com">EMAIL 📨</Link>
                 </Button>
               </TooltipTrigger>
-              <TooltipContent>
-               My Email
-              </TooltipContent>
+              <TooltipContent>My Email</TooltipContent>
             </Tooltip>
           </TooltipProvider>
 
@@ -130,9 +120,7 @@ function Intro() {
                   <BsLinkedin />
                 </a>
               </TooltipTrigger>
-              <TooltipContent>
-              LinkedIn Profile
-              </TooltipContent>
+              <TooltipContent>LinkedIn Profile</TooltipContent>
             </Tooltip>
           </TooltipProvider>
 
@@ -148,9 +136,7 @@ function Intro() {
                   <FaSquareGithub />
                 </a>
               </TooltipTrigger>
-              <TooltipContent>
-                Github Profile
-              </TooltipContent>
+              <TooltipContent>Github Profile</TooltipContent>
             </Tooltip>
           </TooltipProvider>
         </div>
