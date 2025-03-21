@@ -76,7 +76,8 @@ function Intro() {
             <Link href="/EmranCV.pdf"> Download CV</Link>
           </Button>
 
-          <Button radius="full" variant="soft">
+          <Button radius="full" variant="solid">
+            <HiOutlineMail />
             <Link href="mailto:emrn.hossn@gmail.com">Email</Link>
           </Button>
 
