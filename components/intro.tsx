@@ -1,6 +1,5 @@
 "use client";
 
-import { Button } from "./ui/button";
 import { BsLinkedin } from "react-icons/bs";
 import { FaSquareGithub } from "react-icons/fa6";
 import { useSectionInView } from "@/lib/hooks";
@@ -8,13 +7,14 @@ import Link from "next/link";
 import { AnimatedTooltip } from "./ui/animated-tooltip";
 import React from "react";
 import { LinkPreview } from "./ui/link-preview";
+import { MdOutlineFileDownload } from "react-icons/md";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { Text, Em, Heading, Kbd, Strong } from "@radix-ui/themes";
+import { Text, Em, Heading, Kbd, Strong, Button } from "@radix-ui/themes";
 
 const people = [
   {
@@ -69,67 +69,35 @@ function Intro() {
             >
               <Kbd> satire design</Kbd>
             </LinkPreview>
-            {""} ideas in my free time. I have over <Strong> 9+ years </Strong> of experience
-            designing for <Strong>B2B, SaaS & AI.</Strong>
+            {""} ideas in my free time. I have over <Strong> 9+ years </Strong>{" "}
+            of experience designing for <Strong>B2B, SaaS & AI.</Strong>
           </Text>
         </div>
 
         {/* Buttons */}
-        <div className=" flex flex-row items-center gap-4 sm:px-20 md:px-10 justify-center mt-10">
-          <TooltipProvider>
-            <Tooltip>
-              <TooltipTrigger>
-                {" "}
-                <Button>
-                  <Link href="">Download CV</Link>
-                </Button>
-              </TooltipTrigger>
-              <TooltipContent>Directly download PDF</TooltipContent>
-            </Tooltip>
-          </TooltipProvider>
+        <div className=" flex flex-row items-center gap-2 sm:px-20 md:px-10 justify-center mt-10">
+          <Button radius="full" variant="solid">
+            <Link href="/EmranCV.pdf">
+              {" "}
+              Download CV
+            </Link>
+          </Button>
 
-          <TooltipProvider>
-            <Tooltip>
-              <TooltipTrigger>
-                <Button asChild>
-                  <Link href="mailto:emrn.hossn@gmail.com">EMAIL 📨</Link>
-                </Button>
-              </TooltipTrigger>
-              <TooltipContent>My Email</TooltipContent>
-            </Tooltip>
-          </TooltipProvider>
+          <Button radius="full" variant="soft">
+            <Link href="mailto:emrn.hossn@gmail.com">Email</Link>
+          </Button>
 
-          <TooltipProvider>
-            <Tooltip>
-              <TooltipTrigger>
-                {" "}
-                <a
-                  className="bg-gray-800 p-4 text-gray-300 hover:text-gray-800 hover:bg-gray-100 flex items-center gap-2 rounded-full focus:scale-[2.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
-                  href="https://www.linkedin.com/in/emran-hossain-80ab17190/"
-                  target=""
-                >
-                  <BsLinkedin />
-                </a>
-              </TooltipTrigger>
-              <TooltipContent>LinkedIn Profile</TooltipContent>
-            </Tooltip>
-          </TooltipProvider>
+          <Button variant="soft">
+            <Link href="https://www.linkedin.com/in/emran-hossain-80ab17190/">
+              <BsLinkedin />
+            </Link>
+          </Button>
 
-          <TooltipProvider>
-            <Tooltip>
-              <TooltipTrigger>
-                {" "}
-                <a
-                  className="bg-gray-800 p-4 text-gray-300 hover:text-gray-800 hover:bg-gray-100 flex items-center gap-2 rounded-full focus:scale-[2.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
-                  href="https://github.com/git-emran"
-                  target=""
-                >
-                  <FaSquareGithub />
-                </a>
-              </TooltipTrigger>
-              <TooltipContent>Github Profile</TooltipContent>
-            </Tooltip>
-          </TooltipProvider>
+          <Button variant="soft">
+            <Link href="https://github.com/git-emran">
+              <FaSquareGithub />
+            </Link>
+          </Button>
         </div>
       </div>
     </section>
