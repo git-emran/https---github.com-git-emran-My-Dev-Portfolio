@@ -29,7 +29,7 @@ export function ProjectNavigation() {
                 Designing a Sports management mobile application.
               </ListItem>
               <ListItem href="/insiddemaps" title="Inidemaps Capture">
-                Simplifying Real estate with just an iPhone.
+                Simplifying Real estate marketing with just an iPhone.
               </ListItem>
               <ListItem href="/officeoutlet" title="Office Outlet">
                 Workstation item shopping and planner tool.
