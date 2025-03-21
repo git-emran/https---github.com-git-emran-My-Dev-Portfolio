@@ -8,13 +8,8 @@ import { AnimatedTooltip } from "./ui/animated-tooltip";
 import React from "react";
 import { LinkPreview } from "./ui/link-preview";
 import { MdOutlineFileDownload } from "react-icons/md";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
 import { Text, Em, Heading, Kbd, Strong, Button } from "@radix-ui/themes";
+import { HiOutlineMail } from "react-icons/hi";
 
 const people = [
   {
@@ -77,10 +72,8 @@ function Intro() {
         {/* Buttons */}
         <div className=" flex flex-row items-center gap-2 sm:px-20 md:px-10 justify-center mt-10">
           <Button radius="full" variant="solid">
-            <Link href="/EmranCV.pdf">
-              {" "}
-              Download CV
-            </Link>
+            <MdOutlineFileDownload />
+            <Link href="/EmranCV.pdf"> Download CV</Link>
           </Button>
 
           <Button radius="full" variant="soft">
