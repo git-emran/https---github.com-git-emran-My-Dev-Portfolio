@@ -22,6 +22,9 @@ export function ProjectNavigation() {
           <NavigationMenuTrigger> View Other Projects </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid text-left gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+              <ListItem href="/fujifilm" title="FujiFilm Diosynth">
+                Designing a complex dashboard for a Biotech Lab.
+              </ListItem>
               <ListItem href="/matchtrack" title="MatchTrack">
                 Designing a Sports management mobile application.
               </ListItem>
