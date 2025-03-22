@@ -19,7 +19,7 @@ export default function Projects() {
       <div className="text-center justify-center p-4 items-center">
         <DescriptionSection
           title="Featured Projects"
-          description="Detailed Case-studies"
+          description="Case-studies"
           badge="5 min read"
         />
       </div>
