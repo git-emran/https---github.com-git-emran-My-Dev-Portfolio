@@ -32,7 +32,7 @@ function Intro() {
         <AnimatedTooltip items={people} />
       </div>
       <div className="flex max-w-3xl text-center items-center flex-col">
-        <Heading weight="medium" color="gray" highContrast size="8">
+        <Heading weight="medium" color="gray" highContrast size="9">
           I am <Em>Emran</Em>, a <Em>Designer</Em> & <Em>Front-end </Em>{" "}
           engineer.
         </Heading>
