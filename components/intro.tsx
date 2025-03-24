@@ -56,7 +56,7 @@ function Intro() {
               {" "}
               <Kbd>illustrations</Kbd>
             </LinkPreview>
-            , design interactions &{" "}
+             , design interactions &{" "}
             <LinkPreview
               url="https://www.instagram.com/designwithemran/"
               isStatic={true}
@@ -64,7 +64,7 @@ function Intro() {
             >
               <Kbd> satire design</Kbd>
             </LinkPreview>
-            {""} ideas in my free time. I have over <Strong> 9+ years </Strong>{" "}
+            {""} ideas in my free time. I have over <Strong> 9 years </Strong>{" "}
             of experience designing for <Strong>B2B, SaaS & AI.</Strong>
           </Text>
         </div>
