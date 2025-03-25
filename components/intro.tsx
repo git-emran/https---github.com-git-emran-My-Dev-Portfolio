@@ -107,7 +107,8 @@ function Intro() {
           <div className=" flex flex-wrap text-wrap mt-20 scroll-mt-20 items-center text-center justify-center pt-12">
             <DescriptionSection
               title="Peer Praise"
-              description="Testimonials"
+              description="First I understand then I deliver and they love me for it."
+              badge="Testimonials"
             />
           </div>
           <InfiniteMovingCards

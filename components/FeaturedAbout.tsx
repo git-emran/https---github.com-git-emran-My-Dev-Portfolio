@@ -10,7 +10,7 @@ import Link from "next/link";
 export function FeaturesSectionDemo() {
   const features = [
     {
-      title: "Value of Team Work",
+      title: "I value Team Work",
       description:
         "Working around each other's strengths and weaknesses is a major key to unlocking a Team's true potential. ",
       skeleton: <SkeletonOne />,
@@ -18,14 +18,14 @@ export function FeaturesSectionDemo() {
         "flex-wrap col-span-1 lg:col-span-4 border-b lg:border-r dark:border-neutral-800",
     },
     {
-      title: "Work life Balance",
+      title: "I value Work life Balance",
       description:
         "My family is the reason behind my strong work ethic.",
       skeleton: <SkeletonTwo />,
       className: "border-b col-span-1 lg:col-span-2 dark:border-neutral-800",
     },
     {
-      title: "Design SneakPeek Reel",
+      title: "My Designs",
       description:
         "It's a short collection of some of the design related work over the years.",
       skeleton: <SkeletonThree />,
@@ -33,7 +33,7 @@ export function FeaturesSectionDemo() {
         "col-span-1 lg:col-span-3 lg:border-r  dark:border-neutral-800",
     },
     {
-      title: "Dynamic Experience",
+      title: "My Dynamic Work Experience",
       description:
         "From cross-functional teams to cross-continental teams, Remote, Hybrid, Onsite, I have done it all. And yes! those are the offices I have worked at.",
       skeleton: <SkeletonFour />,
