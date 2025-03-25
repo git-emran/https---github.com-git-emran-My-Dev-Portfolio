@@ -24,6 +24,7 @@ export default function About() {
         <DescriptionSection
           title="About me"
           description="& the Things I learned to value along the way"
+          badge="Summary"
         />
 
         <div className="items-center gap-4 flex-col justify-center flex">
