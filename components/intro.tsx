@@ -10,6 +10,9 @@ import { LinkPreview } from "./ui/link-preview";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { Text, Em, Heading, Kbd, Strong, Button } from "@radix-ui/themes";
 import { HiOutlineMail } from "react-icons/hi";
+import DescriptionSection from "./DescriptionSection";
+import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
+import { cardData } from "@/lib/data";
 
 const people = [
   {
@@ -31,13 +34,19 @@ function Intro() {
       <div className="flex flex-wrap items-center justify-center mb-6 w-full">
         <AnimatedTooltip items={people} />
       </div>
-      <div className="flex max-w-3xl text-center items-center flex-col">
-        <Heading weight="medium" color="gray" highContrast size="9">
+      <div className="flex max-w-3xl items-center flex-col">
+        <Heading
+          weight="medium"
+          color="gray"
+          highContrast
+          size="9"
+          className="text-center"
+        >
           I am <Em>Emran</Em>, a <Em>Designer</Em> & <Em>Front-end </Em>{" "}
           engineer.
         </Heading>
         <div className="flex items justify-center mt-4">
-          <Text size="2" wrap="wrap" className="max-w-2xl">
+          <Text size="3" wrap="wrap" className="max-w-2xl" align="center">
             I enjoy creating{" "}
             <LinkPreview
               url="https://github.com/git-emran"
@@ -56,7 +65,7 @@ function Intro() {
               {" "}
               <Kbd>illustrations</Kbd>
             </LinkPreview>
-             , design interactions &{" "}
+            , design interactions &{" "}
             <LinkPreview
               url="https://www.instagram.com/designwithemran/"
               isStatic={true}
@@ -92,6 +101,20 @@ function Intro() {
               <FaSquareGithub />
             </Link>
           </Button>
+        </div>
+        {/* Peer Praise Section */}
+        <div className="flex flex-col items-center mb-20 mt-20 justify-center">
+          <div className=" flex flex-wrap text-wrap mt-20 scroll-mt-20 items-center text-center justify-center pt-12">
+            <DescriptionSection
+              title="Peer Praise"
+              description="Testimonials"
+            />
+          </div>
+          <InfiniteMovingCards
+            className="max-w-[55rem]"
+            items={[...cardData]}
+            speed="normal"
+          />
         </div>
       </div>
     </section>
