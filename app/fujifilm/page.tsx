@@ -35,7 +35,7 @@ export default function FujiFilm() {
           <section>
             <DescriptionSection
               title="Summary"
-              description="FUJIFILM Diosynth Biotechnologies is a leading global contract development and manufacturing organization (CDMO) specializing in biologics, vaccines, and advanced therapies. They wanted an easy to use software that is easy to use and has complex user roles with interconnected data that needed to shown or removed depending on the respective roles. My primary focus was always on the ease of use."
+              description="FUJIFILM Diosynth Biotechnologies is a leading global contract development and manufacturing organization (CDMO) specializing in biologics, vaccines, and advanced therapies. They wanted an easy to use software that has complex user roles with interconnected data, which also needed to be shown or removed from the UI depending on the respective roles. My primary focus was always on the 'easy to use' part."
             />
           </section>
 
