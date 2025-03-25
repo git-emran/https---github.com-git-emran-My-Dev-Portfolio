@@ -49,6 +49,17 @@ export default function About() {
       className="
     flex flex-col flex-wrap py-20 md:py-32 sm:py-10 lg:py-20 items-center scroll-smooth justify-center"
     >
+      {/* Peer Praise Section */}
+      <div className="flex flex-col items-center mb-20 justify-center">
+        <div className=" flex flex-wrap text-wrap mt-20 scroll-mt-20 items-center text-center justify-center pt-12">
+          <DescriptionSection title="Peer Praise" description="Testimonials" />
+        </div>
+        <InfiniteMovingCards
+          className="max-w-[55rem]"
+          items={cardData}
+          speed="normal"
+        />
+      </div>
       {/* About me */}
       <div className="flex flex-col items-center text-center justify-center">
         <DescriptionSection
@@ -59,20 +70,6 @@ export default function About() {
         <div className="items-center gap-4 flex-col justify-center flex">
           <FeaturesSectionDemo />
         </div>
-      </div>
-      {/* Peer Praise Section */}
-      <div className="flex flex-col items-center mb-20 justify-center">
-        <div className=" flex flex-wrap text-wrap mt-60 scroll-mt-60 items-center text-center justify-center pt-12">
-          <DescriptionSection
-            title="Peer Praise"
-            description="Testimonials"
-          />
-        </div>
-        <InfiniteMovingCards
-          className="max-w-[55rem]"
-          items={cardData}
-          speed="normal"
-        />
       </div>
     </section>
   );
