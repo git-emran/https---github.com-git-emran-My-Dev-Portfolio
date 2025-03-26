@@ -11,9 +11,9 @@ const experiencesdata = [
     title: "Product Lead",
     content: (
       <section>
-        <h1 className="text-2xl font-bold">Tiblo digital</h1>
+        <h1 className="text-2xl font-bold">Tiblo Digital</h1>
         <p className="text-sm text-gray-500 mb-6">Copenhagen, Denmark</p>
-        <p>A Leading Digital Agency focused on Software Development.</p>
+        <p>A Leading Digital Agency in Denmark focused on Software, Visual Identity & Website Development.</p>
         <div className="pt-4">
           <Image
             src="/tiblo.gif"
@@ -35,7 +35,7 @@ const experiencesdata = [
           Minneapolis, Minnesota, USA
         </p>
         <p>
-          Building a platform to connect contractors with clients and vice versa
+          A platform for average home contractors that can connect with clients and manage their projects seamlessly.
         </p>
         <div className="pt-4">
           <Image
