@@ -39,17 +39,18 @@ function Intro() {
           weight="medium"
           color="gray"
           highContrast
-          size="9"
+          size={{ initial: "4",  sm: "9", md: "9", lg: "9" }}
           className="text-center"
         >
           I am <Em>Emran</Em>, a <Em>Designer</Em> & <Em>Front-end </Em>{" "}
           engineer.
         </Heading>
         <div className="flex items justify-center mt-4">
-          <Text size="3" wrap="wrap" className="max-w-2xl" align="center">
+          <Text size={{ initial: "1", sm: "3", md: "3"}} wrap="wrap" as= "div" className="max-w-[40rem]" align="center">
             I enjoy creating{" "}
             <LinkPreview
               url="https://github.com/git-emran"
+
               isStatic={true}
               imageSrc="/github.png"
             >
