@@ -46,7 +46,7 @@ function Intro() {
           engineer.
         </Heading>
         <div className="flex items justify-center mt-4">
-          <Text size={{ initial: "1", sm: "3", md: "3"}} wrap="wrap" as= "div" className="max-w-[40rem]" align="center">
+          <Text size="1" wrap="wrap" as= "div" className="" align="center">
             I enjoy creating{" "}
             <LinkPreview
               url="https://github.com/git-emran"

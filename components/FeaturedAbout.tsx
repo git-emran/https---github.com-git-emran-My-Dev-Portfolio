@@ -19,8 +19,7 @@ export function FeaturesSectionDemo() {
     },
     {
       title: "I value Work life Balance",
-      description:
-        "My family is the reason behind my strong work ethic.",
+      description: "My family is the reason behind my strong work ethic.",
       skeleton: <SkeletonTwo />,
       className: "border-b col-span-1 lg:col-span-2 dark:border-neutral-800",
     },
@@ -41,9 +40,9 @@ export function FeaturesSectionDemo() {
     },
   ];
   return (
-    <div className="flex flex-wrap items-center justify-center max-w-6xl px-12 mx-40">
-      <div className="relative flex">
-        <div className="grid grid-cols-1 lg:grid-cols-6 mt-12 xl:border rounded-md dark:border-neutral-800">
+    <div className="flex flex-auto items-center justify-center max-w-6xl mx-auto">
+      <div className="relative flex flex-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-6 xl:border rounded-md dark:border-neutral-800">
           {features.map((feature) => (
             <FeatureCard key={feature.title} className={feature.className}>
               <FeatureTitle>{feature.title}</FeatureTitle>
@@ -95,22 +94,19 @@ const FeatureDescription = ({ children }: { children?: React.ReactNode }) => {
 
 export const SkeletonOne = () => {
   return (
-    <div className="relative flex flex-wrap py-8 px-2 gap-10 h-full">
+    <div className="relative flex flex-wrap py-8 h-full">
       <div className="w-full h-fit p-5 mx-auto rounded-md bg-white dark:bg-neutral-900 shadow-md group">
-        <div className="grid grid-row-2 gap-2 w-full h-full space-y-2">
+        <div className="grid w-full h-full">
           {/* TODO */}
           <Image
             src="/mt1.png"
             alt="header"
-            width={2000}
+            width={500}
             height={800}
             className="h-fit w-fit object-cover justify-center rounded-sm"
           />
         </div>
       </div>
-
-      {/* <div className="absolute bottom-0 z-40 inset-x-0 h-60 bg-gradient-to-t from-white dark:from-black via-white dark:via-black to-transparent w-full pointer-events-none" />
-      <div className="absolute top-0 z-40 inset-x-0 h-60 bg-gradient-to-b from-white dark:from-black via-transparent to-transparent w-full pointer-events-none" /> */}
     </div>
   );
 };
@@ -122,9 +118,9 @@ export const SkeletonThree = () => {
       target="__blank"
       className="relative flex flex-wrap gap-10 h-full group/image"
     >
-      <div className="w-full mx-auto bg-transparent dark:bg-transparent group h-full">
-        <div className="flex flex-wrap w-fit h-fit flex-col space-y-2  relative">
-          <IconBrandYoutubeFilled className="h-20 w-20 absolute x-10 z-10 inset-0 text-red-500 m-auto " />
+      <div className="w-full mx-auto bg-transparent group h-full">
+        <div className="w-fit h-fit flex-col pt-4 relative">
+          <IconBrandYoutubeFilled className="lg:h-20 lg:w-20 sm:h-10 sm:w-10 absolute x-10 z-10 inset-0 text-red-500 m-auto drop-shadow-lg" />
           <div className="flex flex-wrap">
             {" "}
             <Image
