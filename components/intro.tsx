@@ -31,26 +31,30 @@ function Intro() {
       ref={ref}
       className="flex flex-col snap-start scroll-mt-[40rem] mt-20 scroll-smooth px-20"
     >
-      <div className="flex flex-wrap items-center justify-center mb-6 w-full">
+      <div className="flex flex-wrap items-center justify-center mb-4 w-full">
         <AnimatedTooltip items={people} />
       </div>
       <div className="flex max-w-3xl items-center flex-col">
         <Heading
           weight="medium"
           color="gray"
+          align="center"
           highContrast
-          size={{ initial: "4",  sm: "9", md: "9", lg: "9" }}
-          className="text-center"
+          size={{ initial: "4", sm: "9", md: "9", lg: "9" }}
         >
           I am <Em>Emran</Em>, a <Em>Designer</Em> & <Em>Front-end </Em>{" "}
           engineer.
         </Heading>
-        <div className="flex items justify-center mt-4">
-          <Text size="1" wrap="wrap" as= "div" className="" align="center">
+        <div className="flex pt-8 flex-wrap px-[10rem] sm:px-20 md:px-20 lg:px-16 xl:px-12 2xl:px-10">
+          <Heading
+            wrap="balance"
+            size={{ initial: "2", sm: "4", md: "4", lg: "4" }}
+            align="center"
+            weight="regular"
+          >
             I enjoy creating{" "}
             <LinkPreview
               url="https://github.com/git-emran"
-
               isStatic={true}
               imageSrc="/github.png"
             >
@@ -66,7 +70,7 @@ function Intro() {
               {" "}
               <Kbd>illustrations</Kbd>
             </LinkPreview>
-            , design interactions &{" "}
+            design interactions &{" "}
             <LinkPreview
               url="https://www.instagram.com/designwithemran/"
               isStatic={true}
@@ -76,7 +80,7 @@ function Intro() {
             </LinkPreview>
             {""} ideas in my free time. I have over <Strong> 9 years </Strong>{" "}
             of experience designing for <Strong>B2B, SaaS & AI.</Strong>
-          </Text>
+          </Heading>
         </div>
 
         {/* Buttons */}
