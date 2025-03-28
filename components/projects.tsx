@@ -6,6 +6,8 @@ import Project from "./project";
 import { useSectionInView } from "@/lib/hooks";
 import Link from "next/link";
 import DescriptionSection from "./DescriptionSection";
+import { Button } from "@radix-ui/themes";
+import { MdOutlineArrowOutward } from "react-icons/md";
 
 export default function Projects() {
   const { ref } = useSectionInView("Projects", 0.5);
@@ -31,9 +33,10 @@ export default function Projects() {
         ))}
       </div>
       <div className="flex p-4 items-center justify-center">
-        <button className=" bg-white cursor-pointer border font-medium border-gray-200 hover:bg-slate-100 text-sm px-10 py-4 rounded-md">
+        <Button className="hover:bg-blue-800 cursor-pointer">
+          <MdOutlineArrowOutward />
           <Link href="/otherprojects"> View Other Projects </Link>
-        </button>
+        </Button>
       </div>
     </section>
   );
