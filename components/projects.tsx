@@ -16,7 +16,7 @@ export default function Projects() {
     <section
       ref={ref}
       id="projects"
-      className=" mt-60 scroll-mt-28 mb-28 scroll-smooth px-12"
+      className="scroll-mt-28 mt-12 scroll-smooth mb-12"
     >
       <div className="text-center justify-center p-4 items-center">
         <DescriptionSection
