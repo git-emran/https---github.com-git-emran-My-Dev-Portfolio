@@ -10,7 +10,7 @@ export default function OfficeOutlet() {
   const router = useRouter();
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <main className="min-h-screen flex flex-col">
       {/* Header */}
       <BackToTopButton />
       <SubpageHeader
@@ -121,6 +121,6 @@ export default function OfficeOutlet() {
           {/* Put design above this comment */}
         </div>
       </section>
-    </div>
+    </main>
   );
 }

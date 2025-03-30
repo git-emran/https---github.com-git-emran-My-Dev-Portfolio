@@ -1,7 +1,5 @@
 "use client";
 
-import React from "react";
-import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 import { FeaturesSectionDemo } from "./FeaturedAbout";
 import DescriptionSection from "./DescriptionSection";
 import { useSectionInView } from "@/lib/hooks";

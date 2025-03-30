@@ -8,7 +8,7 @@ import { AnimatedTooltip } from "./ui/animated-tooltip";
 import React from "react";
 import { LinkPreview } from "./ui/link-preview";
 import { MdOutlineFileDownload } from "react-icons/md";
-import { Text, Em, Heading, Kbd, Strong, Button } from "@radix-ui/themes";
+import { Em, Heading, Kbd, Strong, Button } from "@radix-ui/themes";
 import { HiOutlineMail } from "react-icons/hi";
 import DescriptionSection from "./DescriptionSection";
 import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
@@ -117,7 +117,7 @@ function Intro() {
             />
           </div>
           <InfiniteMovingCards
-            className="max-w-[55rem]"
+            className="max-w-[55rem] mb-20"
             items={[...cardData]}
             speed="normal"
           />
