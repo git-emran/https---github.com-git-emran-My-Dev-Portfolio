@@ -16,7 +16,7 @@ export default function Projects() {
     <section
       ref={ref}
       id="projects"
-      className="scroll-mt-28 mt-12 scroll-smooth mb-12"
+      className="scroll-mt-28 mt-12 scroll-smooth mb- bg-slate-100 w-full pb-12 items-center justify-center flex flex-col"
     >
       <div className="text-center justify-center p-4 items-center">
         <DescriptionSection
@@ -32,7 +32,7 @@ export default function Projects() {
           </React.Fragment>
         ))}
       </div>
-      <div className="flex p-4 items-center justify-center">
+      <div className="flex p-4 items-center justify-center mt-12">
         <Button className="hover:bg-blue-800 cursor-pointer">
           <MdOutlineArrowOutward />
           <Link href="/otherprojects"> View Other Projects </Link>

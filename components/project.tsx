@@ -3,7 +3,6 @@
 import { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
-import Link from "next/link";
 import { Box, Card, Flex, Text, } from "@radix-ui/themes";
 
 
@@ -20,7 +19,7 @@ export default function Project({
   return (
     <div>
       <Flex gap="3" direction="column">
-        <Box maxWidth="350px" className="hover:bg-blue-100 hover:rounded-full">
+        <Box maxWidth="350px" className="hover:bg-orange-100 hover:rounded-lg">
           <Card size="2" variant="surface">
             <Flex gap="4" align="center">
               <a href={href}>
