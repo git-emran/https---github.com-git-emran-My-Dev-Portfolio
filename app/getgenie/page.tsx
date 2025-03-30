@@ -21,7 +21,7 @@ export default function GetGenie() {
         <div className="max-w-4xl mx-auto">
           <DescriptionSection
             title="About the Project"
-            description="Designed & Developed the front-end in JavaScript with the help of
+            description="Designed & Developed the frontend in JavaScript with the help of
             AntDesign framework. My primary focus was to ensure reusability and
             scalability of the components."
           />
