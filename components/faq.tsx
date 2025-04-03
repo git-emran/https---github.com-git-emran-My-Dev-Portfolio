@@ -26,8 +26,8 @@ export default function Faq() {
         <AccordionItem value="item-1">
           <AccordionTrigger>Your Strength ?</AccordionTrigger>
           <AccordionContent className="text-left">
-            My core strengths as a Product designer includes my ability to find
-            clarity through ambiguity, navigate and scale any idea even if its
+            One of my core strength as a Product designer is my ability to find
+            clarity through ambiguity, I can navigate and scale any idea even if its
             just a single sentence. Also I can code, which makes me a strong
             team player who understand both the complexity and feasability of
             the designs that I create.
