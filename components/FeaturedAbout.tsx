@@ -24,9 +24,9 @@ export function FeaturesSectionDemo() {
       className: "border-b col-span-1 lg:col-span-2 dark:border-neutral-800",
     },
     {
-      title: "My Designs",
+      title: "I value good Design",
       description:
-        "It's a short collection of some of the design related work over the years.",
+        "This is a short video compilation of some of my work over the years.",
       skeleton: <SkeletonThree />,
       className:
         "col-span-1 lg:col-span-3 lg:border-r  dark:border-neutral-800",
