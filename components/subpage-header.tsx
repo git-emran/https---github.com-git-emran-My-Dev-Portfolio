@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+
 import BackToHome from "./back-to-home";
 import { ProjectNavigation } from "./nextproject";
 

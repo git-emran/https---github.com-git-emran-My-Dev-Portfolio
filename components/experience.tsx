@@ -13,7 +13,7 @@ const experiencesdata = [
       <section>
         <h1 className="text-2xl font-bold">Tiblo Digital</h1>
         <p className="text-sm text-gray-500 mb-6">Copenhagen, Denmark</p>
-        <p>A Leading Digital Agency in Denmark focused on Software, Visual Identity & Website Development.</p>
+        <p>A Leading Digital Agency in Denmark focused on Software Development, Visual Identity, Branding & Website Development.</p>
         <div className="pt-4">
           <Image
             src="/tiblo.gif"
