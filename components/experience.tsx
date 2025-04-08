@@ -75,10 +75,10 @@ const experiencesdata = [
     title: "Lead UX/UI Designer",
     content: (
       <section>
-        <h1 className="text-2xl font-bold">MarketTime B2B</h1>
+        <h1 className="text-2xl font-bold">MarketTime LLC</h1>
         <p className="text-sm text-gray-500 mb-6">Texas, USA</p>
         <p>
-          Helped small, medium and Enterprise businesses of Gift, Toy & Decor
+          I Helped Small, Medium and Enterprise businesses of Gift, Toy & Decor
           Industries serve more customers through our B2B application ecosystem
         </p>
         <div className="pt-4">
