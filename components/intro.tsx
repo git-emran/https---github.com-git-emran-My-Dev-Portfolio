@@ -79,7 +79,7 @@ function Intro() {
               <Kbd> satire design</Kbd>
             </LinkPreview>
             {""} ideas in my spare time. I have over <Strong> 9 years </Strong>{" "}
-            of experience designing for <Strong>B2B, SaaS & AI.</Strong>
+            of experience designing for <Strong>B2B, SaaS & AI.</Strong> Industries
           </Heading>
         </div>
 
