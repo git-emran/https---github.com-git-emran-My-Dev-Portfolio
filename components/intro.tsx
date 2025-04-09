@@ -36,14 +36,13 @@ function Intro() {
       </div>
       <div className="flex max-w-3xl items-center flex-col">
         <Heading
-          weight="medium"
+          weight="light"
           color="gray"
           align="center"
           highContrast
-          size={{ initial: "4", sm: "9", md: "9", lg: "9" }}
+          size={{ initial: "4", sm: "8", md: "7", lg: "8" }}
         >
-          I am <Em>Emran</Em>, a <Em>Designer</Em> & <Em>Frontend </Em>{" "}
-          engineer.
+          I am <Em>Emran</Em>, a <Em>Designer</Em> & an <Em></Em>
         </Heading>
         <div className="flex pt-8 flex-wrap px-[10rem] sm:px-20 md:px-20 lg:px-16 xl:px-12 2xl:px-10">
           <Heading
@@ -79,7 +78,7 @@ function Intro() {
               <Kbd> satire design</Kbd>
             </LinkPreview>
             {""} ideas in my spare time. I have over <Strong> 9 years </Strong>{" "}
-            of experience designing for <Strong>B2B, SaaS & AI.</Strong> Industries
+            of experience designing for <Strong>B2B, SaaS & AI</Strong> Industries.
           </Heading>
         </div>
 
