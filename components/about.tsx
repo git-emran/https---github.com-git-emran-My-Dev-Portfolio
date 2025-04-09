@@ -17,8 +17,8 @@ export default function About() {
       <div className="flex flex-col items-center text-center justify-center max-w-4xl w-full">
         <DescriptionSection
           title="About me"
-          description="& the Things I learned to value along the way"
-          badge="Summary"
+          description="I am Emran Hossain & these are the things I learned to value along the way"
+          badge="Short Summary"
         />
 
         <div className="flex flex-col items-center justify-center w-full">
