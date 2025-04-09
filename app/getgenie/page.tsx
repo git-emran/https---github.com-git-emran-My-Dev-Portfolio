@@ -14,7 +14,7 @@ export default function GetGenie() {
       <BackToTopButton />
       <SubpageHeader
         title="GetGenie AI"
-        subtitle="Your personal AI content writer"
+        subtitle="AI Content Generator & SEO Assistant"
       />
       {/* Case study starting */}
       <section className="p-8 bg-gray-100">
