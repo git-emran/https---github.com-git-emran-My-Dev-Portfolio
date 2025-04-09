@@ -42,7 +42,7 @@ function Intro() {
           highContrast
           size={{ initial: "4", sm: "9", md: "9", lg: "9" }}
         >
-          I am <Em>Emran</Em>, a <Em>Designer</Em> & <Em>Front-end </Em>{" "}
+          I am <Em>Emran</Em>, a <Em>Designer</Em> & <Em>Frontend </Em>{" "}
           engineer.
         </Heading>
         <div className="flex pt-8 flex-wrap px-[10rem] sm:px-20 md:px-20 lg:px-16 xl:px-12 2xl:px-10">
@@ -78,7 +78,7 @@ function Intro() {
             >
               <Kbd> satire design</Kbd>
             </LinkPreview>
-            {""} ideas in my free time. I have over <Strong> 9 years </Strong>{" "}
+            {""} ideas in my spare time. I have over <Strong> 9 years </Strong>{" "}
             of experience designing for <Strong>B2B, SaaS & AI.</Strong>
           </Heading>
         </div>
