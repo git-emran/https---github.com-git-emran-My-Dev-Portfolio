@@ -79,7 +79,7 @@ const experiencesdata = [
         <p className="text-sm text-gray-500 mb-6">Texas, USA</p>
         <p>
           I Helped Small, Medium and Enterprise businesses of Gift, Toy & Decor
-          Industries serve more customers through our B2B application ecosystem
+          Industries to serve more customers through our B2B application ecosystem
         </p>
         <div className="pt-4">
           <Image
