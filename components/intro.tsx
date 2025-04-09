@@ -40,14 +40,13 @@ function Intro() {
           color="gray"
           align="center"
           highContrast
-          size={{ initial: "4", sm: "8", md: "7", lg: "8" }}
+          size={{ initial: "4", sm: "8", md: "8", lg: "9" }}
         >
-          I am <Em>Emran</Em>, a <Em>Designer</Em> & an <Em></Em>
         </Heading>
-        <div className="flex pt-8 flex-wrap px-[10rem] sm:px-20 md:px-20 lg:px-16 xl:px-12 2xl:px-10">
+        <div className="flex pt-4 flex-wrap px-[10rem] sm:px-20 md:px-20 lg:px-16 xl:px-12 2xl:px-10">
           <Heading
             wrap="balance"
-            size={{ initial: "2", sm: "4", md: "4", lg: "4" }}
+            size={{ initial: "2", sm: "4", md: "5", lg: "7" }}
             align="center"
             weight="regular"
           >
@@ -78,7 +77,8 @@ function Intro() {
               <Kbd> satire design</Kbd>
             </LinkPreview>
             {""} ideas in my spare time. I have over <Strong> 9 years </Strong>{" "}
-            of experience designing for <Strong>B2B, SaaS & AI</Strong> Industries.
+            of experience designing for <Strong>B2B, SaaS & AI</Strong>{" "}
+            Industries.
           </Heading>
         </div>
 
