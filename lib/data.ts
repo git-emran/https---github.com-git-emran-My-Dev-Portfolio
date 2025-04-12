@@ -202,6 +202,7 @@ export const skillsData = [
   "Website Accessibility",
   "Design Systems",
   "Design Thinking",
+  "User Interface Design",
   "User Flows",
   "Wireframing",
   "Prototyping",
