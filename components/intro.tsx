@@ -43,7 +43,7 @@ function Intro() {
           size={{ initial: "4", sm: "8", md: "8", lg: "9" }}
         >
         </Heading>
-        <div className="flex pt-4 flex-wrap px-[10rem] sm:px-20 md:px-20 lg:px-16 xl:px-12 2xl:px-10">
+        <div className="flex pt-4 flex-wrap px-24">
           <Heading
             wrap="balance"
             size={{ initial: "2", sm: "4", md: "5", lg: "7" }}
