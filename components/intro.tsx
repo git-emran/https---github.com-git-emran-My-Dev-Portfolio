@@ -29,21 +29,20 @@ function Intro() {
     <section
       id="home"
       ref={ref}
-      className="flex flex-col snap-start scroll-mt-[40rem] mt-20 scroll-smooth px-20"
+      className="flex flex-col snap-start scroll-mt-[40rem] mt-20 scroll-smooth"
     >
       <div className="flex flex-wrap items-center justify-center mb-4 w-full">
         <AnimatedTooltip items={people} />
       </div>
-      <div className="flex max-w-3xl items-center flex-col px-12">
+      <div className="flex max-w-3xl items-center flex-col">
         <Heading
           weight="light"
           color="gray"
           align="center"
           highContrast
-          size={{ initial: "2", sm: "6", md: "7", lg: "9" }}
         >
         </Heading>
-        <div className="flex pt-4 flex-wrap px-24">
+        <div className="flex pt-4 flex-wrap px-20">
           <Heading
             wrap="balance"
             size={{ initial: "2", sm: "4", md: "5", lg: "7" }}
