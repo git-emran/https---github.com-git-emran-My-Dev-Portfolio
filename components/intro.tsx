@@ -40,9 +40,8 @@ function Intro() {
           color="gray"
           align="center"
           highContrast
-        >
-        </Heading>
-        <div className="flex pt-4 flex-wrap px-20">
+        ></Heading>
+        <div className="flex pt-4 flex-wrap px-40 sm:px-60 md:px-20 lg:px-10 xl:px-6">
           <Heading
             wrap="balance"
             size={{ initial: "2", sm: "4", md: "5", lg: "7" }}
