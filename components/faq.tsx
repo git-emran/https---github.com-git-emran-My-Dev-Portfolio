@@ -38,8 +38,8 @@ export default function Faq() {
             Have you ever built a product from scratch?
           </AccordionTrigger>
           <AccordionContent className="text-left">
-            Yes I have, Infact I have built exactly 5 products from scratch and
-            each with over millions user-base. One of my personal favorite one
+            Yes I have, I have built exactly 5 products from scratch and
+            some with over millions of user-base. My favorite one
             is{" "}
             <LinkPreview
               url="https://getgenie.ai/"
