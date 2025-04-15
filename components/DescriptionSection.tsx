@@ -35,7 +35,7 @@ const DescriptionSection: React.FC<DescriptionSection> = ({
         <Image
           key={index}
           src={image.src}
-          quality={85}
+          quality={100}
           alt={image.alt || ""}
           width={image.width || 900}
           height={image.height || 700}
