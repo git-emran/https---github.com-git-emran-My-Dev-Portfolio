@@ -60,7 +60,7 @@ export default function FujiFilm() {
           <section>
             <DescriptionSection
               title="Design system with Atomic approach"
-              description="Starting to build the design system, building reusable components using the atomic design approach. Focusing on Organisms and Templates mostly."
+              description="Starting to build the design system at this point, Primarily foucsing on building reusable components using the atomic design approach. Doubling down on Organisms and Templates mostly."
               badge="Design system"
               images={[
                 {
