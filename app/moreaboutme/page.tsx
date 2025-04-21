@@ -18,6 +18,9 @@ export default function MoreAbout() {
 
       {/* Background */}
       <section className="p-8 bg-gray-100">
+        <div>
+          
+        </div>
 
       </section>
 
