@@ -6,6 +6,8 @@ import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { IconBrandYoutubeFilled } from "@tabler/icons-react";
 import Link from "next/link";
+import { Button } from "@radix-ui/themes";
+
 
 export function FeaturesSectionDemo() {
   const features = [
