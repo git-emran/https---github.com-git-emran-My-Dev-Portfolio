@@ -4,6 +4,7 @@ import DescriptionSection from "@/components/DescriptionSection";
 import BackToTopButton from "@/components/buttontop";
 
 
+
 export default function MoreAbout() {
   return (
     <main>
@@ -14,6 +15,7 @@ export default function MoreAbout() {
         subtitle="Learn more about me, what I like to do and my work"
       />
       {/* Case study starts here */}
+     
   
 
       {/* Background */}
