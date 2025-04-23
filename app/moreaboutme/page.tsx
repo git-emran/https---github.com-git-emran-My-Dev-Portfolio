@@ -2,6 +2,7 @@
 import SubpageHeader from "@/components/subpage-header";
 import DescriptionSection from "@/components/DescriptionSection";
 import BackToTopButton from "@/components/buttontop";
+import { TabsDemo } from "@/components/about-tabs";
 
 
 
@@ -21,8 +22,9 @@ export default function MoreAbout() {
       {/* Background */}
       <section className="p-8 bg-gray-100">
         <div>
-          
+          <TabsDemo />
         </div>
+        
 
       </section>
 
