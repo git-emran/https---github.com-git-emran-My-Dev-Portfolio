@@ -16,7 +16,7 @@ const experiencesdata = [
         <p>A Leading Digital Agency in Denmark focused on Software Development, Visual Identity, Branding & Website Development.</p>
         <div className="pt-4">
           <Image
-            src="/tiblo.gif"
+            src="/tiblo.png"
             alt="JoContractor"
             width={500}
             height={300}
