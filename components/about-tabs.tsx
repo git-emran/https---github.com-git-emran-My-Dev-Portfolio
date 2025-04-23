@@ -1,16 +1,19 @@
-import { Button } from "@/components/ui/button";
+"use client";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export function TabsDemo() {
   return (
-    <Tabs defaultValue="account" className="w-[400px]">
+    <Tabs className="w-[400px]">
       <TabsList className="grid w-full grid-cols-2">
-        <TabsTrigger value="account">Personal Details</TabsTrigger>
-        <TabsTrigger value="password">Fun stuff</TabsTrigger>
+        <TabsTrigger value="details">Personal Details</TabsTrigger>
+        <TabsTrigger value="fun">Fun stuff</TabsTrigger>
       </TabsList>
-      <TabsContent value="account">
-        
+      <TabsContent value="details" className="mt-12">
+        <div>This is personal details</div>
+      </TabsContent>
+      <TabsContent value="fun" className="mt-12">
+        <div>This is fun stuff</div>
       </TabsContent>
     </Tabs>
   );
