@@ -3,7 +3,7 @@ import SubpageHeader from "@/components/subpage-header";
 import DescriptionSection from "@/components/DescriptionSection";
 import BackToTopButton from "@/components/buttontop";
 import { TabsDemo } from "@/components/about-tabs";
-
+import { BackgroundLines } from "@/components/ui/background-lines";
 
 
 export default function MoreAbout() {
@@ -23,7 +23,6 @@ export default function MoreAbout() {
           <TabsDemo />
         </div>
       </section>
-
     </main>
   );
 }
