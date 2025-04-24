@@ -3,7 +3,6 @@ import SubpageHeader from "@/components/subpage-header";
 import BackToTopButton from "@/components/buttontop";
 import SideDescription from "@/components/sideDescription";
 
-
 export default function MoreAbout() {
   return (
     <main>
@@ -21,29 +20,35 @@ export default function MoreAbout() {
             title="How it all Started"
             paragraphs={[
               <>
-                The success of my app earned me my first internship as a{" "}
+                Every legend has an origin story—and mine?{" "}
                 <span className="bg-yellow-100 font-semibold px-1 rounded">
-                  mobile developer at a tech startup
+                  It started somewhere between caffeine-fueled all-nighters and
+                  obsessively perfecting pixel alignment.
                 </span>
-                . While coding features, I still went out of my way to conduct
-                user research and design better workflows.
+                I jumped into the world of design and front-end development at a
+                time when “responsive design” was still more buzzword than
+                standard.
               </>,
               <>
-                This solidified my passion for UX Design, and by the end of my
-                internship, I was offered a full-time position as a developer.{" "}
+                Armed with curiosity,{" "}
                 <span className="bg-yellow-100 font-semibold px-1 rounded">
-                  With a leap of faith, I countered the offer requesting a
-                  full-time role as a UX Designer
+                  Photoshop & Figma
+                </span>{" "}
+                , and more tabs open than any browser should reasonably handle,
+                I grew into roles that let me blur the lines between design,
+                code, and strategy.{" "}
+                <span className="bg-yellow-100 font-semibold px-1 rounded">
+                  I wasn’t just pushing pixels—I was learning to build products
+                  that people love to use and teams love to build.
                 </span>
-                . To my surprise, they agreed.{" "}
+                . Today, I lead design and front-end teams across the globe.{" "}
                 <span className="text-xl">😯</span>
               </>,
             ]}
             imageSrc="/fuji-final.png"
-            imageAlt=""
+            imageAlt="how it all started"
           />
         </div>
-    
       </section>
     </main>
   );
