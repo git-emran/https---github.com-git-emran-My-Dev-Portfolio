@@ -38,7 +38,7 @@ export default function MoreAbout() {
                 I grew into roles that let me blur the lines between design,
                 code, and strategy.{" "}
                 <span className="bg-yellow-100 font-semibold px-1 rounded">
-                  I wasn’t just pushing pixels—I was learning to build products
+                  I wasn’t just pushing pixels I was learning to build products
                   that people love to use and teams love to build.
                 </span>
                 . Today, I lead design and front-end teams across the globe.{" "}
