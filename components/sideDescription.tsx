@@ -14,7 +14,6 @@ type SideDescriptionProps = {
 
 const SideDescription: FC<SideDescriptionProps> = ({
   title,
-  emoji,
   paragraphs,
   imageSrc,
   imageAlt,
@@ -46,7 +45,7 @@ const SideDescription: FC<SideDescriptionProps> = ({
       {/* Text Block */}
       <div className={`${isImageLeft ? "order-2" : "order-1"} space-y-6`}>
         <h2 className="text-3xl font-bold text-gray-900">
-          {title} {emoji && <span className="ml-1">{emoji}</span>}
+          {title}
         </h2>
         <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
           {paragraphs.map((para, i) => (
