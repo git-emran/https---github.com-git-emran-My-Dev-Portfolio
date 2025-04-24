@@ -47,15 +47,15 @@ function Intro() {
               as="div"
               wrap="pretty"
               align="center"
-              size="9"
+              size={{initial:"2", xs:"4", lg:"9", xl:"9"}}
               weight="medium"
               className="text-[#2d2d2d]"
             >
               Designing better Softwares, Websites & Applications.
             </Text>
           </div>
-          <div className="flex flex-wrap">
-            <Heading wrap="pretty" size="3" align="center" weight="medium">
+          <div className="flex px-20">
+            <Heading wrap="pretty" size={{initial:"1", xs:"2", sm:"2", lg:"5", xl:"6"}} align="center" weight="medium">
               I enjoy creating{" "}
               <LinkPreview
                 url="https://github.com/git-emran"
