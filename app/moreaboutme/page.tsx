@@ -45,7 +45,7 @@ export default function MoreAbout() {
                 <span className="text-xl">😯</span>
               </>,
             ]}
-            imageSrc="/fuji-final.png"
+            imageSrc="/first_started_1.png"
             imageAlt="how it all started"
           />
         </div>
