@@ -54,7 +54,7 @@ function Intro() {
               Designing better Softwares, Websites & Applications.
             </Text>
           </div>
-          <div>
+          <div className="flex flex-wrap">
             <Heading wrap="pretty" size="3" align="center" weight="medium">
               I enjoy creating{" "}
               <LinkPreview
