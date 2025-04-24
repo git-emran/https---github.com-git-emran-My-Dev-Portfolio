@@ -1,5 +1,4 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
 import ActiveSectionContextProvider from "@/app/context/active-section-context";
 import Footer from "@/components/footer";
 import "@radix-ui/themes/styles.css";
@@ -7,8 +6,6 @@ import { Theme } from "@radix-ui/themes";
 
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Emran Hossain Portfolio",
@@ -24,7 +21,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${inter.className}bg-gray-50 w-full overflow-x-hidden text-gray-950 relative dark:text-opacity-90`}
+        className="bg-gray-50 w-full overflow-x-hidden text-gray-950 relative font-sans dark:text-opacity-90"
+        style={{ fontFamily: '"Helvetica Neue,"' }} // Updated font
       >
         <Theme>
           {/* Responsive Background Blob 1 */}

@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 const colors = require("tailwindcss/colors");
@@ -20,15 +21,18 @@ const config = {
       center: true,
       padding: "2rem",
       screens: {
-        "2xl": '1400px',
-        "xs": '540px',
-        "sm": '640px',
-        "md": '768px',
-        "lg": '1024px',
-        "xl" : '1280px'
+        "2xl": "1400px",
+        xs: "540px",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['"Helvetica Neue"', "Arial", "sans-serif"],
+      },
       fontWeight: {
         light: "300",
         normal: "400",

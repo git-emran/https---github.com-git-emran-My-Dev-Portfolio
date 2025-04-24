@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: "Helvetica Neue";
+}
 html {
   @apply overflow-x-hidden;
   --line-color: #e5e7eb;
