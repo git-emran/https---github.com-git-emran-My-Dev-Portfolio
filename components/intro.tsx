@@ -126,7 +126,7 @@ function Intro() {
           <InfiniteMovingCards
             className="max-w-[55rem] mb-20"
             items={[...cardData]}
-            speed="normal"
+            speed="fast"
           />
         </div>
       </div>
