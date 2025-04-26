@@ -29,7 +29,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
   return (
     <div
-      className="w-full justify-center items-center md:px-10"
+      className="w-full justify-center items-center my-40 md:px-10"
       ref={containerRef}
     >
       <div
