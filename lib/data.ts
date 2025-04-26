@@ -22,7 +22,7 @@ export const galleryImages = [
 "/373.png",
 "/374.png",
 "/602.png",
-"/604.png"
+"/604.png",
 
 ]
 
