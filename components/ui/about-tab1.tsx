@@ -1,5 +1,5 @@
-'use client'
-import SideDescription from "../sideDescription"
+"use client";
+import SideDescription from "../sideDescription";
 
 export default function AboutTab1() {
   return (
@@ -56,19 +56,49 @@ export default function AboutTab1() {
                   understand both how things look and how they work under the
                   hood.
                 </span>
+              </>,
+              <>
                 No more just passing pretty Figma files to developers and hoping
                 for the best—I started learning how the pixels I dreamed up
                 turned into living, breathing products.
                 <span className="bg-yellow-100 font-semibold px-1 rounded">
-                  I picked up front-end languages like TypeScript and React,
-                  built components, wrangled Tailwind classes like a cowboy, and
-                  even explored SwiftUI to create animations that didn’t just
-                  look good—they felt good.
+                  {" "}
+                  <></>I picked up front-end languages like TypeScript and
+                  React, built components, wrangled Tailwind classes like a
+                  cowboy, and even explored SwiftUI to create animations that
+                  didn’t just look good—they felt good.
                 </span>
               </>,
             ]}
             imageAlt="Starting my coding journey"
             imageSrc="/first_widget.gif"
+          />
+        </div>
+      </section>
+      <section className="p-20 bg-gray-100">
+        <div className="items-center justify-center mx-auto">
+          <SideDescription
+            imagePosition="right"
+            title="Code by Day, Design by Night"
+            paragraphs={[
+              <>
+                In my free time, you will still find me sketching new concepts,
+                experimenting with motion design, or just giving random side
+                projects the kind of pixel-perfect attention that would make my
+                past self proud. it reminds me why I started this journey in the
+                first place: to create things that are both beautiful and
+                meaningful.
+              </>,
+              <>
+                <span className="bg-yellow-100 font-semibold px-1 rounded">
+                  Staying hands-on with design not only keeps my creative
+                  muscles sharp but also helps me create good looking products.
+                </span>
+                {""}
+              </>,
+            ]}
+            imageAlt="Starting my coding journey"
+            imageSrc="/personal-details-3.png"
           />
         </div>
       </section>
