@@ -15,7 +15,7 @@ export default function MyTimeline() {
   const { ref } = useSectionInView("Experience", 0.5);
 
   return (
-    <main ref={ref} className="scroll-mt-28 mt-6 mx-auto pb-10 sm:mb-30 w-full">
+    <main ref={ref} className="scroll-mt-28 mt-6 my-auto mx-auto pb-10 sm:mb-30 w-full">
       <section id="timeline">
         <div>
           <BackToHome />
