@@ -1,15 +1,6 @@
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import AboutTab1 from "./ui/about-tab1";
+import AboutTab2 from "./ui/about-tab2";
 
 export function TabsDemo() {
   return (
@@ -23,8 +14,11 @@ export function TabsDemo() {
           <AboutTab1 />
         </div>
       </TabsContent>
-      <TabsContent value="Fun stuff"></TabsContent>
+      <TabsContent value="Fun stuff">
+        <div className="w-full">
+          <AboutTab2 />
+        </div>
+      </TabsContent>
     </Tabs>
   );
 }
-  

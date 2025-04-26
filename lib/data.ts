@@ -13,6 +13,19 @@ import imapslogoImg from "@/public/insidemapslogo.png"
 import mtrackImg from "@/public/logomtrack.png"
 import fujiImg from "@/public/fuji-logo.png"
 
+
+export const galleryImages = [
+"/369.png", 
+"/370.png",
+"/371.png",
+"/372.png",
+"/373.png",
+"/374.png",
+"/602.png",
+"/604.png"
+
+]
+
 export const cardData = [
   {
     quote:
