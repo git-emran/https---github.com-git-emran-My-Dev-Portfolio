@@ -1,19 +1,30 @@
-"use client";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import AboutTab1 from "./ui/about-tab1";
 
 export function TabsDemo() {
   return (
-    <Tabs className="w-[400px]">
-      <TabsList className="grid w-full grid-cols-2">
-        <TabsTrigger value="details">Personal Details</TabsTrigger>
-        <TabsTrigger value="fun">Fun stuff</TabsTrigger>
+    <Tabs className="mt-10">
+      <TabsList className="flex gap-10 flex-row w-full">
+        <TabsTrigger value="Personal Details">Personal Details</TabsTrigger>
+        <TabsTrigger value="Fun stuff">Fun Stuff</TabsTrigger>
       </TabsList>
-      <TabsContent value="details" className="mt-12">
-        <div>This is personal details</div>
+      <TabsContent value="Personal Details">
+        <div className="w-full">
+          <AboutTab1 /> 
+        </div>
       </TabsContent>
-      <TabsContent value="fun" className="mt-12">
-        <div>This is fun stuff</div>
+      <TabsContent value="Fun stuff">
+        
       </TabsContent>
     </Tabs>
   );
