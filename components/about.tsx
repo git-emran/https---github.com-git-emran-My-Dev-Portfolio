@@ -28,10 +28,10 @@ export default function About() {
           <FeaturesSectionDemo />
         </div>
         <div className="flex p-4 items-center justify-center mt-12">
-          {/* <Button className="hover:bg-blue-800 cursor-pointer">
+          <Button className="hover:bg-blue-800 cursor-pointer">
             <MdOutlineArrowOutward />
             <Link href="/moreaboutme"> Learn More About Me </Link>
-          </Button> */}
+          </Button>
         </div>
       </div>
     </section>

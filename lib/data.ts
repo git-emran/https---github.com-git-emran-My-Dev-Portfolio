@@ -23,6 +23,13 @@ export const galleryImages = [
 "/374.png",
 "/602.png",
 "/604.png",
+"/605.png",
+"/Apple music video call.png",
+"/apple music.png",
+"/Blink tracker.png",
+"/bnb.png",
+"/By the Gram.png",
+"/call chef.png",
 
 ]
 
