@@ -50,6 +50,39 @@ export default function MoreAbout() {
           />
         </div>
       </section>
+      <section className="p-20 bg-gray-100">
+        <div className="items-center justify-center mx-auto">
+          <SideDescription
+            imagePosition="left"
+            title="When Pixels Met Code: My Dive Into the Technical Side"
+            paragraphs={[
+              <>
+                For a while, I thought my love affair with design would be all
+                about colors, grids, and convincing clients that white space
+                isnt actually wasted space. But somewhere between shipping my
+                fifth design system and dodging endless handoff meetings,
+                <span className="bg-yellow-100 font-semibold px-1 rounded">
+                  I realized something crucial: real magic happens when you
+                  understand both how things look and how they work under the
+                  hood.
+                </span>
+                No more just passing pretty Figma files to developers and hoping
+                for the best—I started learning how the pixels I dreamed up
+                turned into living, breathing products.
+                <span className="bg-yellow-100 font-semibold px-1 rounded">
+                  I picked up front-end languages like TypeScript and React,
+                  built components, wrangled Tailwind classes like a cowboy, and
+                  even explored SwiftUI to create animations that didn’t just
+                  look good—they felt good.
+                </span>
+              </>,
+            ]}
+            imageAlt="Starting my coding journey"
+            imageSrc="/first_widget.gif"
+          />
+        </div>
+      </section>
     </main>
   );
+  
 }

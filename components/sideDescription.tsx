@@ -5,7 +5,6 @@ import Image from "next/image";
 
 type SideDescriptionProps = {
   title: string;
-  emoji?: string;
   paragraphs: (string | JSX.Element)[];
   imageSrc: string;
   imageAlt: string;
