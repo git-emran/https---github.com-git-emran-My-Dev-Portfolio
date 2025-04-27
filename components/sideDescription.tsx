@@ -35,6 +35,7 @@ const SideDescription: FC<SideDescriptionProps> = ({
               alt={imageAlt}
               width={700}
               height={500}
+              unoptimized
               className="object-cover w-full h-auto"
             />
           </CardContent>
@@ -43,9 +44,7 @@ const SideDescription: FC<SideDescriptionProps> = ({
 
       {/* Text Block */}
       <div className={`${isImageLeft ? "order-2" : "order-1"} space-y-6`}>
-        <h2 className="text-3xl font-bold text-gray-900">
-          {title}
-        </h2>
+        <h2 className="text-3xl font-bold text-gray-900">{title}</h2>
         <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
           {paragraphs.map((para, i) => (
             <p key={i}>{para}</p>
