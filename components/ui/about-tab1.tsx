@@ -44,7 +44,7 @@ export default function AboutTab1() {
         <div className="items-center justify-center mx-auto">
           <SideDescription
             imagePosition="left"
-            title="When Pixels Met Code: My Dive Into the Technical Side"
+            title="My Dive Into the Technical Side"
             paragraphs={[
               <>
                 For a while, I thought my love affair with design would be all
