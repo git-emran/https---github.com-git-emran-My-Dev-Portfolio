@@ -30,6 +30,13 @@ export const galleryImages = [
 "/bnb.png",
 "/By the Gram.png",
 "/call chef.png",
+"/Family invasion.png",
+"/fart tracker.png",
+"/Feature Fired.png",
+"/Fitnesspal.png",
+"/GPT meme.png",
+"/perfect score.png",
+"Snapchat Poop.png",
 
 ]
 
