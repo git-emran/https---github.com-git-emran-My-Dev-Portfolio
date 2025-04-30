@@ -56,7 +56,7 @@ export default function MatchTrack() {
           {/* Where to start */}
           <section>
             <DescriptionSection
-              title="Where to Start ?"
+              title="Use cases are everything"
               description="It is often fun and games when ideating but real challenge comes along when its time to put priority on things. So the question remains, where do we start from? I did some user interviews and came up with critical use cases. And that was the plan, to start with use cases and solve one high priority problem at a time."
               images={[
                 {
