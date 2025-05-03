@@ -36,7 +36,10 @@ export const galleryImages = [
 "/Fitnesspal.png",
 "/GPT meme.png",
 "/perfect score.png",
-"Snapchat Poop.png",
+"/Snapchat Poop.png",
+"/Sus Meeting.png",
+"/unlimited ads.png",
+"/Siri backwards.png"
 
 ]
 
