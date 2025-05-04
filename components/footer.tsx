@@ -7,7 +7,7 @@ export default function Footer() {
         &copy; 2030 Emran. All rights reserved.
       </small>
       <p className="text-xs">
-        <span className="font-semibold">About this website:</span> built with
+        <span className="font-semibold">About this website:</span> Built with
         React & Next.js, TypeScript, Tailwind CSS,
         Framer Motion, Vercel hosting.
       </p>
