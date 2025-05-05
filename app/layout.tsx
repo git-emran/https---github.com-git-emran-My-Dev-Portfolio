@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en" className="!scroll-smooth">
       <head>
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-2JCN6EMX6G"
+          src="https://www.googletagmanager.com/gtag/js?id=G-D2ZF2LF7V8"
           strategy="afterInteractive"
         />
         <Script id="gtag-init" strategy="afterInteractive">
@@ -31,7 +31,7 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-2JCN6EMX6G');
+            gtag('config', 'G-D2ZF2LF7V8');
           `}
         </Script>
       </head>
