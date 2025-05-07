@@ -8,7 +8,7 @@ import DescriptionSection from "@/components/DescriptionSection";
 
 function OtherProjects() {
   return (
-    <div className="min-h-screen sm:top-20 flex flex-col">
+    <main className="min-h-screen sm:top-20 flex flex-col">
       <BackToTopButton />
       <BackToHome />
       {/* Start of the Body   */}
@@ -23,7 +23,7 @@ function OtherProjects() {
       <section className="mt-20 flex">
         <ExpandableCardDemo />
       </section>
-    </div>
+    </main>
   );
 }
 
