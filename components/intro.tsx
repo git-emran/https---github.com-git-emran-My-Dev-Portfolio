@@ -90,7 +90,7 @@ function Intro() {
           <div className=" flex flex-row gap-2 sm:px-20 md:px-10 mt-10">
             <Button radius="full" variant="solid">
               <MdOutlineFileDownload />
-              <Link href="/EmranCV.pdf"> Download CV</Link>
+              <Link href="/NewEmranCV.pdf"> Download Resume</Link>
             </Button>
 
             <Button radius="full" variant="solid">
