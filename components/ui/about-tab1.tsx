@@ -79,14 +79,14 @@ export default function AboutTab1() {
         <div className="items-center justify-center mx-auto">
           <SideDescription
             imagePosition="right"
-            title="Code by Day, Design by Night"
+            title="Design by Day, Code by Night"
             paragraphs={[
               <>
                 In my free time, you will still find me sketching new concepts,
-                experimenting with motion design, or just giving random side
-                projects the kind of pixel-perfect attention that would make my
-                past self proud. it reminds me why I started this journey in the
-                first place: to create things that are both beautiful and
+                experimenting with open-source projects, or just giving random
+                side projects the kind of pixel-perfect attention that would
+                make myself proud. It reminds me why I started this journey in
+                the first place: to create things that are both beautiful and
                 meaningful.
               </>,
               <>
@@ -97,7 +97,7 @@ export default function AboutTab1() {
                 {""}
               </>,
             ]}
-            imageAlt="Starting my coding journey"
+            imageAlt="Code at night"
             imageSrc="/personal-details-3.png"
           />
         </div>
