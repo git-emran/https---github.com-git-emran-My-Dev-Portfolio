@@ -91,8 +91,8 @@ export default function AboutTab1() {
               </>,
               <>
                 <span className="bg-yellow-100 font-semibold px-1 rounded">
-                  Staying hands-on with design not only keeps my creative
-                  muscles sharp but also helps me create good looking products.
+                  Staying hands-on with code not only keeps my logical
+                  muscles sharp but also helps me create good looking and easy to use products.
                 </span>
                 {""}
               </>,
