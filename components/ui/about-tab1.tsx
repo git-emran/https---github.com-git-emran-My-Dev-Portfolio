@@ -97,7 +97,7 @@ export default function AboutTab1() {
                 {""}
               </>,
             ]}
-            imageAlt="Code at night"
+            imageAlt="Coding at night"
             imageSrc="/personal-details-3.png"
           />
         </div>
