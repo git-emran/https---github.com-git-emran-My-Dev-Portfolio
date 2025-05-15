@@ -119,40 +119,28 @@ export default function WebSiteRedesign() {
             />
           </div>
           {/* Responsiveness & Accessibility -------> */}
-          <h2 className="text-3xl font-bold mb-4 pt-20">
-            Responsiveness & Accessibility
-          </h2>
-          <p>
-            Ensuring everyone has the same experience no matter the device being
-            used and their physical ability.
-          </p>
-          <Image
-            src="/redesign7.webp"
-            alt="Take 2"
-            width={900}
-            height={700}
-            quality={100}
-            unoptimized
-            className="block shadow-2xl rounded-md object-cover mt-8"
+          <DescriptionSection
+            title="Responsiveness & Accessibility"
+            description="Ensuring everyone has the same experience no matter the device being
+            used and their physical ability."
+            images={[
+              {
+                src: "/redesign7.webp",
+                alt: "responsive design",
+              },
+              {
+                src: "/redesign8.webp",
+                alt: "responsive design",
+              },
+            ]}
           />
-          <Image
-            src="/redesign8.webp"
-            alt="Take 2"
-            width={900}
-            height={700}
-            quality={100}
-            unoptimized
-            className="block shadow-2xl rounded-md object-cover mt-8"
+          {/* Highlighted UI changes -------> */}
+          <DescriptionSection
+            title="Highlighted UI changes"
+            description="Among other design decisions, these are some of the major UI changes
+            that happened."
           />
-          {/* Improvements I made -------> */}
-          <h2 className="text-3xl font-bold mb-4 pt-20">
-            Highlighted UI changes
-          </h2>
-          <p>
-            Among other design decisions, these are some of the major UI changes
-            that happened.
-          </p>
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-3 -mt-10 gap-4">
             <div className="col-span-3">
               <Image
                 src="/redesign10.webp"

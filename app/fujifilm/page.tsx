@@ -39,7 +39,7 @@ export default function FujiFilm() {
             />
           </section>
 
-          {/* Before Everything else */}
+          {/*Data Before Everything else */}
           <section>
             <DescriptionSection
               title="I had to understand data before everything else"
@@ -52,6 +52,20 @@ export default function FujiFilm() {
                 {
                   src: "/fuji-startproject-after.png",
                 },
+              ]}
+            />
+          </section>
+
+          {/*A/B tests with Thick data */}
+          <section>
+            <DescriptionSection
+              title="Performing A/B tests with Thick data"
+              description="Big data gave me insights on how to organize the data and Thick data gave me insights on how to shape the UX of it."
+              badge="3 Experiments"
+              images={[
+                {
+                  src: "/abtest_fuji.png",
+                }
               ]}
             />
           </section>
@@ -85,6 +99,7 @@ export default function FujiFilm() {
             <DescriptionSection
               title="Finally, Everything makes sense"
               description="A comprehensive dashboard was ready that had multi-tiered roles, accesses and user interfaces with cross-platform compatibility. This is fun to use."
+              badge="Final Design"
               images={[
                 {
                   src: "/fuji-final.png",
