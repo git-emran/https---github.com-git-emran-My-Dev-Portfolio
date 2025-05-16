@@ -13,7 +13,6 @@ import DescriptionSection from "./DescriptionSection";
 import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 import { cardData } from "@/lib/data";
 
-
 const people = [
   {
     id: 1,
@@ -47,15 +46,21 @@ function Intro() {
               as="div"
               wrap="pretty"
               align="center"
-              size={{initial:"2", xs:"4", lg:"9", xl:"9"}}
+              size={{ initial: "2", xs: "7", lg: "9", xl: "9" }}
               weight="medium"
-              className="text-[#2d2d2d]"
+              className="text-[#2d2d2d] px-10"
             >
               Designing better Softwares, Websites & Applications.
             </Text>
           </div>
           <div className="flex px-20">
-            <Heading wrap="pretty" size={{initial:"1", xs:"2", sm:"2", lg:"5", xl:"6"}} align="center" weight="medium">
+            <Heading
+              wrap="pretty"
+              size={{ initial: "2", xs: "3", sm: "4", lg: "5", xl: "6" }}
+              align="center"
+              weight="regular"
+              className="px-6"
+            >
               I enjoy creating{" "}
               <LinkPreview
                 url="https://github.com/git-emran"
@@ -72,7 +77,7 @@ function Intro() {
                 imageSrc="/dribbble.png"
               >
                 {" "}
-                <Kbd>illustrations</Kbd>
+                <Kbd>illustrations</Kbd>{" "}
               </LinkPreview>
               design interactions &{" "}
               <LinkPreview
@@ -84,7 +89,8 @@ function Intro() {
               </LinkPreview>
               {""} ideas in my spare time. I have over{" "}
               <Strong> 9 years </Strong> of experience designing for{" "}
-              <Strong>B2B, SaaS & AI</Strong> Industries.
+              <Strong>B2B, SaaS & AI</Strong> Industries.{" "}
+              <em>Currently building my own product.</em>
             </Heading>
           </div>
           <div className=" flex flex-row gap-2 sm:px-20 md:px-10 mt-10">
