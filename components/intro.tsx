@@ -90,7 +90,7 @@ function Intro() {
               {""} ideas in my spare time. I have over{" "}
               <Strong> 9 years </Strong> of experience designing for{" "}
               <Strong>B2B, SaaS & AI</Strong> Industries.{" "}
-              <em>Currently building my own product.</em>
+              Currently building my own product.
             </Heading>
           </div>
           <div className=" flex flex-row gap-2 sm:px-20 md:px-10 mt-10">
