@@ -12,6 +12,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import DescriptionSection from "./DescriptionSection";
 import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 import { cardData } from "@/lib/data";
+import { useRef } from "react";
 
 const people = [
   {
@@ -23,11 +24,10 @@ const people = [
 ];
 
 function Intro() {
-  const { ref } = useSectionInView("Home");
+
   return (
     <section
       id="home"
-      ref={ref}
       className="flex flex-col snap-start scroll-mt-[40rem] mt-20 scroll-smooth"
     >
       <div className="flex items-center flex-col">
@@ -42,6 +42,7 @@ function Intro() {
             <div className="flex flex-wrap items-center justify-center mb-4 w-full">
               <AnimatedTooltip items={people} />
             </div>
+
             <Text
               as="div"
               wrap="pretty"
@@ -89,8 +90,8 @@ function Intro() {
               </LinkPreview>
               {""} ideas in my spare time. I have over{" "}
               <Strong> 9 years </Strong> of experience designing for{" "}
-              <Strong>B2B, SaaS & AI</Strong> Industries.{" "}
-              Currently building my own product.
+              <Strong>B2B, SaaS & AI</Strong> Industries. Currently building my
+              own product.
             </Heading>
           </div>
           <div className=" flex flex-row gap-2 sm:px-20 md:px-10 mt-10">

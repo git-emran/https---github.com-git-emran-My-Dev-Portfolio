@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body {
   font-family: "Helvetica Neue";
 }
@@ -14,6 +15,7 @@ html {
   width: 100%;
   box-sizing: border-box;
 }
+
 
 @layer base {
   :root {
@@ -47,6 +49,7 @@ html {
 
     --radius: 0.5rem;
   }
+  
 
   .dark {
     --background: 222.2 84% 4.9%;
@@ -80,6 +83,7 @@ html {
 }
 
 @layer base {
+  
   * {
     @apply border-border;
   }
