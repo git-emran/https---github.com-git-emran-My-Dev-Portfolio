@@ -58,7 +58,7 @@ export default function Faq() {
         <AccordionItem value="item-3">
           <AccordionTrigger>Most Proficiency: UX or UI ?</AccordionTrigger>
           <AccordionContent className="text-left">
-            Working with both startups and enterprise companies made me realize
+            Working with both Startups and Enterprise Companies made me realize
             that, I am a bit of a Jack of all trades. Since I studied Design in
             my university I tend to focus more on the Human intreaction,
             Technical constraints and UX side of things.
