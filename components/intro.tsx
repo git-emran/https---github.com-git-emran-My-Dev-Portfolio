@@ -90,7 +90,7 @@ function Intro() {
               </LinkPreview>
               {""} ideas in my spare time. I have over{" "}
               <Strong> 9 years </Strong> of experience designing for{" "}
-              <Strong>B2B, SaaS & AI</Strong> Industries. Currently building my
+              <Strong>B2B, SaaS & AI</Strong> Industries. Currently building my own
               Video Recording & Sharing Platform
             </Heading>
           </div>
