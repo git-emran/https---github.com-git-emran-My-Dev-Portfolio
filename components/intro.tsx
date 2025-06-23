@@ -24,7 +24,6 @@ const people = [
 ];
 
 function Intro() {
-
   return (
     <section
       id="home"
@@ -90,8 +89,16 @@ function Intro() {
               </LinkPreview>
               {""} ideas in my spare time. I have over{" "}
               <Strong> 9 years </Strong> of experience designing for{" "}
-              <Strong>B2B, SaaS & AI</Strong> Industries. Currently building my own
-              Video Recording & Sharing Platform
+              <Strong>B2B, SaaS & AI</Strong> Industries. Currently building my
+              own{" "}
+              <LinkPreview
+                url="https://snap-cast-steel.vercel.app"
+                isStatic={true}
+                imageSrc="/myopensource.png"
+              >
+                {" "}
+                <Kbd>Video Recording & Sharing Platform I enjoy creating</Kbd>
+              </LinkPreview>{" "}
             </Heading>
           </div>
           <div className=" flex flex-row gap-2 sm:px-20 md:px-10 mt-10">
