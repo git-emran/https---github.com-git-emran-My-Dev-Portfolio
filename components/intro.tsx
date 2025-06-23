@@ -90,14 +90,14 @@ function Intro() {
               {""} ideas in my spare time. I have over{" "}
               <Strong> 9 years </Strong> of experience designing for{" "}
               <Strong>B2B, SaaS & AI</Strong> Industries. Currently building my
-              own{" "}
+              own Video{" "}
               <LinkPreview
                 url="https://snap-cast-steel.vercel.app"
                 isStatic={true}
                 imageSrc="/myopensource.png"
               >
                 {" "}
-                <Kbd>Video Recording & Sharing Platform I enjoy creating</Kbd>
+                <Kbd> Recording & Sharing Platform </Kbd>
               </LinkPreview>{" "}
             </Heading>
           </div>
