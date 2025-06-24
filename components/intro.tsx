@@ -92,7 +92,7 @@ function Intro() {
               <Strong>B2B, SaaS & AI</Strong> Industries. Currently building my
               own Video{" "}
               <LinkPreview
-                url="https://snap-cast-steel.vercel.app"
+                url="https://snap-cast-one.vercel.app"
                 isStatic={true}
                 imageSrc="/myopensource.png"
               >
