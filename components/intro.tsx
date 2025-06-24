@@ -50,8 +50,7 @@ function Intro() {
               weight="medium"
               className="text-[#2d2d2d] px-10"
             >
-              <strong>Building</strong> better Softwares, Websites &
-              Applications.
+              Building better Softwares, Websites & Applications.
             </Text>
           </div>
           <div className="flex px-20">
