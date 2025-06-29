@@ -4,8 +4,6 @@ import Footer from "@/components/footer";
 import "@radix-ui/themes/styles.css";
 import { Theme } from "@radix-ui/themes";
 import Script from "next/script";
-
-import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
@@ -50,7 +48,6 @@ export default function RootLayout({
             {children}
 
             <SpeedInsights />
-            <Analytics />
 
             <Footer />
           </ActiveSectionContextProvider>
